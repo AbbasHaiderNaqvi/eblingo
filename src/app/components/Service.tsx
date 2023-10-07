@@ -117,9 +117,10 @@ const Service = () => {
                     width={1000}
                     height={100}
                 />
+                <br />
+                <br />
+                <br />
                 
-                
-
             </div>
         </div>
 

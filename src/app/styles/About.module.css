@@ -1,0 +1,97 @@
+.about_img1 {
+    margin-left: 45px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about_img2 {
+    margin-left: 65px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2400px;
+    left: 113px;
+
+}
+
+.about_img3 {
+    border-radius: 0px;
+    position: absolute;
+    top: 2358px;
+    left: 260px;
+}
+
+.bold_heading {
+    position: absolute;
+    left: 302px;
+    top: 2375px;
+    color: white;
+}
+
+.heading_italic {
+    position: absolute;
+    left: 300px;
+    top: 2405px;
+    color: white;
+}
+
+.about_heading {
+    color: #FBAC41;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    float: right;
+    margin-right: 150px;
+}
+
+.about_sub_heading {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    position: relative;
+    left: 600px;
+    bottom: 370px;
+}
+
+.about_paragraph {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    position: relative;
+    left: 600px;
+    bottom: 380px;
+}
+
+.about_img4 {
+    position: relative;
+    bottom: 200px;
+}
+
+.contact_heading {
+    color: white;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70px;
+    position: relative;
+    bottom: 650px;
+    left: 40px;   
+}
+.Readmore_button{
+    background-image: linear-gradient( to right, #ed1e78, #faaf40);
+    color: white;
+    position: relative;
+    bottom: 590px;
+    left: 40px; 
+    font-weight: bold; 
+    border-color: transparent;
+    width:140px;
+    height:50px;
+}
