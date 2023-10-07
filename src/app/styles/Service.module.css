@@ -1,0 +1,41 @@
+.allservice_heading{
+    margin-left: 25px;
+    margin-top: 60px;
+}
+.heading_translation_firm{
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+.quote_button{
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    color: white; 
+    border-color: transparent;
+    float: right;
+    margin-right: 10px;
+    width:140px;
+    height:50px;
+    font-weight: bold;
+
+}
+.service_box1{
+    float: right;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-right: 60px;
+}
+.service_heading{
+    margin-top: 100px;  
+    margin-left: 150px;
+
+}
+.listing{
+    margin-top: 15px;
+    margin-left: 170px;
+    list-style-type: square;
+    color:#FB6239;
+}
+.list{
+    margin-bottom: 10px;  
+}
+
