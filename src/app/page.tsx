@@ -1,11 +1,16 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
+import Service from './components/Service'
+
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-    <div className={styles.content}>
-       <h1>Abbas</h1>
+    <main>
+    <div>
+       <Navbar />
+       <Hero />
+       <Service />
 
     </div>
     </main>
