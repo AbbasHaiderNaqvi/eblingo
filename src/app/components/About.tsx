@@ -1,7 +1,8 @@
-import React from "react";
 import styles from '../styles/About.module.css';
+import AnimatedProgressBar from '../Animations/AnimationProgressBar';
 import Image from "next/image";
-import { Button } from "antd";
+import { Button} from "antd";
+import React from 'react';
 
 const About = () => {
     return (
@@ -43,28 +44,12 @@ const About = () => {
                     is dedicated to helping you communicate your message to the world.<br />
                     Connect with us today to explore how we can serve you in your journey across<br />
                     languages and cultures.</p>
-
-
-                <p className={styles.about_paragraph}>We are a language services company headquartered in the United States; we<br />
-                    have established project management offices worldwide. Our team<br />
-                    comprises skilled project managers and linguists with extensive experience<br />
-                    handling complex projects. Leveraging our dedicated Project Management<br />
-                    Office. </p>
-
-
-                <br />
-                <Image
-                    src="/assets/About-4.png"
-                    alt="About"
-                    width={2000}
-                    height={500}
-                    className={styles.about_img4}
-                />
-                <div className={styles.contact_heading}>
-                Mission is to Protect<br />your Business & much more
-                </div>
-                <Button className={styles.Readmore_button}>Read More</Button>
-
+                   <AnimatedProgressBar />
+                    <p className={styles.about_paragraph}>We are a language services company headquartered in the United States; we<br />
+                        have established project management offices worldwide. Our team<br />
+                        comprises skilled project managers and linguists with extensive experience<br />
+                        handling complex projects. Leveraging our dedicated Project Management<br />
+                        Office. </p>
 
             </div>
         </div>

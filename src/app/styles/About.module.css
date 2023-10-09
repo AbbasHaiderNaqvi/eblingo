@@ -68,30 +68,9 @@
     left: 600px;
     bottom: 380px;
 }
-
-.about_img4 {
+.AnimatedProgressBar {
+    width: 350px;
     position: relative;
-    bottom: 200px;
-}
-
-.contact_heading {
-    color: white;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 70px;
-    position: relative;
-    bottom: 650px;
-    left: 40px;   
-}
-.Readmore_button{
-    background-image: linear-gradient( to right, #ed1e78, #faaf40);
-    color: white;
-    position: relative;
-    bottom: 590px;
-    left: 40px; 
-    font-weight: bold; 
-    border-color: transparent;
-    width:140px;
-    height:50px;
+    bottom: 380px;
+    left: 600px;
 }
