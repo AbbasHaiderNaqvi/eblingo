@@ -2,7 +2,7 @@ import { Button } from 'antd';
 import styles from '../styles/Navbar.module.css';
 import Image from 'next/image';
 import React from 'react';
-import Link from 'next/link';
+  import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (

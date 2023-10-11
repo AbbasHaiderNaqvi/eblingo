@@ -1,9 +1,9 @@
 import Image from "next/image";
 import styles from '../styles/AdvantageSection.module.css';
 import { Button,Progress } from "antd";
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 import Tab from "../Animations/Tab";
-import Testimonials from "../Animations/testimonials";
+import Testimonials from '../Animations/Testimonials';
 import AnimatedProgressCircle1 from "../Animations/AnimationProgressCircle1";
 import AnimatedProgressCircle2 from "../Animations/AnimationProgressCircle2";
 import AnimatedProgressCircle3 from "../Animations/AnimationProgressCircle3";
@@ -145,7 +145,6 @@ const AdvantageSection = () => {
             <div>
                 <h5 className={styles.testimonials_heading}>Clients Testimonials</h5>
                 <h4 className={styles.testimonials_heading2}>what clients has to say about us?</h4>
-                {/* testimonial remaining*/}
             <div>
                 <h5 className={styles.project_satisfaction_heading}>PROJECT SATISFACTION</h5>
                 <h4 className={styles.project_satisfaction_heading2}>Our Projects</h4>
@@ -162,6 +161,7 @@ const AdvantageSection = () => {
                     <AnimatedProgressCircle3 />
                     <p className={styles.AnimatedProgressCircle3_paragraph3}>Results improved compared <br/>to previous agencies</p>
                     </div>
+                    <div className={styles.rectangle_number_Animation}>
                     <Image
                     src="/assets/rectangle_number.png"
                     alt="Project Satisfaction"
@@ -169,6 +169,15 @@ const AdvantageSection = () => {
                     height={180}
                     className={styles.rectangle_number}
                 />
+                <div className={styles.rectangle_contents}>
+                <div className={styles.rectangle_content}>Leads generated so far...</div>
+                <div className={styles.rectangle_button}>
+                    <Button>Contact us</Button>
+                </div>
+                </div>
+                </div>
+
+                 
                 
             </div>
 

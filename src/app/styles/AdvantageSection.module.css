@@ -380,6 +380,7 @@
     bottom: 580px;
     left: 60px;
 }
+
 .AnimatedProgressCircle2_paragraph2 {
     color: #393939;
     font-size: 12px;
@@ -391,6 +392,7 @@
     bottom: 745px;
     left: 280px;
 }
+
 .AnimatedProgressCircle3_paragraph3 {
     color: #393939;
     font-size: 12px;
@@ -402,8 +404,23 @@
     bottom: 910px;
     left: 500px;
 }
-.rectangle_number{
+
+.rectangle_number {
+    float: right;
     position: relative;
     bottom: 1095px;
-    left: 700px;
+    margin-right: 20px;
+}
+
+.rectangle_content {
+    color: black;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.968px;
+    letter-spacing: 0.6px;
+    float: right;
+    position:absolute;
+    bottom: 1000px;
+    margin-right: 10px;
 }

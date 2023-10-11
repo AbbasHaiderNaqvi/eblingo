@@ -1,46 +1,39 @@
+'use client';
 import React from 'react';
 import { Carousel } from 'antd';
-import Image from 'next/image';
-import styles from '../styles/AdvantageSection.module.css';
 
-
+const contentStyle: React.CSSProperties = {
+  height: '500px',
+  width: '500px',
+  color: '#fff',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
+  position : 'relative',
+  bottom : '500px',
+};
 
 const Testimonials: React.FC = () => {
-    const onChange = (currentSlide: number) => {
-        console.log(currentSlide);
-      };
-      return(
-  <Carousel afterChange={onChange} className={styles.carousel_testimonial}>
-    <div>
-    <Image
-                    src="/assets/testimonial_img.png"
-                    alt="Service"
-                    className={styles.testimonial_img}
-                />    
-    </div>
+  const onChange = (currentSlide: number) => {
+    console.log(currentSlide);
+  };
 
-    <div>
-    <Image
-                    src="/assets/testimonial_img.png"
-                    alt="Service"
-                    className={styles.testimonial_img}
-                />
-    </div>
-    <div>
-    <Image
-                    src="/assets/testimonial_img.png"
-                    alt="Service"
-                    className={styles.testimonial_img}
-                />
-    </div>
-    <div>
-    <Image
-                    src="/assets/testimonial_img.png"
-                    alt="Service"
-                    className={styles.testimonial_img}
-                />
-    </div>
-  </Carousel>
-)};
+  return (
+    <Carousel afterChange={onChange}>
+      <div>
+        <h3 style={contentStyle}>1</h3>
+      </div>
+      <div>
+        <h3 style={contentStyle}>2</h3>
+      </div>
+      <div>
+        <h3 style={contentStyle}>3</h3>
+      </div>
+      <div>
+        <h3 style={contentStyle}>4</h3>
+      </div>
+    </Carousel>
+  );
+};
 
 export default Testimonials;
