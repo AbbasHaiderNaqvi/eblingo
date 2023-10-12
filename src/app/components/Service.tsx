@@ -11,7 +11,7 @@ const Service = () => {
                     OUR SERVICES
                 </h6>
                 <div className={styles.heading_translation_firm}>
-                    <i>Biggest language Translation <br />firm</i>
+                    Biggest language Translation <br />firm
                 </div>
                 <Button className={styles.quote_button}>
                     Get a quote
@@ -31,9 +31,9 @@ const Service = () => {
                 </h2>
                 <div className={styles.unorder_list}>
                     <ul className={styles.listing} >
-                        <li className={styles.list}>Subtitling</li>
-                        <li className={styles.list}>Transcription</li>
-                        <li className={styles.list}>Closed Caption</li>
+                        <li><div className={styles.list}>Subtitling</div></li>
+                        <li><div className={styles.list}>Transcription </div></li>
+                        <li><div className={styles.list}>Closed Caption</div></li>
                     </ul>
                 </div>
                 <br />
@@ -54,9 +54,9 @@ const Service = () => {
                 </h2>
                 <div className={styles.unorder_list}>
                     <ul className={styles.listing} >
-                        <li className={styles.list}>Financial Translation</li>
-                        <li className={styles.list}>Marketing Translation</li>
-                        <li className={styles.list}>Technical Translation</li>
+                        <li><div className={styles.list}>Financial Translation</div></li>
+                        <li><div className={styles.list}>Marketing Translation</div></li>
+                        <li><div className={styles.list}>Technical Translation</div></li>
                     </ul>
                 </div>
                 <br />
@@ -77,9 +77,9 @@ const Service = () => {
                 </h2>
                 <div className={styles.unorder_list}>
                     <ul className={styles.listing} >
-                        <li className={styles.list}>The Multilingual Subtitling Process</li>
-                        <li className={styles.list}>Our In-House Expertise</li>
-                        <li className={styles.list}>Reduce Your workload</li>
+                        <li><div className={styles.list}>The Multilingual Subtitling Process</div></li>
+                        <li><div className={styles.list}>Our In-House Expertise</div></li>
+                        <li><div className={styles.list}>Reduce Your workload</div></li>
                     </ul>
                 </div>
                 <br />
@@ -100,9 +100,9 @@ const Service = () => {
                 </h2>
                 <div className={styles.unorder_list}>
                     <ul className={styles.listing} >
-                        <li className={styles.list}>Book Translations</li>
-                        <li className={styles.list}>Academic and research Generals </li>
-                        <li className={styles.list}>Magzine  and media publication </li>
+                        <li><div className={styles.list}>Book Translations</div></li>
+                        <li><div className={styles.list}>Academic and research Generals</div> </li>
+                        <li><div className={styles.list}>Magzine  and media publication</div> </li>
                     </ul>
                 </div>
                 <br />

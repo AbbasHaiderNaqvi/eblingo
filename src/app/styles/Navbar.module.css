@@ -4,7 +4,7 @@
   align-items: center;
   height: 75px;
   background-color: white;
-  padding: 10px 30px;
+  padding: 10px 10px;
 }
 
 
@@ -33,7 +33,11 @@
 }
 
 .navLinks a {
-  color: black;
+  color: #484848;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
   text-decoration: none;
   font-weight: bold;
 }
@@ -45,6 +49,8 @@
 
 .button {
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    border-radius: 10px;
+    height: 40px;
     color: white; 
     border-color: transparent;
     

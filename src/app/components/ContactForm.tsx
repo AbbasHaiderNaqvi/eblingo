@@ -11,7 +11,7 @@ const ContactForm: React.FC = () => {
     targetLanguage: '',
     uploadedFile: null,
   });
-
+ 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
@@ -79,11 +79,11 @@ const ContactForm: React.FC = () => {
           className={styles.input_fields} />
         </div>
         <div>
-            <Button 
+            
+        <Button 
             className={styles.contact_button}>
             Submit
           </Button>
-        
         </div>
       </form>
     </div>

@@ -1,5 +1,5 @@
 .about_img1 {
-    margin-left: 45px;
+    margin-left: 35px;
     border-radius: 10px;
     position: relative;
     top: 0;
@@ -10,64 +10,74 @@
     margin-left: 65px;
     border-radius: 10px;
     position: absolute;
-    top: 2400px;
-    left: 113px;
+    top: 2500px;
+    left: 135px;
 
 }
 
 .about_img3 {
     border-radius: 0px;
     position: absolute;
-    top: 2358px;
-    left: 260px;
+    top: 2450px;
+    left: 295px;
 }
 
 .bold_heading {
     position: absolute;
-    left: 302px;
-    top: 2375px;
-    color: white;
+    left: 350px;
+    top: 2460px;
+    color: #FFF;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; 
 }
 
 .heading_italic {
     position: absolute;
-    left: 300px;
-    top: 2405px;
-    color: white;
+    left: 350px;
+    top: 2490px;
+    color: #FFF;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 27px; 
 }
 
 .about_heading {
     color: #FBAC41;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
     float: right;
-    margin-right: 150px;
+    margin-right: 250px;
 }
 
 .about_sub_heading {
     color: #000;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
     position: relative;
-    left: 600px;
+    left: 590px;
     bottom: 370px;
 }
 
 .about_paragraph {
     color: #000;
-    font-family: Poppins;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 27px;
     position: relative;
     left: 600px;
     bottom: 380px;
 }
+
 .AnimatedProgressBar {
     width: 350px;
     position: relative;

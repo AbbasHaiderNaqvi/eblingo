@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
       <h1 className={styles.heading}>
-        Eblingo is
+        Eblingo is 
       </h1>
       {/* <h1 className={styles.typing}>{text}</h1> */}
       <h1 className={styles.service_agency}>Service Agency</h1>

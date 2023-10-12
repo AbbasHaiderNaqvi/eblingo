@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from '../styles/AdvantageSection.module.css';
 import { Button,Progress } from "antd";
-// import ContactForm from "./ContactForm";
 import Tab from "../Animations/Tab";
 import Testimonials from '../Animations/Testimonials';
 import AnimatedProgressCircle1 from "../Animations/AnimationProgressCircle1";
 import AnimatedProgressCircle2 from "../Animations/AnimationProgressCircle2";
 import AnimatedProgressCircle3 from "../Animations/AnimationProgressCircle3";
+import ContactForm from "./ContactForm";
 
 
 const AdvantageSection = () => {
@@ -24,7 +24,7 @@ const AdvantageSection = () => {
                 Mission is to Protect<br />your Business & much more
             </div>
             <Button className={styles.Readmore_button}>Read More</Button>
-            {/*                                                                                                           */}
+            {/* <ContactForm /> */}
             <Image
                 src="/assets/About-5.png"
                 alt="About"
@@ -132,13 +132,7 @@ const AdvantageSection = () => {
                     className={styles.Offer_img}
                 />
                 <Tab />
-                <Image
-                    src="/assets/Rectangle_subscribe.png"
-                    alt="Service"
-                    width={990}
-                    height={75}
-                    className={styles.rectangle_subscribe}
-                />
+                <div className={styles.rectangle_subscribe}></div>
                 <div className={styles.rectangle_subscribe_text}>Professional Translation Enhanced by Human</div>
                 <Button className={styles.rectangle_readmore_button}>Read More</Button>
             </div>
@@ -162,24 +156,59 @@ const AdvantageSection = () => {
                     <p className={styles.AnimatedProgressCircle3_paragraph3}>Results improved compared <br/>to previous agencies</p>
                     </div>
                     <div className={styles.rectangle_number_Animation}>
-                    <Image
-                    src="/assets/rectangle_number.png"
-                    alt="Project Satisfaction"
-                    width={280}
-                    height={180}
-                    className={styles.rectangle_number}
-                />
                 <div className={styles.rectangle_contents}>
+                <div className={styles.rectangle_number}></div>
                 <div className={styles.rectangle_content}>Leads generated so far...</div>
-                <div className={styles.rectangle_button}>
-                    <Button>Contact us</Button>
+                    <Button className={styles.rectangle_button}>Contact us</Button>
                 </div>
                 </div>
-                </div>
-
-                 
-                
+        
             </div>
+                <h5 className={styles.blog_heading}>OUR BLOG</h5>
+                <h4 className={styles.blog_heading2}>Latest Posts</h4>
+                <div className={styles.blog_content_main}>
+                <div className={styles.blog_content}>
+                <Image
+                    src="/assets/blog_img_1.png"
+                    alt="Blog"
+                    width={300}
+                    height={300}
+                    className={styles.Blog_img_1}
+                />
+                <h5 className={styles.blog_img_heading_1}>How to Choose a WooCommerce<br />translation</h5>
+                <p className={styles.blog_paragraph_1}>Lorem ipsum dolor sit amet consectetur. Orci auctor at
+                <br/> nisl aliquet est. In consectetur arcu nunc id turpis eu.</p>
+                </div>
+                <div className={styles.blog_content}>
+                <Image
+                    src="/assets/blog_img_2.png"
+                    alt="Blog"
+                    width={300}
+                    height={300}
+                    className={styles.Blog_img_2}
+                />
+                <h5 className={styles.blog_img_heading_2}>How to Choose a WooCommerce<br />translation</h5>
+                <p className={styles.blog_paragraph_2}>Lorem ipsum dolor sit amet consectetur. Orci auctor at
+                <br/> nisl aliquet est. In consectetur arcu nunc id turpis eu.</p>
+                </div>
+                <div className={styles.blog_content}>
+                <Image
+                    src="/assets/blog_img_3.png"
+                    alt="Service"
+                    width={300}
+                    height={300}
+                    className={styles.Blog_img_3}
+                />
+                <h5 className={styles.blog_img_heading_3}>How to Choose a WooCommerce<br />translation</h5>
+                <p className={styles.blog_paragraph_3}>Lorem ipsum dolor sit amet consectetur. Orci auctor at
+                <br/> nisl aliquet est. In consectetur arcu nunc id turpis eu.</p>
+                </div>
+                </div>
+                <div>
+                <div className={styles.rectangle_signup}></div>
+                {/* <div className={styles.rectangle_text}>Sign up for Our Newsletter</div>
+                <Button className={styles.rectangle_subcribe_button}>Subscribe Now</Button> */}
+                </div>
 
 
         </div>
