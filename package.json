@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.2.6",
     "antd": "^5.9.4",
     "next": "13.5.4",
     "react": "^18",
+    "react-countup": "^6.4.2",
     "react-dom": "^18",
-    "react-simple-typewriter": "^5.0.1"
+    "react-simple-typewriter": "^5.0.1",
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import styles from '../styles/AdvantageSection.module.css';
+import styles from '../styles/Offer.module.css';
 import { Tabs } from 'antd';
 import type { TabsProps } from 'antd';
 

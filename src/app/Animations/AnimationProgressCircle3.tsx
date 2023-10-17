@@ -1,7 +1,8 @@
 "use client";
+"use client";
 import { Progress } from "antd";
 import React,{useState,useEffect} from 'react';
-import styles from '../styles/AdvantageSection.module.css';
+import styles from '../styles/testimonial.module.css';
 
 const AnimatedProgressCircle3: React.FC = () => {
     const [percent, setPercent] = useState<number>(1);

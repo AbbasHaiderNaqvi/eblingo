@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
                 <Image
                     src="/assets/logo.png"
                     alt="Logo"
-                    width={50}
-                    height={50}
+                    width={100}
+                    height={100}
                     className={styles.logo_footer}
                 />
                 <ul className={styles.overall_Link}>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                                     className={styles.recent_img}
                                 />
                                 <div className={styles.recent_content}>
-                                    <div className={styles.recent_heading}>Creating accessible Multilingual Site</div>
+                                    <h4 className={styles.recent_heading}>Creating accessible Multilingual Site</h4>
                                     <div className={styles.recent_Date}>May 21 2023</div>
                                 </div>
                             </div>
