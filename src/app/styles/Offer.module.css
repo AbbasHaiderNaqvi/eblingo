@@ -21,6 +21,7 @@
 .Offer_img {
     position: relative;
     top: 140px;
+    border-radius: 15px;
 }
 
 .AnimatedTab {

@@ -11,7 +11,7 @@ const Service = () => {
                     OUR SERVICES
                 </h6>
                 <div className={styles.heading_translation_firm}>
-                    Biggest language Translation <br />firm
+                    Biggest language Translation firm
                 </div>
                 <Button className={styles.quote_button}>
                     Get a quote
@@ -20,7 +20,7 @@ const Service = () => {
                 <br />
                 <br />
                 <Image
-                    src="/assets/services1.jpeg"
+                    src="/assets/services1.png"
                     alt="Service"
                     width={420}
                     height={310}
