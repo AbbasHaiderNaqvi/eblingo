@@ -1,0 +1,144 @@
+.testimonials_heading {
+    color: #FBAC41;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials_heading2 {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.testimonial_img {
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+
+.project_satisfaction_heading {
+    color: #FBAC41;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.project_satisfaction_heading2 {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.AnimatedProgressCircle1 {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.AnimatedProgressCircle2 {
+    margin-bottom: 10px;
+}
+
+.AnimatedProgressCircle3 {
+    margin-bottom: 10px;
+}
+
+.AnimatedProgressCircle1_paragraph1 {
+    color: #393939;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.54px;
+    margin-left: 50px;
+}
+
+.AnimatedProgressCircle2_paragraph2 {
+    color: #393939;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.54px;
+}
+
+.AnimatedProgressCircle3_paragraph3 {
+    color: #393939;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.54px;
+}
+
+.rectangle_number {
+    margin-right: 30px;
+    width: 250px;
+    height: 175px;
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    border-radius: 10px;
+    position: relative;
+}
+
+.rectangle_content {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.968px;
+    letter-spacing: 0.6px;
+    position: absolute;
+    top: 1px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+
+
+.rectangle_button {
+    color: #F0406B;
+    font-size: 12px;
+    font-style: normal;
+    width: 140px;
+    height: 35px;
+    border-radius: 15px;
+    font-weight: 600;
+    line-height: 22.968px;
+    letter-spacing: 0.54px;
+    position: absolute;
+    bottom: 1px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+
+.AnimatedNumber {
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.968px;
+    letter-spacing: 1.35px;
+    position: absolute;
+    top: 1px;
+    margin-top: 25px;
+    margin-left: 60px;
+}

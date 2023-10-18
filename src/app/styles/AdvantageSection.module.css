@@ -1,0 +1,186 @@
+.contact_rectangle{
+    background-color:#000;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contact_heading {
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70px;
+    position:absolute;
+    bottom: 325px;
+    margin-left: 35px;
+    
+}
+
+.Readmore_button {
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    width: 140px;
+    height: 50px;
+    position:absolute;
+    bottom: 200px;
+    margin-left: 35px;
+}
+
+
+
+.about_img5 {
+    position: relative;
+    top: 12px;
+    left: 50px;
+}
+
+.aboutCircle_img1 {
+    position: absolute;
+    top: 5px;
+    left: 42px;
+}
+
+.FreeSupport_heading {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    
+}
+
+
+.FreeSupport_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    
+}
+
+.aboutCircle_img2 {
+    position: relative;
+    top: 12px;
+    left: 30px;
+}
+
+.about_img6 {
+    position: absolute;
+    top: 15px;
+    left: 42px;
+}
+
+.language_heading {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.language_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.about_img7 {
+    position: relative;
+    top: 12px;
+    left: 50px;
+}
+
+.aboutCircle_img3 {
+    position: absolute;
+    top: 5px;
+    left: 42px;
+}
+
+.tech_translation_heading {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    
+}
+
+.translation_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    
+}
+
+.about_img8 {
+    position: relative;
+    top: 12px;
+    left: 20px;
+}
+
+.aboutCircle_img4 {
+    position: absolute;
+    top: 5px;
+    left: 22px;
+}
+
+.Multi_heading {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    margin-left: 50px;
+    
+}
+
+.Multi_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-left: 50px;
+    
+}
+
+.Innovations_heading {
+    color: #FBAC41;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.Innovations_heading2 {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    
+}
+
+.Innovations_paragraph {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.Innovations_img {
+    
+    width: 400px;
+    height: 296px;
+} 

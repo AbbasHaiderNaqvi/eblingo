@@ -1,0 +1,51 @@
+
+.hero {
+    background-image: url('/assets/HeroSection.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+    color: #FFF;
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  
+  .service_agency {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .readme_button {
+    background-image: linear-gradient( to right, #ed1e78, #faaf40);
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-weight: bold; 
+    border-color: transparent;
+    width:140px;
+    height:50px;
+  }
+  .allservices_button{
+    background-color: white;
+    color: rgb(112, 81, 81);
+    font-weight: bold;
+    width:140px;
+    height:50px;
+  }
+  .paragraph{
+    color: #FFF;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px;
+  }
+  

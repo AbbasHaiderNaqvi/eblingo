@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background-color: white;
+  padding: 10px 10px;
+}
+
+
+
+.left {
+  flex: 1;
+}
+
+.center {
+  flex: 6;
+  text-align: start;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navLinks li {
+  margin-right: 30px;
+  display: inline;
+  margin: 0 15px;
+}
+
+.navLinks a {
+  color: #484848;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+}
+
+.button {
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    border-radius: 10px;
+    height: 40px;
+    color: white; 
+    border-color: transparent;
+    
+  
+}
