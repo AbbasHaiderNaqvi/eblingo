@@ -1,19 +1,19 @@
 .contact_container {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    position: relative;
-    bottom: 800px;
-    width: 950px;
-    height: 1000px;
-    border-color: #BFBFBF;
+    position: absolute;
+    width: 302px;
+    height: 480px;
+    border-color: black;
+    bottom: -200px;
+    border-radius: 10px;
+    margin-left: 25px;
+    border: 1px solid #969696;
+
 
 }
 
 .contactus_heading {
     color: #000;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     margin-left: 20px;
     font-size: 27px;
     font-weight: 700;
@@ -30,14 +30,12 @@
     background-color: #F7F7F7;
     width: 250px;
     height: 40px;
-    top: 5127px;
-    left: 933.46px;
+    margin-bottom: 25px;
+
 
 }
 
 .contact_form {
-    display: flex;
-    flex-direction: column;
     width: 300px;
     gap: 10px;
     background-color: white;
@@ -53,5 +51,12 @@
     font-weight: 700;
     line-height: 27px;
     margin-left: 20px;
+    margin-bottom: 25px;
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
+}
+.upload_button{
+    margin-left: 20px;
+    height: 40px;
+    width: 250px;
+    margin-bottom: 25px;
 }

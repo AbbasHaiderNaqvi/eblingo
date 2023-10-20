@@ -1,6 +1,7 @@
 "use client";
 import styles from '../styles/Hero.module.css';
 import {Button} from 'antd';
+import Image from "next/image";
 import { Typewriter, useTypewriter } from 'react-simple-typewriter'
 import React from 'react';
 
@@ -15,6 +16,12 @@ const Hero = () => {
   //         });  
   return (
     <div className={styles.hero}>
+       {/* <Image
+        src="/assets/logo.png" 
+        alt="Logo"
+        width={150} 
+        height={150} 
+      /> */}
       <h1 className={styles.heading}>
         Eblingo is 
       </h1>

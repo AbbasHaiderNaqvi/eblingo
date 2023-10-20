@@ -21,21 +21,22 @@
 .Offer_img {
     position: relative;
     top: 140px;
+    border-radius: 15px;
 }
 
 .AnimatedTab {
    
     background-color: #FFF0DC;
-    border-radius: 20px;
+    border-radius: 15px;
     height: 420px;
-    width: 475px;
+    width: 500px;
     margin-left: 35px;
     margin-top: 40px;
 }
 
 .Tab_text {
     color: #000;
-    width: 123px;
+    width: 131px;
     text-align: center;
     font-size: 15px;
     font-style: normal;

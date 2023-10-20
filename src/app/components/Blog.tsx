@@ -64,9 +64,9 @@ const Blog: React.FC = () => {
                 </Col>
                 <Col span={35}>
                 <Space className={styles.icons}>
-                <FacebookOutlined className={styles.icons1}/>
-                <LinkedinOutlined className={styles.icons2}/>
-                <InstagramOutlined className={styles.icons3}/>
+                <FacebookOutlined style={{ fontSize: '200%'}} />
+                <LinkedinOutlined style={{ fontSize: '200%'}} />
+                <InstagramOutlined style={{ fontSize: '200%'}} />
                     </Space>
                 </Col>
                 </Row>  

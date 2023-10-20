@@ -24,7 +24,7 @@ const Offer: React.FC = () => {
                 </Col>
                 </Row>
                 <Row>
-                    <Col span={20}>
+                    <Col span={18}>
                     <div className={styles.rectangle_subscribe}></div>
                 <div className={styles.rectangle_subscribe_text}>Professional Translation Enhanced by Human</div>
                     </Col>

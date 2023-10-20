@@ -120,20 +120,24 @@
     background-color: #000;
     color: #FFF;   
     position: absolute;
-    bottom: 27px;
-    left:170px;
+    bottom: 26px;
+    left:215px;
     width: 150px;
     height: 38px;
 }
 .signup_input{
     margin-left: 20px;
     margin-bottom: 10px;
-    border: white;
+    border: 1px solid #FFF;
     background-color: transparent;
-    width: 300px;
-    height: 40px;
+    width: 350px;
+    height: 45px;
     position: absolute;
-    bottom: 15px;
+    bottom: 13px;
+}
+.signup_input::placeholder{
+    color: #FFF;
+    margin-left: 10px;
 }
 .icons{
     position: absolute;
