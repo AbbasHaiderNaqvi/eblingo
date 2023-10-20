@@ -27,7 +27,11 @@ const AnimatedProgressBar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [visited, percent]);
 
-  return <Progress percent={percent} status="active" className={styles.AnimatedProgressBar} />;
+  return <Progress percent={percent}
+   status="active" 
+   className={styles.AnimatedProgressBar} 
+   strokeColor="#FBAC41"
+   />;
 };
 
 export default AnimatedProgressBar;

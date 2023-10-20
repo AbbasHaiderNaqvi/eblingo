@@ -1,17 +1,19 @@
+import { ArrowRightOutlined } from '@ant-design/icons';
 import styles from '../styles/Footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { relative } from 'path';
 
 const Footer: React.FC = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footer_content}>
                 <Image
-                    src="/assets/logo.png"
+                    src="/assets/FooterLogo.png"
                     alt="Logo"
-                    width={100}
-                    height={100}
+                    width={75}
+                    height={50}
                     className={styles.logo_footer}
                 />
                 <ul className={styles.overall_Link}>
@@ -90,6 +92,11 @@ const Footer: React.FC = () => {
                         </div>
                     </li>
                 </ul>
+                <div>
+                    <h3 className={styles.email_heading}>Email Us and Connect with us</h3>
+                    <input  placeholder='E-Mail Address' className={styles.email_input}/>
+                    <ArrowRightOutlined className={styles.email_icon}/>
+                </div>
                 <div className={styles.legal_terms_h}>
                     <div className={styles.reserved_rights}>{new Date().getFullYear()} Eblingo.All right reserved</div>
                     <div className={styles.privacy_policy}>Privacy Policy</div>

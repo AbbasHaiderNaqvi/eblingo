@@ -1,16 +1,18 @@
 .contact_container {
     position: absolute;
-    width: 950px;
-    height: 1000px;
+    width: 302px;
+    height: 480px;
     border-color: black;
+    bottom: -200px;
+    border-radius: 10px;
     margin-left: 25px;
-    bottom: -800px;
+    border: 1px solid #969696;
+
 
 }
 
 .contactus_heading {
     color: #000;
-    margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 20px;
     font-size: 27px;
