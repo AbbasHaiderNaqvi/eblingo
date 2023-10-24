@@ -1,80 +1,77 @@
+.offer_content {
+    margin-top: 10%;
+}
+
 .offer_heading {
     color: #FBAC41;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    margin-top: 100px;
-    margin-left: 35px;
+    margin-bottom: 10px;
+    margin-left: 5%;
 }
 
 .offer_heading2 {
     color: #000;
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: 50px;
-    margin-left: 35px;
-    
+    margin-bottom: 3%;
+    margin-left: 5%;
 }
 
 .Offer_img {
-    position: relative;
-    top: 140px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .AnimatedTab {
-   
+
     background-color: #FFF0DC;
-    border-radius: 15px;
-    height: 420px;
-    width: 500px;
-    margin-left: 35px;
-    margin-top: 40px;
+    border-radius: 20px;
+    height: 767px;
+    width: 672px;
+    margin-left: 5%;
 }
 
 .Tab_text {
     color: #000;
-    width: 131px;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .Tab_paragraph {
     color: #000;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 300;
-    line-height: 25px;
-    position: relative;
-    top: 20px;
-    left: 25px;
+    line-height: 35.5px;
 }
 
 .rectangle_subscribe {
-    width: 980px;
-    height: 90px;
-    margin-top: 75px;
-    margin-left: 20px;
+    margin-top: 10%;
+    align-items: center;
+    width: 1351px;
+    height: 121px;
+    flex-shrink: 0;
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
     border-radius: 10px;
-    position: relative;
 
 }
-
+.rectangle_subscribe{
+    display: flex;
+}
 .rectangle_subscribe_text {
     color: #FFF;
-    font-size: 25px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 80px;
-    position: absolute;
-    margin-left: 40px;
-    top: 85px;
+    
 }
 
 .rectangle_readmore_button {
@@ -82,6 +79,4 @@
     color: #FAAF40;
     width: 125px;
     height: 40px;
-    position: absolute;
-    top: 100px;
 }

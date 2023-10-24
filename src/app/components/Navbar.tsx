@@ -8,11 +8,9 @@ const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
-        <Image
+        <img
         src="/assets/logo.png" 
         alt="Logo"
-        width={150} 
-        height={150} 
         className={styles.logo} 
       />
       </div>

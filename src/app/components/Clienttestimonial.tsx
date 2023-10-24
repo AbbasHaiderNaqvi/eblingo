@@ -10,49 +10,41 @@ import React from 'react';
 const Clienttestimonial: React.FC = () => {
     return (
         <div>
-
+            <div className={styles.Testimonial_Section}>
             <h5 className={styles.testimonials_heading}>Clients Testimonials</h5>
             <h4 className={styles.testimonials_heading2}>what clients has to say about us?</h4>
             <Image
                 src="/assets/testimonial_img.png"
                 alt="Testimonial"
-                width={800}
-                height={350}
+                width={1216}
+                height={426}
                 className={styles.testimonial_img}
             />
+            </div>
+            <div className={styles.project_satisfaction}>
             <h5 className={styles.project_satisfaction_heading}>PROJECT SATISFACTION</h5>
             <h4 className={styles.project_satisfaction_heading2}>Our Projects</h4>
-            <Row>
-                <Col span={6}>
-                    <div>
+            <Row justify={'center'}>
+                <Col>
                         <AnimatedProgressCircle1 />
-                        <p className={styles.AnimatedProgressCircle1_paragraph1}>Average increase in sales<br />
-                            for our clients</p>
-                    </div>
                 </Col>
-                <Col span={5}>
-                    <div>
+                <Col>
                         <AnimatedProgressCircle2 />
-                        <p className={styles.AnimatedProgressCircle2_paragraph2}>Google and Facebook-<br />certified team</p>
-                    </div>
                 </Col>
-                <Col span={6}>
-                    <div>
+                <Col>
                         <AnimatedProgressCircle3 />
-                        <p className={styles.AnimatedProgressCircle3_paragraph3}>Results improved compared <br />to previous agencies</p>
-                    </div>
                 </Col>
-                <Col span={5}>
+                <Col>
                     <div className={styles.rectangle_number_Animation}>
-                        <div className={styles.rectangle_contents}>
-                            <div className={styles.rectangle_number}></div>
+                            <div className={styles.rectangle_number}>
                             <div className={styles.AnimatedNumber}><AnimatedNumber /></div>
                             <div className={styles.rectangle_content}>Leads generated so far...</div>
                             <Button className={styles.rectangle_button}>Contact us</Button>
-                        </div>
+                            </div>
                     </div>
                 </Col>
             </Row>
+            </div>
         </div>
     );
 };

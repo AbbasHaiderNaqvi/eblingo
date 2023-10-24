@@ -7,114 +7,85 @@ import ContactForm from "./ContactForm";
 const AdvantageSection = () => {
     return (
         <div className={styles.content}>
-            <div className={styles.contact_rectangle}></div>
-            <Row justify="start">
-                <Col span={16}>
-                    <div className={styles.contact_heading}>
-                        Mission is to Protect<br />your Business & much more
-                    </div>
-                    <Button className={styles.Readmore_button}>Read More</Button>
-                </Col>
-                <Col>
-                    <ContactForm />
-                </Col>
-            </Row>
             <Row>
-                <Col span={3}>
-                    <Image
-                        src="/assets/AboutCircle.png"
-                        alt="About"
-                        width={40}
-                        height={40}
-                        className={styles.aboutCircle_img1}
-                    />
-                    <Image
-                        src="/assets/About-5.png"
-                        alt="About"
-                        width={50}
-                        height={50}
-                        className={styles.about_img5}
-                    />
-                </Col>
                 <Col>
-                    <div className={styles.FreeSupport_heading}>Free Support</div>
-                    <div className={styles.FreeSupport_paragraph}>Approve, edit and enhance your<br />website translation within your<br /> team</div>
-                </Col>
-                {/*                                                                                       */}
-                <Col span={3}>
-                    <Image
-                        src="/assets/AboutCircle.png"
-                        alt="About"
-                        width={40}
-                        height={40}
-                        className={styles.aboutCircle_img2}
-                    />
-                    <Image
-                        src="/assets/About-6.png"
-                        alt="About"
-                        width={50}
-                        height={50}
-                        className={styles.about_img6}
-                    />
-                </Col>
-                <Col>
-                    <div className={styles.language_heading}>100+ Languages</div>
-                    <div className={styles.language_paragraph}>
-                        Approve, edit and enhance your<br />website translation within your<br /> team
+                    <div className={styles.Advantage1}>
+                        <div className={styles.Advantage_image1}>
+                            <Image
+                                src="/assets/Advantage_Image1.png"
+                                alt="Advantage Section"
+                                width={47}
+                                height={50}
+                                className={styles.Advantage_Image1}
+                            />
+                        </div>
+                        <div className={styles.Advantage_Description1}>
+                            <div className={styles.FreeSupport_heading}>Free Support</div>
+                            <div className={styles.FreeSupport_paragraph}>Approve, edit and enhance your<br />website translation within your<br /> team</div>
+                        </div>
+                    </div>
+                    <div className={styles.Advantage2}>
+                        <div className={styles.Advantage_image2}>
+                            <Image
+                                src="/assets/Advantage_Image2.png"
+                                alt="About"
+                                width={47}
+                                height={50}
+                                className={styles.Advantage_Image2}
+                            />
+                        </div>
+                        <div className={styles.Advantage_Description2}>
+                            <div className={styles.tech_translation_heading}>Technical Translation</div>
+                            <div className={styles.translation_paragraph}>
+                                Approve, edit and enhance your<br />website translation within your<br /> team
+                            </div>
+                        </div>
                     </div>
                 </Col>
-            </Row>
-            {/*                                                                                               */}
-            <Row>
-                <Col span={3}>
-                    <Image
-                        src="/assets/AboutCircle.png"
-                        alt="About"
-                        width={40}
-                        height={40}
-                        className={styles.aboutCircle_img3}
-                    />
-                    <Image
-                        src="/assets/About-7.png"
-                        alt="About"
-                        width={50}
-                        height={50}
-                        className={styles.about_img7}
-                    />
-                </Col>
                 <Col>
-                    <div className={styles.tech_translation_heading}>Technical Translation</div>
-                    <div className={styles.translation_paragraph}>
-                        Approve, edit and enhance your<br />website translation within your<br /> team
+                    <div className={styles.Advantage3}>
+                        <div className={styles.Advantage_image3}>
+                            <Image
+                                src="/assets/Advantage_Image3.png"
+                                alt="About"
+                                width={47}
+                                height={50}
+                                className={styles.Advantage_Image3}
+                            />
+                            </div>
+                            <div className={styles.Advantage_Description3}>
+                                <div className={styles.language_heading}>100+ Languages</div>
+                                <div className={styles.language_paragraph}>
+                                    Approve, edit and enhance your<br />website translation within your<br /> team
+                                </div>
+                                </div>
+                                </div>
+                                {/*                                                                                     */}
+                                <div className={styles.Advantage4}>
+                        <div className={styles.Advantage_image4}>
+                                <Image
+                                    src="/assets/Advantage_Image4.png"
+                                    alt="About"
+                                    width={47}
+                                    height={50}
+                                    className={styles.Advantage_Image4}
+                                />
+                                </div>
+                                <div className={styles.Advantage_Description4}>
+                                <div className={styles.Multi_heading}>Multi Language</div>
+                                <div className={styles.Multi_paragraph}>
+                                    Approve, edit and enhance your<br />website translation within your<br /> team
+                                </div>
+                                </div>
+                                </div>
+                            </Col>
+                            <Col>
+                            <ContactForm />
+                            </Col>
+                        </Row>
                     </div>
-                </Col>
-                {/*                                                                                     */}
-                <Col>
-                    <Image
-                        src="/assets/AboutCircle.png"
-                        alt="About"
-                        width={40}
-                        height={40}
-                        className={styles.aboutCircle_img4}
-                    />
-                    <Image
-                        src="/assets/About-8.png"
-                        alt="About"
-                        width={50}
-                        height={50}
-                        className={styles.about_img8}
-                    />
-                </Col>
-                <Col>
-                    <div className={styles.Multi_heading}>Multi Language</div>
-                    <div className={styles.Multi_paragraph}>
-                        Approve, edit and enhance your<br />website translation within your<br /> team
-                    </div>
-                </Col>
-            </Row>
-        </div>
 
-    )
+                    )
 }
 
-export default AdvantageSection;
+                    export default AdvantageSection;

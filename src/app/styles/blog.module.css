@@ -1,146 +1,165 @@
-
 .blog_heading {
     color: #FBAC41;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    }
+}
 
 .blog_heading2 {
     color: #000;
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: 50px;
     display: flex;
     justify-content: center;
-    margin-bottom: 75px;
+    margin-top: 1%;
+    margin-bottom: 5%;
 }
-.blog_content{
+
+.blog_content {
     border: black;
 }
 
 .Blog_img_1 {
-    
-    border-radius: 10px;
-    margin-left: 30px;
-    }
+
+    border-radius: 20px;
+}
 
 .blog_img_heading_1 {
     color: #000;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 27px;
-    margin-left: 35px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
 }
 
 .blog_paragraph_1 {
     color: #000;
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
-    margin-left: 35px;
-    
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+
 }
+
 .Blog_img_2 {
-    
-    border-radius: 10px;
-    margin-left: 30px;
+
+    border-radius: 20px;
 }
 
 .blog_img_heading_2 {
     color: #000;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 27px;
-    margin-left: 35px;
-    
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
 }
- 
+
 .blog_paragraph_2 {
     color: #000;
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
-    margin-left: 35px;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+
 }
+
 .Blog_img_3 {
-    
-    border-radius: 10px;
-    margin-left: 30px;
+
+    border-radius: 20px;
 }
 
 .blog_img_heading_3 {
     color: #000;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 27px;
-    margin-left: 35px;
-}
-
-
-.blog_paragraph_3 {
-    color: #000;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    margin-left: 35px;
-}
-.rectangle_signup{
-    
-    width: 980px;
-    height: 90px;
-    background-image: linear-gradient(to right, #ed1e78, #faaf40);
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 20px;
-    position: relative;
-}
-.signup{
-    color: white;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 80px;
-    margin-left: 40px;
-    position: absolute;
-    top: 55px;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
 }
-.rectangle_subcribe_button{
+
+.blog_paragraph_3 {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+
+}
+
+.rectangle_signup {
+
+    width: 1351px;
+    height: 121px;
+    align-items: center;
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+
+}
+
+.signup {
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.rectangle_subcribe_button {
     background-color: #000;
-    color: #FFF;   
-    position: absolute;
-    bottom: 26px;
-    left:215px;
-    width: 150px;
-    height: 38px;
+    color: #FFF;
+    width: 173px;
+    height: 49px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    position: relative;
+    left: -180px;
 }
-.signup_input{
-    margin-left: 20px;
-    margin-bottom: 10px;
+.blog{
+    margin-top: 10%;
+}
+
+.signup_input {
     border: 1px solid #FFF;
     background-color: transparent;
-    width: 350px;
-    height: 45px;
-    position: absolute;
-    bottom: 13px;
+    width: 548.334px;
+    height: 63px;
 }
-.signup_input::placeholder{
-    color: #FFF;
-    margin-left: 10px;
+
+.signup_input::placeholder {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
 }
 .icons{
-    position: absolute;
-    left: 500px;
-    bottom: 30px;
+    margin-right: 2%;
 }

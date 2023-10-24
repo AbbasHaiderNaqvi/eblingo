@@ -1,7 +1,7 @@
 import styles from '../styles/About.module.css';
 import AnimatedProgressBar from '../Animations/AnimationProgressBar';
 import Image from "next/image";
-import { Col, Divider, Row } from "antd";
+import { Button, Col, Divider, Row } from "antd";
 import React from 'react';
 import ContactForm from './ContactForm';
 
@@ -9,31 +9,15 @@ const About = () => {
     return (
         <div className={styles.main}>
             <div className={styles.content}>
-                <Row justify="start">
-                    <Col span={13}>
+                <Row>
+                    <Col>
                         <Image
-                            src="/assets/About-1.png"
+                            src="/assets/About_Image.png"
                             alt="About"
-                            width={350}
-                            height={400}
-                            className={styles.about_img1}
+                            width={636}
+                            height={705}
+                            className={styles.About_Image}
                         />
-                        <Image
-                            src="/assets/About-2.png"
-                            alt="About"
-                            width={300}
-                            height={225}
-                            className={styles.about_img2}
-                        />
-                        <Image
-                            src="/assets/About-3.png"
-                            alt="About"
-                            width={185}
-                            height={80}
-                            className={styles.about_img3}
-                        />
-                        <h3 className={styles.bold_heading}>2015<sup> +</sup></h3>
-                        <p className={styles.heading_italic}>Projects Completed</p>
                     </Col>
                     <Col>
                         <div className={styles.about_heading}>ABOUT EBLINGO</div>
@@ -54,6 +38,14 @@ const About = () => {
                             Office. </p>
                     </Col>
                 </Row>
+                <div className={styles.contact_rectangle}>
+        <div className={styles.heading_button}>
+        <div className={styles.contact_heading}>
+          Mission is to Protect<br />your Business & much more
+        </div>
+        <Button className={styles.Readmore_button}>Read More</Button>
+        </div> 
+        </div>
 
             </div>
         </div>

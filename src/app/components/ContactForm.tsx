@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import styles from '../styles/ContactForm.module.css';
-import { Button } from 'antd';
+import { Button, Col, Row } from 'antd';
 import UploadButton from '../Animations/UploadButton';
 
 const ContactForm: React.FC = () => {
@@ -12,7 +12,7 @@ const ContactForm: React.FC = () => {
     targetLanguage: '',
     uploadedFile: null,
   });
-  
+ 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,7 +21,7 @@ const ContactForm: React.FC = () => {
     });
   };
 
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form Data:', formData);
@@ -29,11 +29,10 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className={styles.contact_container}>
-
-      <form className={styles.contact_form} 
-      onSubmit={handleSubmit}>
+      <form className={styles.contact_form}
+        onSubmit={handleSubmit}>
         <div>
-        <h1 className={styles.contactus_heading}>Contact Us!</h1>
+          <h1 className={styles.contactus_heading}>Contact Us!</h1>
           <input className={styles.input_fields}
             type="text"
             name="name"
@@ -77,8 +76,8 @@ const ContactForm: React.FC = () => {
           <UploadButton />
         </div>
         <div>
-            
-        <Button 
+
+          <Button onClick={handleSubmit}
             className={styles.contact_button}>
             Submit
           </Button>

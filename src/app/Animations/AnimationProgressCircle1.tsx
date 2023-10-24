@@ -46,13 +46,16 @@ const AnimatedProgressCircle1: React.FC = () => {
   }, []);
 
   return (
-    <div ref={circleRef} className={styles.AnimatedProgressCircle1}>
+    <div ref={circleRef}>
       <Progress
         type="circle"
         percent={percent}
         status="active"
         strokeColor="#FBAC41"
+        className={styles.AnimatedProgressCircle1}
       />
+      <p className={styles.AnimatedProgressCircle1_paragraph1}>Average increase in sales<br />
+        for our clients</p>
     </div>
   );
 };

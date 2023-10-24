@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Offer from './components/Offer'
 import Clienttestimonial from './components/Clienttestimonial';
 import Blog from './components/Blog'
+import WhatWeDo from './components/WhatWeDo'
 
 
 
@@ -20,6 +21,7 @@ export default function Home() {
        <Service />
        <About />
        <AdvantageSection />
+       <WhatWeDo />
        <Offer />
        <Clienttestimonial />
        <Blog />
