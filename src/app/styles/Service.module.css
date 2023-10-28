@@ -30,11 +30,23 @@
 
 }
 
-.service_box1 {
-    border-radius: 10px;
-
-
+.Images{
+    /* overflow: hidden; */
+    position: relative;
 }
+.Service_Image {
+    border-radius: 10px;
+    top: 25vh;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-right: 10%;
+    
+}
+.active{
+    opacity: 1;
+}
+
 
 .service_heading {
     margin-top: 10%;
@@ -64,19 +76,24 @@
 }
 
 .First_Service_Section {
-    margin-top: 10%;
+    margin-top: 25%;
+    position: relative;
 }
 
 .Second_Service_Section {
-    margin-top: 5%;
+    margin-top: 50%;
+    position: relative;
 }
 
 .third_Service_Section {
-    margin-top: 5%;
+    margin-top: 50%;
+    position: relative;
 }
 
 .fourth_Service_Section {
-    margin-top: 5%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    position: relative;
 }
 
 .brands_images {

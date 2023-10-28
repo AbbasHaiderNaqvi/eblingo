@@ -42,6 +42,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+
+}
+.items{
+    width: 100%;
 }
 
 .Tab_paragraph {
