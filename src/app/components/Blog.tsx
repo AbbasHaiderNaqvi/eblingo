@@ -53,24 +53,6 @@ const Blog: React.FC = () => {
                     </div>
                 </Col>
             </Row>
-            <div className={styles.rectangle_signup}>
-                <div className={styles.signup}>Sign up for Our Newsletter</div>
-                <div>
-                    <input
-                        placeholder='Your Email'
-                        className={styles.signup_input}
-                    />
-                    <Button
-                        className={styles.rectangle_subcribe_button}>
-                        Subscribe Now
-                    </Button>
-                </div>
-                <Space className={styles.icons}>
-                    <FacebookOutlined style={{ fontSize: '250%' }} />
-                    <LinkedinOutlined style={{ fontSize: '250%' }} />
-                    <InstagramOutlined style={{ fontSize: '250%' }} />
-                </Space>
-            </div>
         </div>
 
     );

@@ -48,7 +48,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 29px;
-  margin-bottom: 29px;
 }
 
 .socialmedia_links {
@@ -60,38 +59,70 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  margin-bottom: 30%;
+  margin-bottom: 25%;
 }
 
 
 
 .Useful_links {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  list-style: none;
+}
+
+.links {
   color: var(--Dark, #0A142F);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 29px;
-  list-style: none;
+  line-height: 24px;
+}
+
+.list_Bold {
+  color: var(--Dark, #0A142F);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.list {
+  color: var(--Dark, #0A142F);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .Useful_links li a {
   text-decoration: none;
-  color: black;
 }
 
-.recent_heading {
+.recent_heading_main {
   color: var(--Dark, #0A142F);
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 24px;
+  margin-bottom: 8%;
+  margin-left: 5%;
 }
 
 .recent1 {
   display: flex;
+  margin-top: 2%;
   margin-bottom: 5%;
+}
 
-
+.recent_heading {
+  color: #0A142F;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  align-items: start;
+  margin-bottom: 2%;
 }
 
 .recent_Date {
@@ -99,18 +130,12 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
+
 }
 
-.recent_heading {
-  color: var(--Dark, #0A142F);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-}
 
 .recent2 {
   display: flex;
-  margin-top: 10px;
 }
 
 .logo_footer {
@@ -125,17 +150,95 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.2px;
-  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-bottom: 4%;
 }
 
 .email_input {
   border: none;
   border-bottom: 1px solid #0A142F;
-  height: 40px;
+  height: 55px;
   width: 338px;
 }
 
 .email_icon {
   position: relative;
   left: -25px;
+  top: 5px;
+}
+
+.recent_img {
+  border-radius: 5px;
+  margin-right: 3%;
+}
+
+.blog {
+  margin-bottom: 5%;
+}
+
+.blog_content {
+  margin-bottom: 5%;
+}
+
+.recent_img {
+  margin-bottom: 15%;
+}
+
+.rectangle_signup {
+
+  width: 1351px;
+  height: 121px;
+  align-items: center;
+  background-image: linear-gradient(to right, #ed1e78, #faaf40);
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+
+}
+
+.signup {
+  color: #FFF;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.rectangle_subcribe_button {
+  background-color: #000;
+  color: #FFF;
+  width: 173px;
+  height: 49px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+  bottom: 55px;
+  left: 370px;
+}
+
+.signup_input {
+  border: 1px solid #FFF;
+  background-color: transparent;
+  width: 548.334px;
+  height: 63px;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.signup_input::placeholder {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.icons {
+  margin-right: 2%;
 }

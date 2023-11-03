@@ -6,13 +6,20 @@ import styles from '../styles/Service.module.css';
 import { useEffect } from 'react';
 
 const Service = () => {
-    const [scrollPosition, getScrollPositon] = useState(document.documentElement.scrollTop)
+    const [scrollPosition, setScrollPosition] = useState(0);
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            getScrollPositon(document.documentElement.scrollTop);
-        })
-    }, [])
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+      setScrollPosition(currentPosition);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
     return (
         <div className={styles.main}>
             <div className={styles.Service}>
@@ -91,7 +98,7 @@ const Service = () => {
                             alt="Service"
                             width={673}
                             height={507}
-                            className={`${styles.Service_Image} ${scrollPosition >= 300 && scrollPosition < 900 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 650 && scrollPosition < 1100 ? styles.active : ''
                                 }`}
                         />
                         <Image
@@ -99,7 +106,7 @@ const Service = () => {
                             alt="Service"
                             width={673}
                             height={507}
-                            className={`${styles.Service_Image} ${scrollPosition >= 900 && scrollPosition < 1500 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 1100 && scrollPosition < 1750 ? styles.active : ''
                                 }`}
                         />
                         <Image
@@ -107,7 +114,7 @@ const Service = () => {
                             alt="Service"
                             width={673}
                             height={507}
-                            className={`${styles.Service_Image} ${scrollPosition >= 1500 && scrollPosition < 2100 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 1750 && scrollPosition < 2300 ? styles.active : ''
                                 }`}
                         />
                         <Image
@@ -115,7 +122,7 @@ const Service = () => {
                             alt="Service"
                             width={673}
                             height={507}
-                            className={`${styles.Service_Image} ${scrollPosition >= 2100 && scrollPosition < 2400 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 2300 && scrollPosition < 2500 ? styles.active : ''
                                 }`}
                         />
 

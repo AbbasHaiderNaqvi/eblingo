@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     console.log('Form Data:', formData);
   };
-
+ 
   return (
     <div className={styles.contact_container}>
       <form className={styles.contact_form}

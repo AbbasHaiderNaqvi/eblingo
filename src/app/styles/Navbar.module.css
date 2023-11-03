@@ -20,24 +20,23 @@
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .navLinks li {
   margin-right: 30px;
   display: inline;
-  margin: 0 15px;
+  margin: 0 35px;
 }
 
 .navLinks a {
-  color: #484848;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
   text-decoration: none;
-  font-weight: bold;
+  color: #484848;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .right {
@@ -46,14 +45,18 @@ line-height: normal;
 }
 
 .button {
-    background-image: linear-gradient(to right, #ed1e78, #faaf40);
-    border-radius: 10px;
-    height: 40px;
-    color: white; 
-    border-color: transparent;
-  
+  background-image: linear-gradient(to right, #ed1e78, #faaf40);
+  width: 147px;
+  height: 41px;
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
 }
-.logo{
-  width: 150px;
-  height: 150px;
+
+.logo {
+  position: relative;
+  bottom: 50px;
 }

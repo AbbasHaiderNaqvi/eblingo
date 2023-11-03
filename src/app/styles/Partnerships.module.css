@@ -1,0 +1,174 @@
+.HeroSection {
+    background-image: url('/assets/Partnerships/Partnerships-image.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+}
+
+.HeroSection_Heading {
+    color: #FFF;
+    font-size: 39.833px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.Partnerships_Sub_heading{
+    margin-top: 2%;
+    width: 280px;
+    height: 30px;
+    background: rgba(217, 217, 217, 0.50);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400; 
+}
+.first_master_heading {
+    margin-top: 10%;
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.heading_span {
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.Partnerships_Image {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.arrow_right {
+    float: right;
+}
+
+.Partnerships_Blog_Image {
+    display: flex;
+    justify-content: center;
+    margin-left: 22%;
+    border-radius: 20px;
+}
+
+.heading1 {
+    color: #FB6239;
+    font-size: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.blog_Paragraph1 {
+    color: #7A7A7A;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+}
+.blog_Paragraph1_span {
+    color: #7A7A7A;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    margin-top: 3%;
+}
+.arrow_left {
+    float: left;
+}
+.blog_content{
+    margin-top: 5%;
+}
+.blog_content_last{
+    margin-top: 5%;
+}
+
+.Partnerships_Blog2_Image {
+    display: flex;
+    justify-content: center;
+        margin-left: 22%;
+    border-radius: 20px;
+}
+
+.heading2 {
+    color: #FB6239;
+    font-size: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.blog_Paragraph2 {
+    color: #7A7A7A;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+}
+.blog_Paragraph2_span {
+    color: #7A7A7A;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    margin-top: 3%;
+}
+.arrow_right {
+    float: right;
+}
+
+.Partnerships_Blog3_Image {
+    display: flex;
+    justify-content: center;
+    margin-left: 22%;
+    border-radius: 20px;
+}
+
+.heading3 {
+    color: #FB6239;
+    font-size: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.blog_Paragraph3 {
+    color: #7A7A7A;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+}
+.blog_Paragraph3_span {
+    color: #7A7A7A;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    margin-top: 3%;
+}

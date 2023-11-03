@@ -108,58 +108,7 @@
 
 }
 
-.rectangle_signup {
-
-    width: 1351px;
-    height: 121px;
-    align-items: center;
-    background-image: linear-gradient(to right, #ed1e78, #faaf40);
-    border-radius: 10px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    display: flex;
-
-}
-
-.signup {
-    color: #FFF;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 27px;
-}
-
-.rectangle_subcribe_button {
-    background-color: #000;
-    color: #FFF;
-    width: 173px;
-    height: 49px;
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 27px;
-    position: relative;
-    left: -180px;
-}
 .blog{
     margin-top: 10%;
 }
 
-.signup_input {
-    border: 1px solid #FFF;
-    background-color: transparent;
-    width: 548.334px;
-    height: 63px;
-}
-
-.signup_input::placeholder {
-    color: rgba(255, 255, 255, 0.70);
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
-}
-.icons{
-    margin-right: 2%;
-}

@@ -8,36 +8,45 @@ const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
-        <img
-        src="/assets/logo.png" 
-        alt="Logo"
-        className={styles.logo} 
-      />
+        <Image 
+        src='/assets/logo.png'
+        alt='Logo'
+        width={150}
+        height={150}
+        className={styles.logo}
+        />
       </div>
       <div className={styles.center}>
         <ul className={styles.navLinks}>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" legacyBehavior>
+             <a>Home</a>
+              </Link>
           </li>
           <li>
-            <Link href="/media-services">Media Services</Link>
+            <Link href="/services" legacyBehavior>
+              <a>Media Services</a>
+              </Link>
           </li>
           <li>
-            <Link href="/doc-translation">Doc.Translation</Link>
+            <Link href="/transcription" legacyBehavior>
+              <a>Translation</a>
+              </Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/partnerships" legacyBehavior>
+            <a>Partnership</a>
+              </Link>
           </li>
           <li>
-            <Link href="/partnership">Partnership</Link>
-          </li>
-          <li>
-            <Link href="/contact-us">Contact Us</Link>
+            <Link href="/contact" legacyBehavior>
+              <a>Contact Us</a>
+              </Link>
           </li>
         </ul>
       </div>
       <div className={styles.right}>
-        <Button className={styles.button}><b>Get Estimate</b></Button>
+        <Button className={styles.button}>Get Estimate</Button>
       </div>
     </nav>
   );

@@ -18,9 +18,7 @@ const items: TabsProps['items'] = [
     you to expand your business into new markets<br/> 
     while remaining competitive. Our transparent<br/>
     pricing model offers significantly lower rates than<br/>
-     traditional agencies. This allows you to expand<br/>
-      your business into new markets while remaining<br/>
-       competitive.</div>,
+     traditional agencies.</div>,
   },
   {
     key: '2',
@@ -42,11 +40,7 @@ const items: TabsProps['items'] = [
     Our transparent pricing model offers significantly<br/>
     lower rates than traditional agencies. This allows<br/>
     you to expand your business into new markets<br/> 
-    while remaining competitive. Our transparent<br/>
-    pricing model offers significantly lower rates than<br/>
-     traditional agencies. This allows you to expand<br/>
-      your business into new markets while remaining<br/>
-       competitive.</div>,
+    while remaining competitive.</div>,
   },
 ];
 
