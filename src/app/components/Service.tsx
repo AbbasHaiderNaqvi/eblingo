@@ -111,7 +111,7 @@ const Service = () => {
                             width={673}
                             height={457}
                             className={`${styles.Service_Image} ${scrollPosition >= 2400 && scrollPosition < 2900 ? styles.active : ''
-                                }`}
+                                }`} 
                         />
                         <Image
                             src="/assets/Home/services3.png"
