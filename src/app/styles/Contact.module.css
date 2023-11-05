@@ -1,0 +1,199 @@
+.HeroSection {
+    background-image: url('/assets/Contact/Contact_Image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+}
+
+.HeroSection_Heading {
+    color: #FFF;
+    font-size: 39.833px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact_heading {
+    color: #1B1A1A;
+    font-size: 50px;
+    margin-top: 5%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact_Sub_heading {
+    margin-top: 2%;
+    width: 280px;
+    height: 30px;
+    background: rgba(217, 217, 217, 0.50);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;    
+}
+
+.contact_container {
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 1352px;
+    height: 1054px;
+    margin-top: 5%;
+}
+
+.contact_content {
+    margin-top: 5%;
+}
+
+.First_input {
+    border-radius: 10px;
+    border: 1px solid #9F9F9F;
+    font-size: 22px;
+    width: 605px;
+    height: 98px;
+    flex-shrink: 0;
+    margin-top: 7%;
+}
+
+.First_input::placeholder {
+    color: #C6C6C6;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Second_input {
+    border-radius: 10px;
+    border: 1px solid #9F9F9F;
+    font-size: 22px;
+    width: 605px;
+    height: 98px;
+    flex-shrink: 0;
+    margin-top: 7%;
+}
+
+.Second_input::placeholder {
+    color: #C6C6C6;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.label_input3 {
+    color: #3C3939;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 4%;
+    position: relative;
+    top: 40px;
+    right: 150px;
+}
+
+.label_input4 {
+    color: #3C3939;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    top: 40px;
+    right: 140px;
+
+}
+
+
+.label_input5 {
+    color: #3C3939;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 6%;
+    position: relative;
+    top: 40px;
+
+}
+
+.label_input6 {
+    color: #3C3939;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 1%;
+    position: relative;
+    top: 15px;
+    right: 130px;
+
+
+}
+
+.Fifth_input {
+    border-radius: 10px;
+    border: 1px solid #9F9F9F;
+    font-size: 22px;
+    width: 605px;
+    height: 98px;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.uploadbutton {
+    width: 236px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #9F9F9F;
+    margin-top: 15%;
+    position: relative;
+    right: 140px;
+}
+
+.Sixth_input {
+    width: 1248px;
+    height: 98px;
+    font-size: 22px;
+    border-radius: 10px;
+    border: 1px solid #9F9F9F;
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.Sixth_input::placeholder {
+    color: #C6C6C6;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Seven_input {
+    border-radius: 10px;
+    border: 1px solid #9F9F9F;
+    font-size: 22px;
+    width: 1248px;
+    height: 212px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.Submit_Button {
+    border-radius: 13px;
+    background: #FB6239;
+    width: 214px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 2%;
+}
