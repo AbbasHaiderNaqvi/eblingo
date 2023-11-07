@@ -14,7 +14,7 @@ const Contact: FC = () => {
     estimatedproject: '',
     additionalcomments: '',
   });
-
+// this is eblingo wb
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement | HTMLTextAreaElement >) => {
     const { name, value } = e.target;
     setFormData({
