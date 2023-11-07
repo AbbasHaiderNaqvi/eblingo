@@ -10,6 +10,7 @@ const Blog: React.FC = () => {
             <h5 className={styles.blog_heading}>OUR BLOG</h5>
             <h4 className={styles.blog_heading2}>Latest Posts</h4>
             <Row>
+                
                 <Col span={50}>
                     <div className={styles.blog_content}>
                         <Image

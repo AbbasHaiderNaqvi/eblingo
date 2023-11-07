@@ -121,6 +121,7 @@ const Service = () => {
                             className={`${styles.Service_Image} ${scrollPosition >= 2900 && scrollPosition < 3500 ? styles.active : ''
                                 }`}
                         />
+                        
                         <Image
                             src="/assets/Home/services4.png"
                             alt="Service"

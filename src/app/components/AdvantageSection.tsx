@@ -9,6 +9,7 @@ const AdvantageSection = () => {
         <div className={styles.content}>
             <Row>
                 <Col>
+                
                     <div className={styles.Advantage1}>
                         <div className={styles.Advantage_image1}>
                             <Image

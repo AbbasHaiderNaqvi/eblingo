@@ -8,6 +8,7 @@ const Offer: React.FC = () => {
     return (
         <div className={styles.content}>
             <Row>
+                
                 <Col span={13}>
                     <div className={styles.WhatWeDo}>
                         <h3 className={styles.WhatWeDo_Heading1}>WHAT WE DO</h3>

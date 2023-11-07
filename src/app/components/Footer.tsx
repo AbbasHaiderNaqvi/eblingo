@@ -47,6 +47,7 @@ const Footer: React.FC = () => {
                         fontSize: '150%'
                     }} />
                     </div>
+                    
                     <div style={{
                         backgroundColor: 'white',
                         width: '43px',

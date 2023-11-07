@@ -12,7 +12,9 @@ const Offer: React.FC = () => {
                 <h4 className={styles.offer_heading2}>Offers</h4>
                 <Row>
                     <Col span={14}>
+
                         <Tab />
+                        
                     </Col>
                     <Col>
                         <Image

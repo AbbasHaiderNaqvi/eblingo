@@ -8,6 +8,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
+        
         <Image 
         src='/assets/Home/logo.png'
         alt='Logo'
