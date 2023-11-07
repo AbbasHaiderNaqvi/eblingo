@@ -1,0 +1,30 @@
+.WhatWeDo{
+    margin-bottom: 30%;
+}
+.WhatWeDo_Heading1 {
+    color: #FBAC41;
+    font-size: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 1%;    
+}
+
+.WhatWeDo_Heading2 {
+    color: #000;
+    font-size: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+.WhatWeDo_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Poppins;
+    line-height: 27px;
+}

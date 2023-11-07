@@ -1,0 +1,55 @@
+.contact_container {
+    width: 506px;
+    height: 725px;
+    background: white;
+    border-color: black;
+    border-radius: 10px;
+    border: 1px solid #969696;
+
+}
+
+.contactus_heading {
+    color: #000;
+    font-size: 27px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.input_fields {
+    border: none;
+    background-color: #F7F7F7;
+    font-size: 16px;
+    font-family: Poppins;
+    width: 422px;
+    padding-left: 20px;
+    height: 58px;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_button {
+    display: flex;
+    color: #FFF;
+    width: 422px;
+    height: 61px;
+    justify-content: center;
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.upload_button {
+    margin-left: 10%;
+    width: 422px;
+    height: 51px;
+    margin-bottom: 8%;
+}

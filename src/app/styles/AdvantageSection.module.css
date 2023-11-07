@@ -1,0 +1,113 @@
+.Advantage1 {
+    display: flex;
+    margin-bottom: 15%;
+}
+
+.Advantage2 {
+    display: flex;
+}
+
+.Advantage3 {
+    display: flex;
+    margin-bottom: 15%;
+}
+
+.Advantage4 {
+    display: flex;
+}
+
+.Advantage_Image1 {
+   position: relative;
+   bottom: 25px;
+   right: 10px;
+}
+.Advantage_Image2 {
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+ }
+ .Advantage_Image3 {
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+
+ }
+ .Advantage_Image4 {
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+
+ }
+.FreeSupport_heading {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 50px;
+}
+
+.FreeSupport_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Poppins;
+    line-height: 27px;
+}
+/*  */
+.tech_translation_heading {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.translation_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: Poppins;
+}
+.language_heading {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 50px;
+}
+
+.language_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: Poppins;
+}
+.Multi_heading {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    font-family: Poppins;
+}
+
+.Multi_paragraph {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: Poppins;
+}   
+.content{
+    position: relative;
+    bottom: 250px;
+}

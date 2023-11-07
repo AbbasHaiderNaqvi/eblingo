@@ -1,0 +1,114 @@
+.Service{
+    margin-top: 10%;
+}
+
+.allservice_heading {
+    color: #FB6239;
+    font-size: 30px;
+    font-style: normal;
+    font-family: poppins;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.heading_translation_firm {
+    color: #000;
+    font-size: 40px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+.quote_button {
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    color: #FFF;
+    font-size: 20px;
+    border: transparent;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 10px;
+    line-height: 27px;
+    width: 180px;
+    height: 62px;
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px;
+    z-index:initial; 
+}
+
+
+.Images{
+    position: relative;
+}
+.Service_Image {
+    border-radius: 20px;
+    top: 18vh;
+    right: 10vh;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+.active{
+    opacity: 1;
+}
+
+
+.service_heading {
+    margin-top: 10%;
+    color: #000;
+    margin-left: 5%;
+    font-size: 45.505px;
+    font-style: bold;
+    font-weight: 600;
+    line-height: 91.01px;
+    font-family: poppins;
+
+
+}
+
+.listing {
+    margin-top: 10px;
+    list-style-type: square;
+    font-size: 30px;
+    font-family: poppins;
+    color: #FB6239;
+    margin-left: 10%;
+}
+
+.list {
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 30px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.First_Service_Section {
+    margin-top: 50%;
+    position: relative;
+}
+
+.Second_Service_Section {
+    margin-top: 50%;
+    position: relative;
+}
+
+.third_Service_Section {
+    margin-top: 50%;
+    position: relative;
+}
+
+.fourth_Service_Section {
+    margin-top: 50%;
+    margin-bottom: 50%;
+    position: relative;
+}
+
+.brands_images {
+    margin-top: 2%;
+}

@@ -1,0 +1,91 @@
+.offer_content {
+    margin-top: 10%;
+}
+
+.offer_heading {
+    color: #FBAC41;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: Poppins;
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+.offer_heading2 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    font-family: Poppins;
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+
+.Offer_img {
+    border-radius: 20px;
+}
+
+.AnimatedTab {
+
+    background-color: #FFF0DC;
+    border-radius: 20px;
+    height: 767px;
+    width: 672px;
+    margin-left: 5%;
+}
+
+.Tab_text {
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+
+}
+.items{
+    width: 100%;
+}
+
+.Tab_paragraph {
+    color: #000;
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35.5px;
+}
+
+.rectangle_subscribe {
+    margin-top: 10%;
+    align-items: center;
+    width: 1351px;
+    height: 121px;
+    flex-shrink: 0;
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    border-radius: 10px;
+
+}
+.rectangle_subscribe{
+    display: flex;
+}
+.rectangle_subscribe_text {
+    color: #FFF;
+    font-size: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+    
+}
+
+.rectangle_readmore_button {
+    background-color: white;
+    color: #FAAF40;
+    width: 125px;
+    height: 40px;
+}

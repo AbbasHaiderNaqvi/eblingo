@@ -1,0 +1,117 @@
+.blog_heading {
+    color: #FBAC41;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog_heading2 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.blog_content {
+    border: black;
+    border-radius: 30px 30px 0px 0px;
+    background: linear-gradient(180deg, rgba(251, 98, 57, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.Blog_img_1 {
+
+    border-radius: 20px;
+}
+
+.blog_img_heading_1 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.blog_paragraph_1 {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+    
+}
+
+.Blog_img_2 {
+
+    border-radius: 20px;
+}
+
+.blog_img_heading_2 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.blog_paragraph_2 {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+
+}
+
+.Blog_img_3 {
+
+    border-radius: 20px;
+}
+
+.blog_img_heading_3 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.blog_paragraph_3 {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+
+}
+
+.blog {
+    margin-top: 10%;
+}
