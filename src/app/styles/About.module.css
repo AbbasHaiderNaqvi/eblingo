@@ -1,5 +1,3 @@
-
-
 .contact_rectangle {
     background-image: url("/assets/Home/Contact_main_Image.jpg");
     height: 500px;
@@ -18,6 +16,7 @@
     margin-left: 5%;
     position: relative;
     top: 100px;
+    font-family: Poppins;
 }
 
 .Readmore_button {
@@ -27,6 +26,7 @@
     border-color: transparent;
     border-radius: 10px;
     width: 152px;
+    font-family: Poppins;
     height: 56px;
     margin-left: 5%;
     position: relative;
@@ -55,6 +55,7 @@
     font-weight: 700;
     line-height: 25px;
     position: absolute;
+    font-family: Poppins;
     top: 255px;
     left: 310px;
 }

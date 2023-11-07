@@ -100,32 +100,32 @@ const Service = () => {
                         <Image
                             src="/assets/Home/services1.png"
                             alt="Service"
-                            width={673}
-                            height={457}
+                            width={615}
+                            height={380}
                             className={`${styles.Service_Image} ${scrollPosition >= 2025 && scrollPosition < 2400 ? styles.active : ''
                                 }`}
                         />
                         <Image
                             src="/assets/Home/services2.png"
                             alt="Service"
-                            width={673}
-                            height={457}
+                            width={615}
+                            height={380}
                             className={`${styles.Service_Image} ${scrollPosition >= 2400 && scrollPosition < 2900 ? styles.active : ''
                                 }`} 
                         />
                         <Image
                             src="/assets/Home/services3.png"
                             alt="Service"
-                            width={673}
-                            height={457}
+                            width={615}
+                            height={380}
                             className={`${styles.Service_Image} ${scrollPosition >= 2900 && scrollPosition < 3500 ? styles.active : ''
                                 }`}
                         />
                         <Image
                             src="/assets/Home/services4.png"
                             alt="Service"
-                            width={673}
-                            height={457}
+                            width={615}
+                            height={380}
                             className={`${styles.Service_Image} ${scrollPosition >= 3500 && scrollPosition < 3800 ? styles.active : ''
                                 }`}
                         />
