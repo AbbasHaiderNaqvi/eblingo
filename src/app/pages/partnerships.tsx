@@ -10,6 +10,7 @@ function Partnerships() {
         <h1 className={styles.HeroSection_Heading}>Media Partnerships</h1>
         <h5 className={styles.Partnerships_Sub_heading}>Home / Services / Translation</h5>
       </div>
+      
       <h2 className={styles.first_master_heading}>Master Templates <span className={styles.heading_span}>and</span> Subtitling</h2>
       <Image
         src="/assets/Partnerships/Partnerships-icon.png"
