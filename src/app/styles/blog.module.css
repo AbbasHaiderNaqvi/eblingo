@@ -22,6 +22,10 @@
 
 .blog_content {
     border: black;
+    border-radius: 30px 30px 0px 0px;
+    background: linear-gradient(180deg, rgba(251, 98, 57, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
 }
 
 .Blog_img_1 {
@@ -49,7 +53,7 @@
     margin-top: 5%;
     margin-left: 5%;
     text-align: left;
-
+    
 }
 
 .Blog_img_2 {
@@ -108,7 +112,6 @@
 
 }
 
-.blog{
+.blog {
     margin-top: 10%;
 }
-

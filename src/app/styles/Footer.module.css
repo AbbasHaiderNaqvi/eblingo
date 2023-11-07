@@ -7,6 +7,11 @@
   width: 100%;
 }
 
+.footer_logo {
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+
 .legal_terms_h {
   display: flex;
   justify-content: space-between;
@@ -17,6 +22,7 @@
 .reserved_rights {
   color: var(--Dark, #0A142F);
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -26,6 +32,7 @@
 .privacy_policy {
   color: var(--Dark, #0A142F);
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -35,6 +42,7 @@
 .terms_and_condition {
   color: var(--Dark, #0A142F);
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -45,6 +53,7 @@
   list-style: none;
   color: var(--Dark, #0A142F);
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   line-height: 29px;
@@ -53,6 +62,7 @@
 .socialmedia_links {
   color: var(--Dark, #0A142F);
   font-size: 12px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -66,6 +76,7 @@
 
 .Useful_links {
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -75,6 +86,7 @@
 .links {
   color: var(--Dark, #0A142F);
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -83,6 +95,7 @@
 .list_Bold {
   color: var(--Dark, #0A142F);
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 700;
   line-height: 35px;
@@ -91,6 +104,7 @@
 .list {
   color: var(--Dark, #0A142F);
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -103,6 +117,7 @@
 .recent_heading_main {
   color: var(--Dark, #0A142F);
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
@@ -119,6 +134,7 @@
 .recent_heading {
   color: #0A142F;
   font-size: 12px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 700;
   align-items: start;
@@ -128,6 +144,7 @@
 .recent_Date {
   color: rgba(10, 20, 47, 0.50);
   font-size: 15px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
 
@@ -146,6 +163,7 @@
 .email_heading {
   color: var(--Dark, #0A142F);
   font-size: 20px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -157,6 +175,7 @@
 .email_input {
   border: none;
   border-bottom: 1px solid #0A142F;
+  padding-left: 20px;
   height: 55px;
   width: 338px;
 }
@@ -191,8 +210,9 @@
   align-items: center;
   background-image: linear-gradient(to right, #ed1e78, #faaf40);
   border-radius: 10px;
+  font-family: Poppins;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   display: flex;
 
 }
@@ -200,6 +220,7 @@
 .signup {
   color: #FFF;
   font-size: 28px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   line-height: 27px;
@@ -212,11 +233,13 @@
   height: 49px;
   color: #FFF;
   font-size: 16px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   position: relative;
   bottom: 55px;
   left: 370px;
+  border: transparent;
 }
 
 .signup_input {
@@ -224,11 +247,14 @@
   background-color: transparent;
   width: 548.334px;
   height: 63px;
+  padding-left: 20px;
+  font-family: Poppins;
   font-size: 16px;
   color: white;
   display: flex;
   justify-content: center;
   margin-top: 5%;
+  border-radius: 5px;
 }
 
 .signup_input::placeholder {
@@ -236,6 +262,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  font-family: Poppins;
   line-height: 27px;
 }
 

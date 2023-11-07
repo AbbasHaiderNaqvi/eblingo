@@ -2,17 +2,20 @@ import { type FC } from 'react';
 import React, { useState } from 'react'
 import styles from '../styles/Contact.module.css';
 import { Button, Col, Row } from 'antd';
-import UploadButton from '../../Animations/Upload';
+import UploadButton from '../Animations/UploadButton';
 
 const Contact: FC = () => {
   const [formData, setFormData] = useState({
     name: '',
+    phone: '',
     email: '',
     sourceLanguage: '',
     targetLanguage: '',
+    estimatedproject: '',
+    additionalcomments: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement | HTMLTextAreaElement >) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -50,10 +53,15 @@ const Contact: FC = () => {
                   />
                 </Col>
                 <Col>
-                  <input 
-                  className={styles.Second_input}
-                   placeholder='   Your Phone Number  '
-                    />
+                  <input
+                    className={styles.Second_input}
+                    placeholder='   Your Phone Number  '
+                    type="number"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
                 </Col>
               </Row>
 
@@ -67,24 +75,59 @@ const Contact: FC = () => {
               </Row>
               <Row>
                 <Col span={10}>
-                  <input className={styles.First_input} />
+                  <input
+                    className={styles.First_input}
+                    type="text"
+                    name="sourceLanguage"
+                    value={formData.sourceLanguage}
+                    onChange={handleChange}
+                    required
+                  />
                 </Col>
                 <Col>
-                  <input className={styles.Second_input} />
+                  <input
+                    className={styles.Second_input}
+                    type="text"
+                    name="targetLanguage"
+                    value={formData.targetLanguage}
+                    onChange={handleChange}
+                    required
+                  />
                 </Col>
               </Row>
               <Row>
                 <Col span={14}>
                   <label className={styles.label_input5}>Estimated project size</label>
-                  <input className={styles.Fifth_input} />
+                  <input
+                    className={styles.Fifth_input}
+                    type="text"
+                    name="estimatedproject"
+                    value={formData.estimatedproject}
+                    onChange={handleChange}
+                    required
+                  />
                 </Col>
                 <Col>
                   <label className={styles.label_input6}>Documents Upload</label>
                   <UploadButton />
                 </Col>
               </Row>
-              <input className={styles.Sixth_input} placeholder='   Your Email Address   ' />
-              <textarea className={styles.Seven_input} placeholder='   Additional Comments...   ' />
+              <input
+                className={styles.Sixth_input}
+                placeholder='   Your Email Address   '
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <textarea
+                className={styles.Seven_input}
+                placeholder='   Additional Comments...   '
+                name="additionalcomments"
+                value={formData.additionalcomments}
+                onChange={handleChange}
+              />
               <Button className={styles.Submit_Button}>Submit</Button>
             </div>
           </div>

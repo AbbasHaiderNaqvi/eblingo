@@ -12,7 +12,7 @@ const About = () => {
                 <Row>
                     <Col>
                         <Image
-                            src="/assets/About_Image.png"
+                            src="/assets/Home/About_Image.png"
                             alt="About"
                             width={636}
                             height={705}

@@ -13,6 +13,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: Poppins;
 }
 
 .contact_heading {
@@ -23,6 +24,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: Poppins;
 }
 
 .contact_Sub_heading {
@@ -31,6 +33,7 @@
     height: 30px;
     background: rgba(217, 217, 217, 0.50);
     text-align: center;
+    font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;    
@@ -54,6 +57,7 @@
     border: 1px solid #9F9F9F;
     font-size: 22px;
     width: 605px;
+    font-family: Poppins;
     height: 98px;
     flex-shrink: 0;
     margin-top: 7%;
@@ -62,6 +66,7 @@
 .First_input::placeholder {
     color: #C6C6C6;
     font-size: 22px;
+    font-family: Poppins;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

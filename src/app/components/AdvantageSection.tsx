@@ -12,7 +12,7 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage1}>
                         <div className={styles.Advantage_image1}>
                             <Image
-                                src="/assets/Advantage_Image1.png"
+                                src="/assets/Home/Advantage_Image1.png"
                                 alt="Advantage Section"
                                 width={47}
                                 height={50}
@@ -27,7 +27,7 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage2}>
                         <div className={styles.Advantage_image2}>
                             <Image
-                                src="/assets/Advantage_Image2.png"
+                                src="/assets/Home/Advantage_Image2.png"
                                 alt="About"
                                 width={47}
                                 height={50}
@@ -46,7 +46,7 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage3}>
                         <div className={styles.Advantage_image3}>
                             <Image
-                                src="/assets/Advantage_Image3.png"
+                                src="/assets/Home/Advantage_Image3.png"
                                 alt="About"
                                 width={47}
                                 height={50}
@@ -64,7 +64,7 @@ const AdvantageSection = () => {
                                 <div className={styles.Advantage4}>
                         <div className={styles.Advantage_image4}>
                                 <Image
-                                    src="/assets/Advantage_Image4.png"
+                                    src="/assets/Home/Advantage_Image4.png"
                                     alt="About"
                                     width={47}
                                     height={50}

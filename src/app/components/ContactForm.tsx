@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     console.log('Form Data:', formData);
   };
- 
+  
   return (
     <div className={styles.contact_container}>
       <form className={styles.contact_form}
@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="       Your Name"
+            placeholder="Your Name"
             required
           />
         </div>
@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="       Your Email"
+            placeholder=" Your Email"
             required
           />
         </div>
@@ -58,7 +58,7 @@ const ContactForm: React.FC = () => {
             name="sourceLanguage"
             value={formData.sourceLanguage}
             onChange={handleChange}
-            placeholder="       Source Language"
+            placeholder="Source Language"
             required
           />
         </div>
@@ -68,7 +68,7 @@ const ContactForm: React.FC = () => {
             name="targetLanguage"
             value={formData.targetLanguage}
             onChange={handleChange}
-            placeholder="       Target Language"
+            placeholder="Target Language"
             required
           />
         </div>

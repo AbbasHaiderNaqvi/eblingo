@@ -15,6 +15,7 @@ const Service = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -33,7 +34,10 @@ const Service = () => {
                         </div>
                     </Col>
                     <Col>
-                        <Button className={styles.quote_button}>Get a quote</Button>
+                        <Button 
+                        className={`${styles.quote_button} 
+                        ${scrollPosition ? 'sticky' : ''}`}
+                        >Get a quote</Button>
                     </Col>
                 </Row>
             </div>
@@ -44,7 +48,7 @@ const Service = () => {
                             Audio Visual Solution
                         </h2>
                         <div className={styles.unorder_list}>
-                            <ul className={styles.listing} >
+                            <ul className={styles.listing}>
                                 <li><div className={styles.list}>Subtitling</div></li>
                                 <li><div className={styles.list}>Transcription </div></li>
                                 <li><div className={styles.list}>Closed Caption</div></li>
@@ -94,35 +98,35 @@ const Service = () => {
                     <div className={styles.Images}>
 
                         <Image
-                            src="/assets/services1.png"
+                            src="/assets/Home/services1.png"
                             alt="Service"
-                            width={673}
-                            height={507}
-                            className={`${styles.Service_Image} ${scrollPosition >= 650 && scrollPosition < 1100 ? styles.active : ''
+                            width={615}
+                            height={380}
+                            className={`${styles.Service_Image} ${scrollPosition >= 2025 && scrollPosition < 2400 ? styles.active : ''
                                 }`}
                         />
                         <Image
-                            src="/assets/services2.png"
+                            src="/assets/Home/services2.png"
                             alt="Service"
-                            width={673}
-                            height={507}
-                            className={`${styles.Service_Image} ${scrollPosition >= 1100 && scrollPosition < 1750 ? styles.active : ''
+                            width={615}
+                            height={380}
+                            className={`${styles.Service_Image} ${scrollPosition >= 2400 && scrollPosition < 2900 ? styles.active : ''
+                                }`} 
+                        />
+                        <Image
+                            src="/assets/Home/services3.png"
+                            alt="Service"
+                            width={615}
+                            height={380}
+                            className={`${styles.Service_Image} ${scrollPosition >= 2900 && scrollPosition < 3500 ? styles.active : ''
                                 }`}
                         />
                         <Image
-                            src="/assets/services3.png"
+                            src="/assets/Home/services4.png"
                             alt="Service"
-                            width={673}
-                            height={507}
-                            className={`${styles.Service_Image} ${scrollPosition >= 1750 && scrollPosition < 2300 ? styles.active : ''
-                                }`}
-                        />
-                        <Image
-                            src="/assets/services4.png"
-                            alt="Service"
-                            width={673}
-                            height={507}
-                            className={`${styles.Service_Image} ${scrollPosition >= 2300 && scrollPosition < 2500 ? styles.active : ''
+                            width={615}
+                            height={380}
+                            className={`${styles.Service_Image} ${scrollPosition >= 3500 && scrollPosition < 3800 ? styles.active : ''
                                 }`}
                         />
 

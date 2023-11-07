@@ -13,7 +13,7 @@ const Blog: React.FC = () => {
                 <Col span={50}>
                     <div className={styles.blog_content}>
                         <Image
-                            src="/assets/blog_img_1.png"
+                            src="/assets/Home/blog_img_1.png"
                             alt="Blog"
                             width={420}
                             height={280}
@@ -27,7 +27,7 @@ const Blog: React.FC = () => {
                 <Col>
                     <div className={styles.blog_content}>
                         <Image
-                            src="/assets/blog_img_2.png"
+                            src="/assets/Home/blog_img_2.png"
                             alt="Blog"
                             width={420}
                             height={280}
@@ -41,7 +41,7 @@ const Blog: React.FC = () => {
                 <Col span={50}>
                     <div className={styles.blog_content}>
                         <Image
-                            src="/assets/blog_img_3.png"
+                            src="/assets/Home/blog_img_3.png"
                             alt="Service"
                             width={420}
                             height={280}

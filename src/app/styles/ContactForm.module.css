@@ -12,6 +12,7 @@
     color: #000;
     font-size: 27px;
     font-style: normal;
+    font-family: Poppins;
     font-weight: 700;
     line-height: 50px;
     margin-top: 5%;
@@ -23,7 +24,9 @@
     border: none;
     background-color: #F7F7F7;
     font-size: 16px;
+    font-family: Poppins;
     width: 422px;
+    padding-left: 20px;
     height: 58px;
     margin-bottom: 8%;
     display: flex;
@@ -38,6 +41,7 @@
     justify-content: center;
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
     font-size: 20px;
+    font-family: Poppins;
     font-style: normal;
     font-weight: 700;
     line-height: 27px;

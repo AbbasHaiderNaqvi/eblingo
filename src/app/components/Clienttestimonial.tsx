@@ -14,7 +14,7 @@ const Clienttestimonial: React.FC = () => {
             <h5 className={styles.testimonials_heading}>Clients Testimonials</h5>
             <h4 className={styles.testimonials_heading2}>what clients has to say about us?</h4>
             <Image
-                src="/assets/testimonial_img.png"
+                src="/assets/Home/testimonial_img.png"
                 alt="Testimonial"
                 width={1216}
                 height={426}

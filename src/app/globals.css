@@ -1,9 +1,9 @@
-*{
+    *{
     box-sizing: border-box;
     margin: auto;
     padding: 0px;
     max-width: 1440px;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins';
   }
