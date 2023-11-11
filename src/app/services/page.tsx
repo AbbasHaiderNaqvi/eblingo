@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from 'react'
 import styles from '../styles/Services.module.css'
 import { Col, Row } from 'antd';
