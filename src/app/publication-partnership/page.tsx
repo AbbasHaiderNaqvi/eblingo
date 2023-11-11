@@ -25,7 +25,7 @@ function Publications() {
                     <Col span={12}>
                         <p className={styles.Blog_Paragraph}>
                             By choosing Eblingo as your translation<br />
-                            partner, you're choosing quality, precision, and<br />
+                            partner, you&apos;re choosing quality, precision, and<br />
                             dedication. We pride ourselves on building<br />
                             strong relationships with book publishing<br />
                             houses, self-published authors, and<br />

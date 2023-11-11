@@ -60,7 +60,7 @@ function Services() {
                             translations are performed by experts<br />
                             familiar with the intricacies of financial<br />
                             terminology and global markets. Whether<br />
-                            it's annual reports, investment analyses, or<br />
+                            it&apos;s annual reports, investment analyses, or<br />
                             accounting documents, we deliver<br />
                             meticulous translations you can rely on.
                         </p>
@@ -72,7 +72,7 @@ function Services() {
                 <Row>
                     <Col>
                         <p className={styles.First_Blog_Paragraph}>
-                        In the field of marketing, it's all about<br/> 
+                        In the field of marketing, it&apos;s all about<br/> 
                         connecting with your audience and<br/> 
                         establishing the right context. Our<br/> 
                         marketing translations go beyond literal<br/> 
@@ -130,10 +130,10 @@ function Services() {
                         another language demands more than<br /> 
                         linguistic skills – it requires a translator<br /> 
                         who is also a storyteller. We provide book<br /> 
-                        translations that maintain the author's<br /> 
+                        translations that maintain the author&apos;s<br /> 
                         voice, style, and, most importantly,<br /> 
                         the heart of story. We translate various genres<br /> 
-                        from fiction to non-fiction, children's books<br /> 
+                        from fiction to non-fiction, children&apos;s books<br /> 
                         to biographies.
                         </p>
                     </Col>
@@ -166,10 +166,10 @@ function Services() {
                         another language demands more than<br /> 
                         linguistic skills – it requires a translator<br /> 
                         who is also a storyteller. We provide book<br /> 
-                        translations that maintain the author's<br /> 
+                        translations that maintain the author&apos;s<br /> 
                         voice, style, and, most importantly,<br /> 
                         the heart of story. We translate various genres<br /> 
-                        from fiction to non-fiction, children's books<br /> 
+                        from fiction to non-fiction, children&apos;s books<br /> 
                         to biographies.
                         </p>
                     </Col>

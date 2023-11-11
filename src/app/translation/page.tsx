@@ -49,7 +49,7 @@ function Transcription() {
                         accurate, timely transcriptions in multiple<br />
                         languages. Whether its a recorded<br />
                         meeting, a conference, or an interview,<br />
-                        we'll convert your audio files into precisely<br />
+                        we&apos;ll convert your audio files into precisely<br />
                         transcribed text, retaining the essence and<br />
                         context of the original content.
                     </p>
@@ -67,7 +67,7 @@ function Transcription() {
                     </h3>
                     <p className={styles.blog_paragraph_2}>
                         We understand the power of subtitled<br />
-                        content in expanding your audience's<br />
+                        content in expanding your audience&apos;s<br />
                         reach and engagement. Our team of<br />
                         linguistic experts excels in creating<br />
                         accurate, culturally appropriate subtitles<br />

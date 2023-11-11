@@ -63,7 +63,7 @@ function Partnerships() {
           through our expertise in creating Master Templates.</p>
         <p className={styles.blog_Paragraph2_span}>
           Master Templates form the cornerstone of our multilingual subtitling process. By<br />
-          establishing a foundation that standardizes the process, we've eliminated<br />
+          establishing a foundation that standardizes the process, we&apos;ve eliminated<br />
           duplicate work, reduced costs, improved delivery timelines, and<br />
           enhanced the quality control of a large volume of subtitle files.</p>
       </div>
@@ -85,12 +85,12 @@ function Partnerships() {
         <h3 className={styles.heading3}>Our In-House Expertise</h3>
         <p className={styles.blog_Paragraph3}>
           At the heart of our operation are our in-house teams. Our professionals are<br /> 
-          thoroughly trained in various streaming platforms' best practices and<br />
+          thoroughly trained in various streaming platforms&apos; best practices and<br />
           style guides. They bring a deep understanding of timing conventions, shot<br />
           changes, reading speed considerations, and the adherence to syntactic<br />
           rules and structures. This level of expertise ensures that your subtitled<br />
           content will be linguistically accurate, enjoyable, and accessible to global<br />
-          audiences. Through these partnerships and our proven processes, we've built a<br /> 
+          audiences. Through these partnerships and our proven processes, we&apos;ve built a<br /> 
           strong reputation as a leader in multilingual subtitling. Let Eblingo be your trusted<br />
           partner in ensuring that your content transcends linguistic barriers,<br />
           reaches wider audiences, and truly connects with people across the globe.</p>
