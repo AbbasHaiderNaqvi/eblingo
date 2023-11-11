@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import styles from '../styles/ContactForm.module.css';
 import { Button, Col, Row } from 'antd';
 import UploadButton from '../Animations/UploadButton';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -28,6 +30,12 @@ const ContactForm: React.FC = () => {
   };
    
   return (
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={MediumAnimationVariants}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
     <div className={styles.contact_container}>
       <form className={styles.contact_form}
         onSubmit={handleSubmit}>
@@ -86,6 +94,7 @@ const ContactForm: React.FC = () => {
         </div>
       </form>
     </div>
+    </motion.div>
   );
 };
 

@@ -1,12 +1,21 @@
+'use client';
 import styles from '../styles/WhatWeDo.module.css';
 import Image from 'next/image';
 import React from 'react';
 import { Button, Progress, Row, Col } from "antd";
 import Tab from "../Animations/Tab";
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
+
 
 const Offer: React.FC = () => {
     return (
-        <div className={styles.content}>
+        <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={MediumAnimationVariants}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      className={styles.content}>
             <Row>
                 
                 <Col span={13}>
@@ -34,7 +43,7 @@ const Offer: React.FC = () => {
                     />
                 </Col>
             </Row>
-        </div>
+        </motion.div>
     );
 }
 export default Offer;

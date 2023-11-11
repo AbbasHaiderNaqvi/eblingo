@@ -3,11 +3,17 @@ import React from 'react'
 import styles from '../styles/Services.module.css'
 import { Col, Row } from 'antd';
 import Image from 'next/image';
-
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
 
 function Services() {
     return (
-        <div>
+        <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={MediumAnimationVariants}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
             <div className={styles.HeroSection}>
                 <h1 className={styles.HeroSection_Heading}>Eblingo Services</h1>
             </div> 
@@ -175,7 +181,7 @@ function Services() {
                     </Col>
                 </Row>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

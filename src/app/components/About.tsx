@@ -1,13 +1,22 @@
+'use client';
 import styles from '../styles/About.module.css';
 import AnimatedProgressBar from '../Animations/AnimationProgressBar';
 import Image from "next/image";
 import { Button, Col, Divider, Row } from "antd";
 import React from 'react';
 import ContactForm from './ContactForm';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
+
 
 const About = () => {
     return (
-        <div className={styles.main}>
+          <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={MediumAnimationVariants}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+       className={styles.main}>
             <div className={styles.content}>
                 <Row>
                     <Col> 
@@ -48,7 +57,7 @@ const About = () => {
         </div>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 

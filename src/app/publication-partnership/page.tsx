@@ -3,10 +3,17 @@ import React from 'react'
 import styles from '../styles/Publications.module.css';
 import { Col, Row } from 'antd';
 import Image from 'next/image';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
 
 function Publications() {
     return (
-        <div>
+        <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={MediumAnimationVariants}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
             <div className={styles.HeroSection}>
                 <h1 className={styles.HeroSection_Heading}>Publications Partnership</h1>
                 <h5 className={styles.Publications_Sub_heading}>Home / Services / Translation</h5>
@@ -71,7 +78,7 @@ function Publications() {
                 </p>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -5,6 +5,8 @@ import styles from '../styles/Contact.module.css';
 import { Button, Col, Row } from 'antd';
 import UploadButton from '../Animations/Upload';
 import TextArea from 'antd/es/input/TextArea';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
 
 const Contact: FC = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +32,12 @@ const Contact: FC = () => {
     console.log('Form Data:', formData);
   };
   return (
-    <div>
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={MediumAnimationVariants}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Contact Us</h1>
         <h5 className={styles.contact_Sub_heading}>Home / Services / Translation</h5>
@@ -140,7 +147,7 @@ const Contact: FC = () => {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

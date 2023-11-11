@@ -2,11 +2,17 @@
 import React from 'react'
 import styles from '../styles/Partnerships.module.css';
 import Image from 'next/image';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
 
 function Partnerships() {
   return (
-    <div>
-
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={MediumAnimationVariants}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Media Partnerships</h1>
         <h5 className={styles.Partnerships_Sub_heading}>Home / Services / Translation</h5>
@@ -96,7 +102,7 @@ function Partnerships() {
           reaches wider audiences, and truly connects with people across the globe.</p>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

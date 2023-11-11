@@ -4,8 +4,19 @@ import { Button, Row, Col } from 'antd';
 import Image from 'next/image';
 import styles from '../styles/Service.module.css';
 import { useEffect } from 'react';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
 
 const Service = () => {
+    const [isPopupOpen, setPopupOpen] = useState(false);
+
+    const handleGetCodeClick = () => {
+      setPopupOpen(true);
+    };
+  
+    const handleClosePopup = () => {
+      setPopupOpen(false);
+    };
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
@@ -22,7 +33,12 @@ const Service = () => {
         };
     }, []);
     return (
-        <div className={styles.main}>
+        <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={MediumAnimationVariants}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+     className={styles.main}>
             <div className={styles.Service}>
                 <Row>
                     <Col span={18}>
@@ -135,7 +151,7 @@ const Service = () => {
                 </Col>
             </Row>
 
-        </div>
+        </motion.div>
 
     )
 }

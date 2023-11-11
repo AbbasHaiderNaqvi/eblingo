@@ -1,12 +1,20 @@
+'use client';
 import styles from '../styles/blog.module.css';
 import Image from 'next/image';
 import React from 'react';
 import { Row, Col, Button, Space } from 'antd';
 import { FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
 
 const Blog: React.FC = () => {
     return (
-        <div className={styles.blog}>
+        <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={MediumAnimationVariants}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      className={styles.blog}>
             <h5 className={styles.blog_heading}>OUR BLOG</h5>
             <h4 className={styles.blog_heading2}>Latest Posts</h4>
             <Row>
@@ -54,7 +62,7 @@ const Blog: React.FC = () => {
                     </div>
                 </Col>
             </Row>
-        </div>
+        </motion.div>
 
     );
 };

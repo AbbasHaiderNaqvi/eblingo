@@ -1,3 +1,4 @@
+'use client';
 import styles from '../styles/testimonial.module.css';
 import AnimatedProgressCircle1 from "../Animations/AnimationProgressCircle1";
 import AnimatedProgressCircle2 from "../Animations/AnimationProgressCircle2";
@@ -6,10 +7,17 @@ import { Button, Row, Col } from 'antd';
 import AnimatedNumber from '../Animations/AnimatedNumber';
 import Image from 'next/image';
 import React from 'react';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { motion } from 'framer-motion';
 
 const Clienttestimonial: React.FC = () => {
     return (
-        <div>
+         <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={MediumAnimationVariants}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
             
             <div className={styles.Testimonial_Section}>
             <h5 className={styles.testimonials_heading}>Clients Testimonials</h5>
@@ -46,7 +54,7 @@ const Clienttestimonial: React.FC = () => {
                 </Col>
             </Row>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

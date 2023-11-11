@@ -4,8 +4,8 @@ import { Button, Col, Row } from 'antd';
 import Image from "next/image";
 import { Typewriter, useTypewriter } from 'react-simple-typewriter'
 import React from 'react';
-import QueueAnim from 'rc-queue-anim';
-import ReactDom from 'react-dom';
+import { motion } from 'framer-motion';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 
 const Hero = () => {
   const [text] = useTypewriter({
@@ -19,20 +19,40 @@ const Hero = () => {
     delaySpeed: 2000,
   });
   return (
-    <div>
-      <div>
+    <div> 
+      <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={MediumAnimationVariants}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <motion.div
+      variants={MediumAnimationVariants}
+      transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+      >
         <video autoPlay muted loop className={styles.video}>
           <source src='/assets/Home/video.mp4' type='video/mp4'></source>
         </video>
-      </div>
-      <div className={styles.hero}>
+      </motion.div>
         <Row>
           <Col lg={12}>
-        <h1 className={styles.heading}>
+        <motion.h1 
+        className={styles.heading}
+        variants={MediumAnimationVariants}
+      transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+        >
           Eblingo is
-        </h1>
-        <h1 className={styles.typing}>{text}</h1>
-        <h1 className={styles.service_agency}>Service Agency</h1>
+        </motion.h1>
+        <motion.h1
+        variants={MediumAnimationVariants}
+        transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }} 
+        className={styles.typing}>
+          {text}
+          </motion.h1>
+        <motion.h1 
+        variants={MediumAnimationVariants}
+        transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+        className={styles.service_agency}>Service Agency</motion.h1>
           
         <Button className={styles.readme_button}>Learn More</Button>
         <Button className={styles.allservices_button}>All Services</Button>
@@ -46,8 +66,7 @@ const Hero = () => {
       /> 
       </Col>
       </Row>
-      </div>
-      
+      </motion.div>
     </div>
   );
 };
