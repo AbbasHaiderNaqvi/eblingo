@@ -18,9 +18,7 @@ const Hero = () => {
     deleteSpeed: 50,
     delaySpeed: 2000,
   });
-  <div>
-    Abbbas
-  </div>
+  
   return (
     <div> 
       <motion.div
