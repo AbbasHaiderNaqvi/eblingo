@@ -1,5 +1,5 @@
-.Service{
-    margin-top: 10%;
+.Service {
+    margin-top: 5%;
 }
 
 .allservice_heading {
@@ -14,78 +14,80 @@
 .heading_translation_firm {
     color: #000;
     font-size: 40px;
-    font-family: poppins;
+    font-family: Poppins;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 70px;
 }
 
 .quote_button {
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
-    color: #FFF;
-    font-size: 20px;
     border: transparent;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 600;
     border-radius: 10px;
-    line-height: 27px;
-    width: 180px;
-    height: 62px;
+    width: 131.309px;
+    height: 51.809px;
     position: fixed;
-    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    bottom: 20px;
     right: 20px;
-    z-index:initial; 
+    z-index: 3;
+    color: #FFF !important;
+    font-family: Poppins;
+    font-size: 15.45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.858px;
+}
+.quote_button:hover{
+    background-image: linear-gradient(to right, #faaf40, #ed1e78);
 }
 
 
-.Images{
+.Images {
     position: relative;
 }
+
 .Service_Image {
     border-radius: 20px;
     top: 18vh;
     right: 10vh;
     position: fixed;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    
+    transition: opacity 0.4s ease-in-out;
+    box-shadow: rgb(0 0 0 / 9%) 0px 10px 16px 4px;
 }
-.active{
+.active {
     opacity: 1;
 }
 
 
 .service_heading {
     margin-top: 10%;
+    margin-left: 15%;
     color: #000;
-    margin-left: 5%;
-    font-size: 45.505px;
-    font-style: bold;
+    font-family: Poppins;
+    font-size: 34.473px;
+    font-style: normal;
     font-weight: 600;
-    line-height: 91.01px;
-    font-family: poppins;
-
-
+    line-height: 68.947px;
 }
 
 .listing {
     margin-top: 10px;
     list-style-type: square;
-    font-size: 30px;
+    font-size: 22px;
     font-family: poppins;
     color: #FB6239;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 .list {
     margin-bottom: 10px;
     color: #000;
-    font-size: 30px;
-    font-family: poppins;
+    font-family: Poppins;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 22.727px;
 }
 
 .First_Service_Section {

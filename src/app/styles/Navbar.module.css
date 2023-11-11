@@ -35,7 +35,6 @@
   color: #484848;
   font-size: 17px;
   font-style: normal;
-  font-family: Poppins;
   font-weight: 600;
   line-height: normal;
 }
@@ -49,16 +48,42 @@
   background-image: linear-gradient(to right, #ed1e78, #faaf40);
   width: 147px;
   height: 41px;
-  color: #FFF;
+  color: #FFF !important;
   font-size: 15px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 
+}
+.button:hover{
+  background-image: linear-gradient(to right, #faaf40,#ed1e78);
+}
+.partnership{
+  position: relative;
 }
 
 .logo {
   position: relative;
   bottom: 50px;
 }
+.dropdown{
+  position: absolute;
+  top:20px;
+  right: 20px;
+  width: 120px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid gray;
+}
+.dropdown::before{
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  background-color: white;
+}
+

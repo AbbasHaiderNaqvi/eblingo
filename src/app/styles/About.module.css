@@ -7,32 +7,34 @@
 }
 
 .contact_heading {
-    color: #FFF;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 80px;
     margin-top: 5%;
     margin-left: 5%;
     position: relative;
     top: 100px;
+    color: #FFF;
     font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
 }
 
 .Readmore_button {
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
-    color: white;
-    font-weight: bold;
+    color: white !important;
+    font-weight: 500;
     border-color: transparent;
     border-radius: 10px;
-    width: 152px;
+    width: 142px;
+    height: 56.027px;
     font-family: Poppins;
-    height: 56px;
     margin-left: 5%;
     position: relative;
-    top: 150px;    
+    top: 150px;
 }
-
+.Readmore_button:hover{
+    background-image: linear-gradient(to right, #faaf40, #ed1e78);
+}
 .about_img2 {
     border-radius: 10px;
     position: absolute;
@@ -65,6 +67,7 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
+    font-family: poppins;
     line-height: 27px;
     position: absolute;
     top: 285px;
@@ -73,6 +76,7 @@
 
 .about_heading {
     color: #FBAC41;
+    font-family: Poppins;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -82,6 +86,7 @@
 
 .about_sub_heading {
     color: #000;
+    font-family: Poppins;
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -96,7 +101,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
-
+    font-family: poppins;
 }
 
 .AnimatedProgressBar {

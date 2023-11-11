@@ -5,9 +5,10 @@ import './theme.css'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+// const pop = Poppins({ subsets: ['latin'] })
 
-
-const font = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400','500', '600', '700', '800','900'] }); // Add other weight values as needed
+// const font = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400','500', '600', '700', '800','900'] }); // Add other weight values as needed
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Eblingo',
@@ -21,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />

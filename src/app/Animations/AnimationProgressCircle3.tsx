@@ -17,7 +17,7 @@ const AnimatedProgressCircle3: React.FC = () => {
     };
 
     if (isAnimated && percent < targetPercent) {
-      const animationInterval = setInterval(startAnimation, 75);
+      const animationInterval = setInterval(startAnimation, 0.1);
 
       return () => {
         clearInterval(animationInterval);

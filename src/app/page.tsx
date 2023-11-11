@@ -21,8 +21,6 @@ export default function Home() {
       <Offer />
       <Clienttestimonial />
       <Blog />
-      {/* <Publications /> */}
-      {/* <Contact /> */}
     </div>
     </main>
   )

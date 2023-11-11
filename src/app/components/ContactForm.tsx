@@ -26,12 +26,12 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     console.log('Form Data:', formData);
   };
-  
+   
   return (
     <div className={styles.contact_container}>
       <form className={styles.contact_form}
         onSubmit={handleSubmit}>
-        <div>
+        <div className={styles.Form}>
           <h1 className={styles.contactus_heading}>Contact Us!</h1>
           <input className={styles.input_fields}
             type="text"

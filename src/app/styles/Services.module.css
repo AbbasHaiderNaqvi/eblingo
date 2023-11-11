@@ -9,61 +9,51 @@
 
 .HeroSection_Heading {
     color: #FFF;
-    font-size: 39.833px;
+    font-size: 50px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-.Services_Sub_heading{
-    margin-top: 2%;
-    width: 280px;
-    height: 30px;
-    background: rgba(217, 217, 217, 0.50);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400; 
-}
 
 .First_Blog_Heading {
     color: #FB6239;
-    text-align: center;
-    font-size: 50px;
     font-family: Poppins;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    line-height: 22.536px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .First_Blog_Paragraph {
     color: #7A7A7A;
-    font-size: 30px;
     font-family: Poppins;
+    font-size: 22px;
     font-style: normal;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 30.048px;
 }
+
 .Second_Blog_Heading {
     color: #FB6239;
-    text-align: center;
-    font-size: 50px;
     font-family: Poppins;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    line-height: 22.536px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .Second_Blog_Paragraph {
     color: #7A7A7A;
-    font-size: 30px;
     font-family: Poppins;
+    font-size: 22px;
     font-style: normal;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 30.048px;  
 }

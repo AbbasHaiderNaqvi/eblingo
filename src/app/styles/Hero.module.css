@@ -1,84 +1,75 @@
 .hero {
-  background-image: url('/assets/Home/HeroSection1.jpg');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
   padding: 100px;
   color: #fff;
   font-family: Poppins;
-  width: 100%;
-  margin-top: 5%
 }
- 
+
 .typing {
-  color: #636363;
-  font-size: 87.697px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 45px;
   font-style: normal;
   font-weight: 600;
+  height: 5px;
   line-height: normal;
-  height: 88px;
-  font-family: Poppins;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
+
 }
-.video{
+
+.video {
   height: 600px;
   display: flex;
   justify-content: center;
 }
+
 .heading {
-  margin-top: 10%;
-  color: #636363;
-  font-size: 87.697px;
+  color: #000;
   font-family: Poppins;
+  font-size: 45.94px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 }
 
 .service_agency {
-  color: #636363;
-  font-size: 87.697px;
+  color: #000;
   font-family: Poppins;
+  font-size: 45.94px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 }
-
+ 
 .readme_button {
   background-image: linear-gradient(to right, #ed1e78, #faaf40);
   margin-top: 20px;
   margin-right: 10px;
-  color: #FFF;
-  font-size: 20px;
+  color: #FFF !important;
   font-family: Poppins;
+  font-size: 13.399px;
   font-style: normal;
   font-weight: 600;
-  line-height: 35px;
-  width: 196px;
-  height: 77px;
+  line-height: 24.118px;
+  width: 131.563px;
+  height: 51.809px;
+  border-radius: 9px;
+}
+.readme_button:hover{
+  background-image: linear-gradient(to right,#faaf40, #ed1e78 );
+
 }
 
 .allservices_button {
-  background-color: white;
+  border-radius: 9px;
+  background: #F6F6F6;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
   color: #000;
-font-size: 20px;
-font-family: Poppins;
-font-style: normal;
-font-weight: 600;
-line-height: 35px; 
-  width: 196px;
-  height: 77px;
-  margin-left: 3%;
-}
-
-.paragraph {
-  color: #636363;
-  text-align: center;
-  font-size: 22.551px;
   font-family: Poppins;
+  font-size: 13.399px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 37.584px;
-  text-align: center;
-  margin-bottom: 5%;
+  font-weight: 600;
+  line-height: 24.118px;
+  width: 131.309px;
+  height: 51.809px;
+  margin-left: 3%;
 }

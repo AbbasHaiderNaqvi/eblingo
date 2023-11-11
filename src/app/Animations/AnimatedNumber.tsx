@@ -17,7 +17,7 @@ const AnimatedNumber = () => {
     <div>
       <VisibilitySensor onChange={onVisibilityChange}>
         <h2>
-          <CountUp start={0} end={isVisible ? 1320921 : 0} duration={10} delay={0} />
+          <CountUp start={0} end={isVisible ? 1320921 : 0} duration={3} delay={0} />
         </h2>
       </VisibilitySensor>
     </div>

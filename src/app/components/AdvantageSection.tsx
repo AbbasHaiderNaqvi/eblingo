@@ -8,21 +8,20 @@ const AdvantageSection = () => {
     return (
         <div className={styles.content}>
             <Row>
-                <Col>
-                
+                <Col lg={7}>
                     <div className={styles.Advantage1}>
                         <div className={styles.Advantage_image1}>
                             <Image
                                 src="/assets/Home/Advantage_Image1.png"
                                 alt="Advantage Section"
-                                width={47}
+                                width={50}
                                 height={50}
                                 className={styles.Advantage_Image1}
                             />
                         </div>
                         <div className={styles.Advantage_Description1}>
                             <div className={styles.FreeSupport_heading}>Free Support</div>
-                            <div className={styles.FreeSupport_paragraph}>Approve, edit and enhance your<br />website translation within your<br /> team</div>
+                            <div className={styles.FreeSupport_paragraph}>Our Project Management team will be<br />available in various time zones to assist your<br />follow up queries and urgent requests</div>
                         </div>
                     </div>
                     <div className={styles.Advantage2}>
@@ -30,7 +29,7 @@ const AdvantageSection = () => {
                             <Image
                                 src="/assets/Home/Advantage_Image2.png"
                                 alt="About"
-                                width={47}
+                                width={50}
                                 height={50}
                                 className={styles.Advantage_Image2}
                             />
@@ -38,18 +37,18 @@ const AdvantageSection = () => {
                         <div className={styles.Advantage_Description2}>
                             <div className={styles.tech_translation_heading}>Technical Translation</div>
                             <div className={styles.translation_paragraph}>
-                                Approve, edit and enhance your<br />website translation within your<br /> team
+                            We have a global talent pool with linguists<br />having technical expertise in finance, medical,<br />legal, and editorial specifics.
                             </div>
                         </div>
                     </div>
-                </Col>
-                <Col>
+                </Col >
+                <Col lg={7}>
                     <div className={styles.Advantage3}>
                         <div className={styles.Advantage_image3}>
                             <Image
                                 src="/assets/Home/Advantage_Image3.png"
                                 alt="About"
-                                width={47}
+                                width={50}
                                 height={50}
                                 className={styles.Advantage_Image3}
                             />
@@ -57,7 +56,9 @@ const AdvantageSection = () => {
                             <div className={styles.Advantage_Description3}>
                                 <div className={styles.language_heading}>100+ Languages</div>
                                 <div className={styles.language_paragraph}>
-                                    Approve, edit and enhance your<br />website translation within your<br /> team
+                                Eblingo’s project management team is<br />
+                                operating in multiple continents,providing<br />
+                                services in more than 100 languages.
                                 </div>
                                 </div>
                                 </div>
@@ -67,7 +68,7 @@ const AdvantageSection = () => {
                                 <Image
                                     src="/assets/Home/Advantage_Image4.png"
                                     alt="About"
-                                    width={47}
+                                    width={50}
                                     height={50}
                                     className={styles.Advantage_Image4}
                                 />
@@ -75,7 +76,9 @@ const AdvantageSection = () => {
                                 <div className={styles.Advantage_Description4}>
                                 <div className={styles.Multi_heading}>Multi Language</div>
                                 <div className={styles.Multi_paragraph}>
-                                    Approve, edit and enhance your<br />website translation within your<br /> team
+                                Our linguists are trained in multi-language<br />
+                                translation. We can offer translation services<br />
+                                in multiple languages from source.
                                 </div>
                                 </div>
                                 </div>

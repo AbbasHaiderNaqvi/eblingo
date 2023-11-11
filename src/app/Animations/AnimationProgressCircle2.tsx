@@ -8,7 +8,7 @@ const AnimatedProgressCircle2: React.FC = () => {
   const [isAnimated, setIsAnimated] = useState<boolean>(false);
 
   useEffect(() => {
-    const targetPercent = 75;
+    const targetPercent = 80;
 
     const startAnimation = () => {
       if (percent < targetPercent) {
@@ -17,7 +17,7 @@ const AnimatedProgressCircle2: React.FC = () => {
     };
 
     if (isAnimated && percent < targetPercent) {
-      const animationInterval = setInterval(startAnimation, 75);
+      const animationInterval = setInterval(startAnimation, 0.1);
 
       return () => {
         clearInterval(animationInterval);

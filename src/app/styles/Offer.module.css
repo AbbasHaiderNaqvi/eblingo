@@ -32,7 +32,7 @@
 
     background-color: #FFF0DC;
     border-radius: 20px;
-    height: 767px;
+    height: 610px;
     width: 672px;
     margin-left: 5%;
 }
@@ -47,7 +47,8 @@
     line-height: 30px;
 
 }
-.items{
+
+.items {
     width: 100%;
 }
 
@@ -61,7 +62,7 @@
 }
 
 .rectangle_subscribe {
-    margin-top: 10%;
+    margin-top: 5%;
     align-items: center;
     width: 1351px;
     height: 121px;
@@ -70,22 +71,28 @@
     border-radius: 10px;
 
 }
-.rectangle_subscribe{
+
+.rectangle_subscribe {
     display: flex;
 }
+
 .rectangle_subscribe_text {
     color: #FFF;
-    font-size: 30px;
     font-family: Poppins;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 80px;
-    
+
 }
 
 .rectangle_readmore_button {
-    background-color: white;
-    color: #FAAF40;
-    width: 125px;
-    height: 40px;
+    background-color: white ;
+    width: 151.265px;
+    height: 55px;
+    color: #FAAF40!important;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
 }

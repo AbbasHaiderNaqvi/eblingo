@@ -1,6 +1,7 @@
 .Advantage1 {
     display: flex;
     margin-bottom: 15%;
+    margin-top: 10%;
 }
 
 .Advantage2 {
@@ -10,6 +11,7 @@
 .Advantage3 {
     display: flex;
     margin-bottom: 15%;
+    margin-top: 10%;
 }
 
 .Advantage4 {
@@ -19,55 +21,56 @@
 .Advantage_Image1 {
    position: relative;
    bottom: 25px;
-   right: 10px;
 }
 .Advantage_Image2 {
+    margin-left: 10%;
     position: relative;
-    bottom: 25px;
-    right: 10px;
+    bottom: 30px;
  }
  .Advantage_Image3 {
     position: relative;
-    bottom: 25px;
-    right: 10px;
+    bottom: 30px;
 
  }
  .Advantage_Image4 {
     position: relative;
     bottom: 25px;
-    right: 10px;
 
  }
 .FreeSupport_heading {
     color: #000;
-    font-size: 25px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     font-family: Poppins;
     line-height: 50px;
-}
+    position: relative;
+    right: 10px;
+} 
 
 .FreeSupport_paragraph {
     color: #000;
-    font-size: 15px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     font-family: Poppins;
     line-height: 27px;
+    position: relative;
+    right: 10px;
 }
 /*  */
 .tech_translation_heading {
     color: #000;
-    font-size: 25px;
+    font-size: 23px;
     font-style: normal;
     font-family: Poppins;
     font-weight: 600;
     line-height: 50px;
-}
+} 
 
 .translation_paragraph {
     color: #000;
-    font-size: 15px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
@@ -75,7 +78,7 @@
 }
 .language_heading {
     color: #000;
-    font-size: 25px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     font-family: Poppins;
@@ -84,7 +87,7 @@
 
 .language_paragraph {
     color: #000;
-    font-size: 15px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
@@ -92,16 +95,16 @@
 }
 .Multi_heading {
     color: #000;
-    font-size: 25px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     line-height: 50px;
     font-family: Poppins;
-}
+} 
 
 .Multi_paragraph {
     color: #000;
-    font-size: 15px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
@@ -109,5 +112,5 @@
 }   
 .content{
     position: relative;
-    bottom: 250px;
+    bottom: 280px;
 }

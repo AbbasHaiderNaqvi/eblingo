@@ -31,7 +31,7 @@ const Clienttestimonial: React.FC = () => {
                 </Col>
                 <Col>
                         <AnimatedProgressCircle2 />
-                </Col>
+                </Col> 
                 <Col>
                         <AnimatedProgressCircle3 />
                 </Col>

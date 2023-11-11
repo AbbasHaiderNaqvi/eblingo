@@ -21,7 +21,7 @@ const Offer: React.FC = () => {
                             src="/assets/Home/Offering_img.png"
                             alt="Service"
                           width={540}
-                            height={767}
+                            height={620}
                             className={styles.Offer_img}
                         />
                     </Col>

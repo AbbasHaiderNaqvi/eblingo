@@ -9,16 +9,17 @@
 
 .HeroSection_Heading {
     color: #FFF;
-    font-size: 39.833px;
+    font-family: Poppins;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    font-family: Poppins;
+    
 }
 
 .contact_heading {
     color: #1B1A1A;
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 5%;
     text-align: center;
     font-style: normal;
@@ -28,7 +29,7 @@
 }
 
 .contact_Sub_heading {
-    margin-top: 2%;
+    margin-top: 1%;
     width: 280px;
     height: 30px;
     background: rgba(217, 217, 217, 0.50);
@@ -36,15 +37,15 @@
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;    
+    font-weight: 400;
 }
 
 .contact_container {
-    border-radius: 30px;
+    border-radius: 24px;
     background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 1352px;
-    height: 1054px;
+    box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
+    width: 1074.93px;
+    height: 838px;
     margin-top: 5%;
 }
 
@@ -55,18 +56,19 @@
 .First_input {
     border-radius: 10px;
     border: 1px solid #9F9F9F;
-    font-size: 22px;
-    width: 605px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
     font-family: Poppins;
-    height: 98px;
-    flex-shrink: 0;
-    margin-top: 7%;
+    width: 481.015px;
+    height: 77.917px;
+    margin-top: 5%;
 }
 
 .First_input::placeholder {
     color: #C6C6C6;
-    font-size: 22px;
     font-family: Poppins;
+    font-size: 17.491px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -75,16 +77,18 @@
 .Second_input {
     border-radius: 10px;
     border: 1px solid #9F9F9F;
-    font-size: 22px;
-    width: 605px;
-    height: 98px;
-    flex-shrink: 0;
-    margin-top: 7%;
+    font-size: 18px;
+    font-family: Poppins;
+    width: 481.015px;
+    padding-left: 20px;
+    height: 77.917px;
+    margin-top: 5%;
 }
 
 .Second_input::placeholder {
     color: #C6C6C6;
-    font-size: 22px;
+    font-family: Poppins;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -93,85 +97,93 @@
 
 .label_input3 {
     color: #3C3939;
-    font-size: 28px;
+    font-family: Poppins;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
+    line-height: normal;
     margin-left: 4%;
     position: relative;
-    top: 40px;
-    right: 150px;
+    top: 27px;
+    right: 110px;
 }
 
 .label_input4 {
     color: #3C3939;
-    font-size: 28px;
+    font-size: 22px;
+    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     position: relative;
-    top: 40px;
-    right: 140px;
+    top: 27px;
+    right: 110px;
 
 }
 
 
 .label_input5 {
     color: #3C3939;
-    font-size: 28px;
+    font-family: Poppins;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
-    margin-left: 6%;
+    line-height: normal;
+    margin-left: 4%;
     position: relative;
-    top: 40px;
-
+    top: 27px;
+    right: 90px;
 }
 
 .label_input6 {
     color: #3C3939;
-    font-size: 28px;
+    font-size: 22px;
+    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    margin-left: 1%;
     position: relative;
-    top: 15px;
-    right: 130px;
-
+    top: 27px;
+    right: 90px;
 
 }
 
 .Fifth_input {
     border-radius: 10px;
     border: 1px solid #9F9F9F;
-    font-size: 22px;
-    width: 605px;
-    height: 98px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Poppins;
+    width: 481.015px;
+    height: 77.917px;
     margin-top: 5%;
-    margin-left: 4%;
 }
 
 .uploadbutton {
     width: 236px;
-    height: 48px;
+    height: 50px;
     border-radius: 5px;
     border: 1px solid #9F9F9F;
     margin-top: 15%;
     position: relative;
-    right: 140px;
+    right: 230px;
 }
 
 .Sixth_input {
-    width: 1248px;
-    height: 98px;
-    font-size: 22px;
+    width: 992.243px;
+    height: 77.917px;
+    font-size: 18px;
     border-radius: 10px;
+    font-family: poppins;
     border: 1px solid #9F9F9F;
     display: flex;
-    margin-top: 5%;
+    margin-top: 4%;
     justify-content: center;
 }
 
 .Sixth_input::placeholder {
     color: #C6C6C6;
-    font-size: 22px;
+    font-size: 18px;
+    font-family: poppins;
+    padding-left: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -180,23 +192,23 @@
 .Seven_input {
     border-radius: 10px;
     border: 1px solid #9F9F9F;
-    font-size: 22px;
-    width: 1248px;
-    height: 212px;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
+    font-size: 18px;
+    width: 992.243px;
+    height: 168.554px;
+    padding-left: 20px;
+    margin-top: 4%;
+    margin-left: 4%;
 }
 
 .Submit_Button {
-    border-radius: 13px;
+    border-radius: 10px;
     background: #FB6239;
-    width: 214px;
-    height: 75px;
+    width: 170px;
+    height: 60px;
     display: flex;
     justify-content: center;
     color: #FFF;
-    font-size: 32px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

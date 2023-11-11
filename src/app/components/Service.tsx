@@ -8,19 +8,19 @@ import { useEffect } from 'react';
 const Service = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-      setScrollPosition(currentPosition);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            setScrollPosition(currentPosition);
+        };
 
-    window.addEventListener('scroll', handleScroll);
-    
+        window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <div className={styles.main}>
             <div className={styles.Service}>
@@ -29,13 +29,13 @@ const Service = () => {
                         <div className={styles.Service_Heading}>
                             <h6 className={styles.allservice_heading}>OUR SERVICES</h6>
                             <div className={styles.heading_translation_firm}>
-                                Biggest language Translation firm
+                                Ensuring global relevancy of content
                             </div>
                         </div>
-                    </Col>
+                    </Col> 
                     <Col>
-                        <Button 
-                        className={`${styles.quote_button} 
+                        <Button
+                            className={`${styles.quote_button} 
                         ${scrollPosition ? 'sticky' : ''}`}
                         >Get a quote</Button>
                     </Col>
@@ -102,7 +102,7 @@ const Service = () => {
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 2025 && scrollPosition < 2400 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 1500 && scrollPosition < 1900 ? styles.active : ''
                                 }`}
                         />
                         <Image
@@ -110,24 +110,24 @@ const Service = () => {
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 2400 && scrollPosition < 2900 ? styles.active : ''
-                                }`} 
+                            className={`${styles.Service_Image} ${scrollPosition >= 1900 && scrollPosition < 2450 ? styles.active : ''
+                                }`}
                         />
                         <Image
                             src="/assets/Home/services3.png"
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 2900 && scrollPosition < 3500 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 2450 && scrollPosition < 3000 ? styles.active : ''
                                 }`}
                         />
-                        
+
                         <Image
                             src="/assets/Home/services4.png"
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 3500 && scrollPosition < 3800 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 3000 && scrollPosition < 3200 ? styles.active : ''
                                 }`}
                         />
 

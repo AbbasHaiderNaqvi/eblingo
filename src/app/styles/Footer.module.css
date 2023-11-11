@@ -1,4 +1,4 @@
-/* styles/Footer.module.css */
+
 
 .footer {
   background-color: #fff;
@@ -15,8 +15,7 @@
 .legal_terms_h {
   display: flex;
   justify-content: space-between;
-  margin-top: 10%;
-
+  margin-top: 8%;
 }
 
 .reserved_rights {
@@ -228,7 +227,7 @@
 
 .rectangle_subcribe_button {
   background-color: #000;
-  color: #FFF;
+  color: #FFF !important;
   width: 173px;
   height: 49px;
   color: #FFF;
@@ -256,7 +255,9 @@
   margin-top: 5%;
   border-radius: 5px;
 }
-
+.signup_input:focus{
+  border: 1px solid white;
+}
 .signup_input::placeholder {
   color: rgba(255, 255, 255, 0.70);
   font-size: 16px;

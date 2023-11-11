@@ -61,17 +61,18 @@
     margin-top: 1%;
     margin-bottom: 5%;
 }
-.AnimatedProgressCircle1{
-    margin-left: 20%;
-}
-.AnimatedProgressCircle2{
-    position: relative;
-    left: 30px;
+
+.AnimatedProgressCircle1 {
+    margin-left: 25%;
 }
 
-.AnimatedProgressCircle3{
-    position: relative;
-    left: 50px;
+.AnimatedProgressCircle2 {
+    margin-left: 20%;
+}
+
+.AnimatedProgressCircle3 {
+    margin-left: 27%;
+
 }
 
 .AnimatedProgressCircle1_paragraph1 {
@@ -121,6 +122,7 @@
     text-align: center;
 
 }
+
 .rectangle_content {
     color: #FFF;
     text-align: center;
@@ -137,11 +139,18 @@
 
 
 .rectangle_button {
-    color: #F0406B;
     width: 201px;
     height: 55px;
     margin-top: 30%;
-    border-radius: 25px;
+    border-radius: 20px;
+    color: #F0406B !important;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.968px;
+    letter-spacing: 0.54px;
 }
 
 .AnimatedNumber {
