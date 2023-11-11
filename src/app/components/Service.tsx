@@ -11,11 +11,11 @@ const Service = () => {
     const [isPopupOpen, setPopupOpen] = useState(false);
 
     const handleGetCodeClick = () => {
-      setPopupOpen(true);
+        setPopupOpen(true);
     };
-  
+
     const handleClosePopup = () => {
-      setPopupOpen(false);
+        setPopupOpen(false);
     };
     const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -34,11 +34,11 @@ const Service = () => {
     }, []);
     return (
         <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={MediumAnimationVariants}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-     className={styles.main}>
+            initial="hidden"
+            animate="visible"
+            variants={MediumAnimationVariants}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className={styles.main}>
             <div className={styles.Service}>
                 <Row>
                     <Col span={18}>
@@ -48,10 +48,11 @@ const Service = () => {
                                 Ensuring global relevancy of content
                             </div>
                         </div>
-                    </Col> 
+                    </Col>
                     <Col>
                         <Button
-                            className={`${styles.quote_button} 
+                            onClick={handleGetCodeClick} 
+                            className={`${styles.quote_button}
                         ${scrollPosition ? 'sticky' : ''}`}
                         >Get a quote</Button>
                     </Col>

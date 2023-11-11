@@ -35,7 +35,7 @@ const Hero = () => {
         </video>
       </motion.div>
         <Row>
-          <Col lg={12}>
+          <Col lg={10}>
         <motion.h1 
         className={styles.heading}
         variants={MediumAnimationVariants}
