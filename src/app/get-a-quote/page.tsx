@@ -75,8 +75,8 @@ const GetaQuote: FC = () => {
           onSubmit={handleSubmit}>
           <h3 className={styles.quote_heading}>Get a quote</h3>
           <p className={styles.quote_paragraph}>
-            Let's get in touch! Share your contact and project details with us, and we'll make<br />
-            sure to get back to you soon. Can't wait to hear from you
+            Let&apos;s get in touch! Share your contact and project details with us, and we&apos;ll make<br />
+            sure to get back to you soon. Can&apos;t wait to hear from you
           </p>
           <div className={styles.quote_container}>
             <div className={styles.quote_content}>
