@@ -6,7 +6,7 @@ import { Button, Col, Row } from 'antd';
 import UploadButton from '../Animations/Upload';
 import TextArea from 'antd/es/input/TextArea';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 
 const Contact: FC = () => {
   const [formData, setFormData] = useState({
@@ -48,6 +48,14 @@ const Contact: FC = () => {
           <h3 className={styles.contact_heading}>Contact Us</h3>
           <div className={styles.contact_container}>
             <div className={styles.contact_content}>
+            <Row justify="start">
+                <Col span={5}>
+                  <label className={styles.label_input3}>Name<sup style={{color:'red'}}>*</sup></label>
+                </Col>
+                <Col span={5}>
+                  <label className={styles.label_input4}>Phone Number<sup style={{color:'red'}}>*</sup></label>
+                </Col>
+              </Row>
               <Row>
                 <Col span={10}>
                   <input
@@ -88,7 +96,7 @@ const Contact: FC = () => {
                     name="sourceLanguage"
                     value={formData.sourceLanguage}
                     onChange={handleChange}
-                    required
+                    
                   />
                 </Col>
                 <Col>
@@ -98,7 +106,7 @@ const Contact: FC = () => {
                     name="targetLanguage"
                     value={formData.targetLanguage}
                     onChange={handleChange}
-                    required
+                    
                   />
                 </Col>
               </Row>
@@ -118,7 +126,7 @@ const Contact: FC = () => {
                     name="estimatedproject"
                     value={formData.estimatedproject}
                     onChange={handleChange}
-                    required
+                    
                   />
                 </Col>
                 <Col>
@@ -132,7 +140,7 @@ const Contact: FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                required
+                
               />
               <TextArea
                 className={styles.Seven_input}

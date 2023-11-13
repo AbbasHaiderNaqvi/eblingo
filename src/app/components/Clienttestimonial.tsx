@@ -1,5 +1,6 @@
 'use client';
 import styles from '../styles/testimonial.module.css';
+import { useRouter } from 'next/navigation';
 import AnimatedProgressCircle1 from "../Animations/AnimationProgressCircle1";
 import AnimatedProgressCircle2 from "../Animations/AnimationProgressCircle2";
 import AnimatedProgressCircle3 from "../Animations/AnimationProgressCircle3";
@@ -9,8 +10,15 @@ import Image from 'next/image';
 import React from 'react';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
+import Contact from '../contact/page';
 
 const Clienttestimonial: React.FC = () => {
+    const router = useRouter();
+    const handleClick = () => {
+        console.log('Button clicked!');
+    
+        router.push('/contact');
+      };
     return (
          <motion.div
         initial="hidden"
@@ -48,7 +56,7 @@ const Clienttestimonial: React.FC = () => {
                             <div className={styles.rectangle_number}>
                             <div className={styles.AnimatedNumber}><AnimatedNumber /></div>
                             <div className={styles.rectangle_content}>Leads generated so far...</div>
-                            <Button className={styles.rectangle_button}>Contact us</Button>
+                            <Button className={styles.rectangle_button} onClick={handleClick}>Contact us</Button>
                             </div>
                     </div>
                 </Col>

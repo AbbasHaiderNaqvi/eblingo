@@ -59,12 +59,12 @@ const Hero = () => {
         <Button className={styles.allservices_button}>All Services</Button>
         </Col>
         <Col lg={12}>
-        {/* <Image
+        <Image
         src="/assets/Home/HeroSection.png" 
         alt="HeroSection"
         width={550} 
         height={444} 
-      />  */}
+      /> 
       </Col>
       </Row>
       </motion.div>

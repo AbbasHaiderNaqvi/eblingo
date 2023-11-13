@@ -1,23 +1,4 @@
-.HeroSection {
-    background-image: url('/assets/Contact/Contact_Image.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 100px;
-    color: #fff;
-}
-
-.HeroSection_Heading {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    
-}
-
-.contact_heading {
+.quote_heading {
     color: #1B1A1A;
     font-size: 30px;
     margin-top: 5%;
@@ -28,41 +9,67 @@
     font-family: Poppins;
 }
 
-.contact_Sub_heading {
-    margin-top: 1%;
-    width: 280px;
-    height: 30px;
-    background: rgba(217, 217, 217, 0.50);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-}
 
-.contact_container {
-    border-radius: 24px;
+.quote_container {
+    border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
-    width: 1074.93px;
-    height: 838px;
+    width: 1121px;
+    height: 603px;
     margin-top: 5%;
 }
 
-.contact_content {
+.quote_paragraph {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.34px;
+    margin-top: 3%;
+}
+
+.quote_content {
     margin-top: 5%;
+}
+
+.label_input1 {
+    color: #3C3939;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 4%;
+    position: relative;
+    top: 39px;
+    right: 110px;
+}
+
+.label_input2 {
+    color: #3C3939;
+    font-size: 22px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    top: 39px;
+    right: 110px;
+
 }
 
 .First_input {
     border-radius: 10px;
-    border: 1px solid #9F9F9F!important;
+    border: 1px solid #9F9F9F !important;
     font-size: 18px;
     font-weight: 400;
     padding-left: 20px;
     font-family: Poppins;
     width: 481.015px;
     height: 77.917px;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .First_input::placeholder {
@@ -75,15 +82,14 @@
 }
 
 .Second_input {
-
     border-radius: 10px;
-    border: 1px solid #9F9F9F!important;
+    border: 1px solid #9F9F9F !important;
     font-size: 18px;
     font-family: Poppins;
     width: 481.015px;
     padding-left: 20px;
     height: 77.917px;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .Second_input::placeholder {
@@ -105,8 +111,21 @@
     line-height: normal;
     margin-left: 4%;
     position: relative;
-    top: 22px;
+    top: 39px;
     right: 110px;
+}
+
+.Translateto {
+    border-radius: 10px;
+    border: 1px solid #9F9F9F !important;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: end;
+    font-family: Poppins;
+    width: 481.015px;
+    padding-left: 20px;
+    height: 77.917px;
+    margin-top: 10%;
 }
 
 .label_input4 {
@@ -116,11 +135,32 @@
     font-style: normal;
     font-weight: 600;
     position: relative;
-    top: 22px;
+    top: 39px;
     right: 110px;
 
 }
 
+.Translateform {
+    border-radius: 10px;
+    border: 1px solid #9F9F9F !important;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: end;
+    font-family: Poppins;
+    width: 481.015px;
+    padding-left: 20px;
+    height: 77.917px;
+    margin-top: 10%;
+}
+
+.Translateform::placeholder {
+    color: #979797;
+    font-family: Poppins;
+    font-size: 16.601px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .label_input5 {
     color: #3C3939;
@@ -131,8 +171,8 @@
     line-height: normal;
     margin-left: 4%;
     position: relative;
-    top: 30px;
-    right: 90px;
+    top: 39px;
+    right: 110px;
 }
 
 .label_input6 {
@@ -142,83 +182,46 @@
     font-style: normal;
     font-weight: 600;
     position: relative;
-    top: 30px;
-    right: 90px;
+    top: 39px;
+    right: 110px;
 
 }
 
-.Fifth_input {
-    border: 1px solid #9F9F9F!important;
+.Service_Dropdown_Button {
+    border: 1px solid #9F9F9F !important;
     border-radius: 10px;
     font-size: 18px;
+    color: white!important;
     font-weight: 400;
+    text-align: end;
     font-family: Poppins;
     width: 481.015px;
     height: 77.917px;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.uploadbutton {
-    width: 236px;
-    height: 50px;
-    border-radius: 5px;
-    border: 1px solid #9F9F9F!important;
-    margin-top: 15%;
-    position: relative;
-    right: 230px;
-}
-.uploadbutton:hover{
-    color: #000!important;
-    border: 1px solid #9F9F9F!important;
-}
-
-.Sixth_input {
-    border: 1px solid #9F9F9F!important;
-    width: 992.243px;
+.Upload_input {
+    border-radius: 10px;
+    border: 1px solid #9F9F9F !important;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+    font-family: Poppins;
+    width: 481.015px;
     height: 77.917px;
-    font-size: 18px;
-    border-radius: 10px;
-    font-family: poppins;
-    border: 1px solid #9F9F9F;
-    display: flex;
-    margin-top: 4%;
-    justify-content: center;
+    margin-top: 10%;
+
 }
 
-.Sixth_input::placeholder {
-    color: #C6C6C6;
-    font-size: 18px;
-    font-family: poppins;
-    padding-left: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.Seven_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F!important;
-    font-size: 18px;
-    width: 992.243px;
-    height: 168.554px;
-    font-family: poppins;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-top: 4%;
-    margin-left: 4%;
-}
-.Seven_input:hover{
-    color: #000;
-    font-size: 18px;
-    padding-left: 20px;
-    padding-top: 20px;
-    font-family: poppins;
+.Upload_input::placeholder {
+    color: #979797;
+    font-family: Poppins;
+    font-size: 16.601px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+
 .Submit_Button {
     border-radius: 10px;
     background: #FB6239;
@@ -226,10 +229,10 @@
     height: 60px;
     display: flex;
     justify-content: center;
-    color: #FFF!important;
+    color: #FFF !important;
     font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-top: 2%;
+    margin-top: 3%;
 }

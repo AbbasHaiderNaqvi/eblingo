@@ -1,6 +1,6 @@
 import { ArrowRightOutlined, FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
 import styles from '../styles/Footer.module.css';
-import { Row, Col, Button, Space } from 'antd';
+import { Row, Col, Button, Space, Input } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <div className={styles.rectangle_signup}>
                 <div className={styles.signup}>Sign up for Our Newsletter</div>
                 <div>
-                    <input
+                    <Input
                         placeholder='Your Email'
                         className={styles.signup_input}
                     />
@@ -21,40 +21,40 @@ const Footer: React.FC = () => {
                     </Button>
                 </div>
                 <Space className={styles.icons}>
-                <div style={{
+                    <div style={{
                         backgroundColor: 'white',
                         width: '43px',
                         height: '43px',
-                        display:'flex',
-                        justifyContent:'center',
-                        borderRadius:'2px'
+                        display: 'flex',
+                        justifyContent: 'center',
+                        borderRadius: '2px'
                     }}>
-                    <FacebookOutlined style={{
-                        backgroundColor: 'white',
-                        fontSize: '150%'
-                    }} />
+                        <FacebookOutlined style={{
+                            backgroundColor: 'white',
+                            fontSize: '150%'
+                        }} />
                     </div>
                     <div style={{
                         backgroundColor: 'white',
                         width: '43px',
                         height: '43px',
-                        display:'flex',
-                        justifyContent:'center',
-                        borderRadius:'2px'
+                        display: 'flex',
+                        justifyContent: 'center',
+                        borderRadius: '2px'
                     }}>
-                    <LinkedinOutlined style={{
-                        backgroundColor: 'white',
-                        fontSize: '150%'
-                    }} />
+                        <LinkedinOutlined style={{
+                            backgroundColor: 'white',
+                            fontSize: '150%'
+                        }} />
                     </div>
-                    
+
                     <div style={{
                         backgroundColor: 'white',
                         width: '43px',
                         height: '43px',
-                        display:'flex',
-                        justifyContent:'center',
-                        borderRadius:'2px'
+                        display: 'flex',
+                        justifyContent: 'center',
+                        borderRadius: '2px'
                     }}>
                         <InstagramOutlined style={{
                             backgroundColor: 'white',
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
                         </ul>
                         <div>
                             <h3 className={styles.email_heading}>Email Us and Connect with us</h3>
-                            <input placeholder='E-Mail Address' className={styles.email_input} />
+                            <Input placeholder='E-Mail Address' className={styles.email_input} />
                             <ArrowRightOutlined style={{ fontSize: '150%' }} className={styles.email_icon} />
                         </div>
                     </Col>
@@ -90,11 +90,31 @@ const Footer: React.FC = () => {
                         <div>
                             <ul className={styles.Useful_links}>
                                 <li className={styles.list_Bold}>Useful Links</li>
-                                <li className={styles.list}>Home</li>
-                                <li className={styles.list}>Pages</li>
-                                <li className={styles.list}>Services</li>
-                                <li className={styles.list}>Blog</li>
-                                <li className={styles.list}>Contact Us</li>
+                                <li className={styles.list}>
+                                    <Link href="/" legacyBehavior>
+                                        <a>Home</a>
+                                    </Link>
+                                </li>
+                                <li className={styles.list}>
+                                    <Link href="/media-localization" legacyBehavior>
+                                        <a>Media localization</a>
+                                    </Link>
+                                </li>
+                                <li className={styles.list}>
+                                    <Link href="/document-translation" legacyBehavior>
+                                        <a>Document Translation</a>
+                                    </Link>
+                                </li>
+                                <li className={styles.list}>
+                                    <Link href="/media-partnership">
+                                        Media Partnership
+                                    </Link>
+                                </li>
+                                <li className={styles.list}>
+                                    <Link href="/contact" legacyBehavior>
+                                        <a>Contact Us</a>
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </Col>

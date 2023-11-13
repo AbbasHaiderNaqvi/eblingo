@@ -7,6 +7,7 @@ import WhatWeDo from './components/WhatWeDo';
 import Offer from './components/Offer';
 import Clienttestimonial from './components/Clienttestimonial';
 import Blog from './components/Blog';
+// import 'aos/dist/aos.css';
 
 
 export default function Home() {

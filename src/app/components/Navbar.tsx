@@ -47,13 +47,13 @@ function Navbar(): JSX.Element {
             </Link>
           </li>
           <li>
-            <Link href="/services" legacyBehavior>
-              <a>Media Services</a>
+            <Link href="/media-localization" legacyBehavior>
+              <a>Media localization</a>
             </Link>
           </li>
           <li>
-            <Link href="/translation" legacyBehavior>
-              <a>Translation</a>
+            <Link href="/document-translation" legacyBehavior>
+              <a>Document Translation</a>
             </Link>
           </li>
           <li>
@@ -74,9 +74,6 @@ function Navbar(): JSX.Element {
             </Link>
           </li>
         </ul>
-      </div>
-      <div className={styles.right}>
-        <Button className={styles.button}>Get Estimate</Button>
       </div>
     </nav>
   );
