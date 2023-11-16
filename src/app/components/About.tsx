@@ -11,15 +11,15 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-          <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={MediumAnimationVariants}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-       className={styles.main}>
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={MediumAnimationVariants}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className={styles.main}>
             <div className={styles.content}>
-                <Row>
-                    <Col> 
+                <Row >
+                    <Col xs={24} sm={24} md={24} lg={24} xl={13}>
                         <Image
                             src="/assets/Home/About_Image.png"
                             alt="About"
@@ -28,7 +28,7 @@ const About = () => {
                             className={styles.About_Image}
                         />
                     </Col>
-                    <Col>
+                    <Col xs={24} sm={24} md={24} lg={24} xl={11}>
                         <div className={styles.about_heading}>ABOUT EBLINGO</div>
                         <div className={styles.about_sub_heading}>We’re Partner of your <br />Innovations</div>
                         <p className={styles.about_paragraph}>We are a language services company headquartered in the United States; we<br />
@@ -47,15 +47,18 @@ const About = () => {
                             Office. </p>
                     </Col>
                 </Row>
-                <div className={styles.contact_rectangle}>
-        <div className={styles.heading_button}>
-        <div className={styles.contact_heading}>
-          Mission is to Protect<br />your Business & much more
-        </div>
-        <Button className={styles.Readmore_button}>Read More</Button>
-        </div> 
-        </div>
-
+                <Row>
+                    <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                    <div className={styles.contact_rectangle}>
+                        <div className={styles.heading_button}>
+                            <div className={styles.contact_heading}>
+                                Mission is to Protect<br />your Business & much more
+                            </div>
+                            <Button className={styles.Readmore_button}>Read More</Button>
+                        </div>
+                    </div>
+                    </Col>
+                </Row>
             </div>
         </motion.div>
     )

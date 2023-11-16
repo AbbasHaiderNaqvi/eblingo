@@ -1,15 +1,21 @@
-"use client"
-import { Button, Dropdown, MenuProps, Space } from 'antd';
-import { DownOutlined, SmileOutlined } from '@ant-design/icons';
+import { Drawer, Dropdown, Menu, Space } from 'antd';
+import { DownOutlined, MenuOutlined } from '@ant-design/icons';
 import styles from '../styles/Navbar.module.css';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
+const Navbar: React.FC = () => {
+  const [drawerVisible, setDrawerVisible] = useState(false);
 
+  const showDrawer = () => {
+    setDrawerVisible(true);
+  };
 
-function Navbar(): JSX.Element {
-  const items: MenuProps['items'] = [
+  const onCloseDrawer = () => {
+    setDrawerVisible(false);
+  };
+  const items = [
     {
       key: '1',
       label: (
@@ -25,12 +31,11 @@ function Navbar(): JSX.Element {
           Publication Partnership
         </Link>
       ),
-    },
+    }
   ];
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
-
         <Image
           src='/assets/Home/logo.png'
           alt='Logo'
@@ -75,6 +80,48 @@ function Navbar(): JSX.Element {
           </li>
         </ul>
       </div>
+      <div className={styles.right}>
+        <div className={styles.menuIcon} onClick={showDrawer}>
+          <MenuOutlined />
+        </div>
+      </div>
+      <Drawer
+        title=""
+        placement="right"
+        closable={false}
+        onClose={onCloseDrawer}
+        open={drawerVisible}
+        className={styles.drawer}
+      >
+        <div className={styles.drawerLogo}>
+          <Image
+            src='/assets/Home/logo.png'
+            alt='Logo'
+            width={120}
+            height={120}
+          />
+        </div>
+        <Menu mode="vertical" theme="light" className={styles.drawerMenu}>
+          <Menu.Item key="home">
+            <Link href="/">Home</Link>
+          </Menu.Item>
+          <Menu.Item key="media-localization">
+            <Link href="/media-localization">Media Localization</Link>
+          </Menu.Item>
+          <Menu.Item key="document-translation">
+            <Link href="/document-translation">Document Translation</Link>
+          </Menu.Item>
+          <Menu.Item key="media-partnership">
+          <Link href="/media-partnership">Media Partnership</Link>
+          </Menu.Item>
+          <Menu.Item key="publication-partnership">
+          <Link href="/publication-partnership">Publication Partnership</Link>
+          </Menu.Item>
+          <Menu.Item key="contact">
+            <Link href="/contact">Contact Us</Link>
+          </Menu.Item>
+        </Menu>
+      </Drawer>
     </nav>
   );
 };

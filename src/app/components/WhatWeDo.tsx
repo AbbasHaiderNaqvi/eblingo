@@ -18,7 +18,7 @@ const Offer: React.FC = () => {
       className={styles.content}>
             <Row>
                 
-                <Col span={13}>
+                <Col xs={24} sm={24} md={24} lg={24} xl={14}>
                     <div className={styles.WhatWeDo}>
                         <h3 className={styles.WhatWeDo_Heading1}>WHAT WE DO</h3>
                         <h2 className={styles.WhatWeDo_Heading2}>
@@ -33,7 +33,7 @@ const Offer: React.FC = () => {
                         </p>
                     </div>
                 </Col>
-                <Col>
+                <Col xs={24} sm={24} md={24} lg={24} xl={10}>
                     <Image
                         src="/assets/Home/WhatWeDo_Image.png"
                         alt="WhatWeDo"

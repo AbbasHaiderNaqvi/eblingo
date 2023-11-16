@@ -87,3 +87,35 @@
   background-color: white;
 }
 
+.drawer {
+  display: none;
+}
+
+.drawerLogo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.drawerMenu {
+  padding-top: 20px;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .navLinks {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+}

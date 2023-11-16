@@ -19,7 +19,7 @@ const Blog: React.FC = () => {
             <h4 className={styles.blog_heading2}>Latest Posts</h4>
             <Row>
                 
-                <Col span={50}>
+                <Col xs={24} sm={24} md={24} lg={24} xl={8}>
                     <div className={styles.blog_content}>
                         <Image
                             src="/assets/Home/blog_img_1.png"
@@ -33,7 +33,7 @@ const Blog: React.FC = () => {
                             <br /> nisl aliquet est. In consectetur arcu nunc id turpis eu.</p>
                     </div>
                 </Col>
-                <Col>
+                <Col xs={24} sm={24} md={24} lg={24} xl={8}>
                     <div className={styles.blog_content}>
                         <Image
                             src="/assets/Home/blog_img_2.png"
@@ -47,7 +47,7 @@ const Blog: React.FC = () => {
                             <br /> nisl aliquet est. In consectetur arcu nunc id turpis eu.</p>
                     </div>
                 </Col>
-                <Col span={50}>
+                <Col xs={24} sm={24} md={24} lg={24} xl={8}>
                     <div className={styles.blog_content}>
                         <Image
                             src="/assets/Home/blog_img_3.png"

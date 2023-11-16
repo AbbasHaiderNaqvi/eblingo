@@ -1,6 +1,6 @@
 "use client";
 import react, { useState } from 'react';
-import { Button, Row, Col } from 'antd';
+import { Button, Row, Col, Progress } from 'antd';
 import { useRouter } from 'next/navigation'
 import Image from 'next/image';
 import styles from '../styles/Service.module.css';
@@ -14,15 +14,6 @@ const Service = () => {
         console.log('Button clicked!');
         router.push('/get-a-quote');
       };
-    const [isPopupOpen, setPopupOpen] = useState(false);
-
-    const handleGetCodeClick = () => {
-        setPopupOpen(true);
-    };
-
-    const handleClosePopup = () => {
-        setPopupOpen(false);
-    };
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {

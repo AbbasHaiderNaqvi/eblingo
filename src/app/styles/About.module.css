@@ -26,7 +26,7 @@
     border-color: transparent;
     border-radius: 10px;
     width: 142px;
-    height: 56.027px;
+    height: 56.027px; 
     font-family: Poppins;
     margin-left: 5%;
     position: relative;
@@ -35,19 +35,9 @@
 .Readmore_button:hover{
     background-image: linear-gradient(to right, #faaf40, #ed1e78);
 }
-.about_img2 {
-    border-radius: 10px;
-    position: absolute;
-    top: 275px;
-    left: 200px;
-
-}
-
-.about_img3 {
-    border-radius: 0px;
-    position: absolute;
-    top: 245px;
-    left: 270px;
+.About_Image{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .bold_heading {
@@ -107,5 +97,6 @@
 .AnimatedProgressBar {
     margin-top: 10%;
     margin-bottom: 10%;
-
+    width: 90%;
+    height: 100%;
 }

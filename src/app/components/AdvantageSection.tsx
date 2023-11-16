@@ -17,7 +17,7 @@ const AdvantageSection = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       className={styles.content}>
             <Row>
-                <Col lg={7}>
+                <Col xs={24} sm={24} md={24} lg={24} xl={7}>
                     <div className={styles.Advantage1}>
                         <div className={styles.Advantage_image1}>
                             <Image
@@ -51,7 +51,7 @@ const AdvantageSection = () => {
                         </div>
                     </div>
                 </Col >
-                <Col lg={7}>
+                <Col xs={24} sm={24} md={24} lg={24} xl={7}>
                     <div className={styles.Advantage3}>
                         <div className={styles.Advantage_image3}>
                             <Image
@@ -92,7 +92,7 @@ const AdvantageSection = () => {
                                 </div>
                                 </div>
                             </Col>
-                            <Col>
+                            <Col xs={24} sm={24} md={24} lg={24} xl={10}>
                             <ContactForm />
                             </Col>
                         </Row>

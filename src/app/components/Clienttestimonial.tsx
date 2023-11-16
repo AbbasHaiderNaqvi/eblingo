@@ -26,7 +26,9 @@ const Clienttestimonial: React.FC = () => {
         variants={MediumAnimationVariants}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-            
+        
+        <Row justify={'center'}>
+            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
             <div className={styles.Testimonial_Section}>
             <h5 className={styles.testimonials_heading}>Clients Testimonials</h5>
             <h4 className={styles.testimonials_heading2}>what clients has to say about us?</h4>
@@ -38,20 +40,22 @@ const Clienttestimonial: React.FC = () => {
                 className={styles.testimonial_img}
             />
             </div>
+            </Col>
+        </Row>
             <div className={styles.project_satisfaction}>
             <h5 className={styles.project_satisfaction_heading}>PROJECT SATISFACTION</h5>
             <h4 className={styles.project_satisfaction_heading2}>Our Projects</h4>
             <Row justify={'center'}>
-                <Col>
+                <Col xs={24} sm={24} md={24} lg={24} xl={5}>
                         <AnimatedProgressCircle1 />
                 </Col>
-                <Col>
+                <Col xs={24} sm={24} md={24} lg={24} xl={5}>
                         <AnimatedProgressCircle2 />
                 </Col> 
-                <Col>
+                <Col xs={24} sm={24} md={24} lg={24} xl={5}>
                         <AnimatedProgressCircle3 />
                 </Col>
-                <Col>
+                <Col xs={24} sm={24} md={24} lg={24} xl={9}>
                     <div className={styles.rectangle_number_Animation}>
                             <div className={styles.rectangle_number}>
                             <div className={styles.AnimatedNumber}><AnimatedNumber /></div>

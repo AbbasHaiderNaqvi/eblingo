@@ -20,12 +20,12 @@ const Offer: React.FC = () => {
                 <h5 className={styles.offer_heading}>WHAT WE OFFER</h5>
                 <h4 className={styles.offer_heading2}>Offers</h4>
                 <Row>
-                    <Col span={14}>
+                    <Col xs={24} sm={24} md={24} lg={24} xl={14}>
 
                         <Tab />
                         
                     </Col>
-                    <Col>
+                    <Col xs={24} sm={24} md={24} lg={24} xl={10}>
                         <Image
                             src="/assets/Home/Offering_img.png"
                             alt="Service"
@@ -37,6 +37,7 @@ const Offer: React.FC = () => {
                 </Row>
             </div>
             <Row>
+            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <div className={styles.rectangle_subscribe}>
                     <Col span={17}>
                         <div className={styles.rectangle_subscribe_text}>Professional Translation Enhanced by Human</div>
@@ -45,6 +46,7 @@ const Offer: React.FC = () => {
                         <Button className={styles.rectangle_readmore_button}>Read More</Button>
                     </Col>
                 </div>
+            </Col>
             </Row>
         </motion.div>
     );

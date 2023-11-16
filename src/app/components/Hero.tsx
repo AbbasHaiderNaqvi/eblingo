@@ -27,6 +27,8 @@ const Hero = () => {
       variants={MediumAnimationVariants}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
+      <Row>
+          <Col xs={24} sm={24} md={24} lg={24} xl={24}>
       <motion.div
       variants={MediumAnimationVariants}
       transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
@@ -35,8 +37,11 @@ const Hero = () => {
           <source src='/assets/Home/video.mp4' type='video/mp4'></source>
         </video>
       </motion.div>
+      </Col>
+      </Row>
         <Row>
-          <Col lg={10}>
+          <Col xs={24} sm={24} md={24} lg={24} xl={13}>
+            <div className={styles.HeroSection_content}>
         <motion.h1 
         className={styles.heading}
         variants={MediumAnimationVariants}
@@ -57,13 +62,15 @@ const Hero = () => {
           
         <Button className={styles.readme_button}>Learn More</Button>
         <Button className={styles.allservices_button}>All Services</Button>
+        </div>
         </Col>
-        <Col lg={12}>
+        <Col  xs={24} sm={24} md={24} lg={24} xl={11}>
         <Image
         src="/assets/Home/HeroSection.png" 
         alt="HeroSection"
         width={550} 
-        height={444} 
+        height={444}
+        className={styles.HeroSection_Image} 
       /> 
       </Col>
       </Row>
