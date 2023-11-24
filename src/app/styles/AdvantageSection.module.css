@@ -1,3 +1,4 @@
+
 .Advantage1 {
     display: flex;
     margin-bottom: 15%;
@@ -19,24 +20,28 @@
 }
 
 .Advantage_Image1 {
-   position: relative;
-   bottom: 25px;
+    position: relative;
+    bottom: 25px;
 }
+
 .Advantage_Image2 {
     margin-left: 10%;
     position: relative;
     bottom: 30px;
- }
- .Advantage_Image3 {
+}
+
+.Advantage_Image3 {
     position: relative;
     bottom: 30px;
 
- }
- .Advantage_Image4 {
+}
+
+.Advantage_Image4 {
     position: relative;
     bottom: 25px;
 
- }
+}
+
 .FreeSupport_heading {
     color: #000;
     font-size: 23px;
@@ -45,8 +50,8 @@
     font-family: Poppins;
     line-height: 50px;
     position: relative;
-    right: 10px;
-} 
+    right: 5px;
+}
 
 .FreeSupport_paragraph {
     color: #000;
@@ -56,8 +61,9 @@
     font-family: Poppins;
     line-height: 27px;
     position: relative;
-    right: 10px;
+    right: 5px;
 }
+
 /*  */
 .tech_translation_heading {
     color: #000;
@@ -66,7 +72,7 @@
     font-family: Poppins;
     font-weight: 600;
     line-height: 50px;
-} 
+}
 
 .translation_paragraph {
     color: #000;
@@ -76,6 +82,7 @@
     line-height: 27px;
     font-family: Poppins;
 }
+
 .language_heading {
     color: #000;
     font-size: 23px;
@@ -93,6 +100,7 @@
     line-height: 27px;
     font-family: Poppins;
 }
+
 .Multi_heading {
     color: #000;
     font-size: 23px;
@@ -100,7 +108,7 @@
     font-weight: 600;
     line-height: 50px;
     font-family: Poppins;
-} 
+}
 
 .Multi_paragraph {
     color: #000;
@@ -109,8 +117,385 @@
     font-weight: 400;
     line-height: 27px;
     font-family: Poppins;
-}   
-.content{
-    position: relative;
-    bottom: 280px;
+}
+
+
+@media (max-width:500px) {
+    .Advantage1 {
+        display: flex;
+        margin-bottom: 15%;
+        margin-top: 65%;
+    }
+
+    .Advantage2 {
+        display: flex;
+    }
+
+    .Advantage3 {
+        display: flex;
+        margin-bottom: 15%;
+        margin-top: 10%;
+    }
+
+    .Advantage4 {
+        display: flex;
+    }
+
+    .Advantage_Image1 {
+        position: relative;
+        bottom: 25px;
+    }
+
+    .Advantage_Image2 {
+        margin-left: 10%;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .Advantage_Image3 {
+        position: relative;
+        bottom: 30px;
+
+    }
+
+    .Advantage_Image4 {
+        position: relative;
+        bottom: 25px;
+
+    }
+
+    .FreeSupport_heading {
+        color: #000;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 50px;
+        position: relative;
+        right: 10px;
+    }
+
+    .FreeSupport_paragraph {
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: Poppins;
+        line-height: 27px;
+        position: relative;
+        right: 10px;
+    }
+
+    /*  */
+    .tech_translation_heading {
+        color: #000;
+        font-size: 23px;
+        font-style: normal;
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .translation_paragraph {
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: Poppins;
+    }
+
+    .language_heading {
+        color: #000;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 50px;
+    }
+
+    .language_paragraph {
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: Poppins;
+    }
+
+    .Multi_heading {
+        color: #000;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px;
+        font-family: Poppins;
+    }
+
+    .Multi_paragraph {
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: Poppins;
+    }
+}
+
+@media (max-width:390px) {
+    .Advantage1 {
+        display: flex;
+        margin-bottom: 5%;
+        margin-top: 75%;
+    }
+
+    .Advantage2 {
+        display: flex;
+    }
+
+    .Advantage3 {
+        display: flex;
+        margin-bottom: 15%;
+        margin-top: 10%;
+    }
+
+    .Advantage4 {
+        display: flex;
+    }
+
+    .Advantage_Image1 {
+        position: relative;
+        left: 30px;
+        bottom: 25px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .Advantage_Image2 {
+        position: relative;
+        bottom: 30px;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .Advantage_Image3 {
+        position: relative;
+        left: 30px;
+        bottom: 30px;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .Advantage_Image4 {
+        position: relative;
+        bottom: 25px;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .FreeSupport_heading {
+        color: #000;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 30px;
+        position: relative;
+        right: 10px;
+    }
+
+    .FreeSupport_paragraph {
+        color: #000;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: Poppins;
+        line-height: 20px;
+        position: relative;
+        right: 10px;
+    }
+ 
+    .tech_translation_heading {
+        color: #000;
+        font-size: 15px;
+        font-style: normal;
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .translation_paragraph {
+        color: #000;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: Poppins;
+    }
+
+    .language_heading {
+        color: #000;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 30px;
+    }
+
+    .language_paragraph {
+        color: #000;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: Poppins;
+    }
+
+    .Multi_heading {
+        color: #000;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        font-family: Poppins;
+    }
+
+    .Multi_paragraph {
+        color: #000;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: Poppins;
+    }
+} 
+@media (max-width:1100px) {
+    .Advantage1 {
+        display: flex;
+        margin-bottom: 5%;
+        margin-top: 75%;
+    }
+
+    .Advantage2 {
+        display: flex;
+    }
+
+    .Advantage3 {
+        display: flex;
+        margin-bottom: 5%;
+        margin-top: 75%;
+    }
+
+    .Advantage4 {
+        display: flex;
+    }
+
+    .Advantage_Image1 {
+        position: relative;
+        left: 20px;
+        bottom: 25px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .Advantage_Image2 {
+        position: relative;
+        bottom: 30px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .Advantage_Image3 {
+        position: relative;
+        left: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .Advantage_Image4 {
+        position: relative;
+        bottom: 25px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .FreeSupport_heading {
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 30px;
+    }
+
+    .FreeSupport_paragraph {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: Poppins;
+        line-height: 20px;
+        
+    }
+ 
+    .tech_translation_heading {
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .translation_paragraph {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: Poppins;
+    }
+
+    .language_heading {
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 30px;
+    }
+
+    .language_paragraph {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: Poppins;
+    }
+
+    .Multi_heading {
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        font-family: Poppins;
+    }
+
+    .Multi_paragraph {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: Poppins;
+    }
 }

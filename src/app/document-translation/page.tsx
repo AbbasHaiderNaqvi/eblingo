@@ -1,134 +1,187 @@
 'use client';
-import React from 'react';
-import styles from '../styles/Transcription.module.css';
-import Image from 'next/image';
+import React from 'react'
+import styles from '../styles/Services.module.css'
 import { Col, Row } from 'antd';
+import Image from 'next/image';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 
-
-function Transcription() {
+function Services() {
     return (
         <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={MediumAnimationVariants}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+            initial="hidden"
+            animate="visible"
+            variants={MediumAnimationVariants}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+        >
             <div className={styles.HeroSection}>
-                <h1 className={styles.HeroSection_Heading}>Transcription | Subtitling | Closed Captions</h1>
-                <h5 className={styles.Transcription_Sub_heading}>Home / Services / Translation</h5>
+                <h1 className={styles.HeroSection_Heading}>Eblingo Services</h1>
             </div>
             <div>
-                <div className={styles.content}>
-                    <h2 className={styles.First_Connect_Heading}>More than ever, <span className={styles.span}>Businesses</span> rely on video to<br />
-                        connect with customers and <span className={styles.span}>thrive</span><br />
-                        in the digital age.</h2>
-                    <div className={styles.divider}>
+                <h3 className={styles.First_Blog_Heading}>Document Translations</h3>
+                <Row>
+                    <Col xs={24} sm={12} md={12} lg={11} xl={14}>
+                        <p className={styles.First_Blog_Paragraph}>
+                            In the age of global connectivity, the power<br />
+                            to communicate effectively across<br />
+                            languages is invaluable. At Eblingo, we<br />
+                            provide superior document translation<br />
+                            services that bridge language barriers and<br />
+                            enable successful cross-cultural<br />
+                            communication.At Eblingo,we believe in<br />
+                            breaking down language barriers and<br />
+                            fostering global connections. Reach out to<br />
+                            us today to experience our professional<br />
+                            translation services.
+                        </p>
+                    </Col>
+                    <Col xs={24} sm={12} md={12} lg={11} xl={10}>
                         <Image
-                            src="/assets/Transcription/Transcription-icon.png"
-                            alt="Transcription"
-                            width={120}
-                            height={12}
-                            className={styles.Transcription_Image}
+                            src="/assets/Services/First_Blog_Image.png"
+                            alt="Services"
+                            width={441}
+                            height={452}
+                            className={styles.Services_First_Blog_Image}
                         />
-                    </div>
-                    <h4 className={styles.Second_Connect_heading}>
-                        By making your film available in several languages, you can
-                        reach more of<br />your target customers and
-                        grow your customers.
-                    </h4>
-                </div>
+                    </Col>
+                </Row>
             </div>
-            <div className={styles.content_blog}>
-                <div className={styles.blog_content}>
-                    <Image
-                        src="/assets/Transcription/Transcription_Blog_1.png"
-                        alt="Transcription"
-                        width={333}
-                        height={249}
-                        className={styles.Transcription_Blog_Image1}
-                    />
-                    <h3 className={styles.blog_heading_1}>
-                        Transcription
-                    </h3>
-                    <p className={styles.blog_paragraph_1}>
-                        Our experienced transcriptionists deliver<br />
-                        accurate, timely transcriptions in multiple<br />
-                        languages. Whether its a recorded<br />
-                        meeting, a conference, or an interview,<br />
-                        we&apos;ll convert your audio files into precisely<br />
-                        transcribed text, retaining the essence and<br />
-                        context of the original content.
-                    </p>
-                </div>
-                <div className={styles.blog_content}>
-                    <Image
-                        src="/assets/Transcription/Transcription_Blog_2.png"
-                        alt="Transcription"
-                        width={333}
-                        height={249}
-                        className={styles.Transcription_Blog_Image2}
-                    />
-                    <h3 className={styles.blog_heading_2}>
-                        Subtitling
-                    </h3>
-                    <p className={styles.blog_paragraph_2}>
-                        We understand the power of subtitled<br />
-                        content in expanding your audience&apos;s<br />
-                        reach and engagement. Our team of<br />
-                        linguistic experts excels in creating<br />
-                        accurate, culturally appropriate subtitles<br />
-                        that resonate with your target<br />
-                        demographics, allowing your content to be<br />
-                        accessible, understandable, and enjoyable<br />
-                        to all.
-                    </p>
-                </div>
-
-                <div className={styles.blog_content}>
-                    <Image
-                        src="/assets/Transcription/Transcription_Blog_3.png"
-                        alt="Transcription"
-                        width={333}
-                        height={249}
-                        className={styles.Transcription_Blog_Image3}
-                    />
-                    <h3 className={styles.blog_heading_3}>
-                        Closed Captions
-                    </h3>
-                    <p className={styles.blog_paragraph_3}>
-                        Our captioning services make your<br />
-                        audio-visual content accessible to<br />
-                        everyone, including the hard-of-<br />
-                        hearing community. We go beyond just<br />
-                        literal transcription, incorporating<br />
-                        descriptions of non-speech elements,<br />
-                        providing a full contextual experience to<br />
-                        your audience. Our attention to detail<br />
-                        and commitment to accessibility make<br />
-                        us a trusted partner for your captioning<br />
-                        needs.
-                    </p>
-                </div>
+            <div>
+                <h3 className={styles.Second_Blog_Heading}>Financial Translations</h3>
+                <Row>
+                    <Col xs={24} sm={24} md={24} lg={11} xl={14}>
+                        <Image
+                            src="/assets/Services/Second_Blog_Image.png"
+                            alt="Services"
+                            width={365}
+                            height={368}
+                            className={styles.Services_Second_Blog_Image}
+                        />
+                    </Col>
+                    <Col xs={24} sm={12} md={12} lg={11} xl={10}>
+                        <p className={styles.Second_Blog_Paragraph}>
+                            In the realm of finance, precision and clarity<br />
+                            are paramount. Our financial translations<br />
+                            are performed by experts familiar with the<br />
+                            intricacies of financial terminology and <br />
+                            global markets. Whether it&apos;s annual reports,<br />
+                            investment analyses, or accounting<br />
+                            documents, we deliver accounting<br />
+                            translations you can rely on.
+                        </p>
+                    </Col>
+                </Row>
             </div>
-            <div className={styles.blog_statement1}>
-                EBLINGO is dedicated to helping you communicate your message to the world<br />
-                across all languages and mediums. Connect with us today to explore how we<br />
-                can serve you in your journey across languages and cultures.
+            <div>
+                <h3 className={styles.First_Blog_Heading}>Marketing Translations</h3>
+                <Row>
+                    <Col xs={24} sm={24} md={24} lg={11} xl={14}>
+                        <p className={styles.First_Blog_Paragraph}>
+                            In the field of marketing, it&apos;s all about<br />
+                            connecting with your audience and<br />
+                            establishing the right context. Our<br />
+                            marketing translations go beyond literal<br />
+                            translation, capturing the cultural nuances<br />
+                            and local idioms that resonate with your<br />
+                            target demographic. From advertising copy<br />
+                            to social media posts, we ensure your<br />
+                            brand voice sounds natural and engaging<br />
+                            in every language.
+                        </p>
+                    </Col>
+                    <Col xs={24} sm={24} md={24} lg={11} xl={10}>
+                        <Image
+                            src="/assets/Services/Third_Blog_Image.png"
+                            alt="Services"
+                            width={365}
+                            height={368}
+                            className={styles.Services_Second_Blog_Image}
+                        />
+                    </Col>
+                </Row>
             </div>
-            <div className={styles.blog_statement2}>
-                Businesses who adopt video in their content strategy get a variety of<br />
-                advantages. Customers stay on their pages longer. They improve visitors, lead<br />
-                generation, and income.
+            <div>
+                <h3 className={styles.Second_Blog_Heading}>Technical Translations</h3>
+                <Row>
+                    <Col xs={24} sm={24} md={24} lg={11} xl={14}>
+                        <Image
+                            src="/assets/Services/Fourth_Blog_Image.png"
+                            alt="Services"
+                            width={395}
+                            height={395}
+                            className={styles.Services_Second_Blog_Image}
+                        />
+                    </Col>
+                    <Col xs={24} sm={24} md={24} lg={11} xl={10}>
+                        <p className={styles.Second_Blog_Paragraph}>
+                            Technical documents require a deep<br />
+                            understanding of industry-specific<br />
+                            terminology and conventions. Our technical<br />
+                            translators, proficient in various fields like<br />
+                            Engineering, Information Technology, or<br />
+                            Medical, offer precise and reliable<br />
+                            translations of manuals, data sheets,<br />
+                            patent documents, and more.
+                        </p>
+                    </Col>
+                </Row>
             </div>
-            <div className={styles.blog_statement3}>
-                By including a transcript, businesses may communicate marketing messaging<br />
-                to those who struggle to hear video audio.  Subtitles in multiple languages<br />
-                facilitate communication between businesses and their international clientele.<br />
+            <div>
+                <h3 className={styles.First_Blog_Heading}>Document Translations</h3>
+                <Row>
+                    <Col xs={24} sm={24} md={24} lg={11} xl={14}>
+                        <p className={styles.First_Blog_Paragraph}>
+                            Capturing the magic of a narrative in<br />
+                            another language demands more than<br />
+                            linguistic skills – it requires a translator who<br />
+                            is also a storyteller. We provide book<br />
+                            translations that maintain the author&apos;s<br />
+                            voice, style, and, most importantly, the<br />
+                            heart of story. We translate various genres<br />
+                            from fiction to non-fiction, children&apos;s books<br />
+                            to biographies.
+                        </p>
+                    </Col>
+                    <Col xs={24} sm={24} md={24} lg={11} xl={10}>
+                        <Image
+                            src="/assets/Services/Fifth_Blog_Image.png"
+                            alt="Services"
+                            width={395}
+                            height={395}
+                            className={styles.Services_Second_Blog_Image}
+                        />
+                    </Col>
+                </Row>
+            </div>
+            <div>
+                <h3 className={styles.Second_Blog_Heading}>Academic Research Paper Translations</h3>
+                <Row>
+                    <Col>
+                        <Image
+                            src="/assets/Services/Sixth_Blog_Image.png"
+                            alt="Services"
+                            width={479}
+                            height={477}
+                            className={styles.Services_Second_Blog_Image}
+                        />
+                    </Col>
+                    <Col>
+                        <p className={styles.Second_Blog_Paragraph}>
+                            Capturing the magic of a narrative in<br />
+                            another language demands more than<br />
+                            linguistic skills – it requires a translator who<br />
+                            is also a storyteller. We provide book<br />
+                            translations that maintain the author&apos;s<br />
+                            voice, style, and, most importantly, the<br />
+                            heart of story. We translate various genres<br />
+                            from fiction to non-fiction, children&apos;s books<br />
+                            to biographies.
+                        </p>
+                    </Col>
+                </Row>
             </div>
         </motion.div>
     )
 }
 
-export default Transcription;
+export default Services;

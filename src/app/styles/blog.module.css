@@ -1,3 +1,6 @@
+.blog{
+    margin-bottom: 5%;
+}
 .blog_heading {
     color: #FBAC41;
     font-size: 30px;
@@ -6,7 +9,7 @@
     line-height: 30px;
     display: flex;
     justify-content: center;
-}
+} 
 
 .blog_heading2 {
     color: #000;
@@ -26,7 +29,7 @@
     background: linear-gradient(180deg, rgba(251, 98, 57, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%);
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
     width: 415px;
-    height: 480px;
+    height: 500px;
     text-align: center;
 }
 
@@ -41,7 +44,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 27px; 
+    line-height: 27px;
     margin-top: 5%;
     text-align: center;
 }
@@ -52,7 +55,7 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27px; 
+    line-height: 27px;
     text-align: center;
     margin-top: 5%;
 }
@@ -68,7 +71,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 27px; 
+    line-height: 27px;
     margin-top: 5%;
     text-align: center;
 }
@@ -79,7 +82,7 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27px; 
+    line-height: 27px;
     text-align: center;
     margin-top: 5%;
 }
@@ -95,7 +98,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 27px; 
+    line-height: 27px;
     margin-top: 5%;
     text-align: center;
 }
@@ -106,11 +109,134 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27px; 
+    line-height: 27px;
     text-align: center;
     margin-top: 5%;
 }
 
 .blog {
     margin-top: 10%;
+}
+
+@media (max-width:500px) {
+    .blog_heading {
+        color: #FBAC41;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .blog_heading2 {
+        color: #000;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+
+    .blog_content {
+        border: black;
+        border-radius: 30px 30px 0px 0px;
+        background: linear-gradient(180deg, rgba(251, 98, 57, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%);
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+        width: 350px;
+        height: 430px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .Blog_img_1 {
+        border-radius: 20px;
+        width: 350px;
+        height: 300px;
+    }
+
+    .blog_img_heading_1 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        margin-top: 3%;
+        text-align: center;
+    }
+
+    .blog_paragraph_1 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .Blog_img_2 {
+
+        border-radius: 20px;
+        width: 350px;
+        height: 300px;
+    }
+
+    .blog_img_heading_2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        margin-top: 3%;
+        text-align: center;
+    }
+
+    .blog_paragraph_2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .Blog_img_3 {
+
+        border-radius: 20px;
+        width: 350px;
+        height: 300px;
+    }
+
+    .blog_img_heading_3 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        margin-top: 3%;
+        text-align: center;
+    }
+
+    .blog_paragraph_3 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .blog {
+        margin-top: 10%;
+    }
 }

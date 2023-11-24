@@ -8,7 +8,7 @@ import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 
 
-const Offer: React.FC = () => {
+const WhatWeDo: React.FC = () => {
     return (
         <motion.div
         initial="hidden"
@@ -17,7 +17,7 @@ const Offer: React.FC = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       className={styles.content}>
             <Row>
-                
+                 
                 <Col xs={24} sm={24} md={24} lg={24} xl={14}>
                     <div className={styles.WhatWeDo}>
                         <h3 className={styles.WhatWeDo_Heading1}>WHAT WE DO</h3>
@@ -46,4 +46,4 @@ const Offer: React.FC = () => {
         </motion.div>
     );
 }
-export default Offer;
+export default WhatWeDo;

@@ -1,67 +1,10 @@
-.contact_rectangle {
-    background-image: url("/assets/Home/Contact_main_Image.jpg");
-    height: 500px;
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.content {
+    margin-top: 10%;
 }
 
-.contact_heading {
-    margin-top: 5%;
-    margin-left: 5%;
-    position: relative;
-    top: 100px;
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 60px;
-}
-
-.Readmore_button {
-    background-image: linear-gradient(to right, #ed1e78, #faaf40);
-    color: white !important;
-    font-weight: 500;
-    border-color: transparent;
-    border-radius: 10px;
-    width: 142px;
-    height: 56.027px; 
-    font-family: Poppins;
-    margin-left: 5%;
-    position: relative;
-    top: 150px;
-}
-.Readmore_button:hover{
-    background-image: linear-gradient(to right, #faaf40, #ed1e78);
-}
-.About_Image{
+.About_Image {
     margin-left: 5%;
     margin-right: 5%;
-}
-
-.bold_heading {
-    color: #FFF;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px;
-    position: absolute;
-    font-family: Poppins;
-    top: 255px;
-    left: 310px;
-}
-
-.heading_italic {
-    color: white;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: poppins;
-    line-height: 27px;
-    position: absolute;
-    top: 285px;
-    left: 310px;
 }
 
 .about_heading {
@@ -71,7 +14,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
+    
 }
 
 .about_sub_heading {
@@ -81,7 +25,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 50px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 
 }
 
@@ -100,3 +44,387 @@
     width: 90%;
     height: 100%;
 }
+
+@media (max-width:500px) {
+    .contact_rectangle {
+        background-image: url("/assets/Home/Contact_main_Image.jpg");
+        height: 300px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contact_heading {
+        margin-top: 5%;
+        margin-left: 5%;
+        color: #FFF;
+        position: relative;
+        top: 30px;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .Readmore_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        color: white !important;
+        font-weight: 500;
+        border-color: transparent;
+        border-radius: 7px;
+        width: 112px;
+        height: 46px;
+        font-family: Poppins;
+        margin-left: 5%;
+        position: relative;
+        top: 50px;
+    }
+
+    .Readmore_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+
+    .About_Image {
+        width: 350px;
+        height: 350px;
+        margin-left: 10%;
+
+    }
+
+    /* .bold_heading {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        position: absolute;
+        font-family: Poppins;
+        top: 255px;
+        left: 310px;
+    }
+    
+    .heading_italic {
+        color: white;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-family: poppins;
+        line-height: 27px;
+        position: absolute;
+        top: 285px;
+        left: 310px;
+    }
+     */
+    .about_heading {
+        color: #FBAC41;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 2%;
+        margin-top: 8%;
+        text-align: center;
+    }
+
+    .about_sub_heading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 5%;
+        text-align: center;
+
+    }
+
+    .about_paragraph {
+        color: #000;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: poppins;
+        text-align: center;
+    }
+
+    .AnimatedProgressBar {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        width: 90%;
+        height: 80%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:390px) {
+    .contact_rectangle {
+        background-image: url("/assets/Home/Contact_main_Image.jpg");
+        height: 200px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contact_heading {
+        margin-top: 5%;
+        margin-left: 5%;
+        color: #FFF;
+        position: relative;
+        top: 30px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .Readmore_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        color: white !important;
+        font-weight: 500;
+        border-color: transparent;
+        border-radius: 5px;
+        width: 90px;
+        height: 30px;
+        font-family: Poppins;
+        margin-left: 5%;
+        position: relative;
+        top: 50px;
+        font-size: 10px;
+    }
+
+    .Readmore_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+
+    .About_Image {
+        width: 300px;
+        height: 300px;
+        margin-left: 10%;
+
+    }
+
+    .about_heading {
+        color: #FBAC41;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 1%;
+        margin-top: 8%;
+
+    }
+
+    .about_sub_heading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 5%;
+
+    }
+
+    .about_paragraph {
+        color: #000;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: poppins;
+    }
+
+    .AnimatedProgressBar {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        width: 90%;
+        height: 80%;
+    }
+
+}
+
+@media (max-width:850px) {
+    .contact_rectangle {
+        background-image: url("/assets/Home/Contact_main_Image.jpg");
+        height: 400px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contact_heading {
+        margin-top: 5%;
+        margin-left: 5%;
+        position: relative;
+        top: 100px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .Readmore_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        color: white !important;
+        font-weight: 500;
+        border-color: transparent;
+        border-radius: 10px;
+        font-size: 12px;
+        width: 112px;
+        height: 45px;
+        font-family: Poppins;
+        margin-left: 5%;
+        position: relative;
+        top: 150px;
+    }
+
+    .Readmore_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+
+    .About_Image {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 600px;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_heading {
+        color: #FBAC41;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 2%;
+    }
+
+    .about_sub_heading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 30px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 5%;
+
+    }
+
+    .about_paragraph {
+        color: #000;
+        font-size: 15px;
+        font-style: normal;
+        text-align: center;
+        font-weight: 400;
+        line-height: 30px;
+        font-family: poppins;
+    }
+
+    .AnimatedProgressBar {
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        width: 85%;
+        height: 100%;
+    }
+}
+
+/* @media (max-width:1100px ) {
+    .contact_rectangle {
+        background-image: url("/assets/Home/Contact_main_Image.jpg");
+        height: 500px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contact_heading {
+        margin-top: 5%;
+        margin-left: 5%;
+        position: relative;
+        top: 100px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px;
+    }
+
+    .Readmore_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        color: white !important;
+        font-weight: 500;
+        border-color: transparent;
+        border-radius: 10px;
+        width: 142px;
+        height: 56.027px;
+        font-family: Poppins;
+        margin-left: 5%;
+        position: relative;
+        top: 150px;
+    }
+
+    .Readmore_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+
+    .About_Image {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 400px;
+        height: 400px;
+    }
+
+    .about_heading {
+        color: #FBAC41;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 3%;
+    }
+
+    .about_sub_heading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 5%;
+
+    }
+
+    .about_paragraph {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: poppins;
+    }
+
+    .AnimatedProgressBar {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 85%;
+        height: 100%;
+    }
+} */

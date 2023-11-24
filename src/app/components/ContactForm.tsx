@@ -13,7 +13,7 @@ const ContactForm: React.FC = () => {
     sourceLanguage: '',
     targetLanguage: '',
     uploadedFile: null,
-  });
+  }); 
  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement>) => {
     const { name, value } = e.target;

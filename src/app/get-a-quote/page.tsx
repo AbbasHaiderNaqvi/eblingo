@@ -114,7 +114,7 @@ const GetaQuote: FC = () => {
               </Row>
               <Row justify="start">
                 <Col span={5}>
-                  <label className={styles.label_input3}>Translate from</label>
+                  <label className={styles.label_input3}>Source Language</label>
                 </Col>
                 <Col span={5}>
                   <label className={styles.label_input4}>Translate to</label>

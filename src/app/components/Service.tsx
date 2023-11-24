@@ -15,7 +15,7 @@ const Service = () => {
         router.push('/get-a-quote');
       };
     const [scrollPosition, setScrollPosition] = useState(0);
-
+ 
     useEffect(() => {
         const handleScroll = () => {
             const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
@@ -56,7 +56,7 @@ const Service = () => {
                 </Row>
             </div>
             <Row justify={'start'}>
-                <Col span={12}>
+                <Col xs={24}>
                     <div className={styles.First_Service_Section}>
                         <h2 className={styles.service_heading}>
                             Audio Visual Solution
@@ -116,7 +116,7 @@ const Service = () => {
                             height={380}
                             className={`${styles.Service_Image} ${scrollPosition >= 1350 && scrollPosition < 1700 ? styles.active : ''
                                 }`}
-                        />
+                        /> 
                         <Image
                             src="/assets/Home/services2.png"
                             alt="Service"

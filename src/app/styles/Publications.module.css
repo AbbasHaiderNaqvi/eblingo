@@ -62,7 +62,9 @@
     line-height: 29.241px;
     margin-top: 5%;
 }
-
+.blog2{
+    margin-bottom: 5%;
+}
 .Blog_Heading {
     color: #FB6239;
     font-family: Poppins;
@@ -76,6 +78,14 @@
 }
 
 .Blog_Paragraph {
+    color: #7A7A7A;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.627px;
+}
+.Explain_Paragraph2 {
     color: #7A7A7A;
     font-family: Poppins;
     font-size: 22px;
@@ -98,7 +108,6 @@
 
 .Explain_Paragraph1 {
     color: #7A7A7A;
-    text-align: center;
     font-family: Poppins;
     font-size: 22px;
     font-style: normal;

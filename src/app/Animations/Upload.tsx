@@ -2,14 +2,21 @@
 import React from 'react';
 import { UploadOutlined } from '@ant-design/icons';
 import type { UploadProps } from 'antd';
-import { Button, message, Upload } from 'antd';
 import styles from '../styles/Contact.module.css'
+import { Button, Upload, message } from 'antd';
 
 const props: UploadProps = {
-  name: 'file',
-  action: 'https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188',
-  headers: {
-    authorization: 'authorization-text',
+  action: '//jsonplaceholder.typicode.com/posts/',
+  listType: 'picture',
+  previewFile(file) {
+    console.log('Your upload file:', file);
+    // Your process logic. Here we just mock to the same file
+    return fetch('https://next.json-generator.com/api/json/get/4ytyBoLK8', {
+      method: 'POST',
+      body: file,
+    })
+      .then((res) => res.json())
+      .then(({ thumbnail }) => thumbnail);
   },
   onChange(info) {
     if (info.file.status !== 'uploading') {
@@ -22,11 +29,10 @@ const props: UploadProps = {
     }
   },
 };
-
-const UploadButton: React.FC = () => (
+const ContactPage_UploadButton: React.FC = () => (
   <Upload {...props}>
-    <Button icon={<UploadOutlined />} className={styles.uploadbutton}>Click to Upload</Button>
+    <Button className= {styles.uploadbutton}icon={<UploadOutlined />}>Upload</Button>
   </Upload>
 );
 
-export default UploadButton;
+export default ContactPage_UploadButton;

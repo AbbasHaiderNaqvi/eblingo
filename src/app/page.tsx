@@ -45,15 +45,15 @@ className={styles.IconMenu}>
         <span className={styles.HeaderMenu}>
           <Navbar />
           </span> */}
-        <Navbar />
+        
         <Hero />
-        <Service />
         <About />
-        <AdvantageSection />
+        <Service />
         <WhatWeDo />
         <Offer />
         <Clienttestimonial />
         <Blog />
+        <AdvantageSection />
       </div>
     </main>
   )

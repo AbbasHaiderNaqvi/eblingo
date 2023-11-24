@@ -1,3 +1,4 @@
+'use client';
 import { Drawer, Dropdown, Menu, Space } from 'antd';
 import { DownOutlined, MenuOutlined } from '@ant-design/icons';
 import styles from '../styles/Navbar.module.css';
@@ -11,7 +12,7 @@ const Navbar: React.FC = () => {
   const showDrawer = () => {
     setDrawerVisible(true);
   };
-
+ 
   const onCloseDrawer = () => {
     setDrawerVisible(false);
   };

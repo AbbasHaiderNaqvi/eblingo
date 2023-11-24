@@ -39,7 +39,7 @@
 }
 
 .span {
-    color: #000;
+    color: #FB6239;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -148,7 +148,7 @@
 
 .Transcription_Blog_Image3 {
     border-radius: 19.916px 19.916px 0px 0px;
-}
+} 
 
 .blog_heading_3 {
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
@@ -187,17 +187,6 @@
 }
 
 .blog_statement2 {
-    margin-top: 2%;
-    color: #7A7A7A;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-}
-
-.blog_statement3 {
     margin-top: 2%;
     color: #7A7A7A;
     text-align: center;

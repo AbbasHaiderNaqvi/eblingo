@@ -26,7 +26,7 @@ const Clienttestimonial: React.FC = () => {
         variants={MediumAnimationVariants}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        
+         
         <Row justify={'center'}>
             <Col xs={24} sm={24} md={24} lg={24} xl={24}>
             <div className={styles.Testimonial_Section}>
@@ -42,30 +42,6 @@ const Clienttestimonial: React.FC = () => {
             </div>
             </Col>
         </Row>
-            <div className={styles.project_satisfaction}>
-            <h5 className={styles.project_satisfaction_heading}>PROJECT SATISFACTION</h5>
-            <h4 className={styles.project_satisfaction_heading2}>Our Projects</h4>
-            <Row justify={'center'}>
-                <Col xs={24} sm={24} md={24} lg={24} xl={5}>
-                        <AnimatedProgressCircle1 />
-                </Col>
-                <Col xs={24} sm={24} md={24} lg={24} xl={5}>
-                        <AnimatedProgressCircle2 />
-                </Col> 
-                <Col xs={24} sm={24} md={24} lg={24} xl={5}>
-                        <AnimatedProgressCircle3 />
-                </Col>
-                <Col xs={24} sm={24} md={24} lg={24} xl={9}>
-                    <div className={styles.rectangle_number_Animation}>
-                            <div className={styles.rectangle_number}>
-                            <div className={styles.AnimatedNumber}><AnimatedNumber /></div>
-                            <div className={styles.rectangle_content}>Leads generated so far...</div>
-                            <Button className={styles.rectangle_button} onClick={handleClick}>Contact us</Button>
-                            </div>
-                    </div>
-                </Col>
-            </Row>
-            </div>
         </motion.div>
     );
 };

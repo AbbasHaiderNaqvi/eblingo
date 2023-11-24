@@ -1,86 +1,54 @@
-'use client';
-import { type FC } from 'react';
-import React, { useState } from 'react'
+"use client";
+import { FC, ChangeEvent, FormEvent, useState } from 'react';
+import { Button, Col, Row, Input, Form, Upload } from 'antd';
 import styles from '../styles/Contact.module.css';
-import { Button, Col, Row } from 'antd';
-import UploadButton from '../Animations/Upload';
-import TextArea from 'antd/es/input/TextArea';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { color, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
+import axios, { AxiosResponse } from 'axios';
+import { UploadOutlined } from '@ant-design/icons';
+
 
 const Contact: FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    sourceLanguage: '',
-    targetLanguage: '',
-    estimatedproject: '',
-    additionalcomments: '',
-  });
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement | HTMLTextAreaElement >) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form Data:', formData);
+  const onFinish = (values: any) => {
+    console.log('Form data:', values);
   };
   return (
     <motion.div
-    initial="hidden"
-    animate="visible"
-    variants={MediumAnimationVariants}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-  >
+      initial="hidden"
+      animate="visible"
+      variants={MediumAnimationVariants}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Contact Us</h1>
         <h5 className={styles.contact_Sub_heading}>Home / Services / Translation</h5>
       </div>
-      <div>
-        <form className={styles.contact_form}
-          onSubmit={handleSubmit}>
-          <h3 className={styles.contact_heading}>Contact Us</h3>
-          <div className={styles.contact_container}>
-            <div className={styles.contact_content}>
-            <Row justify="start">
+      <div className={styles.contact_heading_main}>
+        Contact Us
+      </div>
+      <div className={styles.contact_container}>
+        <Form onFinish={onFinish}>
+        <Row justify="start">
                 <Col span={5}>
-                  <label className={styles.label_input3}>Name<sup style={{color:'red'}}>*</sup></label>
+                  <label className={styles.label_input3}>Name<sup style={{ color: 'red' }}>*</sup></label>
                 </Col>
                 <Col span={5}>
-                  <label className={styles.label_input4}>Phone Number<sup style={{color:'red'}}>*</sup></label>
+                  <label className={styles.label_input4}>Phone Number<sup style={{ color: 'red' }}>*</sup></label>
                 </Col>
               </Row>
-              <Row>
-                <Col span={10}>
-                  <input
-                    className={styles.First_input}
-                    placeholder='Your Name'
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                  />
-                </Col>
-                <Col>
-                  <input
-                    className={styles.Second_input}
-                    placeholder='Your Phone Number'
-                    type="text"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                  />
-                </Col>
-              </Row>
-              <Row justify="start">
+          <Row>
+            <Col>
+              <Form.Item name="name" rules={[{ required: true, message: 'Please enter your name!' }]}>
+                <Input className={styles.First_input} />
+              </Form.Item>
+            </Col>
+            <Col>
+              <Form.Item name="phoneNumber" rules={[{ required: true, message: 'Please enter your phone number!' }]}>
+                <Input className={styles.Second_input} />
+              </Form.Item>
+            </Col>
+          </Row>
+          <Row justify="start">
                 <Col span={5}>
                   <label className={styles.label_input3}>Source Language</label>
                 </Col>
@@ -88,29 +56,19 @@ const Contact: FC = () => {
                   <label className={styles.label_input4}>Target Language</label>
                 </Col>
               </Row>
-              <Row>
-                <Col span={10}>
-                  <input
-                    className={styles.First_input}
-                    type="text"
-                    name="sourceLanguage"
-                    value={formData.sourceLanguage}
-                    onChange={handleChange}
-                    
-                  />
-                </Col>
-                <Col>
-                  <input
-                    className={styles.Second_input}
-                    type="text"
-                    name="targetLanguage"
-                    value={formData.targetLanguage}
-                    onChange={handleChange}
-                    
-                  />
-                </Col>
-              </Row>
-              <Row justify="start">
+          <Row>
+            <Col>
+              <Form.Item name="sourceLanguage">
+                <Input className={styles.Second_input} />
+              </Form.Item>
+            </Col>
+            <Col>
+              <Form.Item name="targetLanguage">
+                <Input className={styles.First_input} />
+              </Form.Item>
+            </Col>
+          </Row>
+          <Row justify="start">
                 <Col span={6}>
                   <label className={styles.label_input5}>Estimated project size</label>
                 </Col>
@@ -118,45 +76,38 @@ const Contact: FC = () => {
                   <label className={styles.label_input6}>Documents Upload</label>
                 </Col>
               </Row>
-              <Row>
-                <Col lg={15}>
-                  <input
-                    className={styles.Fifth_input}
-                    type="text"
-                    name="estimatedproject"
-                    value={formData.estimatedproject}
-                    onChange={handleChange}
-                    
-                  />
-                </Col>
-                <Col>
-                  <UploadButton />
-                </Col>
-              </Row>
-              <input
-                className={styles.Sixth_input}
-                placeholder='Your Email Address'
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                
-              />
-              <TextArea
-                className={styles.Seven_input}
-                placeholder='Additional Comments...'
-                name="additionalcomments"
-                value={formData.additionalcomments}
-                onChange={handleChange}
-                autoSize={{ minRows: 5, maxRows: 6 }}
-              />
-              <Button className={styles.Submit_Button}>Submit</Button>
-            </div>
-          </div>
-        </form>
+          <Row>
+            <Col lg={12} xl={12}>
+              <Form.Item name="projectSize">
+                <Input className={styles.First_input} />
+              </Form.Item>
+            </Col>
+            <Col lg={4} xl={6}>
+            <Form.Item name="uploadDocument">
+              <Upload>
+                <Button className={styles.uploadbutton} icon={<UploadOutlined />}>Click to Upload</Button>
+              </Upload>
+            </Form.Item>
+            </Col>
+          </Row>
+          
+          <Form.Item name="email" rules={[{ type: 'email', message: 'Please enter a valid email address!' }]}>
+            <Input className={styles.Sixth_input} />
+          </Form.Item>
+
+          <Form.Item name="additionalComments">
+            <Input.TextArea autoSize={{ minRows: 5, maxRows: 6 }} placeholder='Additional Comments...' className={styles.Seven_input}/>
+          </Form.Item>
+
+          <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Button className={styles.Submit_Button} htmlType="submit">
+              Submit
+            </Button>
+          </Form.Item>
+        </Form>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
 export default Contact;
