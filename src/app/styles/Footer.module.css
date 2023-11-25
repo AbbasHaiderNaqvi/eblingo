@@ -174,9 +174,18 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  position: absolute;
-  right: 42px;
   border: transparent;
+  position: absolute;
+  top: 10%;
+  right: 6px;
+  /* Adjust as needed */
+  transform: translateY(-10%);
+  transform: translateX(25%);
+}
+
+.entry_container {
+  position: relative;
+  display: inline-block;
 }
 
 .signup_input {
@@ -206,15 +215,17 @@
   line-height: 27px;
 }
 
-@media (min-width:350px) and (max-width:500px){
-  .rectangle_signup{
+@media (min-width:350px) and (max-width:500px) {
+  .rectangle_signup {
     display: none;
   }
-  .Footer_Logo{
+
+  .Footer_Logo {
     width: 130px;
     height: 60px;
   }
-  .email_heading{
+
+  .email_heading {
     color: var(--Dark, #0A142F);
     font-family: Poppins;
     font-size: 18px;
@@ -223,30 +234,37 @@
     line-height: normal;
     letter-spacing: -0.2px;
   }
-  .Footer_icons{
+
+  .Footer_icons {
     display: none;
   }
-  .socialmedia_links{
+
+  .socialmedia_links {
     display: none;
   }
-  .reserved_rights{
+
+  .reserved_rights {
     display: none;
   }
-  .email_entry{
+
+  .email_entry {
     margin-bottom: 10%;
   }
 }
-@media (min-width:510px) and (max-width:850px){
-  .rectangle_signup{
+
+@media (min-width:510px) and (max-width:850px) {
+  .rectangle_signup {
     display: none;
   }
-  .Footer_Logo{
+
+  .Footer_Logo {
     width: 130px;
     height: 60px;
     display: block;
     justify-content: center;
   }
-  .email_heading{
+
+  .email_heading {
     color: var(--Dark, #0A142F);
     font-family: Poppins;
     font-size: 18px;
@@ -255,16 +273,20 @@
     line-height: normal;
     letter-spacing: -0.2px;
   }
-  .Footer_icons{
+
+  .Footer_icons {
     display: none;
   }
-  .socialmedia_links{
+
+  .socialmedia_links {
     display: none;
   }
-  .reserved_rights{
+
+  .reserved_rights {
     display: none;
   }
-  .email_entry{
+
+  .email_entry {
     margin-bottom: 10%;
   }
 }

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div>
             <div className={styles.rectangle_signup}>
                 <div className={styles.signup}>Sign up for Our Newsletter</div>
-                
+                <div className={styles.entry_container}>
                     <Input
                         placeholder='Your Email'
                         className={styles.signup_input}
@@ -19,6 +19,7 @@ const Footer: React.FC = () => {
                         className={styles.rectangle_subcribe_button}>
                         Subscribe Now
                     </Button>
+                    </div>
                     <div>
                 </div>
             </div>
