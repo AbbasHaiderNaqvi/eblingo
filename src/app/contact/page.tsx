@@ -21,7 +21,6 @@ const Contact: FC = () => {
     >
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Contact Us</h1>
-        <h5 className={styles.contact_Sub_heading}>Home / Services / Translation</h5>
       </div>
       <div className={styles.contact_heading_main}>
         Contact Us
