@@ -79,7 +79,7 @@ function Partnerships() {
               multiple languages, a challenge we meet head-on through our<br />
               expertise in creating Master Templates.Master Templates form<br />
               the cornerstone of our multilingual subtitling process. By<br /> 
-              establishing a foundation that standardizes the process, we've<br /> 
+              establishing a foundation that standardizes the process, we&apos;ve<br /> 
               eliminated duplicate work, reduced costs, improved delivery<br /> 
               timelines, and enhanced the quality control of a large volume of<br /> 
               subtitle files.
