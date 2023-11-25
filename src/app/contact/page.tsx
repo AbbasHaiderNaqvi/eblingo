@@ -30,56 +30,58 @@ const Contact: FC = () => {
         <Form onFinish={onFinish}>
         <Row justify="start">
                 <Col span={5}>
-                  <label className={styles.label_input3}>Name<sup style={{ color: 'red' }}>*</sup></label>
+                  <label className={styles.L1_input}>Name<sup style={{ color: 'red' }}>*</sup></label>
                 </Col>
                 <Col span={5}>
-                  <label className={styles.label_input4}>Phone Number<sup style={{ color: 'red' }}>*</sup></label>
+                  <label className={styles.L2_Input}>Phone Number<sup style={{ color: 'red' }}>*</sup></label>
                 </Col>
               </Row>
           <Row>
             <Col>
               <Form.Item name="name" rules={[{ required: true, message: 'Please enter your name!' }]}>
-                <Input className={styles.First_input} />
+                <Input className={styles.F_input} placeholder='Your Name' autoComplete='off'/>
               </Form.Item>
             </Col>
             <Col>
               <Form.Item name="phoneNumber" rules={[{ required: true, message: 'Please enter your phone number!' }]}>
-                <Input className={styles.Second_input} />
+                <Input className={styles.S_input} placeholder='Your Phone Number' autoComplete='off'/>
               </Form.Item>
             </Col>
           </Row>
           <Row justify="start">
                 <Col span={5}>
-                  <label className={styles.label_input3}>Source Language</label>
+                  <label className={styles.L3_Input}>Source Language</label>
                 </Col>
                 <Col span={5}>
-                  <label className={styles.label_input4}>Target Language</label>
+                  <label className={styles.L4_Input}>Target Language</label>
                 </Col>
               </Row>
           <Row>
             <Col>
               <Form.Item name="sourceLanguage">
-                <Input className={styles.Second_input} />
+                <Input className={styles.T_input} autoComplete='off'/>
               </Form.Item>
             </Col>
             <Col>
               <Form.Item name="targetLanguage">
-                <Input className={styles.First_input} />
+                <Input className={styles.F_input} autoComplete='off'/>
               </Form.Item>
             </Col>
           </Row>
           <Row justify="start">
                 <Col span={6}>
-                  <label className={styles.label_input5}>Estimated project size</label>
+                <Form.Item >
+                  <label className={styles.L5_Input}>Estimated project size</label>
+                  </Form.Item>
                 </Col>
                 <Col span={6}>
-                  <label className={styles.label_input6}>Documents Upload</label>
+                  <label className={styles.L6_Input}>Documents Upload</label>
                 </Col>
               </Row>
           <Row>
             <Col lg={12} xl={12}>
               <Form.Item name="projectSize">
-                <Input className={styles.First_input} />
+                <Input className={styles.Fi_input} autoComplete='off'/>
               </Form.Item>
             </Col>
             <Col lg={4} xl={6}>
@@ -92,11 +94,11 @@ const Contact: FC = () => {
           </Row>
           
           <Form.Item name="email" rules={[{ type: 'email', message: 'Please enter a valid email address!' }]}>
-            <Input className={styles.Sixth_input} />
+            <Input className={styles.Six_Input}placeholder='Your Email Address' autoComplete='off'/>
           </Form.Item>
 
           <Form.Item name="additionalComments">
-            <Input.TextArea autoSize={{ minRows: 5, maxRows: 6 }} placeholder='Additional Comments...' className={styles.Seven_input}/>
+            <Input.TextArea autoSize={{ minRows: 5, maxRows: 6 }} placeholder='Additional Comments...' autoComplete='off'className={styles.Seven_input}/>
           </Form.Item>
 
           <Form.Item wrapperCol={{ offset: 8, span: 16 }}>

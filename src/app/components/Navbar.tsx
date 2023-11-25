@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   const showDrawer = () => {
     setDrawerVisible(true);
   };
- 
+  
   const onCloseDrawer = () => {
     setDrawerVisible(false);
   };

@@ -3,12 +3,11 @@ import styles from '../styles/blog.module.css';
 import Image from 'next/image';
 import React from 'react';
 import { Row, Col, Button, Space } from 'antd';
-import { FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
-
+ 
 const Blog: React.FC = () => {
-    return (
+    return ( 
         <motion.div
         initial="hidden"
         animate="visible"

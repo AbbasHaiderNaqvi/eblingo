@@ -37,14 +37,49 @@
 }
 
 
-@media (max-width:500px){
+@media (min-width:350px) and (max-width:500px){
     .Testimonial_Section {
         margin-top: 10%;
     }
         
     .testimonials_heading {
         color: #FBAC41;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+       text-align: center;
+    }
+    
+    .testimonials_heading2 {
+        color: #000;
+        font-size: 25px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+    
+    .testimonial_img {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media (min-width:510px) and (max-width:850px){
+    .Testimonial_Section {
+        margin-top: 10%;
+    }
+        
+    .testimonials_heading {
+        color: #FBAC41;
+        font-size: 25px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 700;
@@ -67,43 +102,11 @@
     .testimonial_img {
         display: flex;
         justify-content: center;
-        width: 300px;
-        height: 150px;
+        width: 500px;
+        height: 350px;
     }
 }
-@media (max-width:390px){
-    .Testimonial_Section {
-        margin-top: 10%;
-    }
-     
-    .testimonials_heading {
-        color: #FBAC41;
-        font-size: 15px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px;
-    }
-    
-    .testimonials_heading2 {
-        color: #000;
-        font-size: 20px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20px;
-        margin-top: 1%;
-        margin-bottom: 10%;
-    }
-    
-    .testimonial_img {
-        display: flex;
-        justify-content: center;
-        width: 330px;
-        height: 200px;
-    }
- 
-} 
+/* 
 @media (max-width:1100px){
     .Testimonial_Section {
         margin-top: 10%;
@@ -136,4 +139,4 @@
         height: 300px;
     }
     
-}
+} */

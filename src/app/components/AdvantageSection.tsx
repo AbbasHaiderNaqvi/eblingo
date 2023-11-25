@@ -7,7 +7,7 @@ import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from "framer-motion";
 
    
-
+ 
 const AdvantageSection = () => {
     return (
         <motion.div

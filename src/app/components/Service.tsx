@@ -13,7 +13,7 @@ const Service = () => {
     const handleClick = () => {
         console.log('Button clicked!');
         router.push('/get-a-quote');
-      };
+      }; 
     const [scrollPosition, setScrollPosition] = useState(0);
  
     useEffect(() => {

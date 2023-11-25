@@ -15,14 +15,14 @@ const Offer: React.FC = () => {
             animate="visible"
             variants={MediumAnimationVariants}
             transition={{ duration: 0.8, ease: "easeOut" }}
-        >
+        > 
             <div className={styles.offer_content}>
                 <Row>
                     <Col xs={24} sm={24} md={24} lg={24} xl={14}>
                     <h5 className={styles.offer_heading}>WHAT WE OFFER</h5>
                         <Tab />
                     </Col>
-                    <Col xs={24} sm={24} md={24} lg={24} xl={10}>
+                     <Col xs={24} sm={24} md={24} lg={24} xl={10}>
                         <Image
                             src="/assets/Home/Offering_img.png"
                             alt="Service"

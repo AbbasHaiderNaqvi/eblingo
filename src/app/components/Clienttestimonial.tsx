@@ -1,24 +1,12 @@
 'use client';
 import styles from '../styles/testimonial.module.css';
-import { useRouter } from 'next/navigation';
-import AnimatedProgressCircle1 from "../Animations/AnimationProgressCircle1";
-import AnimatedProgressCircle2 from "../Animations/AnimationProgressCircle2";
-import AnimatedProgressCircle3 from "../Animations/AnimationProgressCircle3";
-import { Button, Row, Col } from 'antd';
-import AnimatedNumber from '../Animations/AnimatedNumber';
+import { Row, Col } from 'antd';
 import Image from 'next/image';
 import React from 'react';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
-import Contact from '../contact/page';
 
-const Clienttestimonial: React.FC = () => {
-    const router = useRouter();
-    const handleClick = () => {
-        console.log('Button clicked!');
-    
-        router.push('/contact');
-      };
+const Clienttestimonial: React.FC = () => { 
     return (
          <motion.div
         initial="hidden"
@@ -32,7 +20,7 @@ const Clienttestimonial: React.FC = () => {
             <div className={styles.Testimonial_Section}>
             <h5 className={styles.testimonials_heading}>Clients Testimonials</h5>
             <h4 className={styles.testimonials_heading2}>what clients has to say about us?</h4>
-            <Image
+            <Image 
                 src="/assets/Home/testimonial_img.png"
                 alt="Testimonial"
                 width={1216}

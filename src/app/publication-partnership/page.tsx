@@ -72,7 +72,7 @@ function Publications() {
                     </Col>
                     <Col>
                         <Image
-                            src="/assets/Publications/Publication_Blog_Image.png"
+                            src="/assets/Publications/Publication_Blog2.png"
                             alt="Publications"
                             width={397}
                             height={398}
@@ -101,7 +101,7 @@ function Publications() {
                     </Col>
                     <Col>
                         <Image
-                            src="/assets/Publications/Publication_Blog_Image.png"
+                            src="/assets/Publications/Publication_Blog3.png"
                             alt="Publications"
                             width={397}
                             height={398}

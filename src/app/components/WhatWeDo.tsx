@@ -7,7 +7,7 @@ import Tab from "../Animations/Tab";
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 
-
+ 
 const WhatWeDo: React.FC = () => {
     return (
         <motion.div
