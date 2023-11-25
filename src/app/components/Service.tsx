@@ -114,7 +114,7 @@ const Service = () => {
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 1350 && scrollPosition < 1700 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 1500 && scrollPosition < 1900 ? styles.active : ''
                                 }`}
                         /> 
                         <Image
@@ -122,7 +122,7 @@ const Service = () => {
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 1700 && scrollPosition < 2250 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 1900 && scrollPosition < 2300 ? styles.active : ''
                                 }`}
                         />
                         <Image
@@ -130,7 +130,7 @@ const Service = () => {
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 2250 && scrollPosition < 2800 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 2300 && scrollPosition < 2900 ? styles.active : ''
                                 }`}
                         />
 
@@ -139,7 +139,7 @@ const Service = () => {
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 2800 && scrollPosition < 3100 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 2900 && scrollPosition < 3200 ? styles.active : ''
                                 }`}
                         />
 
