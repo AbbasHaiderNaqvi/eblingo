@@ -27,7 +27,7 @@ const About = () => {
                         />
                     </Col>
                     <Col xs={24} sm={24} md={24} lg={13} xl={11}>
-                        <div className={styles.about_heading}>ABOUT EBLINGO</div>
+                        <div className={styles.about_heading}>ABOUT US</div>
                         <div className={styles.about_sub_heading}>We’re Partner of your <br />Innovations</div>
                         <p className={styles.about_paragraph}>We are a language services company headquartered in the United States<br />
                             with established project management offices worldwide. Our team<br />

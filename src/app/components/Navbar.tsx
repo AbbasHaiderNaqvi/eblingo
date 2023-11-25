@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   const showDrawer = () => {
     setDrawerVisible(true);
   };
-  
+
   const onCloseDrawer = () => {
     setDrawerVisible(false);
   };
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
               <Dropdown menu={{ items }}>
                 <a onClick={(e) => e.preventDefault()}>
                   <Space>
-                    Partnership
+                    Partnerships
                     <DownOutlined />
                   </Space>
                 </a>
@@ -113,10 +113,10 @@ const Navbar: React.FC = () => {
             <Link href="/document-translation">Document Translation</Link>
           </Menu.Item>
           <Menu.Item key="media-partnership">
-          <Link href="/media-partnership">Media Partnership</Link>
+            <Link href="/media-partnership">Media Partnership</Link>
           </Menu.Item>
           <Menu.Item key="publication-partnership">
-          <Link href="/publication-partnership">Publication Partnership</Link>
+            <Link href="/publication-partnership">Publication Partnership</Link>
           </Menu.Item>
           <Menu.Item key="contact">
             <Link href="/contact">Contact Us</Link>

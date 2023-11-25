@@ -16,7 +16,6 @@ function Publications() {
         >
             <div className={styles.HeroSection}>
                 <h1 className={styles.HeroSection_Heading}>Publications Partnership</h1>
-                <h5 className={styles.Publications_Sub_heading}>Home / Services / Translation</h5>
             </div>
             <div>
                 <h4 className={styles.FirstHeading}>Book Translation Services with Eblingo</h4>
@@ -83,7 +82,7 @@ function Publications() {
                 </div>
             </div>
             <div>
-            <h3 className={styles.Explain_Heading2}>End-to-End Solutions<br />Desktop Publishing Services</h3>
+            <h3 className={styles.Explain_Heading2}>End-to-End Solutions<br />Desktop Publishing Services.</h3>
                 <Row>
                     <Col span={12}>
                         <p className={styles.Blog_Paragraph}>

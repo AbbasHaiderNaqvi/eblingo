@@ -17,7 +17,6 @@ function Transcription() {
         >
             <div className={styles.HeroSection}>
                 <h1 className={styles.HeroSection_Heading}>Transcription | Subtitling | Closed Captions</h1>
-                <h5 className={styles.Transcription_Sub_heading}>Home / Services / Translation</h5>
             </div>
             <div>
                 <div className={styles.content}>

@@ -25,11 +25,12 @@ const WhatWeDo: React.FC = () => {
                             Embracing Your Innovations<br />Together
                         </h2>
                         <p className={styles.WhatWeDo_paragraph}>
-                            The translation and subtitling process can be overwhelming with its complex<br />
-                            procedures, ongoing interaction with linguists, and unforeseen expenses. Our<br />
-                            company has devised simplified procedures that cater to the requirements of<br />
-                            businesses in search of expert language services. We aim to offer fast, efficient, and<br />
-                            budget-friendly solutions that align with our clients’ spending limits.
+                        The translation and subtitling process can be overwhelming with its<br /> 
+                        complex procedures, ongoing interaction with linguists, and unforeseen<br /> 
+                        expenses. Our company has devised simplified procedures that cater to<br /> 
+                        the requirements of businesses in search of expert language services.<br /> 
+                        We aim to offer fast, efficient, and budget-friendly solutions that<br /> 
+                        align with our clients’ spending limits.
                         </p>
                     </div>
                 </Col>
@@ -40,7 +41,7 @@ const WhatWeDo: React.FC = () => {
                         width={540}
                         height={436}
                         className={styles.WhatWeDO_Image}
-                    />
+                     />
                 </Col>
             </Row>
         </motion.div>

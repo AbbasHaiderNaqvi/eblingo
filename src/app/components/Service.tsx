@@ -101,7 +101,7 @@ const Service = () => {
                         <div className={styles.unorder_list}>
                             <ul className={styles.listing} >
                                 <li><div className={styles.list}>Book Translations</div></li>
-                                <li><div className={styles.list}>Academic and research Generals</div> </li>
+                                <li><div className={styles.list}>Academic and research journals</div> </li>
                                 <li><div className={styles.list}>Magzine  and media publication</div> </li>
                             </ul>
                         </div>

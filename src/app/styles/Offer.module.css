@@ -69,19 +69,19 @@
 
         background-color: #FFF0DC;
         border-radius: 20px;
-        height: 310px;
-        width: 372px;
+        height: 250px;
+        width: 320px;
         margin-left: 5%;
     }
 
     .Tab_text {
         color: #000;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px;
+        line-height: 15px;
 
     }
 

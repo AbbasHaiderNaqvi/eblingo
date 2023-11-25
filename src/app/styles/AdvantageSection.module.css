@@ -22,24 +22,26 @@
 .Advantage_Image1 {
     position: relative;
     bottom: 25px;
+    left: 20px;
 }
 
 .Advantage_Image2 {
-    margin-left: 10%;
+    
     position: relative;
+    left: 20px;
     bottom: 30px;
 }
 
 .Advantage_Image3 {
     position: relative;
     bottom: 30px;
-
+    left: 30px;
 }
 
 .Advantage_Image4 {
     position: relative;
     bottom: 25px;
-
+    left: 30px;
 }
  
 .FreeSupport_heading {
@@ -50,7 +52,7 @@
     font-family: Poppins;
     line-height: 50px;
     position: relative;
-    right: 5px;
+    right: 20px;
 }
 
 .FreeSupport_paragraph {
@@ -61,7 +63,7 @@
     font-family: Poppins;
     line-height: 27px;
     position: relative;
-    right: 5px;
+    right: 20px;
 }
 
 /*  */
@@ -142,7 +144,7 @@
         height: 45px;
         position: relative;
         bottom: 15px;
-        left: 20px;
+        left: 15px;
     }
 
     .Advantage_Image2 {
@@ -158,7 +160,7 @@
         height: 45px;
         position: relative;
         bottom: 15px;
-        left: 30px;
+        left: 10px;
     }
 
     .Advantage_Image4 {
@@ -166,7 +168,7 @@
         height: 45px;
         position: relative;
         bottom: 15px;
-        left: 20px;
+        left: 10px;
     }
 
     .FreeSupport_heading {
@@ -175,7 +177,9 @@
         font-style: normal;
         font-weight: 600;
         font-family: Poppins;
-        line-height: 50px;        
+        line-height: 50px;
+        position: relative;
+        right: 40px;        
     }
 
     .FreeSupport_paragraph {
@@ -184,6 +188,8 @@
         font-style: normal;
         font-weight: 400;
         font-family: Poppins;
+        position: relative;
+        right: 40px;        
         line-height: 20px;
     }
 
@@ -214,7 +220,7 @@
         font-family: Poppins;
         line-height: 50px;
         position: relative;
-        right: 20px;
+        right: 40px;
     }
 
     .language_paragraph {
@@ -225,7 +231,7 @@
         line-height: 20px;
         font-family: Poppins;
         position: relative;
-        right: 20px;
+        right: 40px;
     }
 
     .Multi_heading {
@@ -236,7 +242,7 @@
         line-height: 50px;
         font-family: Poppins;
         position: relative;
-        right: 20px;
+        right: 40px;
     }
 
     .Multi_paragraph {
@@ -247,7 +253,7 @@
         line-height: 20px;
         font-family: Poppins;
         position: relative;
-        right: 20px;
+        right: 40px;
     }
 }
 /* 

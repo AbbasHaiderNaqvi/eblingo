@@ -37,7 +37,8 @@
     font-weight: 400;
     line-height: 20.858px;
 }
-.quote_button:hover{
+
+.quote_button:hover {
     background-image: linear-gradient(to right, #faaf40, #ed1e78);
 }
 
@@ -55,6 +56,7 @@
     transition: opacity 0.4s ease-in-out;
     box-shadow: rgb(0 0 0 / 9%) 0px 10px 16px 4px;
 }
+
 .active {
     opacity: 1;
 }
@@ -115,31 +117,37 @@
     margin-top: 2%;
 }
 
-@media (min-width:350px) and (max-width:500px){
+@media (min-width:350px) and (max-width:500px) {
     .Service {
         margin-top: 15%;
     }
-    
+
     .allservice_heading {
         color: #FB6239;
         text-align: center;
-        font-size: 18px!important;
+        font-size: 18px !important;
         font-style: normal;
         font-family: poppins;
         font-weight: 700;
         line-height: 20px;
     }
-    
+
     .heading_translation_firm {
         color: #000;
-        font-size: 20px!important;
+        font-size: 20px !important;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         text-align: center;
-        line-height: 30px!important;
+        line-height: 30px !important;
     }
-    
+/* 
+    .Service_Image {
+        border-radius: 20px;
+        opacity: 0;
+        width: 300px;
+        height: 100px;
+    } */
     .quote_button {
         background-image: linear-gradient(to right, #ed1e78, #faaf40);
         border: transparent;
@@ -157,96 +165,99 @@
         font-weight: 400;
         line-height: 20.858px;
     }
-    .quote_button:hover{
+
+    .quote_button:hover {
         background-image: linear-gradient(to right, #faaf40, #ed1e78);
     }
-    
+
     .Service_Image {
         border-radius: 20px;
-       
+
     }
-    
-    
+
+
     .service_heading {
         margin-top: 10%;
         margin-left: 15%;
         color: #000;
         font-family: Poppins;
-        font-size: 20px!important;
+        font-size: 20px !important;
         font-style: normal;
         font-weight: 600;
         line-height: 40px;
     }
-    
+
     .listing {
         margin-top: 10px;
         list-style-type: square;
-        font-size: 15px!important;
+        font-size: 15px !important;
         font-family: poppins;
         color: #FB6239;
         line-height: 30px;
         margin-left: 20%;
     }
-    
+
     .list {
         margin-bottom: 10px;
         color: #000;
         font-family: Poppins;
-        font-size: 15px!important;
+        font-size: 15px !important;
         font-style: normal;
         font-weight: 400;
-        line-height: 18px!important;
+        line-height: 18px !important;
     }
-    
+
     .First_Service_Section {
         margin-top: 50%;
-    
+
     }
-    
+
     .Second_Service_Section {
         margin-top: 50%;
-        }
-    
+    }
+
     .third_Service_Section {
         margin-top: 50%;
-    
+
     }
-    
+
     .fourth_Service_Section {
         margin-top: 50%;
         margin-bottom: 50%;
-    
+
     }
-    
+
     .brands_images {
         margin-top: 2%;
-    }   
+    }
 }
-@media (min-width:510px) and (max-width:850px){
+
+@media (min-width:510px) and (max-width:850px) {
     .Service {
         margin-top: 15%;
-    }   
-    
+    }
+
     .allservice_heading {
         color: #FB6239;
         text-align: center;
-        font-size: 21px!important;
+        font-size: 21px !important;
         font-style: normal;
         font-family: poppins;
         font-weight: 700;
         line-height: 20px;
     }
-    
+
     .heading_translation_firm {
         color: #000;
-        font-size: 25px!important;
+        font-size: 25px !important;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         text-align: center;
-        line-height: 40px!important;
+        line-height: 40px !important;
     }
-/*     
+
+    /*     
     .quote_button {
         background-image: linear-gradient(to right, #ed1e78, #faaf40);
         border: transparent;
@@ -270,63 +281,62 @@
      */
     .Service_Image {
         border-radius: 20px;
-       
+
     }
-    
-    
+
+
     .service_heading {
         margin-top: 10%;
         margin-left: 15%;
         color: #000;
         font-family: Poppins;
-        font-size: 24px!important;
+        font-size: 24px !important;
         font-style: normal;
         font-weight: 600;
         line-height: 40px;
     }
-    
+
     .listing {
         margin-top: 10px;
         list-style-type: square;
-        font-size: 18px!important;
+        font-size: 18px !important;
         font-family: poppins;
         color: #FB6239;
         line-height: 30px;
         margin-left: 18%;
     }
-    
+
     .list {
         margin-bottom: 10px;
         color: #000;
         font-family: Poppins;
-        font-size: 18px!important;
+        font-size: 18px !important;
         font-style: normal;
         font-weight: 400;
-        line-height: 18px!important;
+        line-height: 18px !important;
     }
-    
+
     .First_Service_Section {
         margin-top: 40%;
-    
+
     }
-    
+
     .Second_Service_Section {
         margin-top: 40%;
-        }
-    
+    }
+
     .third_Service_Section {
         margin-top: 40%;
-    
+
     }
-    
+
     .fourth_Service_Section {
         margin-top: 40%;
         margin-bottom: 40%;
-    
+
     }
-    
+
     .brands_images {
         margin-top: 2%;
-    }   
+    }
 }
-

@@ -16,7 +16,6 @@ function Partnerships() {
     >
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Media Partnerships</h1>
-        <h5 className={styles.Partnerships_Sub_heading}>Home / Services / Translation</h5>
       </div>
 
       <h2 className={styles.first_master_heading}>Master Templates <span className={styles.heading_span}>and</span> Subtitling</h2>
@@ -77,7 +76,7 @@ function Partnerships() {
             <p className={styles.blog_Paragraph2}>Subtitles are a crucial element in the global accessibility of<br />
               content. This importance is magnified when dealing with<br />
               multiple languages, a challenge we meet head-on through our<br />
-              expertise in creating Master Templates.Master Templates form<br />
+              expertise in creating Master Templates. Master Templates form<br />
               the cornerstone of our multilingual subtitling process. By<br /> 
               establishing a foundation that standardizes the process, we&apos;ve<br /> 
               eliminated duplicate work, reduced costs, improved delivery<br /> 
@@ -107,7 +106,7 @@ function Partnerships() {
           professionals are thoroughly trained in various streaming<br />
           platforms&apos; best practices and style guides. They bring a deep<br />
           understanding of timing conventions, shot changes, reading speed<br />
-          considerations, and the adherence to syntacticrules and<br />
+          considerations, and the adherence to syntactic rules and<br />
           structures. This level of expertise ensures that your subtitled<br />
           content will be linguistically accurate, enjoyable, and accessible to<br />
           global audiences. Through these partnerships and our proven<br />

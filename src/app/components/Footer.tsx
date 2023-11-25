@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
                             height={70}
                             className={styles.Footer_Logo}
                         />
-                        <div>
-                            <h3 className={styles.email_heading}>Email Us and Connect with us</h3>
+                        <div className={styles.email_entry}>
+                            <h3 className={styles.email_heading}>Connect with us</h3>
                             <input placeholder='E-Mail Address' className={styles.email_input} />
                             <ArrowRightOutlined style={{ fontSize: '150%' }} className={styles.email_icon} />
                         </div>
@@ -48,41 +48,41 @@ const Footer: React.FC = () => {
                         </ul>
                         <Space className={styles.Footer_icons}>
                             <div style={{
-                                backgroundColor: '#AA336A',
+                                backgroundColor: '#ED1E78',
                                 width: '43px',
                                 height: '43px',
                                 display: 'flex',
                                 justifyContent: 'center',
-                                borderRadius: '2px'
+                                borderRadius: '3px'
                             }}>
                                 <FacebookOutlined style={{
-                                    backgroundColor: '#AA336A',
+                                    backgroundColor: '#ED1E78',
                                     fontSize: '150%'
                                 }} />
                             </div>
                             <div style={{
-                                backgroundColor: '#AA336A',
+                                backgroundColor: '#ED1E78',
                                 width: '43px',
                                 height: '43px',
                                 display: 'flex',
                                 justifyContent: 'center',
-                                borderRadius: '2px'
+                                borderRadius: '3px'
                             }}>
                                 <LinkedinOutlined style={{
-                                    backgroundColor: '#AA336A',
+                                    backgroundColor: '#ED1E78',
                                     fontSize: '150%'
                                 }} />
                             </div>
                             <div style={{
-                                backgroundColor: '#AA336A',
+                                backgroundColor: '#ED1E78',
                                 width: '43px',
                                 height: '43px',
                                 display: 'flex',
                                 justifyContent: 'center',
-                                borderRadius: '2px'
+                                borderRadius: '3px'
                             }}>
                                 <InstagramOutlined style={{
-                                    backgroundColor: '#AA336A',
+                                    backgroundColor: '#ED1E78',
                                     fontSize: '150%'
                                 }} />
                             </div>
