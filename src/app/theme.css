@@ -1,11 +1,26 @@
 .ant-tabs-nav-wrap {
     width: 100% !important;
 
-   
+
 }
+
 .ant-tabs-nav-list {
     width: 100% !important;
 }
-.ant-tabs-tab{
+
+.ant-tabs-tab {
     width: 33% !important;
+}
+
+.ant-form-item-control-input {
+    margin: 0px !important;
+}
+
+.ant-form-item-required {
+    color: #3C3939;
+    font-family: Poppins!important;
+    font-size: 22px!important;
+    font-style: normal;
+    font-weight: 600!important;
+    line-height: normal;
 }

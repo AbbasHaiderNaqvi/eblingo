@@ -13,34 +13,25 @@ const items: TabsProps['items'] = [
     key: '1',
     label: <div className={styles.Tab_text}>Competitive<br />Pricing</div>,
     children: <div className={styles.Tab_paragraph}>
-    Our transparent pricing model offers significantly<br/>
-    lower rates than traditional agencies. This allows<br/>
-    you to expand your business into new markets<br/> 
-    while remaining competitive. Our transparent<br/>
-    pricing model offers significantly lower rates than<br/>
-     traditional agencies.</div>,
+    Our transparent pricing model offers significantly lower 
+    rates than traditional agencies. This allows you to expand
+    your business into new markets while remaining competitive.</div>,
   },
   {
     key: '2',
     label: <div className={styles.Tab_text}>Faster <br />Turnarounds</div>,
     children: <div className={styles.Tab_paragraph}>
-    Our transparent pricing model offers significantly<br/>
-    lower rates than traditional agencies. This allows<br/>
-    you to expand your business into new markets<br/> 
-    while remaining competitive. Our transparent<br/>
-    pricing model offers significantly lower rates than<br/>
-     traditional agencies. This allows you to expand<br/>
-      your business into new markets while remaining<br/>
-       competitive.</div>,
+    Our certified linguists and project management teams operate 
+    across all major time zones, enabling us to handle your content 
+    requirements regardless of the volume efficiently.</div>,
   },
   {
     key: '3',
-    label:<div className={styles.Tab_text}>Quality<br />Assurance</div>,
+    label:<div className={styles.Tab_text}>Quality <br/> Assurance</div>,
     children:<div className={styles.Tab_paragraph}>
-    Our transparent pricing model offers significantly<br/>
-    lower rates than traditional agencies. This allows<br/>
-    you to expand your business into new markets<br/> 
-    while remaining competitive.</div>,
+    Our certified quality control teams of linguists are 
+    committed to delivering superior quality work, ensuring
+    accurate deliverables every time.</div>,
   },
 ];
 
@@ -52,4 +43,4 @@ const Tab: React.FC = () =>
     className={styles.AnimatedTab}
   />;
 
-export default Tab;
+export default Tab; 

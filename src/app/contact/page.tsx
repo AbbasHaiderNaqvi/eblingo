@@ -1,17 +1,33 @@
 "use client";
 import { FC, ChangeEvent, FormEvent, useState } from 'react';
-import { Button, Col, Row, Input, Form, Upload } from 'antd';
+import { Button, Col, Row, Input, Form, Upload, Select } from 'antd';
 import styles from '../styles/Contact.module.css';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 import axios, { AxiosResponse } from 'axios';
 import { UploadOutlined } from '@ant-design/icons';
+import FormItem from 'antd/es/form/FormItem';
+import TextArea from 'antd/es/input/TextArea';
 
 
 const Contact: FC = () => {
   const onFinish = (values: any) => {
     console.log('Form data:', values);
+    // You can handle the form data submission here (e.g., send to a server).
+    // For now, we'll just log the data to the console.
   };
+
+  const onFinishFailed = (errorInfo: any) => {
+    console.log('Failed:', errorInfo);
+  };
+
+  const normFile = (e: any) => {
+    if (Array.isArray(e)) {
+      return e;
+    }
+    return e && e.fileList;
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -26,85 +42,119 @@ const Contact: FC = () => {
         Contact Us
       </div>
       <div className={styles.contact_container}>
-        <Form onFinish={onFinish}>
-        <Row justify="start">
-                <Col span={5}>
-                  <label className={styles.L1_input}>Name<sup style={{ color: 'red' }}>*</sup></label>
-                </Col>
-                <Col span={5}>
-                  <label className={styles.L2_Input}>Phone Number<sup style={{ color: 'red' }}>*</sup></label>
-                </Col>
-              </Row>
-          <Row>
-            <Col>
-              <Form.Item name="name" rules={[{ required: true, message: 'Please enter your name!' }]}>
-                <Input className={styles.F_input} placeholder='Your Name' autoComplete='off'/>
+        <Form
+          name="contactForm"
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
+        >
+          <Row gutter={[16, 16]}>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <Form.Item
+                labelCol={{ span: 24 }}
+                wrapperCol={{ span: 24 }}
+                label="Name"
+                name="name"
+                className={styles.Row1}
+                rules={[{ required: true, message: 'Please enter your name' }]}>
+                <Input placeholder="Your Name" autoComplete='off' className={styles.Input1}/>
               </Form.Item>
             </Col>
-            <Col>
-              <Form.Item name="phoneNumber" rules={[{ required: true, message: 'Please enter your phone number!' }]}>
-                <Input className={styles.S_input} placeholder='Your Phone Number' autoComplete='off'/>
-              </Form.Item>
-            </Col>
-          </Row>
-          <Row justify="start">
-                <Col span={5}>
-                  <label className={styles.L3_Input}>Source Language</label>
-                </Col>
-                <Col span={5}>
-                  <label className={styles.L4_Input}>Target Language</label>
-                </Col>
-              </Row>
-          <Row>
-            <Col>
-              <Form.Item name="sourceLanguage">
-                <Input className={styles.T_input} autoComplete='off'/>
-              </Form.Item>
-            </Col>
-            <Col>
-              <Form.Item name="targetLanguage">
-                <Input className={styles.F_input} autoComplete='off'/>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <Form.Item
+                labelCol={{ span: 24 }}
+                wrapperCol={{ span: 24 }}
+                label="Phone"
+                name="phone"
+                className={styles.PhoneRow}
+                rules={[{ required: true, message: 'Please enter your phone number' }]}
+              >
+                <Input placeholder="Your Phone Number" autoComplete='off' className={styles.Input2}/>
               </Form.Item>
             </Col>
           </Row>
-          <Row justify="start">
-                <Col span={6}>
-                <Form.Item >
-                  <label className={styles.L5_Input}>Estimated project size</label>
-                  </Form.Item>
-                </Col>
-                <Col span={6}>
-                  <label className={styles.L6_Input}>Documents Upload</label>
-                </Col>
-              </Row>
-          <Row>
-            <Col lg={12} xl={12}>
-              <Form.Item name="projectSize">
-                <Input className={styles.Fi_input} autoComplete='off'/>
-              </Form.Item>
-            </Col>
-            <Col lg={4} xl={6}>
-            <Form.Item name="uploadDocument">
-              <Upload>
-                <Button className={styles.uploadbutton} icon={<UploadOutlined />}>Click to Upload</Button>
-              </Upload>
-            </Form.Item>
-            </Col>
-          </Row>
-          
-          <Form.Item name="email" rules={[{ type: 'email', message: 'Please enter a valid email address!' }]}>
-            <Input className={styles.Six_Input}placeholder='Your Email Address' autoComplete='off'/>
-          </Form.Item>
 
-          <Form.Item name="additionalComments">
-            <Input.TextArea autoSize={{ minRows: 5, maxRows: 6 }} placeholder='Additional Comments...' autoComplete='off'className={styles.Seven_input}/>
-          </Form.Item>
+          <Row gutter={[16, 16]}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <Form.Item
+                labelCol={{ span: 24 }}
+                wrapperCol={{ span: 24 }}
+                label="Source Language"
+                name="sourceLanguage"
+                className={styles.Row2}
+                rules={[{ required: true, message: 'Please select source language' }]}>
+                <Input className={styles.Input3} autoComplete='off' />
+              </Form.Item>
+            </Col>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <Form.Item
+                labelCol={{ span: 24 }}
+                wrapperCol={{ span: 24 }}
+                label="Target Language"
+                name="targetLanguage"
+                className={styles.Row2}
+                rules={[{ required: true, message: 'Please select target language' }]}
+              >
+                <Input className={styles.Input4} autoComplete='off' />
+              </Form.Item>
+            </Col>
+          </Row>
 
-          <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-            <Button className={styles.Submit_Button} htmlType="submit">
+          <Row gutter={[16, 16]}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <Form.Item
+                labelCol={{ span: 24 }}
+                wrapperCol={{ span: 24 }}
+                label="Estimated Project Size"
+                name="projectSize"
+                className={styles.Row3}
+                rules={[{ required: true, message: 'Please enter estimated project size' }]}
+              >
+                <Input autoComplete='off' className={styles.Input5} />
+              </Form.Item>
+            </Col>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <Form.Item
+                labelCol={{ span: 24 }}
+                wrapperCol={{ span: 24 }}
+                label="Upload Document"
+                name="uploadDocument"
+                valuePropName="fileList"
+                className={styles.Row3}
+                getValueFromEvent={normFile}
+                rules={[{ required: true, message: 'Please upload a document' }]}
+              >
+                <Upload name="logo" action="/upload.do" listType="text">
+                  <Button className={styles.UploadButton} icon={<UploadOutlined />}>Choose Files</Button>
+                </Upload>
+              </Form.Item>
+            </Col>
+          </Row>
+
+          <Row gutter={[16, 16]}>
+          <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+              <Form.Item name="email">
+                <Input placeholder="Enter your email" className={styles.Input6} autoComplete='off' />
+              </Form.Item>
+            </Col>
+          </Row>
+
+          <Row gutter={[16, 16]}>
+          <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+              <Form.Item name="message" rules={[{ message: 'Please enter your message' }]}>
+                <TextArea autoSize={{ minRows: 5, maxRows: 6 }} placeholder='Additional Comments...' autoComplete='off' className={styles.TextArea} />
+              </Form.Item>
+            </Col>
+          </Row>
+
+          <Row justify="center">
+            <Col>
+              <Form.Item wrapperCol={{ span: 24 }}>
+              <Button className={styles.Submit_Button} htmlType="submit">
               Submit
             </Button>
-          </Form.Item>
+              </Form.Item>
+            </Col>
+          </Row>
         </Form>
       </div>
     </motion.div>

@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
                         className={styles.rectangle_subcribe_button}>
                         Subscribe Now
                     </Button>
-                    </div>
-                    <div>
+                </div>
+                <div>
                 </div>
             </div>
             <footer>
@@ -33,6 +33,48 @@ const Footer: React.FC = () => {
                             height={70}
                             className={styles.Footer_Logo}
                         />
+                        <Space className={styles.Footer_icons2}>
+                            <div style={{
+                                backgroundColor:'#000',
+                                width: '43px',
+                                height: '43px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                borderRadius: '8px'
+                            }}>
+                                <FacebookOutlined style={{
+                                    color:'white',
+                                    fontSize: '150%'
+                                }} />
+                            </div>
+                            <div style={{
+                                backgroundColor:'#000',
+                                width: '43px',
+                                height: '43px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                borderRadius: '8px'
+                            }}>
+                                <LinkedinOutlined style={{
+                                    color:'white',
+                                    fontSize: '150%'
+                                }} />
+                            </div>
+                            <div style={{
+                                backgroundColor:'#000',
+                                width: '43px',
+                                height: '43px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                borderRadius: '8px'
+                            }}>
+                                <InstagramOutlined style={{
+                                    color:'white',
+                                    borderRadius: '8px',
+                                    fontSize: '150%'
+                                }} />
+                            </div>
+                        </Space>
                         <div className={styles.email_entry}>
                             <h3 className={styles.email_heading}>Connect with us</h3>
                             <input placeholder='E-Mail Address' className={styles.email_input} />
@@ -89,8 +131,8 @@ const Footer: React.FC = () => {
                             </div>
                         </Space>
                         <div className={styles.term}>
-                        <div className={styles.privacy_policy}>Privacy Policy</div>
-                        <div className={styles.terms_and_condition}> Terms and Conditions</div>
+                            <div className={styles.privacy_policy}>Privacy Policy</div>
+                            <div className={styles.terms_and_condition}> Terms and Conditions</div>
                         </div>
                     </Col>
                 </Row>

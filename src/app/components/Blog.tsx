@@ -17,8 +17,7 @@ const Blog: React.FC = () => {
             <h5 className={styles.blog_heading}>OUR BLOG</h5>
             <h4 className={styles.blog_heading2}>Latest Posts</h4>
             <Row>
-
-                <Col xs={24} sm={24} md={24} lg={24} xl={8}>
+                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                     <div className={styles.blog_content}>
                         <Image
                             src="/assets/Home/blog_img_1.png"
@@ -29,12 +28,12 @@ const Blog: React.FC = () => {
                         />
                         <h5 className={styles.blog_img_heading_1}>Content Localization 101</h5>
                         <p className={styles.blog_paragraph_1}>
-                            Content localization is the process of customizing and translating<br/> 
-                            content to cater to the linguistic and cultural preferences of a<br/>
+                            Content localization is the process of customizing and translating
+                            content to cater to the linguistic and cultural preferences of a
                              specific audience.</p>
                     </div>
                 </Col>
-                <Col xs={24} sm={24} md={24} lg={24} xl={8}>
+                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                     <div className={styles.blog_content}>
                         <Image
                             src="/assets/Home/blog_img_2.png"
@@ -45,13 +44,13 @@ const Blog: React.FC = () => {
                         />
                         <h5 className={styles.blog_img_heading_2}>Why do we still need human linguist?</h5>
                         <p className={styles.blog_paragraph_2}>
-                        Human linguists bring cultural nuance, context awareness, and<br /> 
-                        creative adaptability that machine translation often lacks,<br /> 
+                        Human linguists bring cultural nuance, context awareness, and
+                        creative adaptability that machine translation often lacks,
                         ensuring accurate and contextually appropriate communication.
                         </p>
                     </div>
                 </Col>
-                <Col xs={24} sm={24} md={24} lg={24} xl={8}>
+                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                     <div className={styles.blog_content}>
                         <Image
                             src="/assets/Home/blog_img_3.png"
@@ -62,8 +61,8 @@ const Blog: React.FC = () => {
                         />
                         <h5 className={styles.blog_img_heading_3}>Creating Subtitles - Step by Step</h5>
                         <p className={styles.blog_paragraph_3}>
-                            Create subtitles by transcribing, translating (if necessary),<br /> 
-                            formatting, syncing with audio, reviewing, styling, testing,<br /> 
+                            Create subtitles by transcribing, translating (if necessary),
+                            formatting, syncing with audio, reviewing, styling, testing,
                             and exporting in a preferred format for your video.</p>
                     </div>
                 </Col>

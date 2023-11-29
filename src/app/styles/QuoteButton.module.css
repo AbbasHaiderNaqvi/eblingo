@@ -1,6 +1,6 @@
 .quote_heading {
     color: #1B1A1A;
-    font-size: 30px;
+    font-size: 36px;
     margin-top: 5%;
     text-align: center;
     font-style: normal;
@@ -9,15 +9,6 @@
     font-family: Poppins;
 }
 
-
-.quote_container {
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
-    width: 1121px;
-    height: 603px;
-    margin-top: 5%;
-}
 
 .quote_paragraph {
     color: #000;
@@ -29,210 +20,276 @@
     line-height: normal;
     letter-spacing: 0.34px;
     margin-top: 3%;
+    width: 750px;
 }
 
-.quote_content {
+
+.contact_container {
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 3%;
+    width: 100%;
+    max-width: 1100px;
+    height: 600px;
+    margin: 0 auto;
     margin-top: 5%;
 }
 
-.label_input1 {
-    color: #3C3939;
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 4%;
-    position: relative;
-    top: 39px;
-    right: 110px;
+.Row1 {
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
-.label_input2 {
-    color: #3C3939;
-    font-size: 22px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    position: relative;
-    top: 39px;
-    right: 110px;
-
+.emailRow {
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
-.First_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 20px;
-    font-family: Poppins;
+.Row2 {
+    margin-left: 5%;
+}
+
+.Row3 {
+    margin-left: 5%;
+}
+
+.Input1,
+.Input2,
+.Link {
     width: 481.015px;
     height: 77.917px;
-    margin-top: 10%;
-}
-
-.First_input::placeholder {
-    color: #C6C6C6;
-    font-family: Poppins;
-    font-size: 17.491px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.Second_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    font-family: Poppins;
-    width: 481.015px;
-    padding-left: 20px;
-    height: 77.917px;
-    margin-top: 10%;
-}
-
-.Second_input::placeholder {
-    color: #C6C6C6;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-.label_input3 {
-    color: #3C3939;
+    border-radius: 7.951px;
+    border: 0.795px solid #9F9F9F;
     font-family: Poppins;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 4%;
-    position: relative;
-    top: 39px;
-    right: 110px;
 }
 
-.Translateto {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: end;
-    font-family: Poppins;
-    width: 481.015px;
-    padding-left: 20px;
-    height: 77.917px;
-    margin-top: 10%;
+.Input1:hover,
+.Input2:hover,
+.Link:hover {
+    border-color: #9F9F9F !important;
 }
 
-.label_input4 {
-    color: #3C3939;
-    font-size: 22px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    position: relative;
-    top: 39px;
-    right: 110px;
-
-}
-
-.Translateform {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: end;
-    font-family: Poppins;
-    width: 481.015px;
-    padding-left: 20px;
-    height: 77.917px;
-    margin-top: 10%;
-}
-
-.Translateform::placeholder {
-    color: #979797;
-    font-family: Poppins;
-    font-size: 16.601px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.label_input5 {
-    color: #3C3939;
+.Select {
+    width: 481.015px !important;
+    height: 77px;
+    border: 0.795px solid #9F9F9F;
+    border-radius: 7.951px;
+    margin-right: 5%;
     font-family: Poppins;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 4%;
-    position: relative;
-    top: 39px;
-    right: 110px;
-}
-
-.label_input6 {
-    color: #3C3939;
-    font-size: 22px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    position: relative;
-    top: 39px;
-    right: 110px;
-
-}
-
-.Service_Dropdown_Button {
-    border: 1px solid #9F9F9F !important;
-    border-radius: 10px;
-    font-size: 18px;
-    color: white!important;
-    font-weight: 400;
-    text-align: end;
-    font-family: Poppins;
-    width: 481.015px;
-    height: 77.917px;
-    margin-top: 10%;
-}
-
-.Upload_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 20px;
-    font-family: Poppins;
-    width: 481.015px;
-    height: 77.917px;
-    margin-top: 10%;
-
-}
-
-.Upload_input::placeholder {
-    color: #979797;
-    font-family: Poppins;
-    font-size: 16.601px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .Submit_Button {
+    margin-top: 25%;
     border-radius: 10px;
     background: #FB6239;
     width: 170px;
     height: 60px;
-    display: flex;
-    justify-content: center;
     color: #FFF !important;
     font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-top: 3%;
+
+}
+
+@media (min-width:350px) and (max-width:500px) {
+    .quote_heading {
+        color: #1B1A1A;
+        font-size: 25px;
+        margin-top: 5%;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-family: Poppins;
+    }
+
+
+    .quote_paragraph {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.34px;
+        margin-top: 3%;
+        width: auto;
+    }
+
+
+    .contact_container {
+        border-radius: 24px;
+        background: #FFF;
+        box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 3%;
+        width: 100%;
+        max-width: 1100px;
+        height: 1000px;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    .Row1 {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .emailRow {
+        margin-top: 0px;
+
+    }
+
+    .Row2 {
+        margin-left: 5%;
+    }
+
+    .Row3 {
+        margin-left: 5%;
+    }
+
+    .Input1,
+    .Input2,
+    .Link {
+        width: 350.015px;
+        height: 60.917px;
+        border-radius: 7.951px;
+        border: 0.795px solid #9F9F9F;
+        font-family: Poppins;
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .Input1:hover,
+    .Input2:hover,
+    .Link:hover {
+        border-color: #9F9F9F !important;
+    }
+
+    .Select {
+        width: 350.015px !important;
+        height: 60.917px;
+        border: 0.795px solid #9F9F9F;
+        border-radius: 7.951px;
+        margin-right: 5%;
+        font-family: Poppins;
+        font-size: 18px;
+    }
+
+    .Submit_Button {
+        margin-top: 15%;
+        border-radius: 10px;
+        background: #FB6239;
+        width: 170px;
+        height: 60px;
+        color: #FFF !important;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
+}
+@media (min-width:500px) and (max-width:850px) {
+    .quote_heading {
+        color: #1B1A1A;
+        font-size: 25px;
+        margin-top: 5%;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-family: Poppins;
+    }
+
+
+    .quote_paragraph {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.34px;
+        margin-top: 3%;
+        width: auto;
+    }
+
+
+    .contact_container {
+        border-radius: 24px;
+        background: #FFF;
+        box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 3%;
+        width: 100%;
+        max-width: 1100px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    .Row1 {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .emailRow {
+        margin-top: 0px;
+
+    }
+
+    .Row2 {
+        margin-left: 5%;
+    }
+
+    .Row3 {
+        margin-left: 5%;
+    }
+
+    .Input1,
+    .Input2,
+    .Link {
+        width: 300px;
+        height: 55.917px;
+        border-radius: 7.951px;
+        border: 0.795px solid #9F9F9F;
+        font-family: Poppins;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .Input1:hover,
+    .Input2:hover,
+    .Link:hover {
+        border-color: #9F9F9F !important;
+    }
+
+    .Select {
+        width: 300px !important;
+        height: 55.917px;
+        border: 0.795px solid #9F9F9F;
+        border-radius: 7.951px;
+        margin-right: 5%;
+        font-family: Poppins;
+        font-size: 20px;
+    }
+
+    .Submit_Button {
+        margin-top: 15%;
+        border-radius: 10px;
+        background: #FB6239;
+        width: 160px;
+        height: 55px;
+        color: #FFF !important;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
 }

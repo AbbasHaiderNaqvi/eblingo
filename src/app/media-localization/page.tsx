@@ -14,14 +14,14 @@ function Transcription() {
             animate="visible"
             variants={MediumAnimationVariants}
             transition={{ duration: 0.8, ease: "easeOut" }}
-        >
+        > 
             <div className={styles.HeroSection}>
                 <h1 className={styles.HeroSection_Heading}>Transcription | Subtitling | Closed Captions</h1>
             </div>
             <div>
                 <div className={styles.content}>
-                    <h2 className={styles.First_Connect_Heading}>More than ever, <span className={styles.span}>Businesses</span> rely on audio-visuals<br />
-                        to connect with customers and thrive<br />
+                    <h2 className={styles.First_Connect_Heading}>More than ever, <span className={styles.span}>Businesses</span> rely on audio-visuals
+                        to connect with customers and thrive
                         in the digital age.</h2>
                     <div className={styles.divider}>
                         <Image
@@ -33,17 +33,18 @@ function Transcription() {
                         />
                     </div>
                     <h4 className={styles.Second_Connect_heading}>
-                        By making your content available in several languages, you can reach more of<br />
+                        By making your content available in several languages, you can reach more of
                         your target customers and grow your customers.
                     </h4>
                 </div>
             </div>
-            <div className={styles.content_blog}>
+            <Row>
+                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                 <div className={styles.blog_content}>
                     <Image
                         src="/assets/Transcription/Transcription_Blog_1.png"
                         alt="Transcription"
-                        width={333}
+                        width={415}
                         height={249}
                         className={styles.Transcription_Blog_Image1}
                     />
@@ -51,21 +52,23 @@ function Transcription() {
                         Transcription
                     </h3>
                     <p className={styles.blog_paragraph_1}>
-                        Our experienced transcriptionists deliver<br />
-                        accurate, timely transcriptions in multiple<br />
-                        languages. Whether its a recorded<br />
-                        meeting, a conference, or an interview,<br />
-                        we&apos;ll convert your audio files into precisely<br />
-                        transcribed text. We have a global talent<br />
-                        pool of experts who are well versed with<br />
+                        Our experienced transcriptionists deliver
+                        accurate, timely transcriptions in multiple
+                        languages. Whether its a recorded
+                        meeting, a conference, or an interview,
+                        we&apos;ll convert your audio files into precisely
+                        transcribed text. We have a global talent
+                        pool of experts who are well versed with
                         required standards..
                     </p>
                 </div>
+                </Col>
+                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                 <div className={styles.blog_content}>
                     <Image
                         src="/assets/Transcription/Transcription_Blog_2.png"
                         alt="Transcription"
-                        width={333}
+                        width={415}
                         height={249}
                         className={styles.Transcription_Blog_Image2}
                     />
@@ -73,22 +76,23 @@ function Transcription() {
                         Subtitling
                     </h3>
                     <p className={styles.blog_paragraph_2}>
-                    We understand the power of subtitled<br/> 
-                    content in expanding your audience reach<br/> 
-                    and engagement. Our team of linguistic<br/> 
-                    experts excels in creating accurate,<br/> 
-                    culturally appropriate subtitles that<br/> 
-                    resonate with your target demographics,<br/> 
-                    allowing your content to be accessible,<br/> 
+                    We understand the power of subtitled 
+                    content in expanding your audience reach
+                    and engagement. Our team of linguistic
+                    experts excels in creating accurate,
+                    culturally appropriate subtitles that
+                    resonate with your target demographics,
+                    allowing your content to be accessible,
                     understandable, and enjoyable to all.
                     </p>
                 </div>
-
+                </Col>
+                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                 <div className={styles.blog_content}>
                     <Image
                         src="/assets/Transcription/Transcription_Blog_3.png"
                         alt="Transcription"
-                        width={333}
+                        width={415}
                         height={249}
                         className={styles.Transcription_Blog_Image3}
                     />
@@ -96,27 +100,28 @@ function Transcription() {
                         Closed Captions
                     </h3>
                     <p className={styles.blog_paragraph_3}>
-                        Our captioning services make your<br />
-                        audio-visual content accessible to<br />
-                        everyone, including the hard-of-hearing<br />
-                        community. We go beyond just literal<br />
-                        transcription, incorporating descriptions<br />
-                        of non-speech elements, providing a full<br />
-                        contextual experience to your audience<br /> 
+                        Our captioning services make your
+                        audio-visual content accessible to
+                        everyone, including the hard-of-hearing
+                        community. We go beyond just literal
+                        transcription, incorporating descriptions
+                        of non-speech elements, providing a full
+                        contextual experience to your audience
                         by ensuring attention to details.
                     </p>
                 </div>
-            </div>
+                </Col>
+                </Row>
             <div className={styles.blog_statement1}>
-            EBLINGO is dedicated to helping you communicate your message to the world across all<br /> 
-            languages and mediums. Businesses who pick audio-visual medium to drive their content<br /> 
-            strategy get a variety of advantages; strong connectivity increases viewership which<br /> 
+            EBLINGO is dedicated to helping you communicate your message to the world across all 
+            languages and mediums. Businesses who pick audio-visual medium to drive their content 
+            strategy get a variety of advantages; strong connectivity increases viewership which 
             enables lead generation and high commercial gain.
             </div>
             <div className={styles.blog_statement2}>
-            An inclusive content outreach focus on being accessible for all, by including a transcript,<br />
-            businesses may communicate marketing messaging to those who struggle to hear video<br />
-            audio. Subtitles in multiple languages facilitate communication between businesses and<br /> 
+            An inclusive content outreach focus on being accessible for all, by including a transcript,
+            businesses may communicate marketing messaging to those who struggle to hear video
+            audio. Subtitles in multiple languages facilitate communication between businesses and 
             their international clientele.
             </div>
             </motion.div>

@@ -68,6 +68,13 @@ const Service = () => {
                                 <li><div className={styles.list}>Closed Caption</div></li>
                             </ul>
                         </div>
+                        <Image
+                            src="/assets/Home/services1.png"
+                            alt="Service"
+                            width={330}
+                            height={200}
+                            className={styles.Service_Image_responsive}
+                        /> 
                     </div>
                     <div className={styles.Second_Service_Section}>
                         <h2 className={styles.service_heading}>
@@ -80,6 +87,13 @@ const Service = () => {
                                 <li><div className={styles.list}>Technical Translation</div></li>
                             </ul>
                         </div>
+                        <Image
+                            src="/assets/Home/services2.png"
+                            alt="Service"
+                            width={330}
+                            height={200}
+                            className={styles.Service_Image_responsive}
+                        /> 
                     </div>
                     <div className={styles.third_Service_Section}>
                         <h2 className={styles.service_heading}>
@@ -92,7 +106,13 @@ const Service = () => {
                                 <li><div className={styles.list}>Reduce Your workload</div></li>
                             </ul>
                         </div>
-
+                        <Image
+                            src="/assets/Home/services3.png"
+                            alt="Service"
+                            width={330}
+                            height={200}
+                            className={styles.Service_Image_responsive}
+                        /> 
                     </div>
                     <div className={styles.fourth_Service_Section}>
                         <h2 className={styles.service_heading}>
@@ -105,6 +125,13 @@ const Service = () => {
                                 <li><div className={styles.list}>Magzine  and media publication</div> </li>
                             </ul>
                         </div>
+                        <Image
+                            src="/assets/Home/services4.png"
+                            alt="Service"
+                            width={330}
+                            height={200}
+                            className={styles.Service_Image_responsive}
+                        /> 
                     </div>
                 </Col>
                 <Col span={12}>
@@ -116,7 +143,8 @@ const Service = () => {
                             height={380}
                             className={`${styles.Service_Image} ${scrollPosition >= 1500 && scrollPosition < 1900 ? styles.active : ''
                                 }`}
-                        /> 
+                        />
+                        
                         <Image
                             src="/assets/Home/services2.png"
                             alt="Service"
@@ -133,7 +161,6 @@ const Service = () => {
                             className={`${styles.Service_Image} ${scrollPosition >= 2300 && scrollPosition < 2900 ? styles.active : ''
                                 }`}
                         />
-
                         <Image
                             src="/assets/Home/services4.png"
                             alt="Service"
@@ -142,7 +169,7 @@ const Service = () => {
                             className={`${styles.Service_Image} ${scrollPosition >= 2900 && scrollPosition < 3200 ? styles.active : ''
                                 }`}
                         />
-
+                            
                     </div>
                 </Col>
             </Row>

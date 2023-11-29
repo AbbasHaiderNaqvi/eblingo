@@ -82,10 +82,12 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
       <div className={styles.right}>
+        {/* Show the menu icon only when screen width is between 350px and 500px */}
         <div className={styles.menuIcon} onClick={showDrawer}>
           <MenuOutlined />
         </div>
       </div>
+      {/* Use Ant Design Drawer component for the responsive menu */}
       <Drawer
         title=""
         placement="right"
@@ -94,34 +96,51 @@ const Navbar: React.FC = () => {
         open={drawerVisible}
         className={styles.drawer}
       >
-        <div className={styles.drawerLogo}>
+        {/* Logo in the drawer header */}
+        <div className={styles.drawerHeader}>
           <Image
             src='/assets/Home/logo.png'
-            alt='Logo'
-            width={120}
-            height={120}
+            alt="Logo"
+            width={200}
+            height={200}
+            className={styles.drawerLogo}
           />
         </div>
-        <Menu mode="vertical" theme="light" className={styles.drawerMenu}>
-          <Menu.Item key="home">
-            <Link href="/">Home</Link>
-          </Menu.Item>
-          <Menu.Item key="media-localization">
-            <Link href="/media-localization">Media Localization</Link>
-          </Menu.Item>
-          <Menu.Item key="document-translation">
-            <Link href="/document-translation">Document Translation</Link>
-          </Menu.Item>
-          <Menu.Item key="media-partnership">
-            <Link href="/media-partnership">Media Partnership</Link>
-          </Menu.Item>
-          <Menu.Item key="publication-partnership">
-            <Link href="/publication-partnership">Publication Partnership</Link>
-          </Menu.Item>
-          <Menu.Item key="contact">
-            <Link href="/contact">Contact Us</Link>
-          </Menu.Item>
-        </Menu>
+        {/* List of pages in the drawer content */}
+        <div className={styles.drawerMain}>
+          <ul className={styles.unorderedList}>
+              <li>
+                <Link href="/" legacyBehavior>
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/media-localization" legacyBehavior>
+                  <a>Media localization</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/document-translation" legacyBehavior>
+                  <a>Document Translation</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/media-partnership" legacyBehavior>
+                  <a>Media Partnership</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/publication-partnership" legacyBehavior>
+                  <a>Publication Partnership</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" legacyBehavior>
+                  <a>Contact Us</a>
+                </Link>
+              </li>
+            </ul>
+        </div>
       </Drawer>
     </nav>
   );

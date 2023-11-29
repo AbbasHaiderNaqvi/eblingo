@@ -1,6 +1,5 @@
 .WhatWeDo{
     margin-bottom: 10%;
-    margin-left: 5%;
 }
 .WhatWeDo_Heading1 {
     color: #FBAC41;
@@ -36,8 +35,7 @@
     }
     .WhatWeDo_Heading1 {
         color: #FBAC41;
-        text-align: center;
-        font-size: 18px!important;
+        font-size: 20px!important;
         font-family: Poppins;
         font-style: normal;
         font-weight: 700;
@@ -47,8 +45,7 @@
     
     .WhatWeDo_Heading2 {
         color: #000;
-        text-align: center;
-        font-size: 21px!important;
+        font-size: 25px!important;
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
@@ -57,16 +54,15 @@
     
     .WhatWeDo_paragraph {
         color: #000;
-        font-size: 8px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         font-family: Poppins;
-        text-align: center;
         line-height: 20px;
     }
     .WhatWeDO_Image{
        width: 300px;
-       height: 300px;
+       height: 250px;
        display: flex;
        justify-content: center;
     }  
@@ -80,7 +76,50 @@
     .WhatWeDo_Heading1 {
         color: #FBAC41;
         font-size: 25px;
-        text-align: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 1%;  
+        margin-left: 10%;  
+    }
+    
+    .WhatWeDo_Heading2 {
+        color: #000;
+        font-size: 30px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        margin-left: 10%;
+        line-height: 50px;
+        margin-bottom: 2%;
+    }
+    
+    .WhatWeDo_paragraph {
+        color: #000;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: Poppins;
+        line-height: 30px;
+        margin-left: 10%;
+    } 
+    .WhatWeDO_Image{
+        width:400px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+    }  
+}
+
+@media (min-width:852px) and (max-width:1100px){
+    .WhatWeDo{
+        margin-bottom: 10%;
+        margin-left: 5%;
+    }
+    .WhatWeDo_Heading1 {
+        color: #FBAC41;
+        font-size: 20px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 700;
@@ -91,7 +130,6 @@
     .WhatWeDo_Heading2 {
         color: #000;
         font-size: 25px;
-        text-align: center;
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
@@ -100,17 +138,15 @@
     
     .WhatWeDo_paragraph {
         color: #000;
-        font-size: 15px;
-        text-align: center;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         font-family: Poppins;
-        line-height: 30px;
+        line-height: 28px;
     } 
     .WhatWeDO_Image{
         width:400px;
-        height: 400px;
-        display: flex;
-        justify-content: center;
+        height: 350px;
+        margin-left: 10%;
     }  
 }

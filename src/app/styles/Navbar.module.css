@@ -38,8 +38,10 @@
   font-weight: 600;
   line-height: normal;
 }
-
-.partnership{
+.menuIcon{
+  display: none;
+}
+.partnership {
   position: relative;
 }
 
@@ -47,78 +49,60 @@
   position: relative;
   bottom: 50px;
 }
-.dropdown{
-  position: absolute;
-  top:20px;
-  right: 20px;
-  width: 120px;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: white;
-  border: 1px solid gray;
-}
-.dropdown::before{
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 25px;
-  height: 25px;
-  transform: rotate(45deg);
-  background-color: white;
-}
 
-.drawer {
-  display: none;
-}
-
-.drawerLogo {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.drawerMenu {
-  padding-top: 20px;
-}
-
-.menuIcon {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-@media (max-width: 500px) {
+@media (min-width: 350px) and (max-width: 500px) {
   .navLinks {
     display: none;
   }
-
   .menuIcon {
     display: block;
-  }
-
-  .navbar {
-    justify-content: space-between;
+    cursor: pointer;
   }
 }
-/* @media (max-width: 1100px) {
+
+.drawer {
+  background-color: white;
+  /* Set the background color of the drawer to white */
+}
+
+
+
+.drawerMain {
+  padding: 20px;
+}
+.unorderedList{
+  list-style: none;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.unorderedList li a{
+  text-decoration: none;
+  padding: 0;
+  display: inline-block;
+  color: black;
+}
+
+@media(min-width:510px) and (max-width: 1100px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 70px;
     background-color: white;
     padding: 10px 10px;
   }
-  
+
   .left {
     flex: 1;
   }
-  
+
   .center {
     flex: 6;
     text-align: start;
   }
-  
+
   .navLinks {
     list-style: none;
     padding: 0;
@@ -126,21 +110,29 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .navLinks li {
     margin-right: 30px;
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
   }
-  
+
   .navLinks a {
     text-decoration: none;
     color: #484848;
-    font-size: 12px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
-  
-} */
-  
+
+  .partnership {
+    position: relative;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 50px;
+  }
+
+}

@@ -1,68 +1,42 @@
 'use client';
-import { DownOutlined, UserOutlined } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
 import { type FC } from 'react';
 import React, { useState } from 'react'
 import styles from '../styles/QuoteButton.module.css';
-import { Button, Col, Dropdown, Input, Row, Space, message } from 'antd';
+import { Button, Col, Dropdown, Select, Form, Input, Row, Space, Upload, message } from 'antd';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { color, motion } from 'framer-motion';
+import type { SelectProps } from 'antd';
 
 const GetaQuote: FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    translateto: '',
-    translatefrom: '',
-    estimatedproject: '',
-    pastelink: '',
-  });
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+  const options: SelectProps['options'] = [];
+
+  for (let i = 10; i < 36; i++) {
+    options.push({
+      value: i.toString(36) + i,
+      label: i.toString(36) + i,
     });
+  }
+
+  const handleChange = (value: string) => {
+    console.log(`selected ${value}`);
+  };
+  const onFinish = (values: any) => {
+    console.log('Form data:', values);
+    // You can handle the form data submission here (e.g., send to a server).
+    // For now, we'll just log the data to the console.
   };
 
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form Data:', formData);
-  };
-  const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    message.info('Click on left button.');
-    console.log('click left button', e);
+  const onFinishFailed = (errorInfo: any) => {
+    console.log('Failed:', errorInfo);
   };
 
-  const handleMenuClick: MenuProps['onClick'] = (e) => {
-    message.info('Click on menu item.');
-    console.log('click', e);
+  const normFile = (e: any) => {
+    if (Array.isArray(e)) {
+      return e;
+    }
+    return e && e.fileList;
   };
 
-  const items: MenuProps['items'] = [
-    {
-      label: 'Russain',
-      key: '1',
-    },
-    {
-      label: 'Pakistani',
-      key: '2',
-    },
-    {
-      label: 'Franch',
-      key: '3',
-    },
-    {
-      label: 'Italian',
-      key: '4',
-    },
-  ];
-
-  const menuProps = {
-    items,
-    onClick: handleMenuClick,
-  };
   return (
     <motion.div
       initial="hidden"
@@ -71,124 +45,118 @@ const GetaQuote: FC = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div>
-        <form className={styles.contact_form}
-          onSubmit={handleSubmit}>
-          <h3 className={styles.quote_heading}>Get a quote</h3>
-          <p className={styles.quote_paragraph}>
-            Let&apos;s get in touch! Share your contact and project details with us, and we&apos;ll make<br />
-            sure to get back to you soon. Can&apos;t wait to hear from you
-          </p>
-          <div className={styles.quote_container}>
-            <div className={styles.quote_content}>
-              <Row justify="start">
-                <Col span={5}>
-                  <label className={styles.label_input1}>Name<sup style={{ color: 'red' }}>*</sup></label>
-                </Col>
-                <Col span={5}>
-                  <label className={styles.label_input2}>Phone Number<sup style={{ color: 'red' }}>*</sup></label>
-                </Col>
-              </Row>
-              <Row>
-                <Col span={10}>
-                  <Input
-                    className={styles.First_input}
-                    placeholder='Your Name'
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
+        <h3 className={styles.quote_heading}>Get a quote</h3>
+        <p className={styles.quote_paragraph}>
+          Let&apos;s get in touch! Share your contact and project details with us, and we&apos;ll make
+          sure to get back to you soon. Can&apos;t wait to hear from you
+        </p>
+        <div className={styles.contact_container}>
+          <Form
+            name="contactForm"
+            onFinish={onFinish}
+            onFinishFailed={onFinishFailed}
+          >
+            <Row gutter={[16, 16]}>
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <Form.Item
+                  labelCol={{ span: 24 }}
+                  wrapperCol={{ span: 24 }}
+                  label="Name"
+                  name="name"
+                  className={styles.Row1}
+                  rules={[{ required: true, message: 'Please enter your name' }]}>
+                  <Input placeholder="Your Name" autoComplete='off' className={styles.Input1} />
+                </Form.Item>
+              </Col>
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <Form.Item
+                  labelCol={{ span: 24 }}
+                  wrapperCol={{ span: 24 }}
+                  label="Email Address"
+                  name="email"
+                  className={styles.emailRow}
+                  rules={[{ required: true, message: 'Please enter your email' }]}
+                >
+                  <Input placeholder="Your Email Address" autoComplete='off' className={styles.Input2} />
+                </Form.Item>
+              </Col>
+            </Row>
+
+            <Row gutter={[16, 16]}>
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <Form.Item
+                  labelCol={{ span: 24 }}
+                  wrapperCol={{ span: 24 }}
+                  label="Source Language"
+                  name="sourceLanguage"
+                  className={styles.Row2}
+                  rules={[{ required: true, message: 'Please select source language' }]}>
+                  <Select
+                    mode="tags"
+                    placeholder="Select source language"
+                    options={options}
+                    className={styles.Select}
                   />
-                </Col>
-                <Col>
-                  <Input
-                    className={styles.Second_input}
-                    placeholder='Your Phone Number'
-                    type="text"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
+                </Form.Item>
+              </Col>
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <Form.Item
+                  labelCol={{ span: 24 }}
+                  wrapperCol={{ span: 24 }}
+                  label="Target Language"
+                  name="targetLanguage"
+                  className={styles.Row2}
+                  rules={[{ required: true, message: 'Please select target language' }]}
+                >
+                  <Select
+                    mode="tags"
+                    placeholder="Select target language"
+                    options={options}
+                    className={styles.Select}
                   />
-                </Col>
-              </Row>
-              <Row justify="start">
-                <Col span={5}>
-                  <label className={styles.label_input3}>Source Language</label>
-                </Col>
-                <Col span={5}>
-                  <label className={styles.label_input4}>Translate to</label>
-                </Col>
-              </Row>
-              <Row>
-                <Col span={10}>
-                <Space wrap>
-                    <Dropdown menu={menuProps}>
-                      <Button
-                        className={styles.Translateto}
-                        value={formData.translateto}
-                        onChange={handleChange}
-                      >
-                        <Space>
-                        <DownOutlined /> 
-                        </Space>
-                        </Button>
-                    </Dropdown>
-                  </Space>
-                </Col>
-                <Col>
-                  <Space wrap>
-                    <Dropdown menu={menuProps}>
-                      <Button
-                        className={styles.Translateform}
-                        value={formData.translatefrom}
-                        onChange={handleChange}
-                      >
-                        <Space>
-                        <DownOutlined /> 
-                        </Space>
-                        </Button>
-                    </Dropdown>
-                  </Space>
-                </Col>
-              </Row>
-              <Row justify="start">
-                <Col span={5}>
-                  <label className={styles.label_input5}>Services</label>
-                </Col>
-                <Col span={5}>
-                  <label className={styles.label_input6}>Upload link</label>
-                </Col>
-              </Row>
-              <Row>
-                <Col span={10}>
-                  <Space wrap>
-                    <Dropdown menu={menuProps}>
-                      <Button 
-                      className={styles.Service_Dropdown_Button}>
-                        <Space>
-                          <DownOutlined />
-                        </Space>
-                      </Button>
-                    </Dropdown>
-                  </Space>
-                </Col>
-                <Col>
-                <Input
-                    className={styles.Upload_input}
-                    placeholder='paste link'
-                    type="text"
-                    name="pastelink"
-                    value={formData.pastelink}
-                    onChange={handleChange}
-                    required
+                </Form.Item>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <Form.Item
+                  labelCol={{ span: 24 }}
+                  wrapperCol={{ span: 24 }}
+                  label="Services"
+                  name="services"
+                  className={styles.Row3}
+                  rules={[{ required: true, message: 'Please select Correct Service' }]}
+                >
+                  <Select
+                    mode="tags"
+                    options={options}
+                    className={styles.Select}
                   />
-                </Col>
-              </Row>
-              <Button className={styles.Submit_Button}>Submit</Button>
-            </div>
-          </div>
-        </form>
+                </Form.Item>
+              </Col>
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <Form.Item
+                  labelCol={{ span: 24 }}
+                  wrapperCol={{ span: 24 }}
+                  label="Upload link"
+                  name="uploadlink"
+                  className={styles.Row3}
+                  rules={[{ required: true, message: 'Please Upload the Link' }]}>
+                  <Input placeholder="paste link" autoComplete='off' className={styles.Link} />
+                </Form.Item>
+              </Col>
+            </Row>
+            <Row justify="center">
+              <Col>
+                <Form.Item wrapperCol={{ span: 24 }}>
+                  <Button className={styles.Submit_Button} htmlType="submit">
+                    Submit
+                  </Button>
+                </Form.Item>
+              </Col>
+            </Row>
+          </Form>
+        </div>
       </div>
     </motion.div>
   )

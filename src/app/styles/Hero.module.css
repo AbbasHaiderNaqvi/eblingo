@@ -28,4 +28,12 @@
     justify-content: center;
   }
 } 
+@media (min-width: 852px) and (max-width: 1100px){
+  .video {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+} 
 

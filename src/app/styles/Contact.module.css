@@ -28,18 +28,6 @@
     font-family: Poppins;
 }
 
-.contact_Sub_heading {
-    margin-top: 1%;
-    width: 280px;
-    height: 30px;
-    background: rgba(217, 217, 217, 0.50);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-}
-
 .contact_heading_main {
     text-align: center;
     margin-top: 5%;
@@ -55,219 +43,83 @@
     border-radius: 24px;
     background: #FFF;
     box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
-    width: 1074.93px;
+    margin-top: 3%;
+    width: 100%;
+    max-width: 1074.93px;
     height: 900px;
-    margin-top: 3%;
+    margin: 0 auto;
+    margin-top: 5%;
 }
-.L1_input {
-    color: #3C3939;
-    font-family: Poppins;
-    font-size: 22px !important;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+
+.Row1 {
+    margin-top: 5%;
     margin-left: 4%;
-    position: relative;
-    top: 18px;
-    right: 110px;
 }
-
-.F_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 20px;
-    font-family: Poppins;
-    width: 481.015px;
-    height: 77.917px;
-    margin-top: 3%;
-}
-
-.F_input::placeholder {
-    color: #C6C6C6;
-    font-family: Poppins;
-    font-size: 17.491px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.L2_Input {
-    color: #3C3939;
-    font-size: 22px !important;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    position: relative;
-    top: 20px;
-    right: 110px;
-
-}
-.S_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    font-family: Poppins;
-    width: 481.015px;
-    padding-left: 20px;
-    height: 77.917px;
-    margin-top: 4%;
-}
-
-.S_input::placeholder {
-    color: #C6C6C6;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-.L3_Input {
-    color: #3C3939;
-    font-family: Poppins;
-    font-size: 22px !important;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.PhoneRow{
+    margin-top: 5%;
     margin-left: 4%;
-    position: relative;
-    top: 6px;
-    right: 110px;
 }
-
-.T_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 20px;
-    font-family: Poppins;
-    width: 481.015px;
-    height: 77.917px;
-}
-
-.L4_Input {
-    color: #3C3939;
-    font-size: 22px !important;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    position: relative;
-    top: 15px;
-    right: 110px;
-}
-.F_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    font-family: Poppins;
-    width: 481.015px;
-    padding-left: 20px;
-    height: 77.917px;
-    }
-
-.L5_Input {
-    color: #3C3939;
-    font-family: Poppins;
-    font-size: 22px!important;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.Row2 {
     margin-left: 4%;
-    position: relative;
-    top: 10px;
-    right: 90px;
-}
-.Fi_input{
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    font-family: Poppins;
-    width: 481.015px;
-    padding-left: 20px;
-    height: 77.917px;
-    position: relative;
-    bottom: 15px;
-    right: 40px;
-}
-.L6_Input {
-    color: #3C3939;
-    font-size: 22px!important;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    position: relative;
-    right: 90px;
-
 }
 
-
-.uploadbutton {
-    width: 236px;
-    height: 50px;
-    border-radius: 5px;
-    border: 1px solid #9F9F9F !important;
-    margin-top: 15%;
-    position: relative;
-    right: 170px;
-    bottom: 30px;
-}
-
-.uploadbutton:hover {
-    color: #000 !important;
-    border: 1px solid #9F9F9F !important;
-}
-
-.Six_Input {
-    border: 1px solid #9F9F9F !important;
-    width: 992.243px;
-    height: 77.917px;
-    font-size: 18px;
-    border-radius: 10px;
-    font-family: poppins;
-    border: 1px solid #9F9F9F;
+.Row3 {
     margin-left: 4%;
+}
+
+.Input1,
+.Input2,
+.Input3,
+.Input4,
+.Input5 {
+    width: 481.015px;
+    height: 77.917px;
+    border-radius: 7.951px;
+    border: 0.795px solid #9F9F9F;
+    font-family: Poppins;
+    font-size: 18px;
+}
+.Input1:hover,
+.Input2:hover,
+.Input3:hover,
+.Input4:hover,
+.Input5:hover {
+    border-color:#9F9F9F!important;
+}
+
+.Input6 {
+    width: 1030px;
+    height: 77.917px;
+    border-radius: 7.951px;
+    border: 0.795px solid #9F9F9F;
+    margin-left: 2%;
+    font-family: Poppins;
+    font-size: 18px;
     margin-top: 1%;
 }
-
-.Sixth_input::placeholder {
-    color: #C6C6C6;
-    font-size: 18px;
-    font-family: poppins;
-    padding-left: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 20px;
-    padding-top: 20px;
+.Input6:hover{
+    border-color:#9F9F9F!important
 }
-
-.Seven_input {
-    border-radius: 10px;
-    border: 1px solid #9F9F9F !important;
-    font-size: 18px;
-    width: 992.243px;
+.TextArea {
+    width: 1030px;
     height: 168.554px;
-    font-family: poppins;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-top: 2%;
-    margin-left: 4%;
-}
-
-.Seven_input:hover {
-    color: #000;
+    border-radius: 7.951px;
+    margin-left: 2%;
+    border: 0.795px solid #9F9F9F;
+    font-family: Poppins;
     font-size: 18px;
-    padding-left: 20px;
-    padding-top: 20px;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    margin-top: 1%;
 }
-
+.TextArea:hover{
+    border-color:#9F9F9F!important
+}
+.UploadButton {
+    width: 187.636px;
+    height: 38.163px;
+    border-radius: 3.975px;
+    border: 0.795px solid #9F9F9F;
+    margin-top: 9%;
+}
 .Submit_Button {
     border-radius: 10px;
     background: #FB6239;
@@ -278,6 +130,364 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    position: relative;
-    right: 190px;
+     
+}
+@media (min-width:350px) and (max-width:500px){
+    .HeroSection {
+        background-image: url('/assets/Contact/Contact_Image.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 100px;
+        color: #fff;
+    }
+    
+    .HeroSection_Heading {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    
+    }
+    
+    .contact_heading {
+        color: #1B1A1A;
+        font-size: 20px;
+        margin-top: 5%;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-family: Poppins;
+    }
+    
+    .contact_heading_main {
+        text-align: center;
+        margin-top: 5%;
+        color: #1B1A1A;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .contact_container {
+        border-radius: 24px;
+        background: #FFF;
+        box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 3%;
+        width: 100%;
+        max-width: 1074.93px;
+        height: 1300px;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    
+    .Row1 {
+        margin-top: 5%;
+        margin-left: 4%;
+        margin-bottom: 0px;
+    }
+    .PhoneRow{
+        margin-left: 4%;
+    }
+    .Row2 {
+        margin-left: 4%;
+    }
+    
+    .Row3 {
+        margin-left: 4%;
+    }
+    
+    .Input1,
+    .Input2,
+    .Input3,
+    .Input4,
+    .Input5 {
+        width: 350.015px;
+        height: 65.917px;
+        border-radius: 7.951px;
+        border: 0.795px solid #9F9F9F;
+        font-family: Poppins;
+        font-size: 15px;
+    }
+    
+    .Input6 {
+        width: 350.015px;
+        height: 65.917px;        
+        border-radius: 7.951px;
+        border: 0.795px solid #9F9F9F;
+        margin-left: 4%;
+        font-family: Poppins;
+        font-size: 18px;
+        margin-top: 1%;
+    }
+    
+    .TextArea {
+        width: 350.015px;
+        height: 120px;
+        border-radius: 7.951px;
+        margin-left: 4%;
+        border: 0.795px solid #9F9F9F;
+        font-family: Poppins;
+        font-size: 18px;
+        margin-top: 1%;
+    }
+    
+    .UploadButton {
+        width: 187.636px;
+        height: 38.163px;
+        border-radius: 3.975px;
+        border: 0.795px solid #9F9F9F;
+        margin-top: 9%;
+    }
+    .Submit_Button {
+        border-radius: 10px;
+        background: #FB6239;
+        width: 130px;
+        height: 50px;
+        color: #FFF !important;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+         
+    }
+}
+@media (min-width:500px) and (max-width:850px){
+    .HeroSection {
+        background-image: url('/assets/Contact/Contact_Image.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 100px;
+        color: #fff;
+    }
+    
+    .HeroSection_Heading {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    
+    }
+    
+    .contact_heading_main {
+        text-align: center;
+        margin-top: 5%;
+        color: #1B1A1A;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .contact_container {
+        border-radius: 24px;
+        background: #FFF;
+        box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 3%;
+        width: 100%;
+        max-width: 1074.93px;
+        height: 800px;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    
+    .Row1 {
+        margin-top: 5%;
+        margin-left: 6%;
+    }
+    .PhoneRow{
+        margin-left: 6%;
+    }
+    .Row2 {
+        margin-left: 6%;
+    }
+    
+    .Row3 {
+        margin-left: 6%;
+    }
+    
+    .Input1,
+    .Input2,
+    .Input3,
+    .Input4,
+    .Input5 {
+        width: 340.015px;
+        height: 65.917px;
+        border-radius: 7.951px;
+        border: 0.795px solid #9F9F9F;
+        font-family: Poppins;
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    
+    .Input6 {
+        width: 715px;
+        height: 65.917px;        
+        border-radius: 7.951px;
+        border: 0.795px solid #9F9F9F;
+        margin-left: 4%;
+        font-family: Poppins;
+        font-size: 18px;
+        margin-top: 1%;
+        padding-left: 20px;
+    }
+    
+    .TextArea {
+        width: 715px;
+        height: 120px;
+        border-radius: 7.951px;
+        margin-left: 4%;
+        border: 0.795px solid #9F9F9F;
+        font-family: Poppins;
+        font-size: 18px;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-top: 1%;
+    }
+    
+    .UploadButton {
+        width: 187.636px;
+        height: 38.163px;
+        border-radius: 3.975px;
+        border: 0.795px solid #9F9F9F;
+        margin-top: 9%;
+    }
+    .Submit_Button {
+        border-radius: 10px;
+        background: #FB6239;
+        width: 130px;
+        height: 50px;
+        color: #FFF !important;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+         
+    }
+}
+@media (min-width:850px) and (max-width:1100px){
+    .HeroSection {
+        background-image: url('/assets/Contact/Contact_Image.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 100px;
+        color: #fff;
+    }
+    
+    .HeroSection_Heading {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    
+    }
+    
+    .contact_heading_main {
+        text-align: center;
+        margin-top: 5%;
+        color: #1B1A1A;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .contact_container {
+        border-radius: 24px;
+        background: #FFF;
+        box-shadow: 0px 0px 3.18027px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 3%;
+        width: 100%;
+        max-width: 1074.93px;
+        height: 800px;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    
+    .Row1 {
+        margin-top: 5%;
+        margin-left: 6%;
+    }
+    .PhoneRow{
+        margin-left: 6%;
+    }
+    .Row2 {
+        margin-left: 6%;
+    }
+    
+    .Row3 {
+        margin-left: 6%;
+    }
+    
+    .Input1,
+    .Input2,
+    .Input3,
+    .Input4,
+    .Input5 {
+        width: 440px;
+        height: 65.917px;
+        border-radius: 7.951px;
+        border: 0.795px solid #9F9F9F;
+        font-family: Poppins;
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    
+    .Input6 {
+        width: 975px;
+        height: 65.917px;        
+        border-radius: 7.951px;
+        border: 0.795px solid #9F9F9F;
+        margin-left: 3%;
+        font-family: Poppins;
+        font-size: 18px;
+        margin-top: 1%;
+        padding-left: 20px;
+    }
+    
+    .TextArea {
+        width: 975px;
+        height: 120px;
+        border-radius: 7.951px;
+        margin-left: 3%;
+        border: 0.795px solid #9F9F9F;
+        font-family: Poppins;
+        font-size: 18px;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-top: 1%;
+    }
+    
+    .UploadButton {
+        width: 187.636px;
+        height: 38.163px;
+        border-radius: 3.975px;
+        border: 0.795px solid #9F9F9F;
+        margin-top: 9%;
+    }
+    .Submit_Button {
+        border-radius: 10px;
+        background: #FB6239;
+        width: 130px;
+        height: 50px;
+        color: #FFF !important;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+         
+    }
 }

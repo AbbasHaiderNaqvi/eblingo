@@ -115,10 +115,8 @@
         }
 
         .upload_button {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            width: 290px;
+            margin-left: 20px;
+            width: 300px;
             height: 48px;
             margin-bottom: 8%;
         }
@@ -128,11 +126,11 @@
             border: 1px solid #9F9F9F !important;
         }
     }
-/* 
-    @media (max-width:1100px) {
+
+    @media(min-width:852px) and (max-width:1100px) {
         .contact_container {
-            width: 540px;
-            height: 675px;
+            width: 400px;
+            height: 630px;
             background: white;
             border-radius: 10px;
             box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -141,7 +139,7 @@
 
         .contactus_heading {
             color: #000;
-            font-size: 25px;
+            font-size: 20px;
             font-style: normal;
             font-family: Poppins;
             font-weight: 700;
@@ -155,9 +153,9 @@
         .input_fields {
             border: none;
             background-color: #F7F7F7;
-            font-size: 15px;
+            font-size: 12px;
             font-family: Poppins;
-            width: 480px;
+            width: 350px;
             height: 48px;
             margin-bottom: 8%;
             display: flex;
@@ -167,7 +165,7 @@
         .contact_button {
             display: flex;
             color: #FFF !important;
-            width: 480px;
+            width: 350px;
             height: 48px;
             justify-content: center;
             background-image: linear-gradient(to right, #ed1e78, #faaf40);
@@ -182,15 +180,14 @@
         }
 
         .upload_button {
-            width: 480px;
+            margin-right: 35%;
+            width: 350px;
             height: 48px;
             margin-bottom: 8%;
-            position: relative;
-            right: 20px;
         }
 
         .upload_button:hover {
             color: #000 !important;
             border: 1px solid #9F9F9F !important;
         }
-    } */
+    }

@@ -18,11 +18,11 @@ const Offer: React.FC = () => {
         > 
             <div className={styles.offer_content}>
                 <Row>
-                    <Col xs={24} sm={24} md={24} lg={24} xl={14}>
+                    <Col xs={24} sm={24} md={24} lg={14} xl={14}>
                     <h5 className={styles.offer_heading}>WHAT WE OFFER</h5>
                         <Tab />
                     </Col>
-                     <Col xs={24} sm={24} md={24} lg={24} xl={10}>
+                     <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <Image
                             src="/assets/Home/Offering_img.png"
                             alt="Service"
@@ -30,7 +30,7 @@ const Offer: React.FC = () => {
                             height={546}
                             className={styles.Offer_img}
                         />
-                    </Col>
+                    </Col> 
                 </Row>
             </div>
         </motion.div>

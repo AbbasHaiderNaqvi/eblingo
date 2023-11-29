@@ -50,7 +50,9 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
+.Services_First_Blog_Image{
+    margin-left: 15%;
+}
 .Services_Second_Blog_Image{
     margin-left: 10%;
 }
@@ -62,7 +64,86 @@
     font-weight: 500;
     line-height: 30.048px;  
 }
-@media( max-width:500px){
+@media (min-width:350px) and ( max-width:500px){
+    .HeroSection {
+        background-image: url('/assets/Services/Services_Image.png');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 100px;
+        width: 100%;
+        color: #fff;
+    }
+    
+    .HeroSection_Heading {
+        color: #FFF;
+        font-size: 30px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .First_Blog_Heading {
+        color: #FB6239;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    
+    .First_Blog_Paragraph {
+        color: #7A7A7A;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        text-align: center;
+        font-weight: 500;
+        line-height: 30.048px;
+    }
+    .Services_First_Blog_Image{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .Second_Blog_Heading {
+        margin-top: 10%;
+        color: #FB6239;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .Second_Blog_Paragraph {
+        color: #7A7A7A;
+        font-family: Poppins;
+        font-size: 15px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30.048px;  
+    }
+    .Services_Second_Blog_Image{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+@media (min-width:510px) and ( max-width:850px){
     .HeroSection {
         background-image: url('/assets/Services/Services_Image.png');
         background-size: cover;
@@ -132,9 +213,79 @@
         line-height: 30.048px;  
     }
     .Services_Second_Blog_Image{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         display: flex;
         justify-content: center;
+    }
+}
+@media (min-width:852px) and ( max-width:1100px){
+    .HeroSection {
+        background-image: url('/assets/Services/Services_Image.png');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 100px;
+        width: 100%;
+        color: #fff;
+    }
+    
+    .HeroSection_Heading {
+        color: #FFF;
+        font-size: 28px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .First_Blog_Heading {
+        color: #FB6239;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22.536px;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    
+    .First_Blog_Paragraph {
+        color: #7A7A7A;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30.048px;
+    }
+    .Services_First_Blog_Image{
+        width: 300px;
+        height: 300px;
+        margin-top: 5%;
+    }
+    .Second_Blog_Heading {
+        margin-top: 10%;
+        color: #FB6239;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22.536px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .Second_Blog_Paragraph {
+        color: #7A7A7A;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30.048px;  
+    }
+    .Services_Second_Blog_Image{
+        width: 300px;
+        height: 300px;
     }
 }
