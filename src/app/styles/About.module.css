@@ -17,8 +17,6 @@
     font-weight: 700;
     line-height: 30px;
     margin-bottom: 4%;
-    width: 560px;
-    height: 30px;
 
 }
 
@@ -30,8 +28,6 @@
     font-weight: 500;
     line-height: 50px;
     margin-bottom: 10%;
-    width: 570px;
-    height: 100px;
 
 }
 
@@ -49,7 +45,7 @@ line-height: 27px;
     .About_Image {
         width: 290px;
         height: 250px;
-        margin-left: 10%;
+        margin-left: 5%;
 
     }
 
@@ -60,7 +56,7 @@ line-height: 27px;
         font-style: normal;
         font-weight: 700;
         line-height: 20px;
-        margin-bottom: 2%;
+        margin-bottom: 5%;
         margin-top: 8%;
         margin-left: 10%;
     }
@@ -85,53 +81,9 @@ line-height: 27px;
         font-family: poppins;
         margin-left: 10%;
     }
-
 }
 
-@media (min-width: 600px) and (max-width: 850px) {
-    .About_Image {
-        margin-left: 15%;
-        width: 400px;
-        height: 400px;
-    }
-
-    .about_heading {
-        color: #FBAC41;
-        font-family: Poppins;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        margin-top: 10%;
-        margin-left: 10%;
-        margin-bottom: 2%;
-    }
-
-    .about_sub_heading {
-        color: #000;
-        font-family: Poppins;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 40px;
-        margin-bottom: 5%;
-        margin-left: 10%;
-
-    }
-
-    .about_paragraph {
-        color: #000;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        font-family: poppins;
-        margin-left: 10%;
-    }
-
-}
-
-@media (min-width: 600px) and (max-width: 850px) {
+@media (min-width: 500px) and (max-width: 850px) {
     .About_Image {
         margin-left: 15%;
         width: 500px;
@@ -172,7 +124,7 @@ line-height: 27px;
 
 }
 
-@media (min-width: 860px) and (max-width: 1100px) {
+@media (min-width: 850px) and (max-width: 1100px) {
     .About_Image {
         margin-left: 10%;
         width: 450px;
