@@ -181,7 +181,7 @@
         margin-top: 3%;
         width: 100%;
         max-width: 1074.93px;
-        height: 1300px;
+        height: 1150px;
         margin: 0 auto;
         margin-top: 5%;
     }
@@ -207,8 +207,8 @@
     .Input3,
     .Input4,
     .Input5 {
-        width: 350.015px;
-        height: 65.917px;
+        width: 320.015px;
+        height: 55.917px;
         border-radius: 7.951px;
         border: 0.795px solid #9F9F9F;
         font-family: Poppins;
@@ -216,24 +216,24 @@
     }
     
     .Input6 {
-        width: 350.015px;
-        height: 65.917px;        
+        width: 320.015px;
+        height: 55.917px;        
         border-radius: 7.951px;
         border: 0.795px solid #9F9F9F;
         margin-left: 4%;
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 15px;
         margin-top: 1%;
     }
     
     .TextArea {
-        width: 350.015px;
-        height: 120px;
+        width: 320.015px;
+        height: 100px;
         border-radius: 7.951px;
         margin-left: 4%;
         border: 0.795px solid #9F9F9F;
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 15px;
         margin-top: 1%;
     }
     

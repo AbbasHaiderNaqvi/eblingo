@@ -99,6 +99,7 @@
         font-weight: 300;
         line-height: 20px;
         padding-left: 10px;
+        padding-right: 10px;
     }
 
 }
@@ -151,6 +152,7 @@
         font-weight: 300;
         line-height: 27px;
         padding-left: 25px;
+        padding-right: 10px;
     }
 
 }
@@ -204,6 +206,7 @@
         font-style: normal;
         font-weight: 300;
         line-height: 27px;
+        padding-right: 10px;
     }
 
 }

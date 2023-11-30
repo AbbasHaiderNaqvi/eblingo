@@ -129,7 +129,7 @@
         margin-top: 3%;
         width: 100%;
         max-width: 1100px;
-        height: 1000px;
+        height: 900px;
         margin: 0 auto;
         margin-top: 5%;
     }
@@ -155,12 +155,12 @@
     .Input1,
     .Input2,
     .Link {
-        width: 350.015px;
-        height: 60.917px;
+        width: 320.015px;
+        height: 55.917px;
         border-radius: 7.951px;
         border: 0.795px solid #9F9F9F;
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 15px;
         padding-left: 20px;
     }
 
@@ -171,23 +171,23 @@
     }
 
     .Select {
-        width: 350.015px !important;
-        height: 60.917px;
+        width: 320.015px !important;
+        height: 55.917px;
         border: 0.795px solid #9F9F9F;
         border-radius: 7.951px;
         margin-right: 5%;
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .Submit_Button {
         margin-top: 15%;
         border-radius: 10px;
         background: #FB6239;
-        width: 170px;
-        height: 60px;
+        width: 160px;
+        height: 55px;
         color: #FFF !important;
-        font-size: 25px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;

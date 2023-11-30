@@ -101,7 +101,6 @@
         font-family: Poppins;
         font-size: 15px;
         font-style: normal;
-        text-align: center;
         font-weight: 500;
         line-height: 30.048px;
     }
@@ -129,10 +128,10 @@
         color: #7A7A7A;
         font-family: Poppins;
         font-size: 15px;
-        text-align: center;
         font-style: normal;
         font-weight: 500;
-        line-height: 30.048px;  
+        line-height: 30.048px;
+        margin-left: 10%;  
     }
     .Services_Second_Blog_Image{
         width: 300px;

@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
       <div className={styles.right}>
         {/* Show the menu icon only when screen width is between 350px and 500px */}
         <div className={styles.menuIcon} onClick={showDrawer}>
-          <MenuOutlined />
+          <MenuOutlined style={{ fontSize: '150%'}} />
         </div>
       </div>
       {/* Use Ant Design Drawer component for the responsive menu */}
