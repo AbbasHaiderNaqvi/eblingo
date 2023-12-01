@@ -11,10 +11,14 @@ import TextArea from 'antd/es/input/TextArea';
 
 
 const Contact: FC = () => {
-  const onFinish = (values: any) => {
-    console.log('Form data:', values);
-    // You can handle the form data submission here (e.g., send to a server).
-    // For now, we'll just log the data to the console.
+  
+  const onFinish = async (values: any) => {
+    try {
+      const response = await axios.post('/contact', values);
+      console.log('Form data submitted successfully:', response.data);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   const onFinishFailed = (errorInfo: any) => {
@@ -43,6 +47,7 @@ const Contact: FC = () => {
       </div>
       <div className={styles.contact_container}>
         <Form
+          method='POST'
           name="contactForm"
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}

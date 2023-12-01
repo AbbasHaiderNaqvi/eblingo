@@ -136,11 +136,11 @@
 
     .heading_translation_firm {
         color: #000;
-        font-size: 25px !important;
+        font-size: 22px !important;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        line-height: 30px !important;
+        line-height: 35px !important;
     }
 
     .quote_button {
@@ -210,22 +210,22 @@
     }
 
     .First_Service_Section {
-        margin-top: 50%;
+        margin-top: 20%;
 
     }
 
     .Second_Service_Section {
-        margin-top: 50%;
+        margin-top: 20%;
     }
 
     .third_Service_Section {
-        margin-top: 50%;
+        margin-top: 20%;
 
     }
 
     .fourth_Service_Section {
-        margin-top: 50%;
-        margin-bottom: 50%;
+        margin-top: 20%;
+        margin-bottom: 20%;
 
     }
 
@@ -332,24 +332,25 @@
     }
 
     .First_Service_Section {
-        margin-top: 40%;
+        margin-top: 20%;
 
     }
 
     .Second_Service_Section {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 
     .third_Service_Section {
-        margin-top: 40%;
+        margin-top: 20%;
 
     }
 
     .fourth_Service_Section {
-        margin-top: 40%;
-        margin-bottom: 40%;
+        margin-top: 20%;
+        margin-bottom: 20%;
 
     }
+
 
     .brands_images {
         margin-top: 2%;

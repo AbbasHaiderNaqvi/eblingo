@@ -65,7 +65,7 @@
   /* Set the background color of the drawer to white */
 }
 
-
+ 
 
 .drawerMain {
   padding: 20px;
@@ -75,12 +75,12 @@
   font-size: 18px;
   font-family: poppins;
   font-weight: 600;
-  margin-bottom: 15px;
 }
 .unorderedList li a{
   text-decoration: none;
   padding: 0;
   display: inline-block;
+  margin-bottom: 10%;
   color: black;
 }
 

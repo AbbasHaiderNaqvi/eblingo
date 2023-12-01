@@ -103,6 +103,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .Transcription_Blog_Image2 {
@@ -132,6 +134,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24.24px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .Transcription_Blog_Image3 {
@@ -161,6 +165,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24.24px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .blog_statement1 {
@@ -172,6 +178,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .blog_statement2 {
@@ -183,6 +191,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media (min-width:350px) and (max-width:500px) {

@@ -1,6 +1,6 @@
 'use client';
 import { Drawer, Dropdown, Menu, Space } from 'antd';
-import { DownOutlined, MenuOutlined } from '@ant-design/icons';
+import { CloseOutlined, DownOutlined, MenuOutlined } from '@ant-design/icons';
 import styles from '../styles/Navbar.module.css';
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -34,6 +34,10 @@ const Navbar: React.FC = () => {
       ),
     }
   ];
+  const customCloseIcon = (
+    <CloseOutlined style={{ fontSize: 24, color: '#000',marginRight:'300px' }} />
+    // Customize the icon as needed with styles
+  );
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
@@ -91,8 +95,8 @@ const Navbar: React.FC = () => {
       <Drawer
         title=""
         placement="right"
-        closable={false}
         onClose={onCloseDrawer}
+        closeIcon={customCloseIcon}
         open={drawerVisible}
         className={styles.drawer}
       >
