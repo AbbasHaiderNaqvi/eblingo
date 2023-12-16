@@ -14,7 +14,7 @@ import { MenuOutlined } from '@ant-design/icons';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Eblingo',
+  title: 'eblingo',
   description: 'Agency Service',
 }
 export default function RootLayout({
@@ -25,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   )

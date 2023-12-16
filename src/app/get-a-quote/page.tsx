@@ -6,8 +6,14 @@ import { Button, Col, Dropdown, Select, Form, Input, Row, Space, Upload, message
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { color, motion } from 'framer-motion';
 import type { SelectProps } from 'antd';
+import axios from 'axios';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { useRouter } from 'next/navigation';
 
 const GetaQuote: FC = () => {
+  const router = useRouter();
+  
   const options: SelectProps['options'] = [];
 
   for (let i = 10; i < 36; i++) {
@@ -17,15 +23,19 @@ const GetaQuote: FC = () => {
     });
   }
 
-  const handleChange = (value: string) => {
-    console.log(`selected ${value}`);
-  };
-  const onFinish = (values: any) => {
-    console.log('Form data:', values);
-    // You can handle the form data submission here (e.g., send to a server).
-    // For now, we'll just log the data to the console.
-  };
+  const onFinish = async (values: any) => {
+    try {
+      const response = await axios.post('http://localhost:3001/get-a-quote', values);
 
+      console.log('Server Response:', response.data);
+      message.success('Thank you! We will contact you soon');
+      router.push('/');
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+
+    }
+  };
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);
   };
@@ -44,6 +54,7 @@ const GetaQuote: FC = () => {
       variants={MediumAnimationVariants}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
+      <Navbar />
       <div>
         <h3 className={styles.quote_heading}>Get a quote</h3>
         <p className={styles.quote_paragraph}>
@@ -158,6 +169,7 @@ const GetaQuote: FC = () => {
           </Form>
         </div>
       </div>
+      <Footer />
     </motion.div>
   )
 }

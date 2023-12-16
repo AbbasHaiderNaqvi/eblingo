@@ -126,20 +126,14 @@
 }
 
 .email_input {
-  border: none;
-  border-bottom: 1px solid #0A142F;
   padding-left: 20px;
   height: 55px;
   width: 338px;
 }
 
-.email_input:hover {
-  border-bottom: 1px solid #FFF !important;
-}
-
 .email_icon {
   position: relative;
-  left: -25px;
+  left: -35px;
   top: 5px;
 }
 
@@ -319,7 +313,7 @@
     display: block;
     justify-content: center;
   }
-
+ 
   .email_heading {
     color: var(--Dark, #0A142F);
     font-family: Poppins;

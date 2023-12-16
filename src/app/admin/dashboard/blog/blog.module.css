@@ -1,0 +1,25 @@
+.Table{
+    width: 80%;
+    float: right;
+
+}
+.heading{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+.button{
+    width: 80px;
+    height: 50px;
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);    
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 900px;
+}
+.searchbar{
+    width: 350px;
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}

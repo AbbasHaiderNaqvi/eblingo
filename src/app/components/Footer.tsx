@@ -1,11 +1,57 @@
+"use client";
 import { ArrowRightOutlined, FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
 import styles from '../styles/Footer.module.css';
-import { Row, Col, Button, Space, Input } from 'antd';
+import { Row, Col, Button, Space, Input, Form, message } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Footer: React.FC = () => {
+    const [emailSubscribe, setEmailSubscribe] = useState('');
+    const [email, setEmail] = useState('');
+
+// Inside your Footer component
+
+const handleSubscribeClick = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: emailSubscribe }),
+      });
+  
+      if (!response.ok) {
+        console.error('Failed to send email data');
+      } else {
+        message.success('Thank you! We will keep you updated');
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+    }
+  };
+  
+  const handleArrowClick = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+  
+      if (!response.ok) {
+        console.error('Failed to send email data');
+      } else {
+        message.success('Thank you! We will keep you updated');
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+    }
+  };
+  
     return (
         <div>
             <div className={styles.rectangle_signup}>
@@ -13,9 +59,12 @@ const Footer: React.FC = () => {
                 <div className={styles.entry_container}>
                     <Input
                         placeholder='Your Email'
+                        value={emailSubscribe}
+                        onChange={(e) => setEmailSubscribe(e.target.value)}
                         className={styles.signup_input}
                     />
                     <Button
+                        onClick={handleSubscribeClick}
                         className={styles.rectangle_subcribe_button}>
                         Subscribe Now
                     </Button>
@@ -35,7 +84,7 @@ const Footer: React.FC = () => {
                         />
                         <Space className={styles.Footer_icons2}>
                             <div style={{
-                                backgroundColor:'#000',
+                                backgroundColor: '#000',
                                 width: '43px',
                                 height: '43px',
                                 display: 'flex',
@@ -43,12 +92,12 @@ const Footer: React.FC = () => {
                                 borderRadius: '8px'
                             }}>
                                 <FacebookOutlined style={{
-                                    color:'white',
+                                    color: 'white',
                                     fontSize: '150%'
                                 }} />
                             </div>
                             <div style={{
-                                backgroundColor:'#000',
+                                backgroundColor: '#000',
                                 width: '43px',
                                 height: '43px',
                                 display: 'flex',
@@ -56,12 +105,12 @@ const Footer: React.FC = () => {
                                 borderRadius: '8px'
                             }}>
                                 <LinkedinOutlined style={{
-                                    color:'white',
+                                    color: 'white',
                                     fontSize: '150%'
                                 }} />
                             </div>
                             <div style={{
-                                backgroundColor:'#000',
+                                backgroundColor: '#000',
                                 width: '43px',
                                 height: '43px',
                                 display: 'flex',
@@ -69,7 +118,7 @@ const Footer: React.FC = () => {
                                 borderRadius: '8px'
                             }}>
                                 <InstagramOutlined style={{
-                                    color:'white',
+                                    color: 'white',
                                     borderRadius: '8px',
                                     fontSize: '150%'
                                 }} />
@@ -77,8 +126,16 @@ const Footer: React.FC = () => {
                         </Space>
                         <div className={styles.email_entry}>
                             <h3 className={styles.email_heading}>Connect with us</h3>
-                            <input placeholder='E-Mail Address' className={styles.email_input} />
-                            <ArrowRightOutlined style={{ fontSize: '150%' }} className={styles.email_icon} />
+                            <input
+                                placeholder='E-Mail Address'
+                                className={styles.email_input}
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <ArrowRightOutlined
+                                style={{ fontSize: '200%' }}
+                                onClick={handleArrowClick}
+                                className={styles.email_icon} />
                         </div>
                         <div className={styles.reserved_rights}>{new Date().getFullYear()} Eblingo.All right reserved</div>
                     </Col>

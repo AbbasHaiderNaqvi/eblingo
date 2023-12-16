@@ -5,6 +5,7 @@
 }
 .video {
   height: 600px;
+  margin-top: 5%;
   width: 100%;
   display: flex;
   justify-content: center;

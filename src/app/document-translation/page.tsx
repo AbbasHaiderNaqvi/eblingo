@@ -5,6 +5,8 @@ import { Col, Row } from 'antd';
 import Image from 'next/image';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Services() {
     return (
@@ -14,6 +16,7 @@ function Services() {
             variants={MediumAnimationVariants}
             transition={{ duration: 0.8, ease: "easeOut" }}
         >
+            <Navbar />
             <div className={styles.HeroSection}>
                 <h1 className={styles.HeroSection_Heading}>Eblingo Services</h1>
             </div>
@@ -180,6 +183,7 @@ function Services() {
                     </Col>
                 </Row>
             </div>
+            <Footer />
         </motion.div>
     )
 }

@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from 'react';
 import styles from '../styles/ContactForm.module.css';
-import { Button, Col, Row } from 'antd';
-import UploadButton from '../Animations/UploadButton';
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { Button, Form, Input, Upload } from 'antd';
 import { motion } from 'framer-motion';
+import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import axios from 'axios';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -13,9 +13,9 @@ const ContactForm: React.FC = () => {
     sourceLanguage: '',
     targetLanguage: '',
     uploadedFile: null,
-  }); 
- 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLInputElement>) => {
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -23,77 +23,89 @@ const ContactForm: React.FC = () => {
     });
   };
 
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form Data:', formData);
+  const handleFileUpload = (file: any) => {
+    setFormData({
+      ...formData,
+      uploadedFile: file,
+    });
   };
-   
+
+  const handleSubmit = async () => {
+    const { name, email, sourceLanguage, targetLanguage, uploadedFile } = formData;
+
+    try {
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('sourceLanguage', sourceLanguage);
+      formData.append('targetLanguage', targetLanguage);
+
+      if (uploadedFile) {
+        formData.append('uploadedFile', uploadedFile);
+      }
+
+      const response = await axios.post('http://localhost:3001/contact', formData);
+
+      console.log('Form submitted successfully:', response.data);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
+
   return (
     <motion.div
-    initial="hidden"
-    animate="visible"
-    variants={MediumAnimationVariants}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-  >
-    <div className={styles.contact_container}>
-      <form className={styles.contact_form}
-        onSubmit={handleSubmit}>
-        <div className={styles.Form}>
-          <h1 className={styles.contactus_heading}>Contact Us!</h1>
-          <input className={styles.input_fields}
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            required
-          />
-        </div>
-        <div>
-          <input className={styles.input_fields}
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder=" Your Email"
-            required
-          />
-        </div>
-        <div>
-          <input className={styles.input_fields}
-            type="text"
-            name="sourceLanguage"
-            value={formData.sourceLanguage}
-            onChange={handleChange}
-            placeholder="Source Language"
-            required
-          />
-        </div>
-        <div>
-          <input className={styles.input_fields}
-            type="text"
-            name="targetLanguage"
-            value={formData.targetLanguage}
-            onChange={handleChange}
-            placeholder="Target Language"
-            required
-          />
-
-        </div>
-        
-        <div>
-          <UploadButton />
-        </div>
-        <div>
-
-          <Button onClick={handleSubmit}
-            className={styles.contact_button}>
-            Submit
-          </Button>
-        </div>
-      </form>
-    </div>
+      initial="hidden"
+      animate="visible"
+      variants={MediumAnimationVariants}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
+      <div className={styles.contact_container}>
+        <h1 className={styles.heading}>Contact Us!!</h1>
+        <Form
+          method="POST"
+          className={styles.contact_form}
+          onFinish={handleSubmit}
+        >
+          <Form.Item name="name">
+            <Input
+              className={styles.input_fields}
+              placeholder="Your Name"
+              onChange={handleChange}
+            />
+          </Form.Item>
+          <Form.Item name="email">
+            <Input
+              className={styles.input_fields}
+              placeholder="Your Email"
+              onChange={handleChange}
+            />
+          </Form.Item>
+          <Form.Item name="sourceLanguage">
+            <Input
+              className={styles.input_fields}
+              placeholder="Source Language"
+              onChange={handleChange}
+            />
+          </Form.Item>
+          <Form.Item name="targetLanguage">
+            <Input
+              className={styles.input_fields}
+              placeholder="Target Language"
+              onChange={handleChange}
+            />
+          </Form.Item>
+          <Form.Item name="uploadedFile">
+            <Upload onChange={(info) => handleFileUpload(info.file)}>
+              <Button className={styles.upload_button}>Choose Files</Button>
+            </Upload>
+          </Form.Item>
+          <Form.Item>
+            <Button htmlType="submit" className={styles.contact_button}>
+              Submit
+            </Button>
+          </Form.Item>
+        </Form>
+      </div>
     </motion.div>
   );
 };

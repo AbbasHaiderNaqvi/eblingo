@@ -24,3 +24,16 @@
     font-weight: 600!important;
     line-height: normal;
 }
+.ql-toolbar{
+    border-radius: 10px 10px 0 0;
+}
+
+/* for blogs */
+.blog-page p:not(:has(img)) {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/* .blog-page p img {
+    padding-left: 0;
+    padding-right: 0;
+} */
