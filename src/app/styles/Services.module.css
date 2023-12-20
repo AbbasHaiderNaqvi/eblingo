@@ -4,23 +4,25 @@
     background-position: center;
     text-align: center;
     padding: 100px;
+    height: 400px;
     width: 100%;
     color: #fff;
 }
  
 .HeroSection_Heading {
     color: #FFF;
-    font-size: 50px;
+    font-size: 35px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    padding-top: 100px;
 }
 
 .First_Blog_Heading {
     color: #FB6239;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: 22.536px;
@@ -32,7 +34,7 @@
 .First_Blog_Paragraph {
     color: #7A7A7A;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 30.048px;
@@ -42,7 +44,7 @@
 .Second_Blog_Heading {
     color: #FB6239;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: 22.536px;
@@ -59,7 +61,7 @@
 .Second_Blog_Paragraph {
     color: #7A7A7A;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 30.048px;  
@@ -71,23 +73,26 @@
         background-position: center;
         text-align: center;
         padding: 100px;
+        height: 400px;
         width: 100%;
         color: #fff;
     }
     
     .HeroSection_Heading {
         color: #FFF;
-        font-size: 30px;
+        font-size: 25px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        padding-top: 100px;
+
     }
     
     .First_Blog_Heading {
         color: #FB6239;
         font-family: Poppins;
-        font-size: 25px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 30px;
@@ -99,10 +104,11 @@
     .First_Blog_Paragraph {
         color: #7A7A7A;
         font-family: Poppins;
-        font-size: 15px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 30.048px;
+        padding-right: 25px;
     }
     .Services_First_Blog_Image{
         width: 300px;
@@ -116,7 +122,7 @@
         margin-top: 10%;
         color: #FB6239;
         font-family: Poppins;
-        font-size: 25px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 30px;
@@ -127,11 +133,12 @@
     .Second_Blog_Paragraph {
         color: #7A7A7A;
         font-family: Poppins;
-        font-size: 15px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 30.048px;
-        margin-left: 10%;  
+        margin-left: 10%;
+        padding-right: 25px;  
     }
     .Services_Second_Blog_Image{
         width: 300px;
@@ -142,7 +149,7 @@
         margin-bottom: 5%;
     }
 }
-@media (min-width:510px) and ( max-width:850px){
+@media (min-width:500px) and ( max-width:850px){
     .HeroSection {
         background-image: url('/assets/Services/Services_Image.png');
         background-size: cover;
@@ -179,7 +186,6 @@
         font-family: Poppins;
         font-size: 15px;
         font-style: normal;
-        text-align: center;
         font-weight: 500;
         line-height: 30.048px;
     }
@@ -206,10 +212,10 @@
         color: #7A7A7A;
         font-family: Poppins;
         font-size: 15px;
-        text-align: center;
         font-style: normal;
         font-weight: 500;
-        line-height: 30.048px;  
+        line-height: 30.048px;
+        padding-right: 25px;  
     }
     .Services_Second_Blog_Image{
         width: 250px;

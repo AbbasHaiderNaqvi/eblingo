@@ -75,7 +75,7 @@ function Partnerships() {
           </Col>
           <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 19 }}>
             <div className={styles.blog2content}>
-            <h3 className={styles.heading2}>Master Templates: The Foundation of Multilingual <br />Subtitling</h3>
+            <h3 className={styles.heading2}>Master Templates: The Foundation of Multilingual Subtitling</h3>
             <p className={styles.blog_Paragraph2}>Subtitles are a crucial element in the global accessibility of
               content. This importance is magnified when dealing with
               multiple languages, a challenge we meet head-on through our

@@ -1,5 +1,5 @@
 "use client";
-import { FC, ChangeEvent, FormEvent, useState } from 'react';
+import { FC, ChangeEvent, FormEvent, useState, useEffect } from 'react';
 import { Button, Col, Row, Input, Form, Upload, Select, message } from 'antd';
 import styles from '../styles/Contact.module.css';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
@@ -11,15 +11,43 @@ import TextArea from 'antd/es/input/TextArea';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/navigation';
+import api from '../axiosInterceptor/axiosInterceptor';
 
+interface Language {
+  value: string;
+  label: string;
+  type: string; // Add 'type' property to the Language interface
+}
 
 const Contact: FC = () => {
   const router = useRouter();
 
+  const [sourceLanguages, setSourceLanguages] = useState<Language[]>([]);
+  const [targetLanguages, setTargetLanguages] = useState<Language[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await api.get('/getlanguages');
+        const languages: Language[] = response.data;
+
+        const sourceLangs = languages.filter(lang => lang.type === 'source');
+        const targetLangs = languages.filter(lang => lang.type === 'target');
+
+        setSourceLanguages(sourceLangs);
+        setTargetLanguages(targetLangs);
+      } catch (error) {
+        console.error('Error fetching languages:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const onFinish = async (values: any) => {
     try {
       console.log(values);
-      const response = await axios.post('http://localhost:3001/contact', values);
+      const response = await api.post('/contact',values);
       console.log('Form data submitted successfully:', response.data);
       message.success('Thank you! We will contact you soon');
       router.push('/');
@@ -67,7 +95,13 @@ const Contact: FC = () => {
                 label="Name"
                 name="name"
                 className={styles.Row1}
-                rules={[{ required: true, message: 'Please enter your name' }]}>
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please enter your correct name',
+                    pattern: /^[A-Za-z ]+$/,
+                  },
+                ]}>
                 <Input placeholder="Your Name" autoComplete='off' className={styles.Input1} />
               </Form.Item>
             </Col>
@@ -78,7 +112,13 @@ const Contact: FC = () => {
                 label="Phone"
                 name="phone"
                 className={styles.PhoneRow}
-                rules={[{ required: true, message: 'Please enter your phone number' }]}
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please enter your correct phone number',
+                    pattern: /^[0-9]+$/,
+                  },
+                ]}
               >
                 <Input placeholder="Your Phone Number" autoComplete='off' className={styles.Input2} />
               </Form.Item>
@@ -93,8 +133,18 @@ const Contact: FC = () => {
                 label="Source Language"
                 name="sourceLanguage"
                 className={styles.Row2}
-                rules={[{ required: true, message: 'Please select source language' }]}>
-                <Input className={styles.Input3} autoComplete='off' />
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please enter correct source language',
+                    pattern: /^[A-Za-z]+$/,
+                  },
+                ]}>
+                <Select
+                    defaultValue="Select source language"
+                    options={sourceLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
+                    className={styles.Input3}
+                  />
               </Form.Item>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
@@ -104,9 +154,18 @@ const Contact: FC = () => {
                 label="Target Language"
                 name="targetLanguage"
                 className={styles.Row2}
-                rules={[{ required: true, message: 'Please select target language' }]}
-              >
-                <Input className={styles.Input4} autoComplete='off' />
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please enter correct target language',
+                    pattern: /^[A-Za-z]+$/,
+                  },
+                ]}              >
+                 <Select
+                     defaultValue="Select target language"
+                     options={targetLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
+                    className={styles.Input4}
+                  />
               </Form.Item>
             </Col>
           </Row>
@@ -119,8 +178,13 @@ const Contact: FC = () => {
                 label="Estimated Project Size"
                 name="projectSize"
                 className={styles.Row3}
-                rules={[{ required: true, message: 'Please enter estimated project size' }]}
-              >
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please enter estimated project size',
+                    pattern: /^[0-9]+$/,
+                  },
+                ]}              >
                 <Input autoComplete='off' className={styles.Input5} />
               </Form.Item>
             </Col>
@@ -144,7 +208,15 @@ const Contact: FC = () => {
 
           <Row gutter={[16, 16]}>
             <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-              <Form.Item name="email">
+              <Form.Item 
+              rules={[
+                {
+                  required: true,
+                  message: 'Please enter your email',
+                  type: 'email',
+                },
+              ]}
+              name="email">
                 <Input placeholder="Enter your email" className={styles.Input6} autoComplete='off' />
               </Form.Item>
             </Col>

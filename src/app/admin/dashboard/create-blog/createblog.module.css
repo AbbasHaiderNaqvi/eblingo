@@ -42,13 +42,16 @@
     line-height: 25px;
 }
 
-.EditBlog_Input2 {
+.editor {
     width: 125%;
-    height: 600px;
+    height: 500px;
     margin-bottom: 10%;
-    position: fixed;
-    top: 320px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.ContentContainer {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px; 
 }
 
 .EditBlog_L3 {
@@ -57,7 +60,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 25px;
+    line-height: 25px; 
 }
 
 .TextArea {
@@ -68,8 +71,6 @@
 .UpdateButton {
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
     color: #fff;
-    position: relative;
-    top: 500px;
 }
 
 .uploadbutton {

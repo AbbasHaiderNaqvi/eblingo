@@ -8,6 +8,7 @@ import axios from 'axios';
 import { SearchProps } from 'antd/es/input';
 import { useRouter } from 'next/navigation';
 import { DeleteOutlined, EditOutlined, ExclamationCircleOutlined, SearchOutlined } from '@ant-design/icons';
+import api from '@/app/axiosInterceptor/axiosInterceptor';
 
 const { Search } = Input;
 const { confirm } = Modal;
@@ -87,7 +88,7 @@ const AdBlog: React.FC = () => {
 
   const UpdateData = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/updateblog');
+      const response = await api.get('/updateblog');
       const result = response.data;
       setData(result);
       setFilteredData(result);
@@ -103,7 +104,7 @@ const AdBlog: React.FC = () => {
 
   const handleDelete = async (record: DataType) => {
     try {
-      await axios.delete(`http://localhost:3001/blogs/${record._id}`);
+      await api.delete(`/blogs/${record._id}`);
       const updatedData = data.filter((item) => item._id !== record._id);
       setData(updatedData);
       setFilteredData(updatedData);
@@ -135,10 +136,10 @@ const AdBlog: React.FC = () => {
     setFilteredData(filtered);
   };
 
-  if (!tokenAvailable) {
-    router.push('/admin/login');
-    return null;
-  }
+  // if (!tokenAvailable) {
+  //   router.push('/admin/login');
+  //   return null;
+  // }
 
   return (
     <>

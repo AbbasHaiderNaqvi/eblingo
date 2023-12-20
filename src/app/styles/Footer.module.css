@@ -15,6 +15,7 @@
 
 .term {
   display: flex;
+  margin-top: 10%;
 }
 
 .reserved_rights {

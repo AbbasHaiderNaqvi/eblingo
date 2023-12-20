@@ -124,10 +124,10 @@ const UpdateBlog: React.FC = () => {
                         />
                     </Col>
                 </Row>
-
+                <div className={styles.ContentContainer}>
                 <label className={styles.EditBlog_L3}>CONTENT:</label>
                 <ReactQuill
-                    className={styles.EditBlog_Input2}
+                    className={styles.editor}
                     value={content}
                     onChange={(value) => setContent(value)}
                     modules={{
@@ -142,6 +142,7 @@ const UpdateBlog: React.FC = () => {
                     }}
                     formats={['header', 'bold', 'italic', 'underline', 'strike', 'blockquote', 'list', 'bullet', 'link', 'image']}
                 />
+                </div>
                 <Button className={styles.UpdateButton} onClick={handleUpdate}>
                     UPDATE
                 </Button>

@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button, Col, Input, Row, Upload, message } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 import axios from 'axios';
@@ -8,6 +8,7 @@ import 'react-quill/dist/quill.snow.css';
 import Sidebar from '../../Sidebar/Sidebar';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/navigation';
+import api from '@/app/axiosInterceptor/axiosInterceptor';
 
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 const { TextArea } = Input;
@@ -34,7 +35,7 @@ const CreateBlog: React.FC = () => {
                 formData.append('image', fileList[0].originFileObj as Blob);
             }
 
-            const response = await axios.post('http://localhost:3001/blogs', formData, {
+            const response = await api.post('/blogs', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
@@ -51,7 +52,6 @@ const CreateBlog: React.FC = () => {
     const handleFileChange = ({ fileList }: { fileList: any[] }) => {
         setFileList(fileList);
     };
-
     return (
         <div>
             <Sidebar />
@@ -97,13 +97,13 @@ const CreateBlog: React.FC = () => {
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                 />
-
+ 
                     </Col>
                 </Row>
-              
+                <div className={styles.ContentContainer}>
                 <label className={styles.EditBlog_L3}>CONTENT:</label>
                 <ReactQuill
-                    className={styles.EditBlog_Input2}
+                    className={styles.editor}
                     value={content}
                     onChange={(value) => setContent(value)}
                     modules={{
@@ -117,6 +117,7 @@ const CreateBlog: React.FC = () => {
                     }}
                     formats={['header', 'bold', 'italic', 'underline', 'strike', 'blockquote', 'list', 'bullet', 'link', 'image']}
                 />
+                </div>
                 <Button className={styles.UpdateButton} onClick={handleUpdate}>
                     SUBMIT
                 </Button>

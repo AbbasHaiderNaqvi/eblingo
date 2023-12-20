@@ -5,53 +5,56 @@ import { Row, Col, Button, Space, Input, Form, message } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import api from '../axiosInterceptor/axiosInterceptor';
 
 const Footer: React.FC = () => {
     const [emailSubscribe, setEmailSubscribe] = useState('');
     const [email, setEmail] = useState('');
 
-// Inside your Footer component
+    // Inside your Footer component
 
-const handleSubscribeClick = async () => {
-    try {
-      const response = await fetch('http://localhost:3001/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email: emailSubscribe }),
-      });
-  
-      if (!response.ok) {
-        console.error('Failed to send email data');
-      } else {
-        message.success('Thank you! We will keep you updated');
-      }
-    } catch (error) {
-      console.error('Network error:', error);
-    }
-  };
-  
-  const handleArrowClick = async () => {
-    try {
-      const response = await fetch('http://localhost:3001/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-  
-      if (!response.ok) {
-        console.error('Failed to send email data');
-      } else {
-        message.success('Thank you! We will keep you updated');
-      }
-    } catch (error) {
-      console.error('Network error:', error);
-    }
-  };
-  
+    const handleSubscribeClick = async () => {
+        try {
+            // Validate the email format before sending the request
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailSubscribe)) {
+                message.error('Please enter a valid email address');
+                return;
+            }
+
+            const response = await api.post('/email', { email: emailSubscribe });
+
+            if (response.status !== 200) {
+                message.success('Thank you! We will keep you updated');
+            } else {
+                message.error('Failed to send email');
+
+            }
+        } catch (error) {
+            console.error('Network error:', error);
+        }
+    };
+
+    const handleArrowClick = async () => {
+        try {
+            // Validate the email format before sending the request
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                message.error('Please enter a valid email address');
+                return;
+            }
+
+            const response = await api.post('/email', { email });
+
+            if (response.status !== 200) {
+                message.success('Thank you! We will keep you updated');
+            } else {
+                message.error('Failed to send email');
+            }
+        } catch (error) {
+            console.error('Network error:', error);
+        }
+    };
     return (
         <div>
             <div className={styles.rectangle_signup}>
@@ -141,52 +144,76 @@ const handleSubscribeClick = async () => {
                     </Col>
                     <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <ul className={styles.socialmedia_links}>
-                            <li className={styles.links}>Facebook</li>
-                            <li className={styles.links}>Instagram</li>
-                            <li className={styles.links}>Linkedin</li>
-                            <li className={styles.links}>Pinterest</li>
+                            <li className={styles.links}>Facebook
+                                <div style={{
+                                    marginTop: '45%',
+                                    backgroundColor: '#ED1E78',
+                                    width: '43px',
+                                    height: '43px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    borderRadius: '3px'
+                                }}>
+                                    <FacebookOutlined style={{
+                                        backgroundColor: '#ED1E78',
+                                        fontSize: '150%',
+                                        color: '#fff'
+                                    }} />
+                                </div>
+                            </li>
+                            <li className={styles.links}>Instagram
+                                <div style={{
+                                    marginTop: '45%',
+                                    backgroundColor: '#ED1E78',
+                                    width: '43px',
+                                    height: '43px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    borderRadius: '3px'
+                                }}>
+                                    <InstagramOutlined style={{
+                                        backgroundColor: '#ED1E78',
+                                        fontSize: '150%',
+                                        color: '#fff'
+                                    }} />
+                                </div>
+                            </li>
+                            <li className={styles.links}>Linkedin
+                                <div style={{
+                                    marginTop: '55%',
+                                    backgroundColor: '#ED1E78',
+                                    width: '43px',
+                                    height: '43px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    borderRadius: '3px'
+                                }}>
+                                    <LinkedinOutlined style={{
+                                        backgroundColor: '#ED1E78',
+                                        fontSize: '150%',
+                                        color: '#fff'
+                                    }} />
+                                </div>
+                            </li>
+                            <li className={styles.links}>Pinterest
+                                <div style={{
+                                    marginTop: '55%',
+                                    backgroundColor: '#ED1E78',
+                                    width: '43px',
+                                    height: '43px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    borderRadius: '3px'
+                                }}>
+                                    <Image
+                                        src="/assets/Home/pinterest.png"
+                                        alt="icon"
+                                        width={30}
+                                        height={30}
+                                         />
+                                </div>
+                            </li>
                         </ul>
-                        <Space className={styles.Footer_icons}>
-                            <div style={{
-                                backgroundColor: '#ED1E78',
-                                width: '43px',
-                                height: '43px',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                borderRadius: '3px'
-                            }}>
-                                <FacebookOutlined style={{
-                                    backgroundColor: '#ED1E78',
-                                    fontSize: '150%'
-                                }} />
-                            </div>
-                            <div style={{
-                                backgroundColor: '#ED1E78',
-                                width: '43px',
-                                height: '43px',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                borderRadius: '3px'
-                            }}>
-                                <LinkedinOutlined style={{
-                                    backgroundColor: '#ED1E78',
-                                    fontSize: '150%'
-                                }} />
-                            </div>
-                            <div style={{
-                                backgroundColor: '#ED1E78',
-                                width: '43px',
-                                height: '43px',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                borderRadius: '3px'
-                            }}>
-                                <InstagramOutlined style={{
-                                    backgroundColor: '#ED1E78',
-                                    fontSize: '150%'
-                                }} />
-                            </div>
-                        </Space>
                         <div className={styles.term}>
                             <div className={styles.privacy_policy}>Privacy Policy</div>
                             <div className={styles.terms_and_condition}> Terms and Conditions</div>

@@ -7,6 +7,7 @@ import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import api from '../axiosInterceptor/axiosInterceptor';
 
 interface Blog {
   _id: string;
@@ -21,7 +22,7 @@ const Blog: React.FC = () => {
 
   const fetchTopBlogs = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/blogs/top3');
+      const response = await api.get('/blogs/top3');
       setBlogs(response.data);
     } catch (error) {
       console.error('Error fetching top blogs:', error);

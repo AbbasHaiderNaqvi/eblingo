@@ -4,6 +4,8 @@ import { useParams } from 'next/navigation'
 import axios from 'axios';
 import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
+import api from '@/app/axiosInterceptor/axiosInterceptor';
+import { Skeleton } from 'antd';
 
 interface Blog {
     id: string;
@@ -22,7 +24,7 @@ const IndividualBlog: React.FC = () => {
         const fetchBlog = async () => {
             try {
                 if (id && typeof id === 'string') {
-                    const response = await axios.get(`http://localhost:3001/blogs/${id}`);
+                    const response = await api.get(`/blogs/${id}`);
                     setBlog(response.data);
                 } else {
                     console.error('Invalid blog ID');
@@ -39,7 +41,11 @@ const IndividualBlog: React.FC = () => {
     }, []); // Added id to the dependency array
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div>
+            <Navbar />
+            <Skeleton avatar paragraph={{ rows: 4 }} />
+            <Footer />
+        </div>
     }
 
     if (!blog) {

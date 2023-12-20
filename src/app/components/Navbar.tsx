@@ -41,6 +41,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
+      <Link href="/">
         <Image
           src='/assets/Home/logo.png'
           alt='Logo'
@@ -48,26 +49,27 @@ const Navbar: React.FC = () => {
           height={150}
           className={styles.logo}
         />
+      </Link>
       </div>
       <div className={styles.center}>
         <ul className={styles.navLinks}>
           <li>
-            <Link href="/" legacyBehavior>
-              <a>Home</a>
+            <Link href="/">
+              Home
             </Link>
           </li>
           <li>
-            <Link href="/media-localization" legacyBehavior>
-              <a>Media localization</a>
+            <Link href="/media-localization" >
+             Media localization
             </Link>
           </li>
           <li>
-            <Link href="/document-translation" legacyBehavior>
-              <a>Document Translation</a>
+            <Link href="/document-translation">
+              Document Translation
             </Link>
           </li>
           <li>
-            <Link href="/partnership" legacyBehavior className={styles.partnership}>
+            <Link href="/partnership" className={styles.partnership}>
               <Dropdown menu={{ items }}>
                 <a onClick={(e) => e.preventDefault()}>
                   <Space>
@@ -79,8 +81,8 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/contact" legacyBehavior>
-              <a>Contact Us</a>
+            <Link href="/contact">
+             Contact Us
             </Link>
           </li>
         </ul>
@@ -102,6 +104,7 @@ const Navbar: React.FC = () => {
       >
         {/* Logo in the drawer header */}
         <div className={styles.drawerHeader}>
+        <Link href="/" >
           <Image
             src='/assets/Home/logo.png'
             alt="Logo"
@@ -109,38 +112,39 @@ const Navbar: React.FC = () => {
             height={200}
             className={styles.drawerLogo}
           />
+          </Link>
         </div>
         {/* List of pages in the drawer content */}
         <div className={styles.drawerMain}>
           <ul className={styles.unorderedList}>
               <li>
-                <Link href="/" legacyBehavior>
-                  <a>Home</a>
+                <Link href="/" >
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="/media-localization" legacyBehavior>
-                  <a>Media localization</a>
+                <Link href="/media-localization">
+                  Media localization
                 </Link>
               </li>
               <li>
-                <Link href="/document-translation" legacyBehavior>
-                  <a>Document Translation</a>
+                <Link href="/document-translation">
+                  Document Translation
                 </Link>
               </li>
               <li>
-                <Link href="/media-partnership" legacyBehavior>
-                  <a>Media Partnership</a>
+                <Link href="/media-partnership">
+                  Media Partnership
                 </Link>
               </li>
               <li>
-                <Link href="/publication-partnership" legacyBehavior>
-                  <a>Publication Partnership</a>
+                <Link href="/publication-partnership" >
+                  Publication Partnership
                 </Link>
               </li>
               <li>
-                <Link href="/contact" legacyBehavior>
-                  <a>Contact Us</a>
+                <Link href="/contact" >
+                  Contact Us
                 </Link>
               </li>
             </ul>

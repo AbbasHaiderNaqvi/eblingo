@@ -1,5 +1,5 @@
 .navbar{
-    background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    background-image: linear-gradient(to bottom, #faaf40, #ed1e78);
     width: 20%;
     height: 100vh;
     display: inline-table;
@@ -14,7 +14,7 @@
 }
 .list li a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-family: Poppins;
     font-size: 20px;
     font-weight: 600;
@@ -23,6 +23,7 @@
 
 .list li{
     margin-bottom: 10%;
+    list-style: none;
 }
 .logo{
     margin-top: 30%;
@@ -31,7 +32,7 @@
 }
 
 .active {
-background-color: white !important;
+background-color: #ed1e78 !important;
     border-radius: 50px;
     color: #000;
   }

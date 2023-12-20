@@ -27,6 +27,9 @@ function Sidebar() {
         <li className={pathname === '/admin/dashboard/newsletter-applicant' ? styles.active : ''}>
           <Link href='./newsletter-applicant'>NewsLetter</Link>
         </li>
+        <li className={pathname === '/admin/dashboard/languages' ? styles.active : ''}>
+          <Link href='./languages' >Languages</Link>
+        </li>
         <li className={pathname === '/admin/dashboard/blog' ? styles.active : ''}>
           <Link href='./blog' >Blogs</Link>
         </li>

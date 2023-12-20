@@ -7,6 +7,7 @@ import Sidebar from '../../Sidebar/Sidebar';
 import axios from 'axios';
 import { SearchProps } from 'antd/es/input';
 import { ReloadOutlined, SyncOutlined } from '@ant-design/icons';
+import api from '@/app/axiosInterceptor/axiosInterceptor';
 
 const { Search } = Input;
 
@@ -35,7 +36,7 @@ const ContactTable: React.FC = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:3001/admin/dashboard/connect-email');
+            const response = await api.get('/admin/dashboard/connect-email');
             const result = response.data;
             setData(result);
             setFilteredData(result); 

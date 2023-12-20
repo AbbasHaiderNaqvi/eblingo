@@ -33,6 +33,7 @@
   margin-right: 30px;
   display: inline;
   margin: 0 35px;
+  cursor: pointer;
 }
 
 .navLinks a {

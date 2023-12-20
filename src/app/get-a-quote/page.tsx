@@ -1,5 +1,5 @@
 'use client';
-import { type FC } from 'react';
+import { useEffect, type FC } from 'react';
 import React, { useState } from 'react'
 import styles from '../styles/QuoteButton.module.css';
 import { Button, Col, Dropdown, Select, Form, Input, Row, Space, Upload, message } from 'antd';
@@ -10,22 +10,42 @@ import axios from 'axios';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/navigation';
+import api from '../axiosInterceptor/axiosInterceptor';
+
+interface Language {
+  value: string;
+  label: string;
+  type: string; // Add 'type' property to the Language interface
+}
 
 const GetaQuote: FC = () => {
   const router = useRouter();
   
-  const options: SelectProps['options'] = [];
+  const [sourceLanguages, setSourceLanguages] = useState<Language[]>([]);
+  const [targetLanguages, setTargetLanguages] = useState<Language[]>([]);
 
-  for (let i = 10; i < 36; i++) {
-    options.push({
-      value: i.toString(36) + i,
-      label: i.toString(36) + i,
-    });
-  }
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await api.get('/getlanguages');
+        const languages: Language[] = response.data;
+
+        const sourceLangs = languages.filter(lang => lang.type === 'source');
+        const targetLangs = languages.filter(lang => lang.type === 'target');
+
+        setSourceLanguages(sourceLangs);
+        setTargetLanguages(targetLangs);
+      } catch (error) {
+        console.error('Error fetching languages:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const onFinish = async (values: any) => {
     try {
-      const response = await axios.post('http://localhost:3001/get-a-quote', values);
+      const response = await api.post('/get-a-quote', values);
 
       console.log('Server Response:', response.data);
       message.success('Thank you! We will contact you soon');
@@ -75,7 +95,14 @@ const GetaQuote: FC = () => {
                   label="Name"
                   name="name"
                   className={styles.Row1}
-                  rules={[{ required: true, message: 'Please enter your name' }]}>
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please enter your name',
+                      pattern: /^[A-Za-z ]+$/,
+                    },
+                  ]}
+                >
                   <Input placeholder="Your Name" autoComplete='off' className={styles.Input1} />
                 </Form.Item>
               </Col>
@@ -86,7 +113,13 @@ const GetaQuote: FC = () => {
                   label="Email Address"
                   name="email"
                   className={styles.emailRow}
-                  rules={[{ required: true, message: 'Please enter your email' }]}
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please enter your email',
+                      type: 'email',
+                    },
+                  ]}
                 >
                   <Input placeholder="Your Email Address" autoComplete='off' className={styles.Input2} />
                 </Form.Item>
@@ -101,11 +134,17 @@ const GetaQuote: FC = () => {
                   label="Source Language"
                   name="sourceLanguage"
                   className={styles.Row2}
-                  rules={[{ required: true, message: 'Please select source language' }]}>
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please select source language',
+                      pattern: /^[A-Za-z]+$/,
+                    },
+                  ]}
+                >
                   <Select
-                    mode="tags"
-                    placeholder="Select source language"
-                    options={options}
+                    defaultValue="Select source language"
+                    options={sourceLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
                     className={styles.Select}
                   />
                 </Form.Item>
@@ -117,12 +156,17 @@ const GetaQuote: FC = () => {
                   label="Target Language"
                   name="targetLanguage"
                   className={styles.Row2}
-                  rules={[{ required: true, message: 'Please select target language' }]}
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please select target language',
+                      pattern: /^[A-Za-z]+$/,
+                    },
+                  ]}
                 >
                   <Select
-                    mode="tags"
-                    placeholder="Select target language"
-                    options={options}
+                     defaultValue="Select target language"
+                     options={targetLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
                     className={styles.Select}
                   />
                 </Form.Item>
@@ -136,11 +180,22 @@ const GetaQuote: FC = () => {
                   label="Services"
                   name="services"
                   className={styles.Row3}
-                  rules={[{ required: true, message: 'Please select Correct Service' }]}
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please select correct service',
+                      pattern: /^[A-Za-z-]+$/, // Adjusted pattern to allow hyphen
+                    },
+                  ]}
                 >
                   <Select
-                    mode="tags"
-                    options={options}
+                     defaultValue="Services"
+                     options={[
+                       { value: 'data-localization', label: 'Data Localization' }, // Adjusted service values
+                       { value: 'document-translation', label: 'Document Translation' },
+                       { value: 'media-translation', label: 'Media Translation' },
+                       { value: 'publishing-partnership', label: 'Publishing Partnership' },
+                     ]}
                     className={styles.Select}
                   />
                 </Form.Item>
@@ -171,7 +226,7 @@ const GetaQuote: FC = () => {
       </div>
       <Footer />
     </motion.div>
-  )
-}
+  );
+};
 
-export default GetaQuote;
+export default GetaQuote; 

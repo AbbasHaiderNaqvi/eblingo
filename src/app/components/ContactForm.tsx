@@ -1,57 +1,34 @@
 "use client";
 import React, { useState } from 'react';
 import styles from '../styles/ContactForm.module.css';
-import { Button, Form, Input, Upload } from 'antd';
+import { Button, Form, Input, Upload, message } from 'antd';
 import { motion } from 'framer-motion';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import axios from 'axios';
+import api from '../axiosInterceptor/axiosInterceptor';
 
 const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    sourceLanguage: '',
-    targetLanguage: '',
-    uploadedFile: null,
-  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleFileUpload = (file: any) => {
-    setFormData({
-      ...formData,
-      uploadedFile: file,
-    });
-  };
-
-  const handleSubmit = async () => {
-    const { name, email, sourceLanguage, targetLanguage, uploadedFile } = formData;
-
+  const onFinish = async (values: any) => {
     try {
-      const formData = new FormData();
-      formData.append('name', name);
-      formData.append('email', email);
-      formData.append('sourceLanguage', sourceLanguage);
-      formData.append('targetLanguage', targetLanguage);
-
-      if (uploadedFile) {
-        formData.append('uploadedFile', uploadedFile);
-      }
-
-      const response = await axios.post('http://localhost:3001/contact', formData);
-
-      console.log('Form submitted successfully:', response.data);
+      console.log(values);
+      const response = await api.post('/contact', values);
+      console.log('Form data submitted successfully:', response.data);
+      message.success('Thank you! We will contact you soon');
     } catch (error) {
       console.error('Error submitting form:', error);
     }
   };
 
+  const onFinishFailed = (errorInfo: any) => {
+    console.log('Failed:', errorInfo);
+  };
+
+  const normFile = (e: any) => {
+    if (Array.isArray(e)) {
+      return e;
+    }
+    return e && e.fileList;
+  };
   return (
     <motion.div
       initial="hidden"
@@ -62,45 +39,77 @@ const ContactForm: React.FC = () => {
       <div className={styles.contact_container}>
         <h1 className={styles.heading}>Contact Us!!</h1>
         <Form
-          method="POST"
-          className={styles.contact_form}
-          onFinish={handleSubmit}
+          method='POST'
+          name="contactForm"
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
         >
-          <Form.Item name="name">
+          <Form.Item
+            name="name"
+            rules={[
+              {
+                required: true,
+                message: 'Please enter your correct name',
+                pattern: /^[A-Za-z ]+$/,
+              },
+            ]}
+          >
             <Input
               className={styles.input_fields}
               placeholder="Your Name"
-              onChange={handleChange}
             />
           </Form.Item>
-          <Form.Item name="email">
+          <Form.Item
+            name="email"
+
+          >
             <Input
               className={styles.input_fields}
               placeholder="Your Email"
-              onChange={handleChange}
             />
           </Form.Item>
-          <Form.Item name="sourceLanguage">
+          <Form.Item
+            name="sourceLanguage"
+            rules={[
+              {
+                required: true,
+                message: 'Please enter correct source language',
+                pattern: /^[A-Za-z]+$/,
+              },
+            ]}
+          >
             <Input
               className={styles.input_fields}
               placeholder="Source Language"
-              onChange={handleChange}
             />
           </Form.Item>
-          <Form.Item name="targetLanguage">
+          <Form.Item
+            name="targetLanguage"
+            rules={[
+              {
+                required: true,
+                message: 'Please enter correct target language',
+                pattern: /^[A-Za-z]+$/,
+              },
+            ]}
+          >
             <Input
               className={styles.input_fields}
               placeholder="Target Language"
-              onChange={handleChange}
             />
           </Form.Item>
-          <Form.Item name="uploadedFile">
-            <Upload onChange={(info) => handleFileUpload(info.file)}>
+          <Form.Item
+            name="uploadDocument"
+            valuePropName="fileList"
+            getValueFromEvent={normFile}
+            rules={[{ required: true, message: 'Please enter Document' }]}
+          >
+            <Upload name="logo" action="/upload.do" listType="text">
               <Button className={styles.upload_button}>Choose Files</Button>
             </Upload>
           </Form.Item>
           <Form.Item>
-            <Button htmlType="submit" className={styles.contact_button}>
+            <Button className={styles.contact_button} htmlType='submit'>
               Submit
             </Button>
           </Form.Item>

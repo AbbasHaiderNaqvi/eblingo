@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import styles from '../login/Login.module.css'
 import { Form, Input, Button, message } from 'antd';
-import axios from 'axios';
 import { useRouter } from 'next/navigation'
+import api from '@/app/axiosInterceptor/axiosInterceptor';
 
 const Login: React.FC = () => {
   const router= useRouter();
@@ -13,7 +13,7 @@ const Login: React.FC = () => {
     setLoading(true);
     try {
       console.log(values);
-      const response = await axios.post('http://localhost:3001/login', values);
+      const response = await api.post('/login', values);
       const { Token } = response.data;
 
       if (Token) {
