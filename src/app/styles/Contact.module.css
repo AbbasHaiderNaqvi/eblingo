@@ -305,7 +305,7 @@
         color: #FFF;
         font-family: Poppins;
         font-size: 30px;
-        font-style: normal;
+        font-style: normal; 
         font-weight: 600;
         line-height: normal;
         padding-top: 100px;
@@ -366,7 +366,6 @@
         width: 340.015px!important;
         height: 65.917px;
         border-radius: 7.951px;
-        border: 0.795px solid #9F9F9F;
         font-family: Poppins;
         font-size: 15px;
         padding-left: 20px;

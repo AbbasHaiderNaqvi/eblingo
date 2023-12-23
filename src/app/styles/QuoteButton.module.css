@@ -1,15 +1,16 @@
 .quote_heading {
     color: #1B1A1A;
-    font-size: 36px;
+    font-size: 35px;
     margin-top: 5%;
     text-align: center;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     font-family: Poppins;
+    margin-top: 10%;
 }
 
-
+ 
 .quote_paragraph {
     color: #000;
     text-align: center;
@@ -62,9 +63,14 @@
     border-radius: 7.951px;
     border: 0.795px solid #9F9F9F;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 15px;
 }
+.Input1::placeholder,
+.Input2::placeholder,
+.Link::placeholder{
+    color: #A19F9F;
 
+}
 .Input1:hover,
 .Input2:hover,
 .Link:hover {

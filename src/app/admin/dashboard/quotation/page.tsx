@@ -9,6 +9,7 @@ import { SearchProps } from 'antd/es/input';
 import { ReloadOutlined, SyncOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import api from '@/app/axiosInterceptor/axiosInterceptor';
+import { useRouter } from 'next/navigation';
 
 const { Search } = Input;
 
@@ -64,9 +65,11 @@ const columns: ColumnsType<DataType> = [
 
 
 const ContactTable: React.FC = () => {
-
+    const router= useRouter();
     const [data, setData] = useState<DataType[]>([]);
     const [filteredData, setFilteredData] = useState<DataType[]>([]);
+    const [tokenAvailable, setTokenAvailable] = useState<boolean>(true); 
+
 
     const fetchData = async () => {
         try {
@@ -79,8 +82,13 @@ const ContactTable: React.FC = () => {
         }
     };
     useEffect(() => {
-        fetchData();
-    }, []);
+        const token = localStorage.getItem('token'); 
+        if (!token) {
+            setTokenAvailable(false);
+        } else {
+            fetchData();
+        }
+    }, []); 
 
     const onSearch: SearchProps['onSearch'] = (value) => {
         const filtered = data.filter((item) =>
@@ -88,6 +96,10 @@ const ContactTable: React.FC = () => {
         );
         setFilteredData(filtered);
     };
+    if (!tokenAvailable) {
+        router.push('/admin/login');
+        return null;
+    }
     return (
         <>
             <Sidebar />

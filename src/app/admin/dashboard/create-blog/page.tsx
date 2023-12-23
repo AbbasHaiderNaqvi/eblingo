@@ -19,6 +19,7 @@ const CreateBlog: React.FC = () => {
     const [content, setContent] = useState('');
     const [description, setDescription] = useState('');
     const [fileList, setFileList] = useState<any[]>([]);
+    const [tokenAvailable, setTokenAvailable] = useState<boolean>(true); 
 
     const handleUpdate = async () => {
         try {
@@ -48,10 +49,21 @@ const CreateBlog: React.FC = () => {
             console.error('Error creating blog:', error);
         }
     };
-
+    useEffect(() => {
+        const token = localStorage.getItem('token'); 
+        if (!token) {
+            setTokenAvailable(false);
+        } else {
+            handleUpdate();
+        }
+    }, []); 
     const handleFileChange = ({ fileList }: { fileList: any[] }) => {
         setFileList(fileList);
     };
+    if (!tokenAvailable) {
+        router.push('/admin/login');
+        return null;
+    }
     return (
         <div>
             <Sidebar />

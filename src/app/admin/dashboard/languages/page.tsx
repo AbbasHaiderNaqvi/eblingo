@@ -139,6 +139,10 @@ const LanguagePage: React.FC = () => {
       updateData();
     }
   }, []);
+  if (!tokenAvailable) {
+    router.push('/admin/login');
+    return null;
+}
 
   return (
     <>

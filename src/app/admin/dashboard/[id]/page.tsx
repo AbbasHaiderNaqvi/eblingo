@@ -19,6 +19,7 @@ const UpdateBlog: React.FC = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const [description, setDescription] = useState('');
+    const [tokenAvailable, setTokenAvailable] = useState<boolean>(true); 
     const [fileList, setFileList] = useState<any[]>([]);
     const id = params.id;
 
@@ -32,7 +33,6 @@ const UpdateBlog: React.FC = () => {
                 setTitle(blogData.title);
                 setContent(blogData.content);
                 setDescription(blogData.description);
-                // Note: You might need to handle the image separately if needed
             } catch (error) {
                 console.error('Error fetching blog details:', error);
             }
@@ -63,18 +63,21 @@ const UpdateBlog: React.FC = () => {
             message.success('Blog Updated');
         } catch (error) {
             console.error('Error updating blog:', error);
+
         }
     };
 
+    
     const handleFileChange = ({ fileList }: { fileList: any[] }) => {
         setFileList(fileList);
     };
-
-    // Wait until the blog data is fetched before rendering the form
     if (!blog) {
         return null; // or you can show a loading indicator
     }
-
+    if (!tokenAvailable) {
+        router.push('/admin/login');
+        return null;
+    }
     return (
         <div>
             <Sidebar />

@@ -198,7 +198,7 @@ const Contact: FC = () => {
                 className={styles.Row3}
                 getValueFromEvent={normFile}
                 rules={[{ required: true, message: 'Please enter Document' }]}
-              >
+              > 
                 <Upload name="logo" action="/upload.do" listType="text">
                   <Button className={styles.UploadButton} icon={<UploadOutlined />}>Choose Files</Button>
                 </Upload>

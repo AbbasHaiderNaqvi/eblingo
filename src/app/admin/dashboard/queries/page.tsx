@@ -7,7 +7,7 @@ import Sidebar from '../../Sidebar/Sidebar';
 import axios from 'axios';
 import { SearchProps } from 'antd/es/input';
 import { useRouter } from 'next/navigation'
-import { ReloadOutlined, SyncOutlined } from '@ant-design/icons';
+import { DownloadOutlined, ReloadOutlined, SyncOutlined } from '@ant-design/icons';
 import api from '@/app/axiosInterceptor/axiosInterceptor';
 
 
@@ -21,7 +21,7 @@ interface DataType {
     sourceLanguage: string;
     targetLanguage: string;
     projectSize: string;
-    uploadDocument: string[]; 
+    uploadDocument: string[];
     message: string;
     submissionDateTime: string;
 }
@@ -40,12 +40,12 @@ const columns: ColumnsType<DataType> = [
     {
         title: 'SOURCE',
         dataIndex: 'sourceLanguage',
-        width: 30, 
+        width: 30,
     },
     {
         title: 'TARGET',
         dataIndex: 'targetLanguage',
-        width: 30, 
+        width: 30,
     },
     {
         title: 'COST ($)',
@@ -69,13 +69,11 @@ const columns: ColumnsType<DataType> = [
     }
 ];
 
-
-
 const ContactTable: React.FC = () => {
-    const router= useRouter();
+    const router = useRouter();
     const [data, setData] = useState<DataType[]>([]);
     const [filteredData, setFilteredData] = useState<DataType[]>([]);
-    const [tokenAvailable, setTokenAvailable] = useState<boolean>(true); 
+    const [tokenAvailable, setTokenAvailable] = useState<boolean>(true);
 
 
     const fetchData = async () => {
@@ -83,20 +81,20 @@ const ContactTable: React.FC = () => {
             const response = await api.get('/admin/dashboard/contact-table');
             const result = response.data;
             setData(result);
-            setFilteredData(result); 
+            setFilteredData(result);
         } catch (error) {
             console.error('Error fetching data:', error);
             setTokenAvailable(false);
         }
     };
     useEffect(() => {
-        const token = localStorage.getItem('token'); 
+        const token = localStorage.getItem('token');
         if (!token) {
             setTokenAvailable(false);
         } else {
             fetchData();
         }
-    }, []); 
+    }, []);
 
 
     const onSearch: SearchProps['onSearch'] = (value) => {
@@ -106,15 +104,15 @@ const ContactTable: React.FC = () => {
         setFilteredData(filtered);
     };
     if (!tokenAvailable) {
-        router.push('/login');
+        router.push('/admin/login');
         return null;
     }
     return (
         <>
-        <Sidebar/>
-        <div>
-            <h1 className={styles.heading}>CONTACT US</h1>
-            <Search
+            <Sidebar />
+            <div>
+                <h1 className={styles.heading}>CONTACT US</h1>
+                <Search
                     placeholder="input search text"
                     allowClear
                     enterButton
@@ -122,9 +120,9 @@ const ContactTable: React.FC = () => {
                     size="large"
                     onSearch={onSearch}
                 />
-                    <Table className={styles.Table} columns={columns} dataSource={filteredData}  pagination={{ pageSize: 50 }} scroll={{ y: 280 }} />
-                    <Button onClick={fetchData} className={styles.button}><ReloadOutlined style={{fontSize:'150%'}}/></Button>
-        </div>
+                <Table className={styles.Table} columns={columns} dataSource={filteredData} pagination={{ pageSize: 50 }} scroll={{ y: 280 }} />
+                <Button onClick={fetchData} className={styles.button}><ReloadOutlined style={{ fontSize: '150%' }} /></Button>
+            </div>
         </>
     );
 };

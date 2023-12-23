@@ -14,6 +14,7 @@
 
 @media (min-width: 350px) and (max-width: 500px) {
   .video {
+    padding-top: 50px;
     height: 250px;
     width: 100%;
     display: flex;

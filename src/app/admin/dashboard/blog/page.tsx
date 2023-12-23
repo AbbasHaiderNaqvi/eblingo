@@ -120,7 +120,7 @@ const AdBlog: React.FC = () => {
       console.error('Error data:', error);
       setTokenAvailable(false);
     }
-  };
+  }; 
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -136,10 +136,10 @@ const AdBlog: React.FC = () => {
     setFilteredData(filtered);
   };
 
-  // if (!tokenAvailable) {
-  //   router.push('/admin/login');
-  //   return null;
-  // }
+  if (!tokenAvailable) {
+    router.push('/admin/login');
+    return null;
+  }
 
   return (
     <>
