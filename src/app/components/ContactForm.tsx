@@ -37,26 +37,12 @@ const ContactForm: React.FC = () => {
 
   const onFinish = async (values: any) => {
     try {
-      const formData = new FormData();
-      formData.append('uploadDocument', values.uploadDocument[0].originFileObj);
-
-      formData.append('name', values.name);
-      formData.append('email', values.email);
-      formData.append('sourceLanguage', values.sourceLanguage);
-      formData.append('targetLanguage', values.targetLanguage);
-
       console.log(values);
-      const response = await api.post('/contact', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
-
+      const response = await api.post('/contact', values);
       console.log('Form data submitted successfully:', response.data);
       message.success('Thank you! We will contact you soon');
     } catch (error) {
       console.error('Error submitting form:', error);
-      message.error('Error submitting form. Please try again.');
     }
   };
 
@@ -70,7 +56,6 @@ const ContactForm: React.FC = () => {
     }
     return e && e.fileList;
   };
-
   return (
     <motion.div
       initial="hidden"
@@ -103,6 +88,7 @@ const ContactForm: React.FC = () => {
           </Form.Item>
           <Form.Item
             name="email"
+
           >
             <Input
               className={styles.input_fields}
@@ -145,9 +131,9 @@ const ContactForm: React.FC = () => {
             name="uploadDocument"
             valuePropName="fileList"
             getValueFromEvent={normFile}
-            rules={[{ required: true, message: 'Please upload a document' }]}
+            rules={[{ required: true, message: 'Please enter Document' }]}
           >
-            <Upload>
+            <Upload name="logo" action="/upload.do" listType="text">
               <Button className={styles.upload_button}>Choose Files</Button>
             </Upload>
           </Form.Item>
