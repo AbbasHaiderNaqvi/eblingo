@@ -1,0 +1,80 @@
+.Edit_Blog {
+    float: right;
+    margin-right: 20%;
+    margin-top: 2%;
+    width: 55%;
+    position: relative;
+    z-index: 1;
+}
+
+.heading {
+    margin-bottom: 5%;
+    color: #000;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+
+}
+
+.EditBlog_L1 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.EditBlog_Input1 {
+    width: 400px;
+    margin-bottom: 5%;
+}
+
+.EditBlog_L2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.editor {
+    width: 125%;
+    height: 500px;
+    margin-bottom: 10%;
+}
+.ContentContainer {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px; 
+}
+
+.EditBlog_L3 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+}
+
+.TextArea {
+    margin-bottom: 5%;
+    width: 400px;
+}
+
+.UpdateButton {
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    color: #fff;
+}
+
+.uploadbutton {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 5%;
+}

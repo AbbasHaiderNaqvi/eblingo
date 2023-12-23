@@ -3,73 +3,39 @@
   color: #fff;
   font-family: Poppins;
 }
-
-.typing {
-  color: #000;
-  font-family: Poppins;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 600;
-  height: 5px;
-  line-height: normal;
-  margin-bottom: 10%;
-
-}
-
 .video {
   height: 600px;
+  margin-top: 5%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.heading {
-  color: #000;
-  font-family: Poppins;
-  font-size: 45.94px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
-.service_agency {
-  color: #000;
-  font-family: Poppins;
-  font-size: 45.94px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
- 
-.readme_button {
-  background-image: linear-gradient(to right, #ed1e78, #faaf40);
-  margin-top: 20px;
-  margin-right: 10px;
-  color: #FFF !important;
-  font-family: Poppins;
-  font-size: 13.399px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24.118px;
-  width: 131.563px;
-  height: 51.809px;
-  border-radius: 9px;
-}
-.readme_button:hover{
-  background-image: linear-gradient(to right,#faaf40, #ed1e78 );
+@media (min-width: 350px) and (max-width: 500px) {
+  .video {
+    padding-top: 50px;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
 }
+@media (min-width: 510px) and (max-width: 850px){
+  .video {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+} 
+@media (min-width: 852px) and (max-width: 1100px){
+  .video {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+} 
 
-.allservices_button {
-  border-radius: 9px;
-  background: #F6F6F6;
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-  color: #000;
-  font-family: Poppins;
-  font-size: 13.399px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24.118px;
-  width: 131.309px;
-  height: 51.809px;
-  margin-left: 3%;
-}

@@ -1,9 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter,Poppins } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 import './theme.css'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { Drawer } from 'antd';
+import { useState } from 'react';
+import { MenuOutlined } from '@ant-design/icons';
 
 // const pop = Poppins({ subsets: ['latin'] })
 
@@ -11,10 +14,9 @@ import Footer from './components/Footer';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Eblingo',
+  title: 'eblingo',
   description: 'Agency Service',
 }
-
 export default function RootLayout({
   children,
 }: {
@@ -23,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   )

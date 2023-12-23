@@ -1,6 +1,7 @@
 "use client";
 import react, { useState } from 'react';
-import { Button, Row, Col } from 'antd';
+import { Button, Row, Col, Progress } from 'antd';
+import { useRouter } from 'next/navigation'
 import Image from 'next/image';
 import styles from '../styles/Service.module.css';
 import { useEffect } from 'react';
@@ -8,17 +9,13 @@ import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 
 const Service = () => {
-    const [isPopupOpen, setPopupOpen] = useState(false);
-
-    const handleGetCodeClick = () => {
-        setPopupOpen(true);
-    };
-
-    const handleClosePopup = () => {
-        setPopupOpen(false);
-    };
+    const router= useRouter();
+    const handleClick = () => {
+        console.log('Button clicked!');
+        router.push('/get-a-quote');
+      }; 
     const [scrollPosition, setScrollPosition] = useState(0);
-
+ 
     useEffect(() => {
         const handleScroll = () => {
             const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
@@ -51,7 +48,7 @@ const Service = () => {
                     </Col>
                     <Col>
                         <Button
-                            onClick={handleGetCodeClick} 
+                           onClick={handleClick}
                             className={`${styles.quote_button}
                         ${scrollPosition ? 'sticky' : ''}`}
                         >Get a quote</Button>
@@ -59,7 +56,7 @@ const Service = () => {
                 </Row>
             </div>
             <Row justify={'start'}>
-                <Col span={12}>
+                <Col xs={24}>
                     <div className={styles.First_Service_Section}>
                         <h2 className={styles.service_heading}>
                             Audio Visual Solution
@@ -71,6 +68,13 @@ const Service = () => {
                                 <li><div className={styles.list}>Closed Caption</div></li>
                             </ul>
                         </div>
+                        <Image
+                            src="/assets/Home/services1.png"
+                            alt="Service"
+                            width={330}
+                            height={200}
+                            className={styles.Service_Image_responsive}
+                        /> 
                     </div>
                     <div className={styles.Second_Service_Section}>
                         <h2 className={styles.service_heading}>
@@ -83,6 +87,13 @@ const Service = () => {
                                 <li><div className={styles.list}>Technical Translation</div></li>
                             </ul>
                         </div>
+                        <Image
+                            src="/assets/Home/services2.png"
+                            alt="Service"
+                            width={330}
+                            height={200}
+                            className={styles.Service_Image_responsive}
+                        /> 
                     </div>
                     <div className={styles.third_Service_Section}>
                         <h2 className={styles.service_heading}>
@@ -95,7 +106,13 @@ const Service = () => {
                                 <li><div className={styles.list}>Reduce Your workload</div></li>
                             </ul>
                         </div>
-
+                        <Image
+                            src="/assets/Home/services3.png"
+                            alt="Service"
+                            width={330}
+                            height={200}
+                            className={styles.Service_Image_responsive}
+                        /> 
                     </div>
                     <div className={styles.fourth_Service_Section}>
                         <h2 className={styles.service_heading}>
@@ -104,16 +121,21 @@ const Service = () => {
                         <div className={styles.unorder_list}>
                             <ul className={styles.listing} >
                                 <li><div className={styles.list}>Book Translations</div></li>
-                                <li><div className={styles.list}>Academic and research Generals</div> </li>
+                                <li><div className={styles.list}>Academic and research journals</div> </li>
                                 <li><div className={styles.list}>Magzine  and media publication</div> </li>
                             </ul>
                         </div>
-
+                        <Image
+                            src="/assets/Home/services4.png"
+                            alt="Service"
+                            width={330}
+                            height={200}
+                            className={styles.Service_Image_responsive}
+                        /> 
                     </div>
                 </Col>
                 <Col span={12}>
                     <div className={styles.Images}>
-
                         <Image
                             src="/assets/Home/services1.png"
                             alt="Service"
@@ -122,12 +144,13 @@ const Service = () => {
                             className={`${styles.Service_Image} ${scrollPosition >= 1500 && scrollPosition < 1900 ? styles.active : ''
                                 }`}
                         />
+                        
                         <Image
                             src="/assets/Home/services2.png"
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 1900 && scrollPosition < 2450 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 1900 && scrollPosition < 2300 ? styles.active : ''
                                 }`}
                         />
                         <Image
@@ -135,19 +158,18 @@ const Service = () => {
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 2450 && scrollPosition < 3000 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 2300 && scrollPosition < 2900 ? styles.active : ''
                                 }`}
                         />
-
                         <Image
                             src="/assets/Home/services4.png"
                             alt="Service"
                             width={615}
                             height={380}
-                            className={`${styles.Service_Image} ${scrollPosition >= 3000 && scrollPosition < 3200 ? styles.active : ''
+                            className={`${styles.Service_Image} ${scrollPosition >= 2900 && scrollPosition < 3200 ? styles.active : ''
                                 }`}
                         />
-
+                            
                     </div>
                 </Col>
             </Row>

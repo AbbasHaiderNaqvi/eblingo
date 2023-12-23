@@ -1,153 +1,225 @@
+"use client";
 import { ArrowRightOutlined, FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
 import styles from '../styles/Footer.module.css';
-import { Row, Col, Button, Space } from 'antd';
+import { Row, Col, Button, Space, Input, Form, message } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+import api from '../axiosInterceptor/axiosInterceptor';
 
 const Footer: React.FC = () => {
+    const [emailSubscribe, setEmailSubscribe] = useState('');
+    const [email, setEmail] = useState('');
+
+    // Inside your Footer component
+
+    const handleSubscribeClick = async () => {
+        try {
+            // Validate the email format before sending the request
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailSubscribe)) {
+                message.error('Please enter a valid email address');
+                return;
+            }
+
+            const response = await api.post('/email', { email: emailSubscribe });
+
+            if (response.status !== 200) {
+                message.success('Thank you! We will keep you updated');
+            } else {
+                message.error('Failed to send email');
+
+            }
+        } catch (error) {
+            console.error('Network error:', error);
+        }
+    };
+
+    const handleArrowClick = async () => {
+        try {
+            // Validate the email format before sending the request
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                message.error('Please enter a valid email address');
+                return;
+            }
+
+            const response = await api.post('/email', { email });
+
+            if (response.status !== 200) {
+                message.success('Thank you! We will keep you updated');
+            } else {
+                message.error('Failed to send email');
+            }
+        } catch (error) {
+            console.error('Network error:', error);
+        }
+    };
     return (
         <div>
             <div className={styles.rectangle_signup}>
                 <div className={styles.signup}>Sign up for Our Newsletter</div>
-                <div>
-                    <input
+                <div className={styles.entry_container}>
+                    <Input
                         placeholder='Your Email'
+                        value={emailSubscribe}
+                        onChange={(e) => setEmailSubscribe(e.target.value)}
                         className={styles.signup_input}
                     />
                     <Button
+                        onClick={handleSubscribeClick}
                         className={styles.rectangle_subcribe_button}>
                         Subscribe Now
                     </Button>
                 </div>
-                <Space className={styles.icons}>
-                <div style={{
-                        backgroundColor: 'white',
-                        width: '43px',
-                        height: '43px',
-                        display:'flex',
-                        justifyContent:'center',
-                        borderRadius:'2px'
-                    }}>
-                    <FacebookOutlined style={{
-                        backgroundColor: 'white',
-                        fontSize: '150%'
-                    }} />
-                    </div>
-                    <div style={{
-                        backgroundColor: 'white',
-                        width: '43px',
-                        height: '43px',
-                        display:'flex',
-                        justifyContent:'center',
-                        borderRadius:'2px'
-                    }}>
-                    <LinkedinOutlined style={{
-                        backgroundColor: 'white',
-                        fontSize: '150%'
-                    }} />
-                    </div>
-                    
-                    <div style={{
-                        backgroundColor: 'white',
-                        width: '43px',
-                        height: '43px',
-                        display:'flex',
-                        justifyContent:'center',
-                        borderRadius:'2px'
-                    }}>
-                        <InstagramOutlined style={{
-                            backgroundColor: 'white',
-                            fontSize: '150%'
-                        }} />
-                    </div>
-                </Space>
+                <div>
+                </div>
             </div>
-            <footer className={styles.footer}>
-                <Image
-                    src='/assets/Home/logo1.png'
-                    alt='Logo'
-                    width={100}
-                    height={50}
-                    className={styles.footer_logo}
-                />
+            <footer>
                 <Row>
-                    <Col span={8}>
+                    <Col xs={24} sm={24} md={24} lg={10} xl={10}>
+                        <Image
+                            src="/assets/Home/logo1.png"
+                            alt="Logo"
+                            width={150}
+                            height={70}
+                            className={styles.Footer_Logo}
+                        />
+                        <Space className={styles.Footer_icons2}>
+                            <div style={{
+                                backgroundColor: '#000',
+                                width: '43px',
+                                height: '43px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                borderRadius: '8px'
+                            }}>
+                                <FacebookOutlined style={{
+                                    color: 'white',
+                                    fontSize: '150%'
+                                }} />
+                            </div>
+                            <div style={{
+                                backgroundColor: '#000',
+                                width: '43px',
+                                height: '43px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                borderRadius: '8px'
+                            }}>
+                                <LinkedinOutlined style={{
+                                    color: 'white',
+                                    fontSize: '150%'
+                                }} />
+                            </div>
+                            <div style={{
+                                backgroundColor: '#000',
+                                width: '43px',
+                                height: '43px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                borderRadius: '8px'
+                            }}>
+                                <InstagramOutlined style={{
+                                    color: 'white',
+                                    borderRadius: '8px',
+                                    fontSize: '150%'
+                                }} />
+                            </div>
+                        </Space>
+                        <div className={styles.email_entry}>
+                            <h3 className={styles.email_heading}>Connect with us</h3>
+                            <input
+                                placeholder='E-Mail Address'
+                                className={styles.email_input}
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <ArrowRightOutlined
+                                style={{ fontSize: '200%' }}
+                                onClick={handleArrowClick}
+                                className={styles.email_icon} />
+                        </div>
+                        <div className={styles.reserved_rights}>{new Date().getFullYear()} Eblingo.All right reserved</div>
+                    </Col>
+                    <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <ul className={styles.socialmedia_links}>
-                            <li className={styles.links}>Facebook</li>
-                            <li className={styles.links}>Instagram</li>
-                            <li className={styles.links}>Linkedin</li>
-                            <li className={styles.links}>Pinterest</li>
+                            <li className={styles.links}>Facebook
+                                <div style={{
+                                    marginTop: '45%',
+                                    backgroundColor: '#ED1E78',
+                                    width: '43px',
+                                    height: '43px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    borderRadius: '3px'
+                                }}>
+                                    <FacebookOutlined style={{
+                                        backgroundColor: '#ED1E78',
+                                        fontSize: '150%',
+                                        color: '#fff'
+                                    }} />
+                                </div>
+                            </li>
+                            <li className={styles.links}>Instagram
+                                <div style={{
+                                    marginTop: '45%',
+                                    backgroundColor: '#ED1E78',
+                                    width: '43px',
+                                    height: '43px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    borderRadius: '3px'
+                                }}>
+                                    <InstagramOutlined style={{
+                                        backgroundColor: '#ED1E78',
+                                        fontSize: '150%',
+                                        color: '#fff'
+                                    }} />
+                                </div>
+                            </li>
+                            <li className={styles.links}>Linkedin
+                                <div style={{
+                                    marginTop: '55%',
+                                    backgroundColor: '#ED1E78',
+                                    width: '43px',
+                                    height: '43px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    borderRadius: '3px'
+                                }}>
+                                    <LinkedinOutlined style={{
+                                        backgroundColor: '#ED1E78',
+                                        fontSize: '150%',
+                                        color: '#fff'
+                                    }} />
+                                </div>
+                            </li>
+                            <li className={styles.links}>Pinterest
+                                <div style={{
+                                    marginTop: '55%',
+                                    backgroundColor: '#ED1E78',
+                                    width: '43px',
+                                    height: '43px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    borderRadius: '3px'
+                                }}>
+                                    <Image
+                                        src="/assets/Home/pinterest.png"
+                                        alt="icon"
+                                        width={30}
+                                        height={30}
+                                         />
+                                </div>
+                            </li>
                         </ul>
-                        <div>
-                            <h3 className={styles.email_heading}>Email Us and Connect with us</h3>
-                            <input placeholder='E-Mail Address' className={styles.email_input} />
-                            <ArrowRightOutlined style={{ fontSize: '150%' }} className={styles.email_icon} />
+                        <div className={styles.term}>
+                            <div className={styles.privacy_policy}>Privacy Policy</div>
+                            <div className={styles.terms_and_condition}> Terms and Conditions</div>
                         </div>
-                    </Col>
-                    <Col>
-
-                        <div>
-                            <ul className={styles.Useful_links}>
-                                <li className={styles.list_Bold}>Useful Links</li>
-                                <li className={styles.list}>Home</li>
-                                <li className={styles.list}>Pages</li>
-                                <li className={styles.list}>Services</li>
-                                <li className={styles.list}>Blog</li>
-                                <li className={styles.list}>Contact Us</li>
-                            </ul>
-                        </div>
-                    </Col>
-                    <Col>
-                        <ul className={styles.services_feild}>
-                            <li className={styles.list_Bold}>Services</li>
-                            <li className={styles.list}>Technical</li>
-                            <li className={styles.list}>Translation</li>
-                            <li className={styles.list}>Business</li>
-                            <li className={styles.list}>Legal</li>
-                            <li className={styles.list}>Medical documents</li>
-                        </ul>
-                    </Col>
-                    <Col span={6}>
-                        <h6 className={styles.recent_heading_main}>Recents</h6>
-                        <Row>
-                            <Col span={4}>
-                                <Image
-                                    src="/assets/Home/services1.png"
-                                    alt="Service"
-                                    width={75}
-                                    height={75}
-                                    className={styles.recent_img}
-                                />
-                            </Col>
-                            <Col>
-                                <h4 className={styles.recent_heading}>Creating accessible Multilingual Site</h4>
-                                <div className={styles.recent_Date}>May 21 2023</div>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col span={4}>
-                                <Image
-                                    src="/assets/Home/services2.png"
-                                    alt="Service"
-                                    width={75}
-                                    height={75}
-                                    className={styles.recent_img}
-                                />
-                            </Col>
-                            <Col>
-                                <h4 className={styles.recent_heading}>How To translate products on your<br />ecommerce store</h4>
-                                <div className={styles.recent_Date}>May 21 2023</div>
-                            </Col>
-                        </Row>
-
                     </Col>
                 </Row>
-                <div className={styles.legal_terms_h}>
-                    <div className={styles.reserved_rights}>{new Date().getFullYear()} Eblingo.All right reserved</div>
-                    <div className={styles.privacy_policy}>Privacy Policy</div>
-                    <div className={styles.terms_and_condition}> Terms and Conditions</div>
-                </div>
             </footer>
         </div>
     );

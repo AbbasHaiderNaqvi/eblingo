@@ -1,11 +1,45 @@
 .ant-tabs-nav-wrap {
     width: 100% !important;
 
-   
+
 }
+
 .ant-tabs-nav-list {
     width: 100% !important;
 }
-.ant-tabs-tab{
+
+.ant-tabs-tab {
     width: 33% !important;
 }
+
+.ant-form-item-control-input {
+    margin: 0px !important;
+}
+
+.ant-form-item-required {
+    color: #3C3939;
+    font-family: Poppins!important;
+    font-size: 22px!important;
+    font-style: normal;
+    font-weight: 600!important;
+    line-height: normal;
+}
+/* .ql-toolbar{
+    position: fixed;
+    width: 68.7%;
+} */
+.ant-input-search-button{
+    background-color: #ed1e78;
+}
+
+.blog-page p:not(:has(img)) {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/* .blog-page p img {
+    padding-left: 0;
+    padding-right: 0;
+} */
+.ant-form-item-explain {
+    text-align: center;
+  }

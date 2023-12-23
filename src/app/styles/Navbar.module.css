@@ -5,6 +5,11 @@
   height: 75px;
   background-color: white;
   padding: 10px 10px;
+  z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .left {
@@ -28,6 +33,7 @@
   margin-right: 30px;
   display: inline;
   margin: 0 35px;
+  cursor: pointer;
 }
 
 .navLinks a {
@@ -38,27 +44,10 @@
   font-weight: 600;
   line-height: normal;
 }
-
-.right {
-  flex: 1;
-  text-align: right;
+.menuIcon{
+  display: none;
 }
-
-.button {
-  background-image: linear-gradient(to right, #ed1e78, #faaf40);
-  width: 147px;
-  height: 41px;
-  color: #FFF !important;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-
-}
-.button:hover{
-  background-image: linear-gradient(to right, #faaf40,#ed1e78);
-}
-.partnership{
+.partnership {
   position: relative;
 }
 
@@ -66,24 +55,90 @@
   position: relative;
   bottom: 50px;
 }
-.dropdown{
-  position: absolute;
-  top:20px;
-  right: 20px;
-  width: 120px;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: white;
-  border: 1px solid gray;
-}
-.dropdown::before{
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 25px;
-  height: 25px;
-  transform: rotate(45deg);
-  background-color: white;
+
+@media (min-width: 350px) and (max-width: 500px) {
+  .navLinks {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+    cursor: pointer;
+  }
 }
 
+.drawer {
+  background-color: white;
+  /* Set the background color of the drawer to white */
+}
+
+ 
+
+.drawerMain {
+  padding: 20px;
+}
+.unorderedList{
+  list-style: none;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 600;
+}
+.unorderedList li a{
+  text-decoration: none;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 10%;
+  color: black;
+}
+
+@media(min-width:510px) and (max-width: 1100px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: white;
+    padding: 10px 10px;
+  }
+
+  .left {
+    flex: 1;
+  }
+
+  .center {
+    flex: 6;
+    text-align: start;
+  }
+
+  .navLinks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navLinks li {
+    margin-right: 30px;
+    display: inline;
+    margin: 0 15px;
+  }
+
+  .navLinks a {
+    text-decoration: none;
+    color: #484848;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .partnership {
+    position: relative;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 50px;
+  }
+
+}

@@ -1,7 +1,6 @@
-.offer_content {
+.offer_content{
     margin-top: 10%;
 }
-
 .offer_heading {
     color: #FBAC41;
     font-size: 30px;
@@ -9,21 +8,10 @@
     font-weight: 700;
     line-height: 30px;
     font-family: Poppins;
-    margin-bottom: 10px;
+    margin-bottom: 6%;
     margin-left: 5%;
 }
-
-.offer_heading2 {
-    color: #000;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 50px;
-    font-family: Poppins;
-    margin-bottom: 3%;
-    margin-left: 5%;
-}
-
+ 
 .Offer_img {
     border-radius: 20px;
 }
@@ -32,7 +20,7 @@
 
     background-color: #FFF0DC;
     border-radius: 20px;
-    height: 610px;
+    height: 410px;
     width: 672px;
     margin-left: 5%;
 }
@@ -54,45 +42,174 @@
 
 .Tab_paragraph {
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
-    line-height: 35.5px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 3%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-.rectangle_subscribe {
-    margin-top: 5%;
-    align-items: center;
-    width: 1351px;
-    height: 121px;
-    flex-shrink: 0;
-    background-image: linear-gradient(to right, #ed1e78, #faaf40);
-    border-radius: 10px;
+@media (min-width:350px) and (max-width:500px) {
+    .offer_heading {
+        color: #FBAC41;
+        font-size: 20px!important;
+        margin-left: 10%;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        font-family: Poppins;
+        margin-bottom: 10px;
+    }
+
+    .Offer_img {
+        display: none;
+    }
+
+    .AnimatedTab {
+
+        background-color: #FFF0DC;
+        border-radius: 20px;
+        height: 250px;
+        width: 320px;
+        margin-left: 5%;
+    }
+
+    .Tab_text {
+        color: #000;
+        text-align: center;
+        font-size: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+
+    }
+
+    .items {
+        width: 100%;
+    }
+
+    .Tab_paragraph {
+        color: #000;
+        font-size: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 }
+@media (min-width:510px) and (max-width:850px) {
+    .offer_heading {
+        color: #FBAC41;
+        font-size: 25px!important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        font-family: Poppins;
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
 
-.rectangle_subscribe {
-    display: flex;
+    .Offer_img {
+        display: none;
+    }
+
+    .AnimatedTab {
+
+        background-color: #FFF0DC;
+        border-radius: 20px;
+        height: 310px!important;
+        width: 572px!important;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .Tab_text {
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+
+    }
+
+    .items {
+        width: 100%;
+    }
+
+    .Tab_paragraph {
+        color: #000;
+        font-size: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
 }
+@media (min-width:850px) and (max-width:1100px) {
+    .offer_heading {
+        color: #FBAC41;
+        font-size: 20px!important;
+        font-style: normal;
+        font-weight: 700;
+        margin-left: 5%;
+        line-height: 20px;
+        font-family: Poppins;
+        margin-bottom: 10px;
+    }
 
-.rectangle_subscribe_text {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 80px;
+    .Offer_img {
+        height: 450px!important;
+        width: 370px!important;
+        margin-left: 10%;
+    }
 
-}
+    .AnimatedTab {
 
-.rectangle_readmore_button {
-    background-color: white ;
-    width: 151.265px;
-    height: 55px;
-    color: #FAAF40!important;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
+        background-color: #FFF0DC;
+        border-radius: 20px;
+        height: 350px!important;
+        width: 500px!important;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .Tab_text {
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+
+    }
+ 
+    .items {
+        width: 100%;
+    }
+
+    .Tab_paragraph {
+        color: #000;
+        font-size: 13px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
 }
