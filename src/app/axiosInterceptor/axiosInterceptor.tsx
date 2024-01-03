@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 
 const api: AxiosInstance = axios.create({
-  baseURL: 'http://193.203.167.24:3001/', 
+  baseURL: 'https://eblingo.com:3002/', 
 });
 
 export default api;
