@@ -93,6 +93,7 @@ function Transcription() {
                 <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                 <div className={styles.blog_content}>
                     <Image
+                        unoptimized
                         src="/assets/Transcription/Transcription_Blog_Three.png"
                         alt="Transcription"
                         width={415}
