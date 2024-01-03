@@ -24,6 +24,7 @@ const Offer: React.FC = () => {
                     </Col>
                      <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <Image
+                        unoptimized
                             src="/assets/Home/Offering_img.png"
                             alt="Service"
                             width={540}

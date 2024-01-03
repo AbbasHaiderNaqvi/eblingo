@@ -45,6 +45,7 @@ function Publications() {
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={{ span: 12 }} xl={{ span: 12 }}>
                         <Image
+                        unoptimized
                             src="/assets/Publications/Publication_Blog_Image.png"
                             alt="Publications"
                             width={397}
@@ -74,6 +75,7 @@ function Publications() {
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={{ span: 12 }} xl={{ span: 12 }}>
                         <Image
+                        unoptimized
                             src="/assets/Publications/Publication_Blog2.png"
                             alt="Publications"
                             width={397}
@@ -103,6 +105,7 @@ function Publications() {
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={{ span: 12 }} xl={{ span: 12 }}>
                         <Image
+                        unoptimized
                             src="/assets/Publications/Publication_Blog3.png"
                             alt="Publications"
                             width={397}

@@ -69,6 +69,7 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
+                        unoptimized
                             src="/assets/Home/services1.png"
                             alt="Service"
                             width={330}
@@ -88,6 +89,7 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
+                        unoptimized
                             src="/assets/Home/services2.png"
                             alt="Service"
                             width={330}
@@ -107,6 +109,7 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
+                        unoptimized
                             src="/assets/Home/services3.png"
                             alt="Service"
                             width={330}
@@ -126,6 +129,7 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
+                        unoptimized
                             src="/assets/Home/services4.png"
                             alt="Service"
                             width={330}
@@ -137,6 +141,7 @@ const Service = () => {
                 <Col span={12}>
                     <div className={styles.Images}>
                         <Image
+                        unoptimized
                             src="/assets/Home/services1.png"
                             alt="Service"
                             width={615}
@@ -146,6 +151,7 @@ const Service = () => {
                         />
                         
                         <Image
+                        unoptimized
                             src="/assets/Home/services2.png"
                             alt="Service"
                             width={615}
@@ -154,6 +160,7 @@ const Service = () => {
                                 }`}
                         />
                         <Image
+                        unoptimized
                             src="/assets/Home/services3.png"
                             alt="Service"
                             width={615}
@@ -162,6 +169,7 @@ const Service = () => {
                                 }`}
                         />
                         <Image
+                        unoptimized
                             src="/assets/Home/services4.png"
                             alt="Service"
                             width={615}

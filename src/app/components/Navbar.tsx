@@ -43,6 +43,7 @@ const Navbar: React.FC = () => {
       <div className={styles.left}>
       <Link href="/">
         <Image
+        unoptimized
           src='/assets/Home/logo.png'
           alt='Logo'
           width={150}
@@ -106,6 +107,7 @@ const Navbar: React.FC = () => {
         <div className={styles.drawerHeader}>
         <Link href="/" >
           <Image
+          unoptimized
             src='/assets/Home/logo.png'
             alt="Logo"
             width={200}

@@ -11,6 +11,7 @@ function Sidebar() {
     <>
        <nav className={styles.navbar}>
        <Image
+          unoptimized
           src='/assets/Home/logo1.png'
           alt='Logo'
           width={150}

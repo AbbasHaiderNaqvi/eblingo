@@ -19,6 +19,7 @@ const About = () => {
                 <Row >
                     <Col xs={24} sm={24} md={24} lg={11} xl={13}>
                         <Image
+                            unoptimized
                             src="/assets/Home/About_Image.png"
                             alt="About"
                             width={497}
