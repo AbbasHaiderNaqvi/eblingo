@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import styles from '../styles/Partnerships.module.css';
+import styles from '../../styles/Partnerships.module.css';
 import Image from 'next/image';
 import { MediumAnimationVariants } from '../../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
