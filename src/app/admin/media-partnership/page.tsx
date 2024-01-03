@@ -2,11 +2,9 @@
 import React from 'react'
 import styles from '../styles/Partnerships.module.css';
 import Image from 'next/image';
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
+import { MediumAnimationVariants } from '../../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 import { Col, Row } from 'antd';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 function Partnerships() {
   return (
@@ -16,7 +14,6 @@ function Partnerships() {
       variants={MediumAnimationVariants}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <Navbar />
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Media Partnerships</h1>
       </div>
@@ -24,8 +21,7 @@ function Partnerships() {
       <h2 className={styles.first_master_heading}>Master Templates <span className={styles.heading_span}>and</span> Subtitling</h2>
 
       <Image
-      unoptimized
-        src="/assets/Partnerships/Partnerships-Icon.png"
+        src="/assets/Partnerships/Partnerships-icon.png"
         alt="Transcription"
         width={120}
         height={12}
@@ -34,7 +30,6 @@ function Partnerships() {
       <Row>
         <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 6 }}>
           <Image
-          unoptimized
             src="/assets/Partnerships/Partnerships_Blog1_Image.png"
             alt="Blog"
             width={560}
@@ -58,7 +53,6 @@ function Partnerships() {
       
 
         <Image
-        unoptimized
           src="/assets/Partnerships/arrow_right.png"
           alt="Arrow"
           width={130}
@@ -69,7 +63,6 @@ function Partnerships() {
         <Row>
           <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
             <Image
-            unoptimized
               src="/assets/Partnerships/Partnerships_Blog2_Image.png"
               alt="My SVG"
               width={560}
@@ -79,7 +72,7 @@ function Partnerships() {
           </Col>
           <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 19 }}>
             <div className={styles.blog2content}>
-            <h3 className={styles.heading2}>Master Templates: The Foundation of Multilingual Subtitling</h3>
+            <h3 className={styles.heading2}>Master Templates: The Foundation of Multilingual <br />Subtitling</h3>
             <p className={styles.blog_Paragraph2}>Subtitles are a crucial element in the global accessibility of
               content. This importance is magnified when dealing with
               multiple languages, a challenge we meet head-on through our
@@ -98,7 +91,6 @@ function Partnerships() {
         <Row>
         <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
         <Image
-        unoptimized
           src="/assets/Partnerships/Partnerships_Blog3_Image.png"
           alt="My SVG"
           width={560}
@@ -127,7 +119,6 @@ function Partnerships() {
         </Col>
           </Row>
       </div>
-      <Footer />
     </motion.div>
   )
 }
