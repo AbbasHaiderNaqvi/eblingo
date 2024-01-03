@@ -32,9 +32,9 @@ const AdvantageSection = () => {
                         <div className={styles.Advantage_Description1}>
                             <div className={styles.FreeSupport_heading}>Free Support</div>
                             <div className={styles.FreeSupport_paragraph}>
-                                Approve, edit and enhance your<br />
-                                website translation within your<br />
-                                team</div>
+                            Our Project Management team will be <br />
+                            available in various time zones to assist <br />
+                            your follow up queries and urgent requests.</div>
                         </div>
                     </div>
                     <div className={styles.Advantage2}>
@@ -51,9 +51,9 @@ const AdvantageSection = () => {
                         <div className={styles.Advantage_Description2}>
                             <div className={styles.tech_translation_heading}>Technical Translation</div>
                             <div className={styles.translation_paragraph}>
-                                Approve, edit and enhance your<br />
-                                website translation within your<br />
-                                team</div>
+                            We have a global talent pool with linguists <br />
+                            having technical expertise in finance,<br />
+                            medical, legal, and editorial specifics.</div>
                         </div>
                     </div>
                 </Col >
@@ -72,9 +72,9 @@ const AdvantageSection = () => {
                         <div className={styles.Advantage_Description3}>
                             <div className={styles.language_heading}>100+ Languages</div>
                             <div className={styles.language_paragraph}>
-                                Approve, edit and enhance your<br />
-                                website translation within your<br />
-                                team</div>
+                            Eblingo’s project management team<br />
+                             is operating in multiple continents,<br />
+                             providing services in more than 100 languages.</div>
                         </div>
                     </div>
                     {/*                                                                                     */}
@@ -92,9 +92,9 @@ const AdvantageSection = () => {
                         <div className={styles.Advantage_Description4}>
                             <div className={styles.Multi_heading}>Multi Language</div>
                             <div className={styles.Multi_paragraph}>
-                                Approve, edit and enhance your<br />
-                                website translation within your<br />
-                                team</div>
+                            Our linguists are trained in multi-language<br />
+                             translation. We can offer translation services<br />
+                              in multiple languages from source.</div>
                         </div>
                     </div>
                 </Col>

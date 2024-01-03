@@ -191,10 +191,11 @@ const GetaQuote: FC = () => {
                   <Select
                      defaultValue="Services"
                      options={[
-                       { value: 'data-localization', label: 'Data Localization' }, // Adjusted service values
+                       { value: 'captioning', label: 'Captioning' }, // Adjusted service values
+                       { value: 'subtitling', label: 'Subtitling' },
+                       { value: 'transcription', label: 'Translation' },
+                       { value: 'interpretation', label: 'Interpretation' },
                        { value: 'document-translation', label: 'Document Translation' },
-                       { value: 'media-translation', label: 'Media Translation' },
-                       { value: 'publishing-partnership', label: 'Publishing Partnership' },
                      ]}
                     className={styles.Select}
                   />
