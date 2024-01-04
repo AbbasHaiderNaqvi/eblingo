@@ -22,7 +22,7 @@ const Hero = () => {
       variants={MediumAnimationVariants}
       transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
       >
-        <video autoPlay muted loop className={styles.video}>
+        <video autoPlay muted loop className={styles.video} playsInline>
           <source src='/assets/Home/video.mp4' type='video/mp4'></source>
         </video>
       </motion.div>
