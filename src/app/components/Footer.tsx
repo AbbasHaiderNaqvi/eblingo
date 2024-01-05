@@ -196,25 +196,6 @@ const Footer: React.FC = () => {
                                     }} />
                                 </div>
                             </li>
-                            <li className={styles.links}>Pinterest
-                                <div style={{
-                                    marginTop: '55%',
-                                    backgroundColor: '#ED1E78',
-                                    width: '43px',
-                                    height: '43px',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    borderRadius: '3px'
-                                }}>
-                                    <Image
-                                    unoptimized
-                                        src="/assets/Home/pinterest.png"
-                                        alt="icon"
-                                        width={30}
-                                        height={30}
-                                         />
-                                </div>
-                            </li>
                         </ul>
                         <div className={styles.term}>
                             <div className={styles.privacy_policy}>Privacy Policy</div>

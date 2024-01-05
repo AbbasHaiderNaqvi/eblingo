@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
       key: '1',
       label: (
         <Link href="/media-partnership">
-          Media Partnership
+          Media Partnerships
         </Link>
       ),
     },
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       key: '2',
       label: (
         <Link href="/publication-partnership">
-          Publication Partnership
+          Publication Partnerships
         </Link>
       ),
     }
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link href="/media-localization" >
-             Media localization
+             Media Localization
             </Link>
           </li>
           <li>
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
               </li>
               <li>
                 <Link href="/media-localization">
-                  Media localization
+                  Media Localization
                 </Link>
               </li>
               <li>
@@ -136,12 +136,12 @@ const Navbar: React.FC = () => {
               </li>
               <li>
                 <Link href="/media-partnership">
-                  Media Partnership
+                  Media Partnerships
                 </Link>
               </li>
               <li>
                 <Link href="/publication-partnership" >
-                  Publication Partnership
+                  Publication Partnerships
                 </Link>
               </li>
               <li>

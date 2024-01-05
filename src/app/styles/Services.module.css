@@ -3,20 +3,20 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 100px;
+    padding: 250px;
     height: 400px;
     width: 100%;
     color: #fff;
+    margin-bottom: 5%;
 }
  
 .HeroSection_Heading {
     color: #FFF;
-    font-size: 35px;
+    font-size: 40px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-top: 100px;
 }
 
 .First_Blog_Heading {
@@ -167,6 +167,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        padding-top: 100px;
     }
     
     .First_Blog_Heading {
@@ -237,11 +238,12 @@
     
     .HeroSection_Heading {
         color: #FFF;
-        font-size: 28px;
+        font-size: 30px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        padding-top: 100px;
     }
     
     .First_Blog_Heading {

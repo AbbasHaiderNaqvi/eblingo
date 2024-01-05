@@ -44,6 +44,7 @@ const Service = () => {
                             <div className={styles.heading_translation_firm}>
                                 Ensuring global relevancy of content
                             </div>
+                            <div className={styles.paragraph}>Enhancing Global Communication - From Subtitles to Technical Translations, We've Got Your Multilingual Needs Covered</div>
                         </div>
                     </Col>
                     <Col>

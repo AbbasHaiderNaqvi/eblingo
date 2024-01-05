@@ -18,10 +18,9 @@ function Services() {
         >
             <Navbar />
             <div className={styles.HeroSection}>
-                <h1 className={styles.HeroSection_Heading}>Eblingo Services</h1>
+                <h1 className={styles.HeroSection_Heading}>Document Translations</h1>
             </div>
             <div>
-                <h3 className={styles.First_Blog_Heading}>Document Translations</h3>
                 <Row>
                     <Col xs={24} sm={12} md={12} lg={9} xl={10}>
                         <p className={styles.First_Blog_Paragraph}>

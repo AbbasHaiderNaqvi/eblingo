@@ -18,7 +18,7 @@ function Publications() {
         >
             <Navbar />
             <div className={styles.HeroSection}>
-                <h1 className={styles.HeroSection_Heading}>Publications Partnership</h1>
+                <h1 className={styles.HeroSection_Heading}>Publication Partnerships</h1>
             </div>
             <div>
                 <h4 className={styles.FirstHeading}>Book Translation Services with Eblingo</h4>

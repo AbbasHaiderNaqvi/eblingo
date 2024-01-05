@@ -35,13 +35,11 @@
 .Advantage_Image3 {
     position: relative;
     bottom: 30px;
-    left: 30px;
 }
 
 .Advantage_Image4 {
     position: relative;
-    bottom: 25px;
-    left: 30px;
+    bottom: 30px;
 }
  
 .FreeSupport_heading {
@@ -52,7 +50,7 @@
     font-family: Poppins;
     line-height: 50px;
     position: relative;
-    right: 20px;
+    left: 10px;
 }
 
 .FreeSupport_paragraph {
@@ -63,7 +61,7 @@
     font-family: Poppins;
     line-height: 27px;
     position: relative;
-    right: 20px;
+    left: 10px;
 }
 
 /*  */
@@ -110,6 +108,8 @@
     font-weight: 600;
     line-height: 50px;
     font-family: Poppins;
+    position: relative;
+    right: 10px;
 }
 
 .Multi_paragraph {
@@ -119,6 +119,9 @@
     font-weight: 400;
     line-height: 27px;
     font-family: Poppins;
+    position: relative;
+    right: 10px;
+    
 }
 
 
@@ -152,7 +155,7 @@
         height: 45px;
         position: relative;
         bottom: 15px;
-        left: 20px;
+        left: 15px;
     }
 
     .Advantage_Image3 {
@@ -160,7 +163,7 @@
         height: 45px;
         position: relative;
         bottom: 15px;
-        left: 10px;
+        left: 20px;
     }
 
     .Advantage_Image4 {
@@ -168,7 +171,7 @@
         height: 45px;
         position: relative;
         bottom: 15px;
-        left: 10px;
+        left: 20px;
     }
 
     .FreeSupport_heading {
@@ -202,7 +205,7 @@
         font-weight: 600;
         line-height: 50px;
         position: relative;
-        right: 20px; 
+        right: 0; 
     }
 
     .translation_paragraph {
@@ -213,7 +216,7 @@
         line-height: 20px;
         font-family: Poppins;
         position: relative;
-        right: 20px;
+        right: 0;
     }
 
     .language_heading {
@@ -224,7 +227,8 @@
         font-family: Poppins;
         line-height: 50px;
         position: relative;
-        right: 40px;
+        right: 0;
+        left: 20px;
     }
 
     .language_paragraph {
@@ -235,7 +239,8 @@
         line-height: 20px;
         font-family: Poppins;
         position: relative;
-        right: 40px;
+        right: 0;
+        left: 20px;
     }
 
     .Multi_heading {
@@ -246,7 +251,8 @@
         line-height: 50px;
         font-family: Poppins;
         position: relative;
-        right: 40px;
+        right: 0;
+        left: 10px;
     }
 
     .Multi_paragraph {
@@ -257,7 +263,8 @@
         line-height: 20px;
         font-family: Poppins;
         position: relative;
-        right: 40px;
+        right: 0;
+        left: 10px;
     }
 }
 @media (min-width:852px) and (max-width:1100px) {

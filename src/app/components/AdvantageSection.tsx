@@ -30,7 +30,7 @@ const AdvantageSection = () => {
                             />
                         </div>
                         <div className={styles.Advantage_Description1}>
-                            <div className={styles.FreeSupport_heading}>Free Support</div>
+                            <div className={styles.FreeSupport_heading}>24/7 support</div>
                             <div className={styles.FreeSupport_paragraph}>
                             Our Project Management team will be <br />
                             available in various time zones to assist <br />

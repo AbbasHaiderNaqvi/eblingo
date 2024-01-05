@@ -30,15 +30,8 @@ const About = () => {
                     <Col xs={24} sm={24} md={24} lg={13} xl={11}>
                         <div className={styles.about_content}>
                         <div className={styles.about_heading}>ABOUT US</div>
-                        <div className={styles.about_sub_heading}>We’re Partner of your <br />Innovations</div>
-                        <p className={styles.about_paragraph}>We are a language services company headquartered in the United States
-                            with established project management offices worldwide. Our team
-                            comprises skilled project managers and linguists with extensive experience
-                            handling complex projects. Leveraging our dedicated Project Management
-                            Office, we offer comprehensive end-to-end solutions to our partners.
-                            EBLINGO is dedicated to helping you communicate your message to the
-                            world. Connect with us today to explore how we can serve you in your
-                            journey across languages and cultures.</p>
+                        <div className={styles.about_sub_heading}>EBLINGO</div>
+                        <p className={styles.about_paragraph}>Connecting Cultures, Crafting Communication - Your Global Partner in Language Solutions</p>
                             </div>
                     </Col>
                 </Row>
