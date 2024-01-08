@@ -12,6 +12,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/navigation';
 import api from '../axiosInterceptor/axiosInterceptor';
+import FileUploadComponent from '../FileUpload/Contact';
 
 interface Language {
   value: string;
@@ -66,6 +67,11 @@ const Contact: FC = () => {
     }
     return e && e.fileList;
   };
+  const handleFileChange = (file: File | null) => {
+    // Handle the file change logic here
+    console.log('Selected file:', file);
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -199,9 +205,8 @@ const Contact: FC = () => {
                 getValueFromEvent={normFile}
                 rules={[{ required: true, message: 'Please enter Document' }]}
               > 
-                <Upload name="logo" action="/upload.do" listType="text">
-                  <Button className={styles.UploadButton} icon={<UploadOutlined />}>Choose Files</Button>
-                </Upload>
+              <FileUploadComponent onFileChange={handleFileChange} />
+
               </Form.Item>
             </Col>
           </Row>

@@ -5,6 +5,7 @@ import { Button, Form, Input, Select, Upload, message } from 'antd';
 import { motion } from 'framer-motion';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import api from '../axiosInterceptor/axiosInterceptor';
+import FileUploadComponent from '../FileUpload/ContactForm';
 
 interface Language {
   value: string;
@@ -70,6 +71,11 @@ const ContactForm: React.FC = () => {
     }
     return e && e.fileList;
   };
+  const handleFileChange = (file: File | null) => {
+    // Handle the file change logic here
+    console.log('Selected file:', file);
+  };
+
 
   return (
     <motion.div
@@ -147,9 +153,7 @@ const ContactForm: React.FC = () => {
             getValueFromEvent={normFile}
             rules={[{ required: true, message: 'Please upload a document' }]}
           >
-            <Upload>
-              <Button className={styles.upload_button}>Choose Files</Button>
-            </Upload>
+          <FileUploadComponent onFileChange={handleFileChange} />
           </Form.Item>
           <Form.Item>
             <Button className={styles.contact_button} htmlType='submit'>

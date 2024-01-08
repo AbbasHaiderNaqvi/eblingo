@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 
 const api: AxiosInstance = axios.create({
-  baseURL: 'https://eblingo.com:3002/', 
+  baseURL: 'http://localhost:3002/', 
 });
 
 export default api;

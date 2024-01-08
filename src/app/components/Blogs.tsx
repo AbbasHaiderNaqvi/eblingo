@@ -56,7 +56,7 @@ const Blog: React.FC = () => {
               unoptimized
                 src={blog.image}
                 alt="Blog"
-                width={420}
+                width={415}
                 height={280}
                 className={styles.image}
               />
