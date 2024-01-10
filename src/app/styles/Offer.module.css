@@ -42,13 +42,13 @@
 
 .Tab_paragraph {
     color: #000;
-    font-size: 15px;
+    font-size: 17px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 10%;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -95,13 +95,14 @@
 
     .Tab_paragraph {
         color: #000;
-        font-size: 12px;
+        font-size: 10px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 300;
         line-height: 20px;
         padding-left: 15px;
         padding-right: 15px;
+        margin-top: 5%;
     }
 
 }
@@ -155,6 +156,7 @@
         line-height: 27px;
         padding-left: 25px;
         padding-right: 25px;
+        margin-top: 5%;
     }
 
 }
@@ -210,6 +212,7 @@
         line-height: 27px;
         padding-left: 25px;
         padding-right: 25px;
+        margin-top: 7%;
     }
 
 }

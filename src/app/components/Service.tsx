@@ -41,10 +41,10 @@ const Service = () => {
                     <Col span={18}>
                         <div className={styles.Service_Heading}>
                             <h6 className={styles.allservice_heading}>OUR SERVICES</h6>
-                            <div className={styles.heading_translation_firm}>
-                                Ensuring global relevancy of content
+                            <div className={styles.subheading}>
+                            Enhancing Global Communication
                             </div>
-                            <div className={styles.paragraph}>Enhancing Global Communication - From Subtitles to Technical Translations, We&apos;ve Got Your Multilingual Needs Covered</div>
+                            <div className={styles.paragraph}>From Subtitles to Technical Translations, We&apos;ve Got Your Multilingual Needs Covered.</div>
                         </div>
                     </Col>
                     <Col>

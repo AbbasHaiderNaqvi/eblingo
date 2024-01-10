@@ -8,6 +8,7 @@ import 'react-quill/dist/quill.snow.css';
 import Sidebar from '../../Sidebar/Sidebar';
 import dynamic from 'next/dynamic';
 import { useParams, useRouter } from 'next/navigation';
+import api from '@/app/axiosInterceptor/axiosInterceptor';
 
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 const { TextArea } = Input;
@@ -26,7 +27,7 @@ const UpdateBlog: React.FC = () => {
     useEffect(() => {
         const fetchBlogDetails = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/blogs/${id}`);
+                const response = await api.get(`/blogs/${id}`);
                 const blogData = response.data;
 
                 setBlog(blogData);
@@ -52,7 +53,7 @@ const UpdateBlog: React.FC = () => {
                 formData.append('image', fileList[0].originFileObj as Blob);
             }
 
-            const response = await axios.put(`http://localhost:3001/updateblog/${id}`, formData, {
+            const response = await api.put(`/updateblog/${id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

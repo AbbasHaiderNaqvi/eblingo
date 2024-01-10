@@ -6,9 +6,11 @@
     margin-left: 5%;
     margin-right: 5%;
 }
-.about_content{
+
+.about_content {
     margin-right: 10%;
 }
+
 .about_heading {
     color: #FBAC41;
     font-family: Poppins;
@@ -17,7 +19,7 @@
     font-weight: 700;
     line-height: 30px;
     margin-bottom: 4%;
-
+    margin-top: 5%;
 }
 
 .about_sub_heading {
@@ -26,19 +28,30 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
-    line-height: 50px;
-    margin-bottom: 10%;
+    line-height: 60px;
+    margin-bottom: 3%;
+
+}
+
+.about_small_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34.065px;
+    margin-bottom: 3%;
 
 }
 
 .about_paragraph {
     color: #000;
-font-family: Poppins;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 27px;
-margin-bottom: 35%;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 5%;
 }
 
 
@@ -61,14 +74,24 @@ margin-bottom: 35%;
         margin-top: 8%;
         margin-left: 10%;
     }
-
+    .about_small_heading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 3%;
+        margin-left: 10%;
+    
+    }
     .about_sub_heading {
         color: #000;
         font-family: Poppins;
         font-size: 25px;
         font-style: normal;
         font-weight: 500;
-        line-height: 30px;
+        line-height: 40px;
         margin-bottom: 3%;
         margin-left: 10%;
     }
@@ -110,10 +133,20 @@ margin-bottom: 35%;
         font-style: normal;
         font-weight: 500;
         line-height: 40px;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
         margin-left: 10%;
     }
-
+    .about_small_heading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 2%;
+        margin-left: 10%;
+    
+    }
     .about_paragraph {
         color: #000;
         font-size: 15px;
@@ -142,9 +175,19 @@ margin-bottom: 35%;
         line-height: 30px;
         margin-top: 10%;
         margin-bottom: 2%;
-        margin-left: 10%;
+        margin-left: 15%;
     }
-
+    .about_small_heading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 3%;
+        margin-left: 15%;
+    
+    }
     .about_sub_heading {
         color: #000;
         font-family: Poppins;
@@ -152,7 +195,7 @@ margin-bottom: 35%;
         font-style: normal;
         font-weight: 500;
         line-height: 40px;
-        margin-left: 10%;
+        margin-left: 15%;
         margin-bottom: 5%;
 
     }
@@ -163,7 +206,7 @@ margin-bottom: 35%;
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
-        margin-left: 10%;
+        margin-left: 15%;
         font-family: poppins;
     }
 

@@ -11,23 +11,26 @@
     line-height: 30px;
 }
 
-.heading_translation_firm {
+.subheading {
     color: #000;
     font-size: 40px;
     font-family: Poppins;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 70px;
+    margin-top: 2%;
 }
-.paragraph{
+
+.paragraph {
     margin-top: 2%;
     color: #000;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+    font-weight: 600;
+    line-height: 27px;
 }
+
 .quote_button {
     background-image: linear-gradient(to right, #ed1e78, #faaf40);
     border: transparent;
@@ -80,7 +83,8 @@
     font-weight: 600;
     line-height: 68.947px;
 }
-.Service_Image_responsive{
+
+.Service_Image_responsive {
     display: none;
 }
 
@@ -142,21 +146,23 @@
         line-height: 20px;
     }
 
-    .heading_translation_firm {
+    .subheading {
         color: #000;
-        font-size: 22px !important;
+        font-size: 25px !important;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        line-height: 35px !important;
+        line-height: 40px !important;
+        margin-top: 5%;
     }
-    .paragraph{
+
+    .paragraph {
         margin-top: 2%;
         color: #000;
         font-family: Poppins;
         font-size: 15px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 30px;
     }
 
@@ -182,17 +188,19 @@
         background-image: linear-gradient(to right, #faaf40, #ed1e78);
     }
 
-    .Images{
+    .Images {
         display: none;
     }
-    .Service_Image{
+
+    .Service_Image {
         display: none;
     }
-    .Service_Image_responsive{
+
+    .Service_Image_responsive {
         display: block;
-       border-radius: 20px;
-       margin-top: 10%;
-       margin-left: 5%;
+        border-radius: 20px;
+        margin-top: 10%;
+        margin-left: 5%;
     }
 
     .service_heading {
@@ -263,28 +271,31 @@
         font-family: poppins;
         font-weight: 700;
         line-height: 40px;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
-    .heading_translation_firm {
+    .subheading {
         color: #000;
         font-size: 30px !important;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        margin-left: 10%;
-        line-height: 50px !important;
+        line-height: 50px;
+        margin-left: 5%;
+        margin-top: 2%!important;
     }
-    .paragraph{
-        margin-left: 10%;
-        margin-top: 2%;
+
+    .paragraph {
+        margin-top: 5%;
         color: #000;
         font-family: Poppins;
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 30px;
+        margin-left: 5%;
     }
+
     .quote_button {
         background-image: linear-gradient(to right, #ed1e78, #faaf40);
         border: transparent;
@@ -302,28 +313,31 @@
         font-weight: 400;
         line-height: 20.858px;
     }
-    .quote_button:hover{
+
+    .quote_button:hover {
         background-image: linear-gradient(to right, #faaf40, #ed1e78);
     }
-    
+
     .Service_Image {
         border-radius: 20px;
 
     }
 
-    .Images{
+    .Images {
         display: none;
     }
-    .Service_Image{
+
+    .Service_Image {
         display: none;
     }
-    .Service_Image_responsive{
+
+    .Service_Image_responsive {
         display: block;
         width: 480px;
         height: 300px;
-       border-radius: 20px;
-       margin-top: 10%;
-       margin-left: 10%;
+        border-radius: 20px;
+        margin-top: 10%;
+        margin-left: 10%;
     }
 
     .service_heading {
@@ -382,6 +396,7 @@
         margin-top: 2%;
     }
 }
+
 @media (min-width:850px) and (max-width:1100px) {
     .Service {
         margin-top: 10%;
@@ -396,7 +411,7 @@
         line-height: 30px;
     }
 
-    .heading_translation_firm {
+    .subheading {
         color: #000;
         font-size: 25px !important;
         font-family: Poppins;
@@ -404,15 +419,17 @@
         font-weight: 600;
         line-height: 40px !important;
     }
-    .paragraph{
+
+    .paragraph {
         margin-top: 2%;
         color: #000;
         font-family: Poppins;
-        font-size: 22px;
+        font-size: 18px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 30px;
-    }    
+    }
+
     .quote_button {
         background-image: linear-gradient(to right, #ed1e78, #faaf40);
         border: transparent;
@@ -430,7 +447,8 @@
         font-weight: 400;
         line-height: 20.858px;
     }
-    .quote_button:hover{
+
+    .quote_button:hover {
         background-image: linear-gradient(to right, #faaf40, #ed1e78);
     }
 
@@ -439,19 +457,21 @@
 
     }
 
-    .Images{
+    .Images {
         display: none;
     }
-    .Service_Image{
+
+    .Service_Image {
         display: none;
     }
-    .Service_Image_responsive{
+
+    .Service_Image_responsive {
         display: block;
         width: 480px;
         height: 300px;
-       border-radius: 20px;
-       margin-top: 10%;
-       margin-left: 10%;
+        border-radius: 20px;
+        margin-top: 10%;
+        margin-left: 10%;
     }
 
     .service_heading {

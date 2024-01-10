@@ -21,25 +21,25 @@
 
 .Advantage_Image1 {
     position: relative;
-    bottom: 25px;
-    left: 20px;
+    bottom: 40px;
+    left: 30px;
 }
 
 .Advantage_Image2 {
     
     position: relative;
-    left: 20px;
-    bottom: 30px;
+    bottom: 40px;
+    left: 30px;
 }
 
 .Advantage_Image3 {
     position: relative;
-    bottom: 30px;
+    bottom: 37px;
 }
 
 .Advantage_Image4 {
     position: relative;
-    bottom: 30px;
+    bottom: 40px;
 }
  
 .FreeSupport_heading {
@@ -90,6 +90,8 @@
     font-weight: 600;
     font-family: Poppins;
     line-height: 50px;
+    position: relative;
+    bottom: 10px;
 }
 
 .language_paragraph {
@@ -99,6 +101,8 @@
     font-weight: 400;
     line-height: 27px;
     font-family: Poppins;
+    position: relative;
+    bottom: 10px;
 }
 
 .Multi_heading {
@@ -109,6 +113,7 @@
     line-height: 50px;
     font-family: Poppins;
     position: relative;
+    top: 10px;
     right: 10px;
 }
 
@@ -120,6 +125,7 @@
     line-height: 27px;
     font-family: Poppins;
     position: relative;
+    top: 10px;
     right: 10px;
     
 }
@@ -128,50 +134,54 @@
 @media (min-width:350px) and (max-width:500px) {
     .Advantage1 {
         display: flex;
+        margin-bottom: 5%;
     }
 
     .Advantage2 {
         display: flex;
+        margin-bottom: 1%;
     }
 
     .Advantage3 {
         display: flex;
+        margin-bottom: 1%;
     }
 
     .Advantage4 {
         display: flex;
+        margin-bottom: 1%;
     }
 
     .Advantage_Image1 {
         width: 45px;
         height: 45px;
         position: relative;
-        bottom: 15px;
-        left: 15px;
+        bottom: 20px;
+        left: 30px;
     }
 
     .Advantage_Image2 {
         width: 45px;
         height: 45px;
         position: relative;
-        bottom: 15px;
-        left: 15px;
+        bottom: 30px;
+        left: 25px;
     }
 
     .Advantage_Image3 {
         width: 45px;
         height: 45px;
         position: relative;
-        bottom: 15px;
-        left: 20px;
+        bottom: 20px;
+        left: 30px;
     }
 
     .Advantage_Image4 {
         width: 45px;
         height: 45px;
         position: relative;
-        bottom: 15px;
-        left: 20px;
+        bottom: 40px;
+        left: 30px; 
     }
 
     .FreeSupport_heading {
@@ -208,7 +218,7 @@
         font-weight: 600;
         line-height: 50px;
         position: relative;
-        right: 0; 
+        right: 20px; 
     }
 
     .translation_paragraph {
@@ -219,7 +229,7 @@
         line-height: 20px;
         font-family: Poppins;
         position: relative;
-        right: 0;
+        right: 20px;
     }
 
     .language_heading {
@@ -292,15 +302,15 @@
         width: 40px;
         height: 40px;
         position: relative;
-        bottom: 20px;
-        left: 20px;
+        bottom: 30px;
+        left: 30px;
     }
 
     .Advantage_Image2 {
         width: 40px;
         height: 40px;
         position: relative;
-        bottom: 20px;
+        bottom: 30px;
         left: 20px;
     }
 

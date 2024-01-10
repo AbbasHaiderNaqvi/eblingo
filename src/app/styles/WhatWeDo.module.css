@@ -17,9 +17,20 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
+    line-height: 60px;
     margin-bottom: 5%;
+    margin-top: 3%;
 }
+.WhatWeDo_subheading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34.065px;
+    margin-bottom: 3%;
 
+}
 .WhatWeDo_paragraph {
     color: #000;
     font-size: 15px;
@@ -49,7 +60,18 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
+        line-height: 35px;
         margin-bottom: 3%;
+    }
+    .WhatWeDo_subheading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 3%;
+    
     }
     
     .WhatWeDo_paragraph {
@@ -81,7 +103,7 @@
         font-weight: 700;
         line-height: 30px;
         margin-bottom: 1%;  
-        margin-left: 10%;  
+        margin-left: 5%;  
     }
     
     .WhatWeDo_Heading2 {
@@ -90,11 +112,21 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
-        margin-left: 10%;
+        margin-left: 5%;
         line-height: 50px;
         margin-bottom: 2%;
     }
+    .WhatWeDo_subheading {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34.065px;
+        margin-bottom: 3%;
+        margin-left: 5%;
     
+    }
     .WhatWeDo_paragraph {
         color: #000;
         font-size: 15px;
@@ -102,7 +134,7 @@
         font-weight: 400;
         font-family: Poppins;
         line-height: 30px;
-        margin-left: 10%;
+        margin-left: 5%;
     } 
     .WhatWeDO_Image{
         width:400px;

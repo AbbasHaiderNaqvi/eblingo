@@ -24,8 +24,10 @@ const WhatWeDo: React.FC = () => {
                         <h2 className={styles.WhatWeDo_Heading2}>
                         Streamlining Language Services
                         </h2>
+                        <div className={styles.WhatWeDo_subheading}>Fast, Efficient, and Budget-Friendly Solutions for Your Business Translation Needs.</div>
+
                         <p className={styles.WhatWeDo_paragraph}>
-                        Fast, Efficient, and Budget-Friendly Solutions for Your Business Translation Needs.
+                        The translation and subtitling process can be overwhelming with its complex procedures, ongoing interaction with linguists, and unforeseen expenses. Our company has devised simplified procedures that cater to the requirements of businesses in search of expert language services. We aim to offer fast, efficient, and budget-friendly solutions that align with our clients’ spending limits.
                         </p>
                     </div>
                 </Col>

@@ -32,9 +32,10 @@ const AdvantageSection = () => {
                         <div className={styles.Advantage_Description1}>
                             <div className={styles.FreeSupport_heading}>24/7 support</div>
                             <div className={styles.FreeSupport_paragraph}>
-                            Our Project Management team will be <br />
-                            available in various time zones to assist <br />
-                            your follow up queries and urgent requests.</div>
+                            Our Project Management team will be<br /> 
+                            available in various time zones to<br /> 
+                            assist your follow up queries and<br /> 
+                            urgent requests.</div>
                         </div>
                     </div>
                     <div className={styles.Advantage2}>
@@ -49,11 +50,12 @@ const AdvantageSection = () => {
                             />
                         </div>
                         <div className={styles.Advantage_Description2}>
-                            <div className={styles.tech_translation_heading}>Technical Translation</div>
+                            <div className={styles.tech_translation_heading}>Technical Expertise</div>
                             <div className={styles.translation_paragraph}>
-                            We have a global talent pool with linguists <br />
-                            having technical expertise in finance,<br />
-                            medical, legal, and editorial specifics.</div>
+                            We have a global talent pool with<br /> 
+                            linguists having technical expertise<br /> 
+                            in finance, medical, legal, and<br /> 
+                            editorial specifics.</div>
                         </div>
                     </div>
                 </Col >
@@ -72,9 +74,9 @@ const AdvantageSection = () => {
                         <div className={styles.Advantage_Description3}>
                             <div className={styles.language_heading}>100+ Languages</div>
                             <div className={styles.language_paragraph}>
-                            Eblingo’s project management team<br />
-                             is operating in multiple continents,<br />
-                             providing services in more than 100 languages.</div>
+                             Ebling&apos;s project management teams<br /> 
+                             operating in multiple continents, providing<br /> 
+                             services in more than 100 languages.</div>
                         </div>
                     </div>
                     {/*                                                                                     */}
@@ -90,11 +92,12 @@ const AdvantageSection = () => {
                             />
                         </div>
                         <div className={styles.Advantage_Description4}>
-                            <div className={styles.Multi_heading}>Multi Language</div>
+                            <div className={styles.Multi_heading}>Multilingual Teams</div>
                             <div className={styles.Multi_paragraph}>
-                            Our linguists are trained in multi-language<br />
-                             translation. We can offer translation services<br />
-                              in multiple languages from source.</div>
+                            Our linguists are trained in multi-<br />
+                            language translation. We can offer<br /> 
+                            translation services in multiple languages<br /> 
+                            from source.</div>
                         </div>
                     </div>
                 </Col>
