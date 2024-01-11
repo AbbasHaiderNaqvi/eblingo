@@ -30,24 +30,28 @@ const Contact: FC = () => {
       try {
         const response = await api.get('/getlanguages');
         const languages: Language[] = response.data;
-
+  
         const sourceLangs = languages.filter(lang => lang.type === 'source');
         const targetLangs = languages.filter(lang => lang.type === 'target');
-
+  
+        
+        sourceLangs.sort((a, b) => a.label.localeCompare(b.label));
+        targetLangs.sort((a, b) => a.label.localeCompare(b.label));
+  
         setSourceLanguages(sourceLangs);
         setTargetLanguages(targetLangs);
       } catch (error) {
         console.error('Error fetching languages:', error);
       }
     };
-
+  
     fetchData();
   }, []);
 
   const onFinish = async (values: any) => {
     try {
       console.log(values);
-      const response = await api.post('/contact',values);
+      const response = await api.post('/contact', values);
       console.log('Form data submitted successfully:', response.data);
       message.success('Thank you! We will contact you soon');
       router.push('/');
@@ -73,7 +77,7 @@ const Contact: FC = () => {
       variants={MediumAnimationVariants}
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
-          <Navbar />
+      <Navbar />
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Contact Us</h1>
       </div>
@@ -141,10 +145,12 @@ const Contact: FC = () => {
                   },
                 ]}>
                 <Select
-                    defaultValue="Select source language"
-                    options={sourceLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
-                    className={styles.Input3}
-                  />
+                  defaultValue="Select source language"
+                  allowClear
+                  showSearch
+                  options={sourceLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
+                  className={styles.Input3}
+                />
               </Form.Item>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
@@ -161,11 +167,13 @@ const Contact: FC = () => {
                     pattern: /^[A-Za-z]+$/,
                   },
                 ]}              >
-                 <Select
-                     defaultValue="Select target language"
-                     options={targetLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
-                    className={styles.Input4}
-                  />
+                <Select
+                  defaultValue="Select target language"
+                  allowClear
+                  showSearch
+                  options={targetLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
+                  className={styles.Input4}
+                />
               </Form.Item>
             </Col>
           </Row>
@@ -198,7 +206,7 @@ const Contact: FC = () => {
                 className={styles.Row3}
                 getValueFromEvent={normFile}
                 rules={[{ required: true, message: 'Please enter Document' }]}
-              > 
+              >
                 <Upload name="logo" action="/upload.do" listType="text">
                   <Button className={styles.UploadButton} icon={<UploadOutlined />}>Choose Files</Button>
                 </Upload>
@@ -208,15 +216,15 @@ const Contact: FC = () => {
 
           <Row gutter={[16, 16]}>
             <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-              <Form.Item 
-              rules={[
-                {
-                  required: true,
-                  message: 'Please enter your email',
-                  type: 'email',
-                },
-              ]}
-              name="email">
+              <Form.Item
+                rules={[
+                  {
+                    required: true,
+                    message: 'Please enter your email',
+                    type: 'email',
+                  },
+                ]}
+                name="email">
                 <Input placeholder="Enter your email" className={styles.Input6} autoComplete='off' />
               </Form.Item>
             </Col>
