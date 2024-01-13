@@ -1,6 +1,6 @@
 "use client";
 import { FC, ChangeEvent, FormEvent, useState, useEffect } from 'react';
-import { Button, Col, Row, Input, Form, Upload, Select, message } from 'antd';
+import { Button, Col, Row, Input, Form, Upload, Select, message, Spin } from 'antd';
 import styles from '../styles/Contact.module.css';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
@@ -21,15 +21,16 @@ interface Language {
 
 const Contact: FC = () => {
   const router = useRouter();
-
+  const [Loading, setLoading] = useState(true);
   const [sourceLanguages, setSourceLanguages] = useState<Language[]>([]);
   const [targetLanguages, setTargetLanguages] = useState<Language[]>([]);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = () => {
       try {
-        const response = await api.get('/getlanguages');
-        const languages: Language[] = response.data;
+        const response = api.get('/getlanguages').then((response) => {
+          setLoading(false)
+          const languages: Language[] = response.data;
   
         const sourceLangs = languages.filter(lang => lang.type === 'source');
         const targetLangs = languages.filter(lang => lang.type === 'target');
@@ -40,6 +41,7 @@ const Contact: FC = () => {
   
         setSourceLanguages(sourceLangs);
         setTargetLanguages(targetLangs);
+      });
       } catch (error) {
         console.error('Error fetching languages:', error);
       }
@@ -71,6 +73,7 @@ const Contact: FC = () => {
     return e && e.fileList;
   };
   return (
+    <Spin spinning={Loading} >
     <motion.div
       initial="hidden"
       animate="visible"
@@ -140,8 +143,7 @@ const Contact: FC = () => {
                 rules={[
                   {
                     required: true,
-                    message: 'Please enter correct source language',
-                    pattern: /^[A-Za-z]+$/,
+                    message: 'Please enter correct source language'
                   },
                 ]}>
                 <Select
@@ -163,8 +165,7 @@ const Contact: FC = () => {
                 rules={[
                   {
                     required: true,
-                    message: 'Please enter correct target language',
-                    pattern: /^[A-Za-z]+$/,
+                    message: 'Please enter correct target language'                  
                   },
                 ]}              >
                 <Select
@@ -251,6 +252,7 @@ const Contact: FC = () => {
       </div>
       <Footer />
     </motion.div>
+    </Spin>
   );
 };
 

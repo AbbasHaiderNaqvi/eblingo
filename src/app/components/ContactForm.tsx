@@ -115,12 +115,13 @@ const ContactForm: React.FC = () => {
               {
                 required: true,
                 message: 'Please enter correct source language',
-                pattern: /^[A-Za-z]+$/,
               },
             ]}
           >
             <Select
               defaultValue="Select source language"
+              allowClear
+              showSearch
               options={sourceLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
               className={styles.input_fields}
             />
@@ -131,12 +132,13 @@ const ContactForm: React.FC = () => {
               {
                 required: true,
                 message: 'Please enter correct target language',
-                pattern: /^[A-Za-z]+$/,
               },
             ]}
           >
             <Select
               defaultValue="Select target language"
+              allowClear
+              showSearch
               options={targetLanguages.map(lang => ({ value: lang.value, label: lang.label }))}
               className={styles.input_fields}
             />
