@@ -100,7 +100,7 @@ const Service = () => {
                     </div>
                     <div className={styles.third_Service_Section}>
                         <h2 className={styles.service_heading}>
-                            Media Translation
+                            Media Partnerships
                         </h2>
                         <div className={styles.unorder_list}>
                             <ul className={styles.listing} >
