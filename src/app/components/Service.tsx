@@ -120,7 +120,7 @@ const Service = () => {
                     </div>
                     <div className={styles.fourth_Service_Section}>
                         <h2 className={styles.service_heading}>
-                            Publishing Partnership
+                            Publishing Partnerships
                         </h2>
                         <div className={styles.unorder_list}>
                             <ul className={styles.listing} >

@@ -34,6 +34,8 @@ const GetaQuote: FC = () => {
           const sourceLangs = languages.filter(lang => lang.type === 'source');
           const targetLangs = languages.filter(lang => lang.type === 'target');
 
+          sourceLangs.sort((a, b) => a.label.localeCompare(b.label));
+          targetLangs.sort((a, b) => a.label.localeCompare(b.label));
           setSourceLanguages(sourceLangs);
           setTargetLanguages(targetLangs);
         });
@@ -206,6 +208,7 @@ const GetaQuote: FC = () => {
                     />
                   </Form.Item>
                 </Col>
+                
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                   <Form.Item
                     labelCol={{ span: 24 }}
