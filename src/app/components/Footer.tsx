@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
                 <Row>
                     <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <Image
-                        unoptimized
+                            unoptimized
                             src="/assets/Home/logo1.png"
                             alt="Logo"
                             width={150}
@@ -95,10 +95,12 @@ const Footer: React.FC = () => {
                                 justifyContent: 'center',
                                 borderRadius: '8px'
                             }}>
+                            <a className={styles.media_links} href="https://www.facebook.com/profile.php?id=61555814184309" target="_blank" rel="noopener noreferrer">
                                 <FacebookOutlined style={{
                                     color: 'white',
                                     fontSize: '150%'
                                 }} />
+                            </a>
                             </div>
                             <div style={{
                                 backgroundColor: '#000',
@@ -108,24 +110,12 @@ const Footer: React.FC = () => {
                                 justifyContent: 'center',
                                 borderRadius: '8px'
                             }}>
-                                <LinkedinOutlined style={{
-                                    color: 'white',
-                                    fontSize: '150%'
-                                }} />
-                            </div>
-                            <div style={{
-                                backgroundColor: '#000',
-                                width: '43px',
-                                height: '43px',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                borderRadius: '8px'
-                            }}>
-                                <InstagramOutlined style={{
-                                    color: 'white',
-                                    borderRadius: '8px',
-                                    fontSize: '150%'
-                                }} />
+                                <a className={styles.media_links} href="https://www.linkedin.com/company/eblingo/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                                    <LinkedinOutlined style={{
+                                        color: 'white',
+                                        fontSize: '150%'
+                                    }} />
+                                </a>
                             </div>
                         </Space>
                         <div className={styles.email_entry}>
@@ -145,56 +135,45 @@ const Footer: React.FC = () => {
                     </Col>
                     <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <ul className={styles.socialmedia_links}>
-                            <li className={styles.links}>Facebook
-                                <div style={{
-                                    marginTop: '45%',
-                                    backgroundColor: '#ED1E78',
-                                    width: '43px',
-                                    height: '43px',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    borderRadius: '3px'
-                                }}>
-                                    <FacebookOutlined style={{
+                            <li className={styles.facebooklinks}>
+                                <a className={styles.media_links} href="https://www.facebook.com/profile.php?id=61555814184309" target="_blank" rel="noopener noreferrer">
+                                    Facebook
+                                    <div style={{
+                                        marginTop: '45%',
                                         backgroundColor: '#ED1E78',
-                                        fontSize: '150%',
-                                        color: '#fff'
-                                    }} />
-                                </div>
+                                        width: '43px',
+                                        height: '43px',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        borderRadius: '3px'
+                                    }}>
+                                        <FacebookOutlined style={{
+                                            backgroundColor: '#ED1E78',
+                                            fontSize: '150%',
+                                            color: '#fff'
+                                        }} />
+                                    </div>
+                                </a>
                             </li>
-                            <li className={styles.links}>Instagram
-                                <div style={{
-                                    marginTop: '45%',
-                                    backgroundColor: '#ED1E78',
-                                    width: '43px',
-                                    height: '43px',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    borderRadius: '3px'
-                                }}>
-                                    <InstagramOutlined style={{
+                            <li className={styles.linkedinlinks}>
+                                <a className={styles.media_links} href="https://www.linkedin.com/company/eblingo/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                                    Linkedin
+                                    <div style={{
+                                        marginTop: '55%',
                                         backgroundColor: '#ED1E78',
-                                        fontSize: '150%',
-                                        color: '#fff'
-                                    }} />
-                                </div>
-                            </li>
-                            <li className={styles.links}>Linkedin
-                                <div style={{
-                                    marginTop: '55%',
-                                    backgroundColor: '#ED1E78',
-                                    width: '43px',
-                                    height: '43px',
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    borderRadius: '3px'
-                                }}>
-                                    <LinkedinOutlined style={{
-                                        backgroundColor: '#ED1E78',
-                                        fontSize: '150%',
-                                        color: '#fff'
-                                    }} />
-                                </div>
+                                        width: '43px',
+                                        height: '43px',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        borderRadius: '3px'
+                                    }}>
+                                        <LinkedinOutlined style={{
+                                            backgroundColor: '#ED1E78',
+                                            fontSize: '150%',
+                                            color: '#fff'
+                                        }} />
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                         <div className={styles.term}>

@@ -12,7 +12,9 @@
 .Footer_icons2{
   display: none;
 }
-
+.media_links{
+  color:#000;
+}
 .term {
   display: flex;
   margin-top: 10%;
@@ -74,15 +76,24 @@
   list-style: none;
 }
 
-.links {
+.linkedinlinks {
   color: var(--Dark, #0A142F);
   font-size: 16px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  margin-left: 20%;
 }
-
+.facebooklinks {
+  color: var(--Dark, #0A142F);
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 50%;
+}
 .list_Bold {
   color: var(--Dark, #0A142F);
   font-size: 16px;
@@ -233,7 +244,9 @@
     line-height: normal;
     letter-spacing: -0.2px;
   }
-
+  .media_links{
+    color:#000;
+  }
   .Footer_icons {
     display: none;
   }
@@ -271,7 +284,9 @@
     display: block;
     justify-content: center;
   }
-
+  .media_links{
+    color:#000;
+  }
   .email_heading {
     color: var(--Dark, #0A142F);
     font-family: Poppins;
@@ -314,7 +329,9 @@
     display: block;
     justify-content: center;
   }
- 
+  .media_links{
+    color:#000;
+  }
   .email_heading {
     color: var(--Dark, #0A142F);
     font-family: Poppins;

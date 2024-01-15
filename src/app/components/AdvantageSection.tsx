@@ -74,7 +74,7 @@ const AdvantageSection = () => {
                         <div className={styles.Advantage_Description3}>
                             <div className={styles.language_heading}>100+ Languages</div>
                             <div className={styles.language_paragraph}>
-                             Ebling&apos;s project management teams<br /> 
+                             Eblingo&apos;s project management teams<br /> 
                              operating in multiple continents, providing<br /> 
                              services in more than 100 languages.</div>
                         </div>
