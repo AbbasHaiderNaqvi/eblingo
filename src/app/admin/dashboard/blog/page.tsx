@@ -1,10 +1,9 @@
-"use client";
+'use client';
 import React, { useEffect, useState } from 'react';
-import { Input, Button, Table, Modal, message } from 'antd';
+import { Input, Button, Table, Modal, message, Spin } from 'antd';
 import styles from '../../dashboard/blog/blog.module.css';
 import type { ColumnsType } from 'antd/es/table';
 import Sidebar from '../../Sidebar/Sidebar';
-import axios from 'axios';
 import { SearchProps } from 'antd/es/input';
 import { useRouter } from 'next/navigation';
 import { DeleteOutlined, EditOutlined, ExclamationCircleOutlined, SearchOutlined } from '@ant-design/icons';
@@ -27,6 +26,7 @@ const AdBlog: React.FC = () => {
   const [data, setData] = useState<DataType[]>([]);
   const [filteredData, setFilteredData] = useState<DataType[]>([]);
   const [tokenAvailable, setTokenAvailable] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const showDeleteConfirm = (record: DataType) => {
     confirm({
@@ -75,7 +75,7 @@ const AdBlog: React.FC = () => {
       width: 30,
       render: (_, record) => (
         <>
-          <Button style={{marginBottom:'15%'}}onClick={() => handleUpdate(record)}>
+          <Button style={{ marginBottom: '15%' }} onClick={() => handleUpdate(record)}>
             <EditOutlined />
           </Button>
           <Button onClick={() => showDeleteConfirm(record)}>
@@ -88,6 +88,8 @@ const AdBlog: React.FC = () => {
 
   const UpdateData = async () => {
     try {
+      setLoading(true); // Set loading to true when starting API call
+
       const response = await api.get('/updateblog');
       const result = response.data;
       setData(result);
@@ -95,6 +97,8 @@ const AdBlog: React.FC = () => {
     } catch (error) {
       console.error('Error data:', error);
       setTokenAvailable(false);
+    } finally {
+      setLoading(false); // Set loading to false when API call completes
     }
   };
 
@@ -104,21 +108,28 @@ const AdBlog: React.FC = () => {
 
   const handleDelete = async (record: DataType) => {
     try {
+      setLoading(true); // Set loading to true when starting API call
+
       await api.delete(`/blogs/${record._id}`);
       const updatedData = data.filter((item) => item._id !== record._id);
       setData(updatedData);
       setFilteredData(updatedData);
     } catch (error) {
       console.error('Error deleting blog:', error);
+    } finally {
+      setLoading(false); // Set loading to false when API call completes
     }
   };
 
   const fetchData = async () => {
     try {
+      setLoading(true); // Set loading to true when starting API call
       router.push('./create-blog');
     } catch (error) {
       console.error('Error data:', error);
       setTokenAvailable(false);
+    } finally {
+      setLoading(false); // Set loading to false when API call completes
     }
   }; 
 
@@ -154,10 +165,22 @@ const AdBlog: React.FC = () => {
           size="large"
           onSearch={onSearch}
         />
-        <Table className={styles.Table} columns={columns} dataSource={filteredData} pagination={{ pageSize: 50 }} scroll={{ y: 280 }} />
-        <Button onClick={fetchData} className={styles.button}>
-          CREATE
-        </Button>
+        {loading ? (
+          <Spin size="large" />
+        ) : (
+          <>
+            <Table
+              className={styles.Table}
+              columns={columns}
+              dataSource={filteredData}
+              pagination={{ pageSize: 50 }}
+              scroll={{ y: 280 }}
+            />
+            <Button onClick={fetchData} className={styles.button}>
+              CREATE
+            </Button>
+          </>
+        )}
       </div>
     </>
   );

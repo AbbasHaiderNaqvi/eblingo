@@ -1,13 +1,11 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { Input, Button, Table, Modal, message, Select } from 'antd';
 import styles from '../../dashboard/languages/languages.module.css';
-import type { ColumnsType } from 'antd/es/table';
-import Sidebar from '../../Sidebar/Sidebar';
-import axios from 'axios';
-import { useRouter } from 'next/navigation';
+import { Input, Button, Table, Modal, message, Select, Spin } from 'antd';
 import { DeleteOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 import api from '@/app/axiosInterceptor/axiosInterceptor';
+import { useRouter } from 'next/navigation';
+import Sidebar from '../../Sidebar/Sidebar';
 
 const { confirm } = Modal;
 const { Option } = Select;
@@ -27,6 +25,7 @@ const LanguagePage: React.FC = () => {
     value: '',
     type: 'source', // Default type
   });
+  const [loading, setLoading] = useState<boolean>(false);
 
   const showDeleteConfirm = (record: DataType) => {
     confirm({
@@ -48,9 +47,12 @@ const LanguagePage: React.FC = () => {
 
   const handleCreate = async () => {
     try {
+      setLoading(true); // Set loading to true when starting API call
+
       // Validate inputs
       if (!newEntry.label || !newEntry.value) {
         message.error('Label and Value are required');
+        setLoading(false); // Set loading to false when validation fails
         return;
       }
 
@@ -65,6 +67,8 @@ const LanguagePage: React.FC = () => {
       message.success('Language Created');
     } catch (error) {
       console.error('Error creating language:', error);
+    } finally {
+      setLoading(false); // Set loading to false when API call completes
     }
   };
 
@@ -78,15 +82,19 @@ const LanguagePage: React.FC = () => {
 
   const handleDelete = async (record: DataType) => {
     try {
+      setLoading(true); // Set loading to true when starting API call
+
       await api.delete(`/languages/${record._id}`);
       const updatedData = data.filter((item) => item._id !== record._id);
       setData(updatedData);
     } catch (error) {
       console.error('Error deleting language:', error);
+    } finally {
+      setLoading(false); // Set loading to false when API call completes
     }
   };
 
-  const columns: ColumnsType<DataType> = [
+  const columns = [
     {
       title: 'LABEL',
       dataIndex: 'label',
@@ -111,7 +119,7 @@ const LanguagePage: React.FC = () => {
       title: 'ACTIONS',
       dataIndex: 'actions',
       width: 30,
-      render: (_, record) => (
+      render: (_: any, record: DataType) => (
         <>
           <Button style={{ marginBottom: '15%' }} onClick={() => showDeleteConfirm(record)}>
             <DeleteOutlined />
@@ -123,14 +131,19 @@ const LanguagePage: React.FC = () => {
 
   const updateData = async () => {
     try {
+      setLoading(true); // Set loading to true when starting API call
+
       const response = await api.get('/getlanguages');
       const result = response.data;
       setData(result);
     } catch (error) {
       console.error('Error data:', error);
       setTokenAvailable(false);
+    } finally {
+      setLoading(false); // Set loading to false when API call completes
     }
   };
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
@@ -139,26 +152,33 @@ const LanguagePage: React.FC = () => {
       updateData();
     }
   }, []);
+
   if (!tokenAvailable) {
     router.push('/admin/login');
     return null;
-}
+  }
 
   return (
     <>
       <Sidebar />
       <div>
         <h1 className={styles.heading}>LANGUAGES</h1>
-        <Table
-          className={styles.Table}
-          columns={columns}
-          dataSource={data}
-          pagination={{ pageSize: 50 }}
-          scroll={{ y: 280 }}
-        />
-        <Button onClick={showCreateModal} className={styles.button}>
-          CREATE
-        </Button>
+        {loading ? (
+          <Spin size="large" />
+        ) : (
+          <>
+            <Table
+              className={styles.Table}
+              columns={columns}
+              dataSource={data}
+              pagination={{ pageSize: 50 }}
+              scroll={{ y: 280 }}
+            />
+            <Button onClick={showCreateModal} className={styles.button}>
+              CREATE
+            </Button>
+          </>
+        )}
       </div>
       <Modal
         title="Create Language Entry"
@@ -183,7 +203,7 @@ const LanguagePage: React.FC = () => {
         <div>
           <label>Type:</label>
           <Select
-          className={styles.select}
+            className={styles.select}
             value={newEntry.type}
             onChange={(value) => handleInputChange('type', value)}
           >

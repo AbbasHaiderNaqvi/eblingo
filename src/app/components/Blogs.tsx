@@ -38,6 +38,11 @@ const Blog: React.FC = () => {
     router.push(`/blog/${_id}`);
   };
 
+  // Check if blogs array is empty, and hide the entire component if true
+  if (blogs.length === 0) {
+    return null; // or you can return a loading spinner or any other fallback component
+  }
+
   return (
     <motion.div
       initial="hidden"
@@ -53,7 +58,7 @@ const Blog: React.FC = () => {
           <Col key={blog._id} xs={24} sm={24} md={24} lg={8} xl={8}>
             <div className={styles.blog_content} onClick={() => handleBlogClick(blog._id)}>
               <Image
-              unoptimized
+                unoptimized
                 src={blog.image}
                 alt="Blog"
                 width={415}

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { Input, Button, Table } from 'antd';
+import { Input, Button, Table, Spin } from 'antd';
 import styles from '../queries/queries.module.css';
 import type { ColumnsType } from 'antd/es/table';
 import Sidebar from '../../Sidebar/Sidebar';
@@ -65,30 +65,34 @@ const columns: ColumnsType<DataType> = [
 
 
 const ContactTable: React.FC = () => {
-    const router= useRouter();
+    const router = useRouter();
     const [data, setData] = useState<DataType[]>([]);
     const [filteredData, setFilteredData] = useState<DataType[]>([]);
-    const [tokenAvailable, setTokenAvailable] = useState<boolean>(true); 
-
+    const [loading, setLoading] = useState<boolean>(true);
+    const [tokenAvailable, setTokenAvailable] = useState<boolean>(true);
 
     const fetchData = async () => {
+        setLoading(true); // Set loading to true when starting API call
         try {
             const response = await api.get('/admin/dashboard/getquote');
             const result = response.data;
             setData(result);
-            setFilteredData(result); 
+            setFilteredData(result);
         } catch (error) {
             console.error('Error fetching data:', error);
+        } finally {
+            setLoading(false); // Set loading to false when API call completes (including errors)
         }
     };
+
     useEffect(() => {
-        const token = localStorage.getItem('token'); 
+        const token = localStorage.getItem('token');
         if (!token) {
             setTokenAvailable(false);
         } else {
             fetchData();
         }
-    }, []); 
+    }, []);
 
     const onSearch: SearchProps['onSearch'] = (value) => {
         const filtered = data.filter((item) =>
@@ -96,10 +100,12 @@ const ContactTable: React.FC = () => {
         );
         setFilteredData(filtered);
     };
+
     if (!tokenAvailable) {
         router.push('/admin/login');
         return null;
     }
+
     return (
         <>
             <Sidebar />
@@ -113,8 +119,22 @@ const ContactTable: React.FC = () => {
                     size="large"
                     onSearch={onSearch}
                 />
-                <Table className={styles.Table} columns={columns} dataSource={filteredData} pagination={{ pageSize: 50 }} scroll={{ y: 300 }} />
-                <Button onClick={fetchData} className={styles.button}><ReloadOutlined  style={{fontSize:'150%'}}/></Button>
+                {loading ? (
+                    <Spin size="large" />
+                ) : (
+                    <>
+                        <Table
+                            className={styles.Table}
+                            columns={columns}
+                            dataSource={filteredData}
+                            pagination={{ pageSize: 50 }}
+                            scroll={{ y: 300 }}
+                        />
+                        <Button onClick={fetchData} className={styles.button}>
+                            <ReloadOutlined style={{ fontSize: '150%' }} />
+                        </Button>
+                    </>
+                )}
             </div>
         </>
     );
