@@ -165,22 +165,18 @@ const AdBlog: React.FC = () => {
           size="large"
           onSearch={onSearch}
         />
-        {loading ? (
-          <Spin size="large" />
-        ) : (
           <>
             <Table
               className={styles.Table}
               columns={columns}
               dataSource={filteredData}
-              pagination={{ pageSize: 50 }}
               scroll={{ y: 280 }}
+              loading={loading}
             />
             <Button onClick={fetchData} className={styles.button}>
               CREATE
             </Button>
           </>
-        )}
       </div>
     </>
   );

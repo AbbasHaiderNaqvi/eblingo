@@ -163,22 +163,18 @@ const LanguagePage: React.FC = () => {
       <Sidebar />
       <div>
         <h1 className={styles.heading}>LANGUAGES</h1>
-        {loading ? (
-          <Spin size="large" />
-        ) : (
           <>
             <Table
               className={styles.Table}
               columns={columns}
               dataSource={data}
-              pagination={{ pageSize: 50 }}
               scroll={{ y: 280 }}
+              loading={loading}
             />
             <Button onClick={showCreateModal} className={styles.button}>
               CREATE
             </Button>
           </>
-        )}
       </div>
       <Modal
         title="Create Language Entry"
