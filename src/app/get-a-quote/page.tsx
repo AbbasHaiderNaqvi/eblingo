@@ -28,7 +28,7 @@ const GetaQuote: FC = () => {
     const fetchData = () => {
       try {
         const response = api.get('/getlanguages').then((response) => {
-          setLoading(false);
+          setLoading(false);  
           const languages: Language[] = response.data;
 
           const sourceLangs = languages.filter(lang => lang.type === 'source');
@@ -64,12 +64,6 @@ const GetaQuote: FC = () => {
     console.log('Failed:', errorInfo);
   };
 
-  const normFile = (e: any) => {
-    if (Array.isArray(e)) {
-      return e;
-    }
-    return e && e.fileList;
-  };
 
   return (
     <Spin spinning={Loading} >

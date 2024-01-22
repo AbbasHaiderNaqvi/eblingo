@@ -24,7 +24,6 @@ function Partnerships() {
       <h2 className={styles.first_master_heading}>Master Templates <span className={styles.heading_span}>and</span> Subtitling</h2>
 
       <Image
-      unoptimized
         src="/assets/Partnerships/Partnerships-Icon.png"
         alt="Transcription"
         width={120}
@@ -34,7 +33,6 @@ function Partnerships() {
       <Row>
         <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 6 }}>
           <Image
-          unoptimized
             src="/assets/Partnerships/Partnerships_Blog1_Image.png"
             alt="Blog"
             width={560}
@@ -58,7 +56,6 @@ function Partnerships() {
       
 
         <Image
-        unoptimized
           src="/assets/Partnerships/arrow_right.png"
           alt="Arrow"
           width={130}
@@ -69,7 +66,6 @@ function Partnerships() {
         <Row>
           <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
             <Image
-            unoptimized
               src="/assets/Partnerships/Partnerships_Blog2_Image.png"
               alt="My SVG"
               width={560}
@@ -98,7 +94,6 @@ function Partnerships() {
         <Row>
         <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
         <Image
-        unoptimized
           src="/assets/Partnerships/Partnerships_Blog3_Image.png"
           alt="My SVG"
           width={560}

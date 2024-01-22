@@ -39,7 +39,6 @@ function Services() {
                     </Col>
                     <Col xs={24} sm={12} md={12} lg={9} xl={10}>
                         <Image
-                        unoptimized
                             src="/assets/Services/First_Blog_Image.png"
                             alt="Services"
                             width={441}
@@ -54,7 +53,6 @@ function Services() {
                 <Row>
                     <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                        unoptimized
                             src="/assets/Services/Second_Blog_Image.png"
                             alt="Services"
                             width={365}
@@ -95,7 +93,6 @@ function Services() {
                     </Col>
                     <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                        unoptimized
                             src="/assets/Services/Third_Blog_Image.png"
                             alt="Services"
                             width={365}
@@ -110,7 +107,6 @@ function Services() {
                 <Row>
                     <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                        unoptimized
                             src="/assets/Services/Fourth_Blog_Image.png"
                             alt="Services"
                             width={395}
@@ -150,7 +146,6 @@ function Services() {
                     </Col>
                     <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                        unoptimized
                             src="/assets/Services/Fifth_Blog_Image.png"
                             alt="Services"
                             width={395}
@@ -165,7 +160,6 @@ function Services() {
                 <Row>
                 <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                        unoptimized
                             src="/assets/Services/Sixth_Blog_Image.png"
                             alt="Services"
                             width={479}

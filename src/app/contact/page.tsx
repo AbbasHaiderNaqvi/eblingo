@@ -238,7 +238,6 @@ const Contact: FC = () => {
               </Form.Item>
             </Col>
           </Row>
-
           <Row justify="center">
             <Col>
               <Form.Item wrapperCol={{ span: 24 }}>

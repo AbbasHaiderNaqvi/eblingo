@@ -43,7 +43,6 @@ const Navbar: React.FC = () => {
       <div className={styles.left}>
       <Link href="/">
         <Image
-        unoptimized
           src='/assets/Home/logo.png'
           alt='Logo'
           width={150}
@@ -89,12 +88,10 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
       <div className={styles.right}>
-        {/* Show the menu icon only when screen width is between 350px and 500px */}
         <div className={styles.menuIcon} onClick={showDrawer}>
           <MenuOutlined style={{ fontSize: '150%'}} />
         </div>
       </div>
-      {/* Use Ant Design Drawer component for the responsive menu */}
       <Drawer
         title=""
         placement="right"
@@ -103,11 +100,9 @@ const Navbar: React.FC = () => {
         open={drawerVisible}
         className={styles.drawer}
       >
-        {/* Logo in the drawer header */}
         <div className={styles.drawerHeader}>
         <Link href="/" >
           <Image
-          unoptimized
             src='/assets/Home/logo.png'
             alt="Logo"
             width={200}
@@ -116,7 +111,6 @@ const Navbar: React.FC = () => {
           />
           </Link>
         </div>
-        {/* List of pages in the drawer content */}
         <div className={styles.drawerMain}>
           <ul className={styles.unorderedList}>
               <li>

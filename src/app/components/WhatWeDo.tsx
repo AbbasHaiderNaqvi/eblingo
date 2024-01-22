@@ -33,7 +33,6 @@ const WhatWeDo: React.FC = () => {
                 </Col>
                 <Col xs={24} sm={24} md={24} lg={11} xl={10}>
                     <Image
-                    unoptimized
                         src="/assets/Home/WhatWeDo_Image.png"
                         alt="WhatWeDo"
                         width={540}

@@ -11,20 +11,15 @@ import { motion } from 'framer-motion';
 const Service = () => {
     const router= useRouter();
     const handleClick = () => {
-        console.log('Button clicked!');
         router.push('/get-a-quote');
       }; 
     const [scrollPosition, setScrollPosition] = useState(0);
- 
     useEffect(() => {
         const handleScroll = () => {
             const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
             setScrollPosition(currentPosition);
         };
-
         window.addEventListener('scroll', handleScroll);
-
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -70,7 +65,6 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
-                        unoptimized
                             src="/assets/Home/services1.png"
                             alt="Service"
                             width={330}
@@ -90,7 +84,6 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
-                        unoptimized
                             src="/assets/Home/services2.png"
                             alt="Service"
                             width={330}
@@ -110,7 +103,6 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
-                        unoptimized
                             src="/assets/Home/services3.png"
                             alt="Service"
                             width={330}
@@ -130,7 +122,6 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
-                        unoptimized
                             src="/assets/Home/services4.png"
                             alt="Service"
                             width={330}
@@ -142,7 +133,6 @@ const Service = () => {
                 <Col span={12}>
                     <div className={styles.Images}>
                         <Image
-                        unoptimized
                             src="/assets/Home/services1.png"
                             alt="Service"
                             width={615}
@@ -150,9 +140,7 @@ const Service = () => {
                             className={`${styles.Service_Image} ${scrollPosition >= 1500 && scrollPosition < 1900 ? styles.active : ''
                                 }`}
                         />
-                        
                         <Image
-                        unoptimized
                             src="/assets/Home/services2.png"
                             alt="Service"
                             width={615}
@@ -161,7 +149,6 @@ const Service = () => {
                                 }`}
                         />
                         <Image
-                        unoptimized
                             src="/assets/Home/services3.png"
                             alt="Service"
                             width={615}
@@ -170,7 +157,6 @@ const Service = () => {
                                 }`}
                         />
                         <Image
-                        unoptimized
                             src="/assets/Home/services4.png"
                             alt="Service"
                             width={615}
@@ -182,7 +168,6 @@ const Service = () => {
                     </div>
                 </Col>
             </Row>
-
         </motion.div>
 
     )

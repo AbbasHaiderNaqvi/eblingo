@@ -21,7 +21,6 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage1}>
                         <div className={styles.Advantage_image1}>
                             <Image
-                                unoptimized
                                 src="/assets/Home/Advantage_Image1.png"
                                 alt="Advantage Section"
                                 width={50}
@@ -41,7 +40,6 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage2}>
                         <div className={styles.Advantage_image2}>
                             <Image
-                                unoptimized
                                 src="/assets/Home/Advantage_Image2.png"
                                 alt="About"
                                 width={50}
@@ -63,7 +61,6 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage3}>
                         <div className={styles.Advantage_image3}>
                             <Image
-                                unoptimized
                                 src="/assets/Home/Advantage_Image3.png"
                                 alt="About"
                                 width={50}
@@ -79,11 +76,9 @@ const AdvantageSection = () => {
                              services in more than 100 languages.</div>
                         </div>
                     </div>
-                    {/*                                                                                     */}
                     <div className={styles.Advantage4}>
                         <div className={styles.Advantage_image4}>
                             <Image
-                                unoptimized
                                 src="/assets/Home/Advantage_Image4.png"
                                 alt="About"
                                 width={50}

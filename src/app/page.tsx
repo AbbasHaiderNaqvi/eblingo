@@ -1,7 +1,6 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Hero from './components/Hero';
-import styles from '../app/styles/Navbar.module.css'
 import Service from './components/Service';
 import About from './components/About';
 import AdvantageSection from './components/AdvantageSection';

@@ -79,7 +79,6 @@ const Footer: React.FC = () => {
                 <Row>
                     <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <Image
-                            unoptimized
                             src="/assets/Home/logo1.png"
                             alt="Logo"
                             width={150}

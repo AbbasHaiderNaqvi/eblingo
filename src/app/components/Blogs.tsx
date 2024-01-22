@@ -58,7 +58,6 @@ const Blog: React.FC = () => {
           <Col key={blog._id} xs={24} sm={24} md={24} lg={8} xl={8}>
             <div className={styles.blog_content} onClick={() => handleBlogClick(blog._id)}>
               <Image
-                unoptimized
                 src={blog.image}
                 alt="Blog"
                 width={415}
