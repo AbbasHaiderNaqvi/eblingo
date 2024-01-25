@@ -65,7 +65,7 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
-                            src="/assets/Home/services1.webp"
+                            src="https://tinypic.host/images/2024/01/25/services1.webp"
                             alt="Service"
                             width={330}
                             height={200}
@@ -84,7 +84,7 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
-                            src="/assets/Home/services2.webp"
+                            src="https://tinypic.host/images/2024/01/25/services2.webp"
                             alt="Service"
                             width={330}
                             height={200}
@@ -103,7 +103,7 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
-                            src="/assets/Home/services3.webp"
+                            src="https://tinypic.host/images/2024/01/25/services3.webp"
                             alt="Service"
                             width={330}
                             height={200}
@@ -122,7 +122,7 @@ const Service = () => {
                             </ul>
                         </div>
                         <Image
-                            src="/assets/Home/services4.webp"
+                            src="https://tinypic.host/images/2024/01/25/services4.webp"
                             alt="Service"
                             width={330}
                             height={200}
@@ -133,7 +133,7 @@ const Service = () => {
                 <Col span={12}>
                     <div className={styles.Images}>
                         <Image
-                            src="/assets/Home/services1.webp"
+                            src="https://tinypic.host/images/2024/01/25/services1.webp"
                             alt="Service"
                             width={615}
                             height={380}
@@ -141,7 +141,7 @@ const Service = () => {
                                 }`}
                         />
                         <Image
-                            src="/assets/Home/services2.webp"
+                            src="https://tinypic.host/images/2024/01/25/services2.webp"
                             alt="Service"
                             width={615}
                             height={380}
@@ -149,7 +149,7 @@ const Service = () => {
                                 }`}
                         />
                         <Image
-                            src="/assets/Home/services3.webp"
+                            src="https://tinypic.host/images/2024/01/25/services3.webp"
                             alt="Service"
                             width={615}
                             height={380}
@@ -157,7 +157,7 @@ const Service = () => {
                                 }`}
                         />
                         <Image
-                            src="/assets/Home/services4.webp"
+                            src="https://tinypic.host/images/2024/01/25/services4.webp"
                             alt="Service"
                             width={615}
                             height={380}

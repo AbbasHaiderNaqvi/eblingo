@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
                 <Row>
                     <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <Image
-                            src="/assets/Home/logo1.webp"
+                            src="https://tinypic.host/images/2024/01/25/logo1.webp"
                             alt="Logo"
                             width={150}
                             height={70}

@@ -33,7 +33,7 @@ function Partnerships() {
       <Row>
         <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 6 }}>
           <Image
-            src="/assets/Partnerships/Partnerships_Blog1_Image.webp"
+            src="https://tinypic.host/images/2024/01/25/Partnerships_Blog1_Image.webp"
             alt="Blog"
             width={560}
             height={400}
@@ -56,7 +56,7 @@ function Partnerships() {
       
 
         <Image
-          src="/assets/Partnerships/arrow_right.webp"
+          src="https://tinypic.host/images/2024/01/25/arrow_right.webp"
           alt="Arrow"
           width={130}
           height={130}
@@ -66,7 +66,7 @@ function Partnerships() {
         <Row>
           <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
             <Image
-              src="/assets/Partnerships/Partnerships_Blog2_Image.webp"
+              src="https://tinypic.host/images/2024/01/25/Partnerships_Blog2_Image.webp"
               alt="My SVG"
               width={560}
               height={400}
@@ -94,7 +94,7 @@ function Partnerships() {
         <Row>
         <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
         <Image
-          src="/assets/Partnerships/Partnerships_Blog3_Image.webp"
+          src="https://tinypic.host/images/2024/01/25/Partnerships_Blog3_Image.webp"
           alt="My SVG"
           width={560}
           height={400}

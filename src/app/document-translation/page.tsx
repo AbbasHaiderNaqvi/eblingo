@@ -39,7 +39,7 @@ function Services() {
                     </Col>
                     <Col xs={24} sm={12} md={12} lg={9} xl={10}>
                         <Image
-                            src="/assets/Services/First_Blog_Image.webp"
+                            src="https://tinypic.host/images/2024/01/25/First_Blog_Image.webp"
                             alt="Services"
                             width={441}
                             height={452}
@@ -53,7 +53,7 @@ function Services() {
                 <Row>
                     <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                            src="/assets/Services/Second_Blog_Image.png"
+                            src="https://tinypic.host/images/2024/01/25/Second_Blog_Image.webp"
                             alt="Services"
                             width={365}
                             height={368}
@@ -93,7 +93,7 @@ function Services() {
                     </Col>
                     <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                            src="/assets/Services/Third_Blog_Image.png"
+                            src="https://tinypic.host/images/2024/01/25/Third_Blog_Image.webp"
                             alt="Services"
                             width={365}
                             height={368}
@@ -107,7 +107,7 @@ function Services() {
                 <Row>
                     <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                            src="/assets/Services/Fourth_Blog_Image.png"
+                            src="https://tinypic.host/images/2024/01/25/Fourth_Blog_Image.webp"
                             alt="Services"
                             width={395}
                             height={395}
@@ -146,7 +146,7 @@ function Services() {
                     </Col>
                     <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                            src="/assets/Services/Fifth_Blog_Image.png"
+                            src="https://tinypic.host/images/2024/01/25/Fifth_Blog_Image.webp"
                             alt="Services"
                             width={395}
                             height={395}
@@ -160,7 +160,7 @@ function Services() {
                 <Row>
                 <Col xs={24} sm={12} md={12} lg={8} xl={10}>
                         <Image
-                            src="/assets/Services/Sixth_Blog_Image.png"
+                            src="https://tinypic.host/images/2024/01/25/Sixth_Blog_Image.webp"
                             alt="Services"
                             width={479}
                             height={477}

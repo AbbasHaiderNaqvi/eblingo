@@ -21,7 +21,7 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage1}>
                         <div className={styles.Advantage_image1}>
                             <Image
-                                src="/assets/Home/Advantage_Image1.webp"
+                                src="https://tinypic.host/images/2024/01/25/Advantage_Image1.webp"
                                 alt="Advantage Section"
                                 width={50}
                                 height={50}
@@ -40,7 +40,7 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage2}>
                         <div className={styles.Advantage_image2}>
                             <Image
-                                src="/assets/Home/Advantage_Image2.webp"
+                                src="https://tinypic.host/images/2024/01/25/Advantage_Image2.webp"
                                 alt="About"
                                 width={50}
                                 height={50}
@@ -61,7 +61,7 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage3}>
                         <div className={styles.Advantage_image3}>
                             <Image
-                                src="/assets/Home/Advantage_Image3.webp"
+                                src="https://tinypic.host/images/2024/01/25/Advantage_Image3.webp"
                                 alt="About"
                                 width={50}
                                 height={50}
@@ -79,7 +79,7 @@ const AdvantageSection = () => {
                     <div className={styles.Advantage4}>
                         <div className={styles.Advantage_image4}>
                             <Image
-                                src="/assets/Home/Advantage_Image4.webp"
+                                src="https://tinypic.host/images/2024/01/25/Advantage_Image4.webp"
                                 alt="About"
                                 width={50}
                                 height={50}

@@ -12,3 +12,10 @@ module.exports = withBundleAnalyzer({
         NEXT_PUBLIC_ENV: 'PRODUCTION', 
     },
 })
+
+module.exports = {
+    images: {
+      domains: ['tinypic.host'],
+    },
+  };
+  
