@@ -39,7 +39,7 @@ function Services() {
                     </Col>
                     <Col xs={24} sm={12} md={12} lg={9} xl={10}>
                         <Image
-                            src="/assets/Services/First_Blog_Image.png"
+                            src="/assets/Services/First_Blog_Image.webp"
                             alt="Services"
                             width={441}
                             height={452}

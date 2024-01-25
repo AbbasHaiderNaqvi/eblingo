@@ -19,7 +19,7 @@ const About = () => {
                 <Row >
                     <Col xs={24} sm={24} md={24} lg={11} xl={13}>
                         <Image
-                            src="/assets/Home/About_Image.png"
+                            src="/assets/Home/About_Image.webp"
                             alt="About"
                             width={497}
                             height={458}

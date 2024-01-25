@@ -24,7 +24,7 @@ function Partnerships() {
       <h2 className={styles.first_master_heading}>Master Templates <span className={styles.heading_span}>and</span> Subtitling</h2>
 
       <Image
-        src="/assets/Partnerships/Partnerships-Icon.png"
+        src="/assets/Partnerships/Partnerships-Icon.webp"
         alt="Transcription"
         width={120}
         height={12}
@@ -33,7 +33,7 @@ function Partnerships() {
       <Row>
         <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 6 }}>
           <Image
-            src="/assets/Partnerships/Partnerships_Blog1_Image.png"
+            src="/assets/Partnerships/Partnerships_Blog1_Image.webp"
             alt="Blog"
             width={560}
             height={400}
@@ -56,7 +56,7 @@ function Partnerships() {
       
 
         <Image
-          src="/assets/Partnerships/arrow_right.png"
+          src="/assets/Partnerships/arrow_right.webp"
           alt="Arrow"
           width={130}
           height={130}
@@ -66,7 +66,7 @@ function Partnerships() {
         <Row>
           <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
             <Image
-              src="/assets/Partnerships/Partnerships_Blog2_Image.png"
+              src="/assets/Partnerships/Partnerships_Blog2_Image.webp"
               alt="My SVG"
               width={560}
               height={400}
@@ -94,7 +94,7 @@ function Partnerships() {
         <Row>
         <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
         <Image
-          src="/assets/Partnerships/Partnerships_Blog3_Image.png"
+          src="/assets/Partnerships/Partnerships_Blog3_Image.webp"
           alt="My SVG"
           width={560}
           height={400}
@@ -127,4 +127,4 @@ function Partnerships() {
   )
 }
 
-export default Partnerships
+export default Partnerships;

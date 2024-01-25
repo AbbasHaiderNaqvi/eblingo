@@ -3,7 +3,6 @@ import styles from '../styles/WhatWeDo.module.css';
 import Image from 'next/image';
 import React from 'react';
 import { Button, Progress, Row, Col } from "antd";
-import Tab from "../Animations/Tab";
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 
