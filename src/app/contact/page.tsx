@@ -1,12 +1,10 @@
 "use client";
-import { FC, ChangeEvent, FormEvent, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { Button, Col, Row, Input, Form, Upload, Select, message, Spin } from 'antd';
 import styles from '../styles/Contact.module.css';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
-import axios, { AxiosResponse } from 'axios';
 import { UploadOutlined } from '@ant-design/icons';
-import FormItem from 'antd/es/form/FormItem';
 import TextArea from 'antd/es/input/TextArea';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -16,7 +14,7 @@ import api from '../axiosInterceptor/axiosInterceptor';
 interface Language {
   value: string;
   label: string;
-  type: string; // Add 'type' property to the Language interface
+  type: string;
 }
 
 const Contact: FC = () => {
@@ -167,7 +165,7 @@ const Contact: FC = () => {
                     required: true,
                     message: 'Please enter correct target language'                  
                   },
-                ]}              >
+                ]} >
                 <Select
                   defaultValue="Select target language"
                   allowClear

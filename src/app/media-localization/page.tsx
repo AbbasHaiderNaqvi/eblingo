@@ -28,7 +28,7 @@ function Transcription() {
                         in the digital age.</h2>
                     <div className={styles.divider}>
                         <Image
-                            src="/assets/Transcription/Transcription-Icon.png"
+                            src="/assets/Transcription/Transcription-Icon.webp"
                             alt="Transcription"
                             width={120}
                             height={12}
@@ -45,7 +45,7 @@ function Transcription() {
                 <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                 <div className={styles.blog_content}>
                     <Image
-                        src="/assets/Transcription/Transcription_Blog_One.png"
+                        src="https://tinypic.host/images/2024/01/25/Transcription_Blog_One.webp"
                         alt="Transcription"
                         width={415}
                         height={249}
@@ -69,7 +69,7 @@ function Transcription() {
                 <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                 <div className={styles.blog_content}>
                     <Image
-                        src="/assets/Transcription/Transcription_Blog_Two.png"
+                        src="https://tinypic.host/images/2024/01/25/Transcription_Blog_Two.webp"
                         alt="Transcription"
                         width={415}
                         height={249}
@@ -93,7 +93,7 @@ function Transcription() {
                 <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                 <div className={styles.blog_content}>
                     <Image
-                        src="/assets/Transcription/Transcription_Blog_Three.png"
+                        src="https://tinypic.host/images/2024/01/25/Transcription_Blog_Three.webp"
                         alt="Transcription"
                         width={415}
                         height={249}

@@ -3,7 +3,6 @@ import styles from '../styles/WhatWeDo.module.css';
 import Image from 'next/image';
 import React from 'react';
 import { Button, Progress, Row, Col } from "antd";
-import Tab from "../Animations/Tab";
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 
@@ -33,7 +32,7 @@ const WhatWeDo: React.FC = () => {
                 </Col>
                 <Col xs={24} sm={24} md={24} lg={11} xl={10}>
                     <Image
-                        src="/assets/Home/WhatWeDo_Image.png"
+                        src="https://tinypic.host/images/2024/01/25/WhatWeDo_Image.webp"
                         alt="WhatWeDo"
                         width={540}
                         height={436}

@@ -1,5 +1,5 @@
 .HeroSection {
-    background-image: url('/assets/Publications/Publications_Image.png');
+    background-image: url('https://tinypic.host/images/2024/01/25/Publications_Image.webp');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -7,7 +7,7 @@
     padding: 100px;
     color: #fff;
 
-}
+} 
 
 .HeroSection_Heading {
     color: #FFF;

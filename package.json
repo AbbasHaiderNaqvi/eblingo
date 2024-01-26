@@ -2,7 +2,6 @@
   "name": "eblingo",
   "version": "0.1.0",
   "private": true,
-  "proxy": "localhost:3001",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,19 +10,18 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
+    "@next/bundle-analyzer": "^14.1.0",
     "antd": "^5.12.1",
     "axios": "^1.6.2",
+    "cross-env": "^7.0.3",
     "framer-motion": "^10.16.4",
     "next": "13.5.4",
     "rc-queue-anim": "^2.0.0",
     "react": "^18",
-    "react-countup": "^6.4.2",
     "react-dom": "^18",
     "react-quill": "^2.0.0",
-    "react-router-dom": "^6.20.1",
-    "react-simple-typewriter": "^5.0.1",
-    "react-visibility-sensor": "^5.1.1"
-  },
+    "react-router-dom": "^6.20.1"
+    },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
