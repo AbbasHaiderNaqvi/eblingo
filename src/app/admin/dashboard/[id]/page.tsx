@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import { Button, Col, Input, Row, Upload, message } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import axios from 'axios';
 import styles from '../create-blog/createblog.module.css';
 import 'react-quill/dist/quill.snow.css';
 import Sidebar from '../../Sidebar/Sidebar';
@@ -73,7 +72,7 @@ const UpdateBlog: React.FC = () => {
         setFileList(fileList);
     };
     if (!blog) {
-        return null; // or you can show a loading indicator
+        return null;
     }
     if (!tokenAvailable) {
         router.push('/admin/login');

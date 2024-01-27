@@ -2,12 +2,7 @@
 import { useEffect, type FC } from 'react';
 import React, { useState } from 'react'
 import styles from '../styles/QuoteButton.module.css';
-import { Button, Col, Dropdown, Select, Form, Input, Row, Space, Upload, message, Spin } from 'antd';
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { color, motion } from 'framer-motion';
-import type { SelectProps } from 'antd';
-import axios from 'axios';
-import Navbar from '../components/Navbar';
+import { Button, Col, Select, Form, Input, Row, Space, Upload, message, Spin } from 'antd';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/navigation';
 import api from '../axiosInterceptor/axiosInterceptor';
@@ -15,7 +10,7 @@ import api from '../axiosInterceptor/axiosInterceptor';
 interface Language {
   value: string;
   label: string;
-  type: string; // Add 'type' property to the Language interface
+  type: string;
 }
 
 const GetaQuote: FC = () => {
@@ -36,6 +31,7 @@ const GetaQuote: FC = () => {
 
           sourceLangs.sort((a, b) => a.label.localeCompare(b.label));
           targetLangs.sort((a, b) => a.label.localeCompare(b.label));
+          
           setSourceLanguages(sourceLangs);
           setTargetLanguages(targetLangs);
         });
@@ -67,13 +63,7 @@ const GetaQuote: FC = () => {
 
   return (
     <Spin spinning={Loading} >
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={MediumAnimationVariants}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <Navbar />
+      <div>
         <div>
           <h3 className={styles.quote_heading}>Get a quote</h3>
           <p className={styles.quote_paragraph}>
@@ -227,8 +217,7 @@ const GetaQuote: FC = () => {
             </Form>
           </div>
         </div>
-        <Footer />
-      </motion.div>
+      </div>
     </Spin>
   );
 };

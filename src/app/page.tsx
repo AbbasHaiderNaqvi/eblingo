@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import Hero from './components/Hero';
 import Service from './components/Service';
@@ -7,16 +6,11 @@ import AdvantageSection from './components/AdvantageSection';
 import WhatWeDo from './components/WhatWeDo';
 import Offer from './components/Offer';
 import Blog from './components/Blogs';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-
 
 
 export default function Home() {
   return (
-    <main>
       <div>
-        <Navbar />
         <Hero />
         <About />
         <Service />
@@ -24,8 +18,6 @@ export default function Home() {
         <Offer />
         <Blog />
         <AdvantageSection />
-        <Footer />
       </div>
-    </main>
   )
 }

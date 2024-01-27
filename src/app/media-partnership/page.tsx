@@ -5,8 +5,7 @@ import Image from 'next/image';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
 import { Col, Row } from 'antd';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 
 function Partnerships() {
   return (
@@ -16,7 +15,6 @@ function Partnerships() {
       variants={MediumAnimationVariants}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <Navbar />
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Media Partnerships</h1>
       </div>
@@ -24,7 +22,7 @@ function Partnerships() {
       <h2 className={styles.first_master_heading}>Master Templates <span className={styles.heading_span}>and</span> Subtitling</h2>
 
       <Image
-        src="/assets/Partnerships/Partnerships-Icon.webp"
+        src="/assets/Transcription/Transcription-Icon.webp"
         alt="Transcription"
         width={120}
         height={12}
@@ -53,16 +51,16 @@ function Partnerships() {
           </div>
         </Col>
       </Row>
-      
 
-        <Image
-          src="https://tinypic.host/images/2024/01/25/arrow_right.webp"
-          alt="Arrow"
-          width={130}
-          height={130}
-          className={styles.arrow_right1}
-        />
-        <div className={styles.blog2_content}>
+
+      <Image
+        src="https://tinypic.host/images/2024/01/25/arrow_right.webp"
+        alt="Arrow"
+        width={130}
+        height={130}
+        className={styles.arrow_right1}
+      />
+      <div className={styles.blog2_content}>
         <Row>
           <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
             <Image
@@ -75,54 +73,53 @@ function Partnerships() {
           </Col>
           <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 19 }}>
             <div className={styles.blog2content}>
-            <h3 className={styles.heading2}>Master Templates: The Foundation of Multilingual Subtitling</h3>
-            <p className={styles.blog_Paragraph2}>Subtitles are a crucial element in the global accessibility of
-              content. This importance is magnified when dealing with
-              multiple languages, a challenge we meet head-on through our
-              expertise in creating Master Templates. Master Templates form
-              the cornerstone of our multilingual subtitling process. By
-              establishing a foundation that standardizes the process, we&apos;ve 
-              eliminated duplicate work, reduced costs, improved delivery
-              timelines, and enhanced the quality control of a large volume of
-              subtitle files.
+              <h3 className={styles.heading2}>Master Templates: The Foundation of Multilingual Subtitling</h3>
+              <p className={styles.blog_Paragraph2}>Subtitles are a crucial element in the global accessibility of
+                content. This importance is magnified when dealing with
+                multiple languages, a challenge we meet head-on through our
+                expertise in creating Master Templates. Master Templates form
+                the cornerstone of our multilingual subtitling process. By
+                establishing a foundation that standardizes the process, we&apos;ve
+                eliminated duplicate work, reduced costs, improved delivery
+                timelines, and enhanced the quality control of a large volume of
+                subtitle files.
               </p>
-              </div>
+            </div>
           </Col>
         </Row>
       </div>
       <div className={styles.blog_content_last}>
         <Row>
-        <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
-        <Image
-          src="https://tinypic.host/images/2024/01/25/Partnerships_Blog3_Image.webp"
-          alt="My SVG"
-          width={560}
-          height={400}
-          className={styles.Partnerships_Blog3_Image}
-        />
-        </Col> 
-        <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 19 }}>
-        <div className={styles.blog3_content}>
-        <h3 className={styles.heading3}>Our In-House Expertise</h3>
-        <p className={styles.blog_Paragraph3}>
-          At the heart of our operation are our in-house teams. Our
-          professionals are thoroughly trained in various streaming
-          platforms&apos; best practices and style guides. They bring a deep
-          understanding of timing conventions, shot changes, reading speed
-          considerations, and the adherence to syntactic rules and
-          structures. This level of expertise ensures that your subtitled
-          content will be linguistically accurate, enjoyable, and accessible to
-          global audiences. Through these partnerships and our proven
-          processes, we&apos;ve built a strong reputation as a leader in
-          multilingual subtitling. Let Eblingo be your trusted partner in
-          ensuring that your content transcends linguistic barriers, reaches
-          wider audiences, and truly connects with people across the globe.
-          </p>
-        </div>
-        </Col>
-          </Row>
+          <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 5 }}>
+            <Image
+              src="https://tinypic.host/images/2024/01/25/Partnerships_Blog3_Image.webp"
+              alt="My SVG"
+              width={560}
+              height={400}
+              className={styles.Partnerships_Blog3_Image}
+            />
+          </Col>
+          <Col xs={24} sm={24} md={24} lg={{ span: 12 }} xl={{ span: 19 }}>
+            <div className={styles.blog3_content}>
+              <h3 className={styles.heading3}>Our In-House Expertise</h3>
+              <p className={styles.blog_Paragraph3}>
+                At the heart of our operation are our in-house teams. Our
+                professionals are thoroughly trained in various streaming
+                platforms&apos; best practices and style guides. They bring a deep
+                understanding of timing conventions, shot changes, reading speed
+                considerations, and the adherence to syntactic rules and
+                structures. This level of expertise ensures that your subtitled
+                content will be linguistically accurate, enjoyable, and accessible to
+                global audiences. Through these partnerships and our proven
+                processes, we&apos;ve built a strong reputation as a leader in
+                multilingual subtitling. Let Eblingo be your trusted partner in
+                ensuring that your content transcends linguistic barriers, reaches
+                wider audiences, and truly connects with people across the globe.
+              </p>
+            </div>
+          </Col>
+        </Row>
       </div>
-      <Footer />
     </motion.div>
   )
 }

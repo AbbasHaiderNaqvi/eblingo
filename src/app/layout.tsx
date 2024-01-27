@@ -1,35 +1,36 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
-import './theme.css'
+"use client";
+import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { Drawer } from 'antd';
-import { useState } from 'react';
-import { MenuOutlined } from '@ant-design/icons';
+import { Inter } from 'next/font/google';
+import { usePathname } from 'next/navigation'
+import './globals.css';
+import './theme.css';
 
-// const pop = Poppins({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
-// const font = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400','500', '600', '700', '800','900'] }); // Add other weight values as needed
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'eblingo',
-  description: 'Agency Service',
-}
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const [isAdminPanel, setIsAdminPanel] = useState(true);
+  const pathname =usePathname()
+  useEffect(() => {
+    setIsAdminPanel(pathname.includes('/admin'));
+  }, [pathname]); 
+
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/favicon.ico" type="image/png/ico" sizes="32x32" />
+        <title>eblingo</title>
+        <link rel="icon" href="/favicon.ico" type="image/png/ico" sizes="32x32" />
       </head>
       <body className={inter.className}>
+        {!isAdminPanel && <Navbar />}
         {children}
+        {!isAdminPanel && <Footer />}
       </body>
     </html>
-  )
+  );
 }

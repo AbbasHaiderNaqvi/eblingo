@@ -5,8 +5,6 @@ import Image from 'next/image';
 import { Col, Row } from 'antd';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 
 function Transcription() {
@@ -17,7 +15,6 @@ function Transcription() {
             variants={MediumAnimationVariants}
             transition={{ duration: 0.8, ease: "easeOut" }}
         > 
-        <Navbar />
             <div className={styles.HeroSection}>
                 <h1 className={styles.HeroSection_Heading}>Media Localization</h1>
             </div>
@@ -127,7 +124,6 @@ function Transcription() {
             audio. Subtitles in multiple languages facilitate communication between businesses and 
             their international clientele.
             </div>
-            <Footer />
             </motion.div>
     )
 }

@@ -5,8 +5,6 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image';
 import styles from '../styles/Service.module.css';
 import { useEffect } from 'react';
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { motion } from 'framer-motion';
 
 const Service = () => {
     const router= useRouter();
@@ -25,12 +23,7 @@ const Service = () => {
         };
     }, []);
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={MediumAnimationVariants}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className={styles.main}>
+        <>
             <div className={styles.Service}>
                 <Row>
                     <Col span={18}>
@@ -168,8 +161,7 @@ const Service = () => {
                     </div>
                 </Col>
             </Row>
-        </motion.div>
-
+        </>
     )
 }
 

@@ -2,12 +2,8 @@
 import { FC, useState, useEffect } from 'react';
 import { Button, Col, Row, Input, Form, Upload, Select, message, Spin } from 'antd';
 import styles from '../styles/Contact.module.css';
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { motion } from 'framer-motion';
 import { UploadOutlined } from '@ant-design/icons';
 import TextArea from 'antd/es/input/TextArea';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { useRouter } from 'next/navigation';
 import api from '../axiosInterceptor/axiosInterceptor';
 
@@ -72,13 +68,7 @@ const Contact: FC = () => {
   };
   return (
     <Spin spinning={Loading} >
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={MediumAnimationVariants}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
-    >
-      <Navbar />
+    <div>
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Contact Us</h1>
       </div>
@@ -247,8 +237,7 @@ const Contact: FC = () => {
           </Row>
         </Form>
       </div>
-      <Footer />
-    </motion.div>
+    </div>
     </Spin>
   );
 };

@@ -2,10 +2,7 @@
 import styles from '../styles/blog.module.css';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { Row, Col, Button, Space } from 'antd';
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { motion } from 'framer-motion';
-import axios from 'axios';
+import { Row, Col } from 'antd';
 import { useRouter } from 'next/navigation';
 import api from '../axiosInterceptor/axiosInterceptor';
 
@@ -38,19 +35,12 @@ const Blog: React.FC = () => {
     router.push(`/blog/${_id}`);
   };
 
-  // Check if blogs array is empty, and hide the entire component if true
   if (blogs.length === 0) {
-    return null; // or you can return a loading spinner or any other fallback component
+    return null; 
   }
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={MediumAnimationVariants}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className={styles.blog}
-    >
+    <div className={styles.blog}>
       <h5 className={styles.blog_heading}>OUR BLOG</h5>
       <h4 className={styles.blog_heading2}>Latest Posts</h4>
       <Row>
@@ -70,7 +60,7 @@ const Blog: React.FC = () => {
           </Col>
         ))}
       </Row>
-    </motion.div>
+    </div>
   );
 };
 
