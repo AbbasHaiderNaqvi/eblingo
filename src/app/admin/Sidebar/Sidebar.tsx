@@ -12,7 +12,7 @@ function Sidebar() {
        <nav className={styles.navbar}>
        <Image
           unoptimized
-          src='/assets/Home/logo1.png'
+          src='https://tinypic.host/images/2024/01/25/logo1.webp'
           alt='Logo'
           width={150}
           height={70}
