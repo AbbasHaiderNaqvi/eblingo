@@ -1,9 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation'
-import axios from 'axios';
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
 import api from '@/app/axiosInterceptor/axiosInterceptor';
 import { Skeleton } from 'antd';
 
@@ -17,7 +14,6 @@ const IndividualBlog: React.FC = () => {
     const params = useParams();    
     const [blog, setBlog] = useState<Blog | null>(null);
     const [loading, setLoading] = useState(true);
-    console.log(params);
 
     useEffect(() => {
         const id  = params.id;
@@ -38,13 +34,11 @@ const IndividualBlog: React.FC = () => {
         if (id) {
             fetchBlog();
         }
-    }, []); // Added id to the dependency array
+    }, []); 
 
     if (loading) {
         return <div>
-            <Navbar />
-            <Skeleton avatar paragraph={{ rows: 4 }} />
-            <Footer />
+            <Skeleton avatar paragraph={{ rows: 10 }} />
         </div>
     }
 
@@ -54,12 +48,10 @@ const IndividualBlog: React.FC = () => {
 
     return (
         <div>
-        <Navbar />
         <div style={{marginLeft:'0', marginTop:'10%',fontFamily:'poppins'}}>
             <h1 style={{marginBottom:'2%',textAlign:'center',fontSize:'40px'}}>{blog.title}</h1>
             <div style={{textAlign:'center'}} className='blog-page' dangerouslySetInnerHTML={{ __html: blog.content }} />
         </div>
-        <Footer />
         </div>
     );
 };

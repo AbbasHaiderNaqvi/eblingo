@@ -1,20 +1,12 @@
-'use client';
 import styles from '../styles/WhatWeDo.module.css';
 import Image from 'next/image';
 import React from 'react';
-import { Button, Progress, Row, Col } from "antd";
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { motion } from 'framer-motion';
+import { Row, Col } from "antd";
 
  
 const WhatWeDo: React.FC = () => {
     return (
-        <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={MediumAnimationVariants}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      className={styles.content}>
+        <div className={styles.content}>
             <Row>
                  
                 <Col xs={24} sm={24} md={24} lg={13} xl={11}>
@@ -40,7 +32,7 @@ const WhatWeDo: React.FC = () => {
                      />
                 </Col>
             </Row>
-        </motion.div>
+        </div>
     );
 }
 export default WhatWeDo;

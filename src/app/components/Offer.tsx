@@ -1,21 +1,13 @@
-'use client';
 import styles from '../styles/Offer.module.css';
 import Image from 'next/image';
 import React from 'react';
-import { Button, Progress, Row, Col } from "antd";
+import {Row, Col } from "antd";
 import Tab from "../Animations/Tab";
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { motion } from 'framer-motion';
 
 
 const Offer: React.FC = () => {
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={MediumAnimationVariants}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-        > 
+        <> 
             <div className={styles.offer_content}>
                 <Row>
                     <Col xs={24} sm={24} md={24} lg={14} xl={14}>
@@ -33,7 +25,7 @@ const Offer: React.FC = () => {
                     </Col> 
                 </Row>
             </div>
-        </motion.div>
+        </>
     );
 };
 

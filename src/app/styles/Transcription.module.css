@@ -198,7 +198,7 @@
 
 @media (min-width:350px) and (max-width:500px) {
     .HeroSection {
-        background-image: url('/assets/Transcription/Transcription-image.jpg');
+        background-image: url('https://tinypic.host/images/2024/01/25/Transcription-image.webp');
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -407,7 +407,7 @@
 }
 @media (min-width:510px) and (max-width:850px) {
     .HeroSection {
-        background-image: url('/assets/Transcription/Transcription-image.jpg');
+        background-image: url('https://tinypic.host/images/2024/01/25/Transcription-image.webp');
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -608,7 +608,7 @@
 }
 @media (min-width:852px) and (max-width:1100px) {
     .HeroSection {
-        background-image: url('/assets/Transcription/Transcription-image.jpg');
+        background-image: url('https://tinypic.host/images/2024/01/25/Transcription-image.webp');
         background-size: cover;
         background-position: center;
         text-align: center;

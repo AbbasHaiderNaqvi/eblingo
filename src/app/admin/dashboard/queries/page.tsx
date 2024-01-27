@@ -77,7 +77,7 @@ const ContactTable: React.FC = () => {
     const [tokenAvailable, setTokenAvailable] = useState<boolean>(true);
 
     const fetchData = async () => {
-        setLoading(true); // Set loading to true when starting API call
+        setLoading(true); 
         try {
             const response = await api.get('/admin/dashboard/contact-table');
             const result = response.data;
@@ -87,7 +87,7 @@ const ContactTable: React.FC = () => {
             console.error('Error fetching data:', error);
             setTokenAvailable(false);
         } finally {
-            setLoading(false); // Set loading to false when API call completes (including errors)
+            setLoading(false);
         }
     };
 

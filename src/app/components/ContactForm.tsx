@@ -25,6 +25,9 @@ const ContactForm: React.FC = () => {
         const sourceLangs = languages.filter(lang => lang.type === 'source');
         const targetLangs = languages.filter(lang => lang.type === 'target');
 
+        sourceLangs.sort((a, b) => a.label.localeCompare(b.label));
+        targetLangs.sort((a, b) => a.label.localeCompare(b.label));
+        
         setSourceLanguages(sourceLangs);
         setTargetLanguages(targetLangs);
       } catch (error) {
@@ -118,7 +121,7 @@ const ContactForm: React.FC = () => {
               },
             ]}
           >
-            <Select
+            <Select 
               defaultValue="Select source language"
               allowClear
               showSearch

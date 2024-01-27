@@ -1,6 +1,5 @@
-"use client";
 import styles from '../styles/Hero.module.css';
-import { Button, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 import React from 'react';
 
 const Hero = () => {  

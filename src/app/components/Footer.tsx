@@ -1,21 +1,16 @@
 "use client";
-import { ArrowRightOutlined, FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
+import { ArrowRightOutlined, FacebookOutlined,LinkedinOutlined } from '@ant-design/icons';
 import styles from '../styles/Footer.module.css';
-import { Row, Col, Button, Space, Input, Form, message } from 'antd';
+import { Row, Col, Button, Space, Input, message } from 'antd';
 import Image from 'next/image';
-import Link from 'next/link';
 import React, { useState } from 'react';
 import api from '../axiosInterceptor/axiosInterceptor';
 
 const Footer: React.FC = () => {
     const [emailSubscribe, setEmailSubscribe] = useState('');
     const [email, setEmail] = useState('');
-
-    // Inside your Footer component
-
     const handleSubscribeClick = async () => {
         try {
-            // Validate the email format before sending the request
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(emailSubscribe)) {
                 message.error('Please enter a valid email address');
@@ -37,7 +32,6 @@ const Footer: React.FC = () => {
 
     const handleArrowClick = async () => {
         try {
-            // Validate the email format before sending the request
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 message.error('Please enter a valid email address');

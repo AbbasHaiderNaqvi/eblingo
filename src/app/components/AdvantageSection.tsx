@@ -1,21 +1,13 @@
-'use client';
 import Image from "next/image";
 import styles from '../styles/AdvantageSection.module.css';
-import { Button, Progress, Row, Col } from "antd";
+import { Row, Col } from "antd";
 import ContactForm from "./ContactForm";
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { motion } from "framer-motion";
 
 
 
 const AdvantageSection = () => {
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={MediumAnimationVariants}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className={styles.content}>
+        <div className={styles.content}>
             <Row>
                 <Col xs={24} sm={12} md={12} lg={7} xl={7}>
                     <div className={styles.Advantage1}>
@@ -100,7 +92,7 @@ const AdvantageSection = () => {
                     <ContactForm />
                 </Col>
             </Row>
-        </motion.div>
+        </div>
 
     )
 }

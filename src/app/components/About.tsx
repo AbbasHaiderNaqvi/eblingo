@@ -1,20 +1,12 @@
-'use client';
 import styles from '../styles/About.module.css';
 import Image from "next/image";
-import { Button, Col, Divider, Row } from "antd";
+import {Col, Row } from "antd";
 import React from 'react';
-import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
-import { motion } from 'framer-motion';
+
 
 
 const About = () => {
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={MediumAnimationVariants}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className={styles.main}>
             <div className={styles.content}>
                 <Row >
                     <Col xs={24} sm={24} md={24} lg={11} xl={13}>
@@ -38,7 +30,6 @@ const About = () => {
                     </Col>
                 </Row>
             </div>
-        </motion.div>
     )
 }
 

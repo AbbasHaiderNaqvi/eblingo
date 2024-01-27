@@ -4,6 +4,7 @@ import styles from '../login/Login.module.css'
 import { Form, Input, Button, message } from 'antd';
 import { useRouter } from 'next/navigation'
 import api from '@/app/axiosInterceptor/axiosInterceptor';
+import RootLayout from '@/app/layout';
 
 const Login: React.FC = () => {
   const router= useRouter();
@@ -34,6 +35,7 @@ const Login: React.FC = () => {
 
   return (
     <div>
+          <RootLayout>
       <div className={styles.herosection}>
         <div className={styles.HeroSection_Heading}>
            ADMIN PANEL
@@ -57,6 +59,8 @@ const Login: React.FC = () => {
           </Form.Item>
         </Form>
       </div>
+      </ RootLayout>
+
     </div>
   );
 };

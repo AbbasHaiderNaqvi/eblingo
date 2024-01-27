@@ -36,7 +36,6 @@ const Navbar: React.FC = () => {
   ];
   const customCloseIcon = (
     <CloseOutlined style={{ fontSize: 24, color: '#000',marginRight:'300px' }} />
-    // Customize the icon as needed with styles
   );
   return (
     <nav className={styles.navbar}>
