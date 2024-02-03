@@ -49,12 +49,7 @@ const ContactForm: React.FC = () => {
       formData.append('targetLanguage', targetLanguage);
   
       console.log(values);
-      const response = await api.post('/contactForm', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
-  
+      const response = await api.post('/contact', values);
       console.log('Form data submitted successfully:', response.data);
       message.success('Thank you! We will contact you soon');
     } catch (error) {
