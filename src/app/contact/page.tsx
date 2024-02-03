@@ -196,7 +196,17 @@ const Contact: FC = () => {
                 getValueFromEvent={normFile}
                 rules={[{ required: true, message: 'Please enter Document' }]}
               >
-                <Upload name="logo" action="/upload.do" listType="text">
+                <Upload 
+                beforeUpload={(file) => {
+                  const isLt2M = file.size / 1024 / 1024 < 2;
+                  if (!isLt2M) {
+                    message.error('File must be smaller than 2MB!');
+                  }
+                  return isLt2M;
+                }}
+                name="logo" 
+                action="/upload.do" 
+                listType="text">
                   <Button className={styles.UploadButton} icon={<UploadOutlined />}>Choose Files</Button>
                 </Upload>
               </Form.Item>

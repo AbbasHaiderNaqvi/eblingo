@@ -90,7 +90,13 @@ const CreateBlog: React.FC = () => {
                             name="image"
                             listType="picture"
                             fileList={fileList}
-                            beforeUpload={() => false}
+                            beforeUpload={(file) => {
+                                const isLt2M = file.size / 1024 / 1024 < 2;
+                                if (!isLt2M) {
+                                  message.error('File must be smaller than 2MB!');
+                                }
+                                return isLt2M;
+                              }}
                             onChange={handleFileChange}
                             maxCount={1}
                         >

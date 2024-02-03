@@ -27,7 +27,7 @@ const ContactForm: React.FC = () => {
 
         sourceLangs.sort((a, b) => a.label.localeCompare(b.label));
         targetLangs.sort((a, b) => a.label.localeCompare(b.label));
-        
+
         setSourceLanguages(sourceLangs);
         setTargetLanguages(targetLangs);
       } catch (error) {
@@ -41,13 +41,13 @@ const ContactForm: React.FC = () => {
   const onFinish = async (values: any) => {
     try {
       const { name, email, sourceLanguage, targetLanguage } = values;
-  
+
       const formData = new FormData();
       formData.append('name', name);
       formData.append('email', email);
       formData.append('sourceLanguage', sourceLanguage);
       formData.append('targetLanguage', targetLanguage);
-  
+
       console.log(values);
       const response = await api.post('/contact', values);
       console.log('Form data submitted successfully:', response.data);
@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
       message.error('Error submitting form. Please try again.');
     }
   };
-  
+
 
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);
@@ -117,7 +117,7 @@ const ContactForm: React.FC = () => {
               },
             ]}
           >
-            <Select 
+            <Select
               defaultValue="Select source language"
               allowClear
               showSearch
@@ -148,9 +148,18 @@ const ContactForm: React.FC = () => {
             getValueFromEvent={normFile}
             rules={[{ required: true, message: 'Please upload a document' }]}
           >
-            <Upload>
+            <Upload
+              beforeUpload={(file) => {
+                const isLt2M = file.size / 1024 / 1024 < 2;
+                if (!isLt2M) {
+                  message.error('File must be smaller than 2MB!');
+                }
+                return isLt2M;
+              }}
+            >
               <Button className={styles.upload_button}>Choose Files</Button>
             </Upload>
+
           </Form.Item>
           <Form.Item>
             <Button className={styles.contact_button} htmlType='submit'>
