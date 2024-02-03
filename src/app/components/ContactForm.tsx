@@ -40,21 +40,21 @@ const ContactForm: React.FC = () => {
 
   const onFinish = async (values: any) => {
     try {
+      const { name, email, sourceLanguage, targetLanguage } = values;
+  
       const formData = new FormData();
-      formData.append('uploadDocument', values.uploadDocument[0].originFileObj);
-
-      formData.append('name', values.name);
-      formData.append('email', values.email);
-      formData.append('sourceLanguage', values.sourceLanguage);
-      formData.append('targetLanguage', values.targetLanguage);
-
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('sourceLanguage', sourceLanguage);
+      formData.append('targetLanguage', targetLanguage);
+  
       console.log(values);
-      const response = await api.post('/contact', formData, {
+      const response = await api.post('/contactForm', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
-
+  
       console.log('Form data submitted successfully:', response.data);
       message.success('Thank you! We will contact you soon');
     } catch (error) {
@@ -62,6 +62,7 @@ const ContactForm: React.FC = () => {
       message.error('Error submitting form. Please try again.');
     }
   };
+  
 
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);
