@@ -25,7 +25,7 @@ function Transcription() {
                         in the digital age.</h2>
                     <div className={styles.divider}>
                         <Image
-                            src="/assets/Transcription/Transcription-Icon.webp"
+                            src="https://i.ibb.co/pLJCWLw/Transcription-Icon.webp"
                             alt="Transcription"
                             width={120}
                             height={12}

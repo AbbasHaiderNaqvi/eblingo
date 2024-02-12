@@ -78,7 +78,7 @@ const ContactForm: React.FC = () => {
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <div className={styles.contact_container}>
-        <h1 className={styles.heading}>Contact Us!!</h1>
+        <h1 className={styles.heading}>Contact Us!</h1>
         <Form
           method='POST'
           name="contactForm"
