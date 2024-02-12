@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
                                 onClick={handleArrowClick}
                                 className={styles.email_icon} />
                         </div>
-                        <div className={styles.reserved_rights}>{new Date().getFullYear()} Eblingo.All right reserved</div>
+                        <div className={styles.reserved_rights}>{new Date().getFullYear()} Eblingo.Powered by kodwebs.</div>
                     </Col>
                     <Col xs={24} sm={24} md={24} lg={10} xl={10}>
                         <ul className={styles.socialmedia_links}>

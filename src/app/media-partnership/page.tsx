@@ -22,7 +22,7 @@ function Partnerships() {
       <h2 className={styles.first_master_heading}>Master Templates <span className={styles.heading_span}>and</span> Subtitling</h2>
 
       <Image
-        src="/assets/Transcription/Transcription-Icon.webp"
+        src="https://i.ibb.co/pLJCWLw/Transcription-Icon.webp"
         alt="Transcription"
         width={120}
         height={12}
