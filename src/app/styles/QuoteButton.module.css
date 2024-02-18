@@ -9,7 +9,7 @@
     font-family: Poppins;
     margin-top: 10%;
 }
-
+ 
  
 .quote_paragraph {
     color: #000;
@@ -54,7 +54,42 @@
 .Row3 {
     margin-left: 5%;
 }
+.s_label5{
+    color: #3C3939;
+    font-family: Poppins!important;
+    font-size: 22px!important;
+    font-style: normal;
+    font-weight: 600!important;
+    line-height: normal;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.s_label6{
+    color: #3C3939;
+    font-family: Poppins!important;
+    font-size: 22px!important;
+    font-style: normal;
+    font-weight: 600!important;
+    line-height: normal;
+    margin-left: 8%;
+}
+.s_label7{
+    display: none;
+    color: #3C3939;
+    font-family: Poppins!important;
+    font-size: 22px!important;
+    font-style: normal;
+    font-weight: 600!important;
+    line-height: normal;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
 
+.service_span{
+   color: red;
+   font-size: 15px;
+   margin-right: 0.5%;
+}
 .Input1,
 .Input2,
 .Link {
@@ -185,7 +220,43 @@
         font-family: Poppins;
         font-size: 15px;
     }
-
+    .s_label6{
+        display: none;
+        color: #3C3939;
+        font-family: Poppins!important;
+        font-size: 22px!important;
+        font-style: normal;
+        font-weight: 600!important;
+        line-height: normal;
+        margin-left: 8%;
+    }
+    .s_label7{
+        color: #3C3939;
+        font-family: Poppins!important;
+        font-size: 22px!important;
+        font-style: normal;
+        font-weight: 600!important;
+        line-height: normal;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    .s_label8{
+        display:contents;
+        position: relative;
+        left: -110px;
+        color: #3C3939;
+        font-family: Poppins!important;
+        font-size: 22px!important;
+        font-style: normal;
+        font-weight: 600!important;
+        line-height: normal;
+        margin-left: 8%;
+    }
+    .service_span{
+       color: red;
+       font-size: 15px;
+       margin-right: 0.5%;
+    }
     .Submit_Button {
         margin-top: 15%;
         border-radius: 10px;

@@ -192,15 +192,14 @@ const GetaQuote: FC = () => {
                     />
                   </Form.Item>
                 </Col>
-                
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                   <Form.Item
                     labelCol={{ span: 24 }}
                     wrapperCol={{ span: 24 }}
-                    label="Upload link"
+                    label="Upload Link"
                     name="uploadlink"
                     className={styles.Row3}
-                    rules={[{ required: true, message: 'Please Upload the Link' }]}>
+                    rules={[{ message: 'Please Upload the Link' }]}>
                     <Input placeholder="paste link" autoComplete='off' className={styles.Link} />
                   </Form.Item>
                 </Col>
