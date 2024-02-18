@@ -104,18 +104,18 @@ const Contact: FC = () => {
               <Form.Item
                 labelCol={{ span: 24 }}
                 wrapperCol={{ span: 24 }}
-                label="Phone"
-                name="phone"
+                label="Email"
+                name="email"
                 className={styles.PhoneRow}
                 rules={[
                   {
                     required: true,
-                    message: 'Please enter your correct phone number',
-                    pattern: /^[0-9]+$/,
+                    message: 'Please enter your correct Email',
+                    type:'email'
                   },
                 ]}
               >
-                <Input placeholder="Your Phone Number" autoComplete='off' className={styles.Input2} />
+                <Input placeholder="Your Email Address" autoComplete='off' className={styles.Input2} />
               </Form.Item>
             </Col>
           </Row>
@@ -175,13 +175,7 @@ const Contact: FC = () => {
                 label="Estimated Project Size"
                 name="projectSize"
                 className={styles.Row3}
-                rules={[
-                  {
-                    required: true,
-                    message: 'Please enter estimated project size',
-                    pattern: /^[0-9]+$/,
-                  },
-                ]}              >
+               >
                 <Input autoComplete='off' className={styles.Input5} />
               </Form.Item>
             </Col>
@@ -194,35 +188,20 @@ const Contact: FC = () => {
                 valuePropName="fileList"
                 className={styles.Row3}
                 getValueFromEvent={normFile}
-                rules={[{ required: true, message: 'Please enter Document' }]}
               >
-                <Upload name="logo" action="/upload.do" listType="text">
+                <Upload 
+                beforeUpload={(file) => {
+                  const isLt2M = file.size / 1024 / 1024 < 2;
+                  if (!isLt2M) {
+                    message.error('File must be smaller than 2MB!');
+                  }
+                  return isLt2M;
+                }}
+                name="logo" 
+                action="/upload.do" 
+                listType="text">
                   <Button className={styles.UploadButton} icon={<UploadOutlined />}>Choose Files</Button>
                 </Upload>
-              </Form.Item>
-            </Col>
-          </Row>
-
-          <Row gutter={[16, 16]}>
-            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-              <Form.Item
-                rules={[
-                  {
-                    required: true,
-                    message: 'Please enter your email',
-                    type: 'email',
-                  },
-                ]}
-                name="email">
-                <Input placeholder="Enter your email" className={styles.Input6} autoComplete='off' />
-              </Form.Item>
-            </Col>
-          </Row>
-
-          <Row gutter={[16, 16]}>
-            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-              <Form.Item name="message" rules={[{ message: 'Please enter your message' }]}>
-                <TextArea autoSize={{ minRows: 5, maxRows: 6 }} placeholder='Additional Comments...' autoComplete='off' className={styles.TextArea} />
               </Form.Item>
             </Col>
           </Row>

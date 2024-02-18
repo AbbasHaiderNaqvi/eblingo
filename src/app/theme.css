@@ -15,9 +15,8 @@
 .ant-form-item-control-input {
     margin: 0px !important;
 }
-
-.ant-form-item-required {
-    color: #3C3939;
+.ant-form-item-label >label {
+    color: #000!important;
     font-family: Poppins!important;
     font-size: 22px!important;
     font-style: normal;

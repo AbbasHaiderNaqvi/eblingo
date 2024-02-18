@@ -16,13 +16,11 @@ const { Search } = Input;
 
 interface DataType {
     name: string;
-    phone: string;
     email: string;
     sourceLanguage: string;
     targetLanguage: string;
     projectSize: string;
     uploadDocument: string[];
-    message: string;
     submissionDateTime: string;
 }
 
@@ -30,11 +28,6 @@ const columns: ColumnsType<DataType> = [
     {
         title: 'NAME',
         dataIndex: 'name',
-        width: 30,
-    },
-    {
-        title: 'PHONE',
-        dataIndex: 'phone',
         width: 30,
     },
     {
@@ -55,11 +48,6 @@ const columns: ColumnsType<DataType> = [
     {
         title: 'EMAIL',
         dataIndex: 'email',
-        width: 50,
-    },
-    {
-        title: 'MESSAGE',
-        dataIndex: 'message',
         width: 50,
     },
     {
