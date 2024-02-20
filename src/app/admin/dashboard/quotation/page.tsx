@@ -53,7 +53,9 @@ const columns: ColumnsType<DataType> = [
         title: 'UPLOAD LINK',
         dataIndex: 'uploadlink',
         width: 35,
-        render: (value: any) => { return <Link href={value}>{value}</Link>;},
+        render: (value: any) => { 
+            return value ? <Link href={value}>{value}</Link> : null; 
+        },
     },
     {
         title: 'CREATED AT',
@@ -114,7 +116,7 @@ const ContactTable: React.FC = () => {
                     placeholder="input search text"
                     allowClear
                     enterButton
-                    className={styles.searchbar}
+                    className={styles.searchbar} 
                     size="large"
                     onSearch={onSearch}
                 />
