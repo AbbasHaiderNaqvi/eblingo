@@ -1,16 +1,41 @@
-import React from 'react'
+"use client";
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/Publications.module.css';
-import { Col, Row } from 'antd';
+import { Button, Col, Row } from 'antd';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 
 
 function Publications() {
+    const router= useRouter();
+    const handleClick = () => {
+        router.push('/get-a-quote');
+      }; 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            setScrollPosition(currentPosition);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <>
             <div className={styles.HeroSection}>
                 <h1 className={styles.HeroSection_Heading}>Publication Partnerships</h1>
             </div>
+            <Row>
+      <Button
+                           onClick={handleClick}
+                            className={`${styles.quote_button}
+                        ${scrollPosition ? 'sticky' : ''}`}
+                        >Get a quote</Button>
+
+      </Row>
             <div>
                 <h4 className={styles.FirstHeading}>Book Translation Services with Eblingo</h4>
                 <h2 className={styles.SecondHeading}>Empowering Stories across Borders </h2>

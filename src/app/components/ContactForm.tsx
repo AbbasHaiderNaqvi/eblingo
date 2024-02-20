@@ -40,14 +40,14 @@ const ContactForm: React.FC = () => {
 
   const onFinish = async (values: any) => {
     try {
-      const { name, email, sourceLanguage, targetLanguage } = values;
+      const { name, email, sourceLanguage, targetLanguage,uploadlink } = values;
   
       const formData = new FormData();
       formData.append('name', name);
       formData.append('email', email);
       formData.append('sourceLanguage', sourceLanguage);
       formData.append('targetLanguage', targetLanguage);
-  
+      formData.append('Upload Links', uploadlink)
       console.log(values);
       const response = await api.post('/contact', values);
       console.log('Form data submitted successfully:', response.data);
@@ -143,14 +143,12 @@ const ContactForm: React.FC = () => {
             />
           </Form.Item>
           <Form.Item
-            name="uploadDocument"
-            valuePropName="fileList"
-            getValueFromEvent={normFile}
-            rules={[{ required: true, message: 'Please upload a document' }]}
+            name="uploadlink"
           >
-            <Upload>
-              <Button className={styles.upload_button}>Choose Files</Button>
-            </Upload>
+            <Input
+              className={styles.input_fields}
+              placeholder='Any Reference Links'
+            />
           </Form.Item>
           <Form.Item>
             <Button className={styles.contact_button} htmlType='submit'>

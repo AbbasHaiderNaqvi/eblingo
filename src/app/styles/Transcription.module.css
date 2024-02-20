@@ -195,6 +195,28 @@
     padding-left: 100px;
     padding-right: 100px;
 }
+.quote_button {
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    border: transparent;
+    border-radius: 10px;
+    float: right;
+    width: 131.309px;
+    height: 51.809px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    color: #FFF !important;
+    font-family: Poppins;
+    font-size: 15.45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.858px;
+}
+
+.quote_button:hover {
+    background-image: linear-gradient(to right, #faaf40, #ed1e78);
+}
 
 @media (min-width:350px) and (max-width:500px) {
     .HeroSection {
@@ -403,9 +425,31 @@
         margin-top: 5%;
         margin-bottom: 10%;
     }
-
+    .quote_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        border: transparent;
+        border-radius: 10px;
+        float: right;
+        width: 131.309px;
+        height: 51.809px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+        color: #FFF !important;
+        font-family: Poppins;
+        font-size: 15.45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.858px;
+    }
+    
+    .quote_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+    
 }
-@media (min-width:510px) and (max-width:850px) {
+@media (min-width:500px) and (max-width:850px) {
     .HeroSection {
         background-image: url('https://tinypic.host/images/2024/01/25/Transcription-image.webp');
         background-size: cover;
@@ -604,7 +648,29 @@
         font-weight: 500;
         line-height: 25px;
     }
-
+    .quote_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        border: transparent;
+        border-radius: 10px;
+        float: right;
+        width: 131.309px;
+        height: 51.809px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+        color: #FFF !important;
+        font-family: Poppins;
+        font-size: 15.45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.858px;
+    }
+    
+    .quote_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+    
 }
 @media (min-width:852px) and (max-width:1100px) {
     .HeroSection {
@@ -805,5 +871,27 @@
         font-weight: 500;
         line-height: 30px;
     }
-
+    .quote_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        border: transparent;
+        border-radius: 10px;
+        float: right;
+        width: 131.309px;
+        height: 51.809px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+        color: #FFF !important;
+        font-family: Poppins;
+        font-size: 15.45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.858px;
+    }
+    
+    .quote_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+    
 }

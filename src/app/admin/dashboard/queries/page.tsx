@@ -9,6 +9,7 @@ import { SearchProps } from 'antd/es/input';
 import { useRouter } from 'next/navigation'
 import { DownloadOutlined, ReloadOutlined, SyncOutlined } from '@ant-design/icons';
 import api from '@/app/axiosInterceptor/axiosInterceptor';
+import Link from 'next/link';
 
 
 const { Search } = Input;
@@ -17,17 +18,23 @@ const { Search } = Input;
 interface DataType {
     name: string;
     email: string;
-    sourceLanguage: string;
-    targetLanguage: string;
-    projectSize: string;
-    uploadDocument: string[];
-    submissionDateTime: string;
+    sourceLanguage: string[];
+    targetLanguage: string[];
+    services: string[];
+    uploadlink: string;
+    submissionDateTime:string;
 }
+
 
 const columns: ColumnsType<DataType> = [
     {
         title: 'NAME',
         dataIndex: 'name',
+        width: 30,
+    },
+    {
+        title: 'SERVICES',
+        dataIndex: 'services',
         width: 30,
     },
     {
@@ -41,21 +48,26 @@ const columns: ColumnsType<DataType> = [
         width: 30,
     },
     {
-        title: 'COST ($)',
-        dataIndex: 'projectSize',
-        width: 30,
-    },
-    {
         title: 'EMAIL',
         dataIndex: 'email',
-        width: 50,
+        width: 40,
+    },
+    {
+        title: 'UPLOAD LINK',
+        dataIndex: 'uploadlink',
+        width: 35,
+        render: (value: any) => { 
+            return value ? <Link href={value}>{value}</Link> : null; 
+        }
+        
     },
     {
         title: 'CREATED AT',
         dataIndex: 'submissionDateTime',
-        width: 50,
+        width: 40,
     }
 ];
+
 
 const ContactTable: React.FC = () => {
     const router = useRouter();
@@ -65,7 +77,7 @@ const ContactTable: React.FC = () => {
     const [tokenAvailable, setTokenAvailable] = useState<boolean>(true);
 
     const fetchData = async () => {
-        setLoading(true); 
+        setLoading(true); // Set loading to true when starting API call
         try {
             const response = await api.get('/admin/dashboard/contact-table');
             const result = response.data;
@@ -73,9 +85,8 @@ const ContactTable: React.FC = () => {
             setFilteredData(result);
         } catch (error) {
             console.error('Error fetching data:', error);
-            setTokenAvailable(false);
         } finally {
-            setLoading(false);
+            setLoading(false); // Set loading to false when API call completes (including errors)
         }
     };
 
@@ -109,23 +120,23 @@ const ContactTable: React.FC = () => {
                     placeholder="input search text"
                     allowClear
                     enterButton
-                    className={styles.searchbar}
+                    className={styles.searchbar} 
                     size="large"
                     onSearch={onSearch}
                 />
+                
                     <>
                         <Table
                             className={styles.Table}
                             columns={columns}
                             dataSource={filteredData}
-                            scroll={{ y: 280 }}
+                            scroll={{ y: 300 }}
                             loading={loading}
                         />
                         <Button onClick={fetchData} className={styles.button}>
                             <ReloadOutlined style={{ fontSize: '150%' }} />
                         </Button>
                     </>
-                
             </div>
         </>
     );

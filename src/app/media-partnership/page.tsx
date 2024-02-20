@@ -1,13 +1,29 @@
 'use client';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/Partnerships.module.css';
 import Image from 'next/image';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
-import { Col, Row } from 'antd';
+import { Button, Col, Row } from 'antd';
+import { useRouter } from 'next/navigation';
 
 
 function Partnerships() {
+  const router= useRouter();
+    const handleClick = () => {
+        router.push('/get-a-quote');
+      }; 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            setScrollPosition(currentPosition);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
   return (
     <motion.div
       initial="hidden"
@@ -18,7 +34,14 @@ function Partnerships() {
       <div className={styles.HeroSection}>
         <h1 className={styles.HeroSection_Heading}>Media Partnerships</h1>
       </div>
+      <Row>
+      <Button
+                           onClick={handleClick}
+                            className={`${styles.quote_button}
+                        ${scrollPosition ? 'sticky' : ''}`}
+                        >Get a quote</Button>
 
+      </Row>
       <h2 className={styles.first_master_heading}>Master Templates <span className={styles.heading_span}>and</span> Subtitling</h2>
 
       <Image

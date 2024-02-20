@@ -1,13 +1,29 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../styles/Transcription.module.css';
 import Image from 'next/image';
-import { Col, Row } from 'antd';
+import { Button, Col, Row } from 'antd';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 
 function Transcription() {
+    const router= useRouter();
+    const handleClick = () => {
+        router.push('/get-a-quote');
+      }; 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            setScrollPosition(currentPosition);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <motion.div
             initial="hidden"
@@ -19,6 +35,14 @@ function Transcription() {
                 <h1 className={styles.HeroSection_Heading}>Media Localization</h1>
             </div>
             <div>
+            <Row>
+            <Button
+                           onClick={handleClick}
+                            className={`${styles.quote_button}
+                        ${scrollPosition ? 'sticky' : ''}`}
+                        >Get a quote</Button>
+
+            </Row>
                 <div className={styles.content}>
                     <h2 className={styles.First_Connect_Heading}>More than ever, <span className={styles.span}>Businesses</span> rely on audio-visuals
                         to connect with customers and thrive

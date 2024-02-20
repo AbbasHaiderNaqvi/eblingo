@@ -1,12 +1,28 @@
 'use client';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/Services.module.css'
-import { Col, Row } from 'antd';
+import { Button, Col, Row } from 'antd';
 import Image from 'next/image';
 import { MediumAnimationVariants } from '../Animations/ScrollingAnimation';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation'
 
 function Services() {
+    const router= useRouter();
+    const handleClick = () => {
+        router.push('/get-a-quote');
+      }; 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            setScrollPosition(currentPosition);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <motion.div
             initial="hidden"
@@ -18,6 +34,14 @@ function Services() {
                 <h1 className={styles.HeroSection_Heading}>Document Translations</h1>
             </div>
             <div>
+                <Row>
+                        <Button
+                           onClick={handleClick}
+                            className={`${styles.quote_button}
+                        ${scrollPosition ? 'sticky' : ''}`}
+                        >Get a quote</Button>
+
+                </Row>
                 <Row>
                     <Col xs={24} sm={12} md={12} lg={9} xl={10}>
                         <p className={styles.First_Blog_Paragraph}>

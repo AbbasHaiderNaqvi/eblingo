@@ -124,6 +124,28 @@
     line-height: 46.055px;
     margin-bottom: 5%;
 }
+.quote_button {
+    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    border: transparent;
+    border-radius: 10px;
+    float: right;
+    width: 131.309px;
+    height: 51.809px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    color: #FFF !important;
+    font-family: Poppins;
+    font-size: 15.45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.858px;
+}
+
+.quote_button:hover {
+    background-image: linear-gradient(to right, #faaf40, #ed1e78);
+}
 
 @media (min-width:350px) and (max-width:500px) {
     .HeroSection {
@@ -249,6 +271,28 @@
         line-height: 30px;
         margin-bottom: 5%;
     }
+    .quote_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        border: transparent;
+        border-radius: 10px;
+        float: right;
+        width: 131.309px;
+        height: 51.809px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+        color: #FFF !important;
+        font-family: Poppins;
+        font-size: 15.45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.858px;
+    }
+    
+    .quote_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }    
 }
 
 @media (min-width:500px) and (max-width:850px) {
@@ -371,6 +415,29 @@
         line-height: 30px;
         margin-bottom: 5%;
     }
+    .quote_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        border: transparent;
+        border-radius: 10px;
+        float: right;
+        width: 131.309px;
+        height: 51.809px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+        color: #FFF !important;
+        font-family: Poppins;
+        font-size: 15.45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.858px;
+    }
+    
+    .quote_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+    
 }
 
 @media (min-width:850px) and (max-width:1100px) {
@@ -496,4 +563,27 @@
         line-height: 30px;
         margin-bottom: 5%;
     }
+    .quote_button {
+        background-image: linear-gradient(to right, #ed1e78, #faaf40);
+        border: transparent;
+        border-radius: 10px;
+        float: right;
+        width: 131.309px;
+        height: 51.809px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+        color: #FFF !important;
+        font-family: Poppins;
+        font-size: 15.45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.858px;
+    }
+    
+    .quote_button:hover {
+        background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    }
+    
 }
